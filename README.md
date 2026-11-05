@@ -29,6 +29,18 @@ Perhitungan: biaya langsung AHS = jumlah (koefisien × harga dasar). Biaya umum/
 
 Biaya umum/keuntungan awal 10% dan pajak awal 0% adalah pengaturan yang dapat diubah; nilai tersebut bukan penentuan perlakuan pajak proyek. SMKK tidak dikenai biaya umum/keuntungan kedua kali. Rekap kebutuhan sumber daya mengalikan koefisien dengan volume sebelum menggabungkan komponen dan belum memuat SMKK. Harga per OH, per jam, dan per hari dibedakan. Kode tenaga kerja yang sama tidak menyatukan jenis tukang berbeda.
 
+## Form mengikuti workbook rujukan
+
+Struktur form mengacu pada `RAB JEMBATAN MJM.xlsm` unggahan pengguna; rincian pemetaan ada di [docs/workbook-format.md](docs/workbook-format.md). Berkas dibaca tanpa menjalankan VBA/makro atau formula workbook.
+
+- Identitas bersama: pemberi tugas, nama proyek, lokasi, koordinat, tahun proyek; jenis dokumen RAB/HPS dapat dipilih. Tanggal harga tetap terpisah dari tahun proyek.
+- RAB tetap memakai tujuh kolom WBS yang dapat diedit, ditambah kepala form dan rekap biaya.
+- AHS: NO, URAIAN, KODE, SATUAN, KOEFISIEN, HARGA SATUAN, JUMLAH HARGA. Kelompok A tenaga kerja, B bahan, C peralatan, D lain-lain mempunyai subtotal; E jumlah biaya langsung, F biaya umum/keuntungan, G harga satuan pekerjaan. Kode/harga komponen terhubung ke HSD.
+- HSD: NO, URAIAN, KODE, SATUAN, HARGA SHB, HARGA SATUAN, KETERANGAN. Harga SHB adalah pembanding yang tidak otomatis mengubah harga satuan aktual. Kode dan keterangan dapat diedit. Metadata ikut disimpan di cadangan JSON serta CSV HSD (kolom kode, harga shb, harga, keterangan).
+- Form AHS dan HSD dapat dicetak terpisah; cetak RAB juga menyertakan keduanya. Input diganti teks pada cetakan.
+
+Angka harga/koefisien proyek 2025, diskon, formula pajak, pembulatan, dan konversi satuan pada workbook tidak diimpor otomatis. Kelompok Lain-lain tersedia untuk analisis manual; tidak menambahkan biaya baru pada template SE yang tidak memiliki komponen tersebut. Sheet VOLUME dan JADWAL belum menjadi fitur aplikasi.
+
 ## Cakupan analisis siap hitung
 
 Tersedia **18 template AHS**: 10 pekerjaan SDA (pembersihan, galian batu manual/semi-mekanis, dan pemadatan timbris), 7 pekerjaan CK (pagar dan papan nama), serta 1 contoh BM (galian drainase B.1). Koefisien telah diperiksa terhadap halaman PDF yang dicantumkan; asumsi khusus ditampilkan pada rincian. Koefisien template dikunci. Harga dasar tidak diisi otomatis.

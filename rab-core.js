@@ -1,4 +1,4 @@
-export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan'];
+export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
   const n = typeof value === 'number' ? value : Number(value);
@@ -69,17 +69,26 @@ export function importRates(text, project) {
   const header = rows.shift().map(c => c.trim().toLowerCase());
   const keyIndex = header.indexOf('kunci'), priceIndex = header.indexOf('harga');
   if (keyIndex < 0 || priceIndex < 0) throw Error('Gunakan template CSV dengan kolom kunci dan harga.');
-  const allowed = new Set(resources(project).map(c => c.key)), rates = { ...project.rates };
+  const allowed = new Set(resources(project).map(c => c.key)), rates = { ...project.rates }, resourceMeta = structuredClone(project.resourceMeta || {});
   let count = 0;
   for (const row of rows) {
     const key = row[keyIndex], raw = row[priceIndex]?.trim();
     if (!allowed.has(key)) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
+    for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000]]) {
+      const index=header.indexOf(column);
+      if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');resourceMeta[key]??={};resourceMeta[key][field]=value;}
+    }
+    const shbIndex=header.indexOf('harga shb');
+    if(shbIndex>=0 && row[shbIndex]?.trim()){
+      const value=row[shbIndex].trim();if(!/^\d+(?:[.,]\d+)?$/.test(value))throw Error('Harga SHB harus angka tanpa pemisah ribuan.');
+      resourceMeta[key]??={};resourceMeta[key].shb=nonnegative(value.replace(',','.'));
+    }
     if (raw === '' || raw == null) continue;
     // CSV template uses decimal dot; Indonesian decimal comma is accepted without thousands separators.
     if (!/^\d+(?:[.,]\d+)?$/.test(raw)) throw Error('Harga harus angka tanpa pemisah ribuan. Contoh: 150000 atau 150000,50.');
     rates[key] = nonnegative(raw.replace(',', '.')); count++;
   }
-  return { rates, count };
+  return { rates, resourceMeta, count };
 }
 export function validateProject(p) {
   if (!p || typeof p !== 'object' || !Array.isArray(p.items) || !Array.isArray(p.smkk) || p.items.length > 1000 || p.smkk.length > 1000) throw Error('Data proyek tidak valid.');
@@ -88,6 +97,14 @@ export function validateProject(p) {
   if (!p.rates || typeof p.rates !== 'object' || Array.isArray(p.rates)) throw Error('Harga dasar tidak valid.');
   const rates = {};
   for (const [key, value] of Object.entries(p.rates)) { if (key.length > 3000) throw Error('Kunci harga terlalu panjang.'); rates[key] = nonnegative(value); }
+  const resourceMeta = {};
+  if (p.resourceMeta != null && (typeof p.resourceMeta !== 'object' || Array.isArray(p.resourceMeta))) throw Error('Metadata harga dasar tidak valid.');
+  for (const [key,m] of Object.entries(p.resourceMeta || {})) {
+    if (key.length > 3000 || !m || typeof m !== 'object') throw Error('Metadata sumber daya tidak valid.');
+    if (typeof (m.code||'') !== 'string' || (m.code||'').length>100 || typeof (m.remarks||'') !== 'string' || (m.remarks||'').length>4000) throw Error('Kode/keterangan HSD tidak valid.');
+    resourceMeta[key]={code:m.code||'',remarks:m.remarks||''};
+    if(m.shb!=null && m.shb!=='')resourceMeta[key].shb=nonnegative(m.shb);
+  }
   const items = p.items.map(item => {
     for (const k of ['code', 'title', 'unit', 'group']) if (typeof item[k] !== 'string' || item[k].length > 2000) throw Error('Identitas pekerjaan tidak valid.');
     if (!Array.isArray(item.components) || item.components.length > 300 || (item.heading && item.components.length)) throw Error('Rincian analisis tidak valid.');
@@ -98,14 +115,16 @@ export function validateProject(p) {
     const page = Number(item.page || 1); if (!Number.isInteger(page) || page < 1 || page > 10000) throw Error('Halaman sumber tidak valid.');
     return { id: crypto.randomUUID(), code: item.code, title: item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, manual: Boolean(item.manual), volume: nonnegative(item.volume), components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
-      return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient) };
+      return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient), code: String(c.code||'').slice(0,100) };
     }) };
   });
   const smkk = p.smkk.map(r => {
     if (typeof r.name !== 'string' || !r.name.trim() || r.name.length > 1000 || typeof r.unit !== 'string' || r.unit.length > 50) throw Error('Rincian SMKK tidak valid.');
     return { id: crypto.randomUUID(), name: r.name, unit: r.unit, volume: nonnegative(r.volume), price: nonnegative(r.price) };
   });
-  return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+  for(const field of ['year','coordinates','documentType'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>500))throw Error('Identitas form tidak valid.');
+  if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
+  return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, year:p.year||p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
 }
 
 export function wbsNumbers(items) {

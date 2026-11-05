@@ -54,3 +54,16 @@ test('WBS headings do not add costs; unlinked work stays draft; row descriptions
  p.items.push({...heading,heading:false,wbsLevel:3,title:'Pekerjaan belum dipilih',id:'u'});assert.equal(calculateProject(p).incomplete,true);
  assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:3},{wbsLevel:2},{wbsLevel:1},{wbsLevel:2}]),['A','1','a','-','b','2','B','1']);
 });
+
+test('Workbook HSD metadata round-trips without replacing actual prices with SHB or copying sample discounts',()=>{
+ const p=fixture(),c=resources(p)[0];
+ const csv=toCsv([['kunci','kode','harga shb','harga','keterangan'],[c.key,'L.01','200000','175000','Harga setempat, per OH']]);
+ const result=importRates(csv,p);assert.equal(result.rates[c.key],175000);assert.equal(result.resourceMeta[c.key].shb,200000);assert.equal(result.resourceMeta[c.key].code,'L.01');
+ const restored=validateProject({...p,rates:result.rates,resourceMeta:result.resourceMeta,year:'2026',coordinates:'Koordinat proyek',documentType:'HPS'});
+ assert.equal(restored.resourceMeta[c.key].remarks,'Harga setempat, per OH');assert.equal(restored.year,'2026');assert.equal(restored.documentType,'HPS');
+ assert.throws(()=>importRates(toCsv([['kunci','harga shb','harga'],[c.key,'-1','123']]),p));assert.deepEqual(p.rates,{});
+});
+test('Workbook fourth AHS group is included in direct cost and overhead once',()=>{
+ const p=fixture(),i=p.items[0];i.components=[{group:'Lain-lain',name:'Biaya tambahan terukur',unit:'buah',coefficient:2}];p.rates[rateKey(i,i.components[0])]=1000;
+ const r=calculateItem(i,p.rates,10);assert.equal(r.direct,2000);assert.equal(r.margin,200);assert.equal(r.unitPrice,2200);
+});
