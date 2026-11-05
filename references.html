@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174b41">
+  <meta name="description" content="Pustaka digital AHSP berdasarkan SE DJBK No. 47 Tahun 2026. Telusuri pedoman, cari isi dokumen, dan baca PDF sumber.">
+  <title>Pustaka AHSP — Referensi Konstruksi 2026</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <aside class="sidebar" id="sidebar" aria-label="Navigasi utama">
+    <a href="#home" class="brand"><span class="brand-mark">a<span>▰</span></span><span>pustaka<span class="brand-bold">AHSP<span class="brand-dot">.</span></span></span></a>
+    <div class="sidebar-caption">RUANG REFERENSI KONSTRUKSI</div>
+    <div class="nav-label">MENU UTAMA</div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-edition"><span class="edition-symbol">26</span><div><strong>Referensi tahun 2026</strong><small>SE DJBK No. 47</small></div><span class="edition-dot"></span></div>
+    <div class="sidebar-bottom"><span class="tiny-label">DIBANGUN UNTUK KETELITIAN</span><p>Satu pustaka.<br>Landasan setiap pekerjaan.</p><span class="sidebar-line"></span><small>Dokumen sumber tetap menjadi acuan.</small></div>
+  </aside>
+  <button class="nav-overlay" id="nav-overlay" aria-label="Tutup navigasi" hidden></button>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" id="menu-button" aria-label="Buka navigasi" aria-expanded="false"></button><a href="index.html">← Kembali ke RAB</a><span class="breadcrumb-slash">/</span><strong id="breadcrumb-current">Ikhtisar</strong></div><div class="topbar-right"><button class="quick-search" id="quick-search"><span id="quick-search-icon"></span><span>Cari referensi</span><kbd>/</kbd></button><span class="topbar-divider"></span><span class="edition-chip">EDISI 2026</span></div></header>
+    <main id="main" tabindex="-1"><div class="loading-state">Memuat pustaka dokumen…</div></main>
+    <footer><span><strong>pustakaAHSP.</strong> <span class="footer-separator">/</span> Referensi konstruksi, lebih terarah.</span><span>Disusun dari dokumen yang diunggah · Edisi 2026</span></footer>
+  </div>
+  <dialog id="reader" aria-labelledby="reader-title">
+    <div class="reader-bar"><div class="reader-heading"><span id="reader-label" class="eyebrow"></span><h2 id="reader-title"></h2></div><button class="icon-button" id="close-reader" aria-label="Tutup pembaca"></button></div>
+    <div class="reader-tools"><div class="reader-modes" role="group" aria-label="Mode pembaca"><button id="pdf-mode" class="active">PDF asli</button><button id="text-mode">Teks dokumen</button></div><div class="page-controls"><button class="icon-button" id="previous-page" aria-label="Halaman sebelumnya">←</button><label for="page-number">Hal.</label><input id="page-number" type="number" min="1" value="1" aria-label="Nomor halaman PDF"><span id="page-total"></span><button class="icon-button" id="next-page" aria-label="Halaman berikutnya">→</button></div><div class="reader-actions"><button class="icon-button" id="bookmark-page" aria-label="Simpan halaman ini"></button><a id="reader-download" class="icon-button" download aria-label="Unduh PDF"></a><a id="reader-external" class="icon-button" target="_blank" rel="noopener" aria-label="Buka PDF di tab baru"></a></div></div>
+    <div id="reader-content"></div><div class="reader-footnote">Nomor halaman mengikuti urutan halaman PDF, bukan penomoran cetak. Tabel dan gambar: gunakan PDF asli.</div>
+  </dialog>
+  <div class="toast" role="status" id="toast" hidden></div>
+  <noscript><div class="noscript">Aktifkan JavaScript untuk menelusuri pustaka. PDF tersedia di folder public/documents.</div></noscript>
+</body>
+</html>

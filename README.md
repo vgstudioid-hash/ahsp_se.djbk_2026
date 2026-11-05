@@ -1,32 +1,48 @@
-# Pustaka AHSP 2026
+# RAB Studio — AHSP SE DJBK 2026
 
-Website referensi berbahasa Indonesia berdasarkan PDF SE DJBK No. 47 Tahun 2026 yang diunggah pengguna. Aplikasi ini merupakan pustaka dokumen, bukan layanan resmi Kementerian PU atau kalkulator RAB.
+Aplikasi penyusunan Rencana Anggaran Biaya (RAB) berbahasa Indonesia berdasarkan analisis dalam PDF SE DJBK No. 47 Tahun 2026 yang diunggah pengguna. Halaman utama adalah lembar perhitungan proyek. Pustaka PDF dipertahankan sebagai fitur pendukung pada `references.html`.
 
 ## Menjalankan
 
-Memerlukan Node.js 20 atau lebih baru. Tidak ada dependensi eksternal atau variabel rahasia.
+Memerlukan Node.js 20 atau lebih baru. Tidak ada dependensi eksternal, API berbayar, atau variabel rahasia.
 
 ```sh
 cd /workspace/ahsp_se.djbk_2026
 npm run dev -- --host 0.0.0.0 --port 3000
-```
-
-Gunakan checkout yang ada; setiap tugas cloud sudah terisolasi, sehingga tidak perlu membuat Git worktree. Proses server perlu dijalankan kembali pada sesi cloud baru. Untuk memeriksa layanan, ambil `/` dan `/data/documents.json`, kemudian cari “SMKK” di antarmuka dan buka salah satu halaman hasilnya.
-
-```sh
 npm test
 npm run build
 ```
 
-Hasil build di `dist/` dapat disajikan melalui hosting statis. Aset menggunakan path relatif sehingga dapat ditempatkan di subdirektori. Server pengembangan mendukung permintaan rentang byte untuk membaca PDF besar. `PORT` dapat digunakan untuk mengganti port.
+Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git worktree. Proses server perlu dijalankan ulang pada sesi baru. Hasil build statis tersedia di `dist/`; seluruh path relatif mendukung GitHub Pages pada subdirektori repositori. `PORT` dapat digunakan untuk mengganti port server.
 
-## Fitur
+## Alur penyusunan RAB
 
-- Ikhtisar, filter kategori/judul, tampilan kisi/daftar, dan navigasi bidang pekerjaan.
-- Pencarian isi PDF di Web Worker, dengan cuplikan dan nomor halaman sumber. Semua kata kunci harus ada pada halaman yang sama; maksimal 12 hasil per dokumen ditampilkan. Persempit kata kunci untuk menemukan hasil lain.
-- Pembaca PDF asli, teks hasil ekstraksi per halaman, unduhan, dan buka di tab baru.
-- Penanda dokumen/halaman tersimpan di localStorage browser; tidak dikirim ke server.
-- Tampilan responsif, navigasi keyboard, dan pintasan `/` untuk mencari.
+1. Buat atau pilih proyek, isi lokasi dan tanggal harga.
+2. Pilih AHS siap hitung; tambah pekerjaan dan masukkan volume hasil pengukuran.
+3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
+4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK sesuai kebutuhan secara terpisah.
+5. Tinjau biaya umum/keuntungan dan persentase pajak efektif sesuai proyek, lalu ekspor CSV, cadangan JSON, atau cetak/simpan PDF.
+
+Perhitungan: biaya langsung AHS = jumlah (koefisien × harga dasar). Biaya umum/keuntungan = persentase × biaya langsung. Harga satuan = biaya langsung + biaya umum/keuntungan. Jumlah pekerjaan = volume × harga satuan. Dasar pajak = total pekerjaan + biaya SMKK. Total RAB = dasar pajak + pajak efektif yang diisi pengguna. Komponen biaya, biaya umum/keuntungan, harga satuan, jumlah baris, SMKK, dan pajak dibulatkan ke dua desimal rupiah pada masing-masing tahap.
+
+Biaya umum/keuntungan awal 10% dan pajak awal 0% adalah pengaturan yang dapat diubah; nilai tersebut bukan penentuan perlakuan pajak proyek. SMKK tidak dikenai biaya umum/keuntungan kedua kali. Rekap kebutuhan sumber daya mengalikan koefisien dengan volume sebelum menggabungkan komponen dan belum memuat SMKK. Harga per OH, per jam, dan per hari dibedakan. Kode tenaga kerja yang sama tidak menyatukan jenis tukang berbeda.
+
+## Cakupan analisis siap hitung
+
+Tersedia **18 template AHS**: 10 pekerjaan SDA (pembersihan, galian batu manual/semi-mekanis, dan pemadatan timbris), 7 pekerjaan CK (pagar dan papan nama), serta 1 contoh BM (galian drainase B.1). Koefisien telah diperiksa terhadap halaman PDF yang dicantumkan; asumsi khusus ditampilkan pada rincian. Koefisien template dikunci. Harga dasar tidak diisi otomatis.
+
+**Belum seluruh AHS pada 6.700 halaman PDF menjadi data perhitungan terstruktur.** Gunakan pencarian dokumen untuk analisis lain, lalu masukkan seluruh komponen, koefisien, satuan, dan halaman sumber melalui form AHS manual. Analisis manual ditandai pada lembar RAB dan hasil cetak. Contoh BM bersifat informatif dan memakai asumsi angkut 2 km, tanah liat, serta 7 jam kerja efektif; harga alat sudah mencakup operator, BBM, dan bahan habis pakai sesuai catatan sumber. Jangan menambahkan biaya tersebut dua kali.
+
+## Harga, penyimpanan, dan ekspor
+
+- Proyek tersimpan di localStorage browser. Beberapa proyek dapat dibuat; tidak ada akun, server database, atau sinkronisasi antarperangkat. Cadangkan JSON secara berkala.
+- Harga kosong berarti belum diisi; nol yang dimasukkan pengguna merupakan harga nol eksplisit. Item dengan harga kosong atau volume nol membuat hasil berstatus DRAF. Total parsial diberi label dan tidak disajikan sebagai harga satuan lengkap.
+- Harga komponen digunakan bersama jika bidang, kelompok, nama, dan satuannya sama. Perubahan harga menghitung ulang seluruh pekerjaan terkait.
+- Unduh template Harga Dasar CSV proyek. Pertahankan kolom `kunci`; isi `harga` tanpa pemisah ribuan, misalnya `150000` atau `150000,50`. Pemisah kolom `;` dan `,`, kutipan CSV, serta desimal koma/titik didukung. Impor divalidasi secara utuh sebelum diterapkan.
+- File CSV/JSON dapat diunduh, diimpor, dan dicetak tanpa layanan eksternal. JSON impor dibuat menjadi proyek baru dan analisisnya ditandai manual untuk ditinjau, sehingga tidak menimpa proyek yang ada.
+- Cetak mencakup tabel RAB, rincian SMKK, dan analisis tiap pekerjaan. Gunakan pilihan Save as PDF browser untuk menyimpan PDF. CSV dapat dibuka di aplikasi spreadsheet; formula pada teks ekspor dinonaktifkan dengan awalan apostrof.
+
+Pustaka pendukung mempertahankan pencarian teks halaman, pembaca PDF, unduhan, dan penanda halaman lokal. Mode teks tidak menggantikan pemeriksaan tabel dan gambar pada PDF asli.
 
 ## Cakupan sumber
 
