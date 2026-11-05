@@ -67,3 +67,10 @@ test('Workbook fourth AHS group is included in direct cost and overhead once',()
  const p=fixture(),i=p.items[0];i.components=[{group:'Lain-lain',name:'Biaya tambahan terukur',unit:'buah',coefficient:2}];p.rates[rateKey(i,i.components[0])]=1000;
  const r=calculateItem(i,p.rates,10);assert.equal(r.direct,2000);assert.equal(r.margin,200);assert.equal(r.unitPrice,2200);
 });
+
+test('Empirical AHS uses fixed Empiris code, preserves independent rates and basis through backup, and contributes to RAB',()=>{
+ const p=fixture(),i=p.items[0];Object.assign(i,{code:'Empiris',docId:'',page:1,empirical:true,manual:true,note:'Pengamatan 2 OH untuk hasil 4 m²',components:[{group:'Tenaga kerja',name:'Pekerja',unit:'OH',coefficient:0.5}],volume:3});p.smkk=[];p.tax=0;p.rates[rateKey(i,i.components[0])]=100000;
+ assert.equal(calculateProject(p).total,165000);const restored=validateProject(p);assert.equal(restored.items[0].empirical,true);assert.equal(restored.items[0].code,'Empiris');assert.equal(calculateProject(restored).total,165000);
+ assert.notEqual(rateKey(i,i.components[0]),rateKey({...i,empirical:false},i.components[0]));
+ assert.throws(()=>validateProject({...p,items:[{...i,code:'A.1'}]}));assert.throws(()=>validateProject({...p,items:[{...i,docId:'iv'}]}));assert.throws(()=>validateProject({...p,items:[{...i,note:''}]}));
+});

@@ -47,6 +47,12 @@ Tersedia **18 template AHS**: 10 pekerjaan SDA (pembersihan, galian batu manual/
 
 **Belum seluruh AHS pada 6.700 halaman PDF menjadi data perhitungan terstruktur.** Gunakan pencarian dokumen untuk analisis lain, lalu masukkan seluruh komponen, koefisien, satuan, dan halaman sumber melalui form AHS manual. Analisis manual ditandai pada lembar RAB dan hasil cetak. Contoh BM bersifat informatif dan memakai asumsi angkut 2 km, tanah liat, serta 7 jam kerja efektif; harga alat sudah mencakup operator, BBM, dan bahan habis pakai sesuai catatan sumber. Jangan menambahkan biaya tersebut dua kali.
 
+## AHS Empiris
+
+Tombol **+ AHS Empiris** tersedia pada menu Pilih AHS dan dialog pemilihan AHS per baris RAB. Gunakan untuk pekerjaan yang belum tersedia pada daftar. Kode selalu **Empiris** (dikunci), tanpa mengaitkan analisis dengan nomor halaman PDF SE. Isi uraian, satuan hasil, kelompok RAB, komponen/koefisien, dan dasar pengamatan atau asumsi produktivitas. Harga dasar dikelola melalui HSD. Pengguna dapat membuka rincian dan memilih **Ubah AHS Empiris** untuk mengubah koefisien; perubahan menghitung ulang RAB.
+
+Analisis empiris tersimpan bersama proyek dan ikut pada cadangan, CSV, dan cetak/PDF dengan kode Empiris. Saat dibuat dari baris RAB, WBS, volume, keterangan, dan uraian yang telah diisi dipertahankan. Harga komponen empiris dipisahkan dari harga template SE, sehingga perubahan tidak mengubah harga pada analisis sumber. Analisis tidak dinyatakan sebagai AHS resmi dari SE.
+
 ## Harga, penyimpanan, dan ekspor
 
 - Proyek tersimpan di localStorage browser. Beberapa proyek dapat dibuat; tidak ada akun, server database, atau sinkronisasi antarperangkat. Cadangkan JSON secara berkala.
