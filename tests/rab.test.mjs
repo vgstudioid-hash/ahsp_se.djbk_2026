@@ -43,3 +43,14 @@ test('Every curated AHS coefficient and code is present in its declared source p
  for(const c of a.components){assert(text.includes(c.sourceCoefficient),`${a.id}: ${c.name} ${c.sourceCoefficient}`);assert.equal(c.coefficient,Number(c.sourceCoefficient.replace(',','.')));}
  }
 });
+
+test('WBS headings do not add costs; unlinked work stays draft; row descriptions and remarks survive backup',async()=>{
+ const {wbsNumbers}=await import('../rab-core.js');
+ const p=fixture();for(const c of p.items[0].components)p.rates[rateKey(p.items[0],c)]=0;
+ const heading={id:'h',code:'',title:'Persiapan',group:'WBS',unit:'',volume:0,components:[],heading:true,wbsLevel:1,remarks:'Judul'};
+ p.items.unshift(heading);p.items[1].wbsLevel=2;p.items[1].remarks='Sesuai gambar kerja';
+ assert.equal(calculateProject(p).incomplete,false);
+ const restored=validateProject(p);assert.equal(restored.items[0].heading,true);assert.equal(restored.items[1].remarks,'Sesuai gambar kerja');
+ p.items.push({...heading,heading:false,wbsLevel:3,title:'Pekerjaan belum dipilih',id:'u'});assert.equal(calculateProject(p).incomplete,true);
+ assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:3},{wbsLevel:2},{wbsLevel:1},{wbsLevel:2}]),['A','1','a','-','b','2','B','1']);
+});

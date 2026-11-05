@@ -18,7 +18,7 @@ export function calculateItem(item, rates, overhead) {
   const direct = moneyRound(breakdown.reduce((sum, c) => sum + (c.cost ?? 0), 0));
   const margin = moneyRound(direct * overhead / 100);
   const unitPrice = moneyRound(direct + margin);
-  return { breakdown, missing, direct, margin, unitPrice, amount: moneyRound(unitPrice * item.volume) };
+  return { breakdown, missing, unlinked: !item.heading && !item.components.length, direct, margin, unitPrice, amount: item.heading ? 0 : moneyRound(unitPrice * item.volume) };
 }
 export function calculateProject(project) {
   const items = project.items.map(item => ({ item, ...calculateItem(item, project.rates, project.overhead) }));
@@ -27,7 +27,8 @@ export function calculateProject(project) {
   const taxBase = moneyRound(subtotal + smkk);
   const tax = moneyRound(taxBase * project.tax / 100);
   const missingKeys = new Set(items.flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
-  const incomplete = !items.length || missingKeys.size > 0 || items.some(i => i.item.volume <= 0);
+  const work = items.filter(i => !i.item.heading);
+  const incomplete = !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
   return { items, subtotal, smkk, taxBase, tax, total: moneyRound(taxBase + tax), missing: missingKeys.size, incomplete };
 }
 export function resources(project) {
@@ -88,11 +89,14 @@ export function validateProject(p) {
   const rates = {};
   for (const [key, value] of Object.entries(p.rates)) { if (key.length > 3000) throw Error('Kunci harga terlalu panjang.'); rates[key] = nonnegative(value); }
   const items = p.items.map(item => {
-    for (const k of ['code', 'title', 'unit', 'group']) if (typeof item[k] !== 'string' || !item[k].trim() || item[k].length > 2000) throw Error('Identitas pekerjaan tidak valid.');
-    if (!Array.isArray(item.components) || !item.components.length || item.components.length > 300) throw Error('Rincian analisis tidak valid.');
+    for (const k of ['code', 'title', 'unit', 'group']) if (typeof item[k] !== 'string' || item[k].length > 2000) throw Error('Identitas pekerjaan tidak valid.');
+    if (!Array.isArray(item.components) || item.components.length > 300 || (item.heading && item.components.length)) throw Error('Rincian analisis tidak valid.');
+    const wbsLevel = item.wbsLevel ?? 2;
+    if (!Number.isInteger(wbsLevel) || wbsLevel < 1 || wbsLevel > 4) throw Error('Tingkat WBS harus 1–4.');
+    if (item.remarks != null && (typeof item.remarks !== 'string' || item.remarks.length > 4000)) throw Error('Keterangan tidak valid.');
     if (item.docId && !['se','i','ii','iii','iv','v','vi','vii'].includes(item.docId)) throw Error('Dokumen sumber tidak valid.');
     const page = Number(item.page || 1); if (!Number.isInteger(page) || page < 1 || page > 10000) throw Error('Halaman sumber tidak valid.');
-    return { id: crypto.randomUUID(), code: item.code, title: item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), manual: Boolean(item.manual), volume: nonnegative(item.volume), components: item.components.map(c => {
+    return { id: crypto.randomUUID(), code: item.code, title: item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, manual: Boolean(item.manual), volume: nonnegative(item.volume), components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
       return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient) };
     }) };
@@ -102,4 +106,15 @@ export function validateProject(p) {
     return { id: crypto.randomUUID(), name: r.name, unit: r.unit, volume: nonnegative(r.volume), price: nonnegative(r.price) };
   });
   return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+}
+
+export function wbsNumbers(items) {
+  const counters = [0,0,0,0];
+  const alpha = (n, upper) => { let s=''; while(n>0){ n--;s=String.fromCharCode((upper?65:97)+n%26)+s;n=Math.floor(n/26); } return s; };
+  return items.map(item => {
+    const level = item.wbsLevel ?? 2;
+    counters[level-1]++;
+    for(let i=level;i<4;i++) counters[i]=0;
+    return level===1?alpha(counters[0],true):level===2?String(counters[1]):level===3?alpha(counters[2],false):'-';
+  });
 }

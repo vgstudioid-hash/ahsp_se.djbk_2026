@@ -18,10 +18,12 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 ## Alur penyusunan RAB
 
 1. Buat atau pilih proyek, isi lokasi dan tanggal harga.
-2. Pilih AHS siap hitung; tambah pekerjaan dan masukkan volume hasil pengukuran.
+2. Tambah judul WBS atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → − dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
 3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
 4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK sesuai kebutuhan secara terpisah.
 5. Tinjau biaya umum/keuntungan dan persentase pajak efektif sesuai proyek, lalu ekspor CSV, cadangan JSON, atau cetak/simpan PDF.
+
+Lembar RAB mengikuti tujuh kolom: **NO / WBS, URAIAN PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN**. Uraian dan keterangan dapat diketik langsung. Satuan dan harga satuan berasal dari AHS pilihan, sehingga mengganti AHS perlu diikuti pemeriksaan volume. Pemilihan AHS mempertahankan uraian, volume, WBS, dan keterangan pengguna. Tombol panah memindahkan urutan baris. Judul WBS tidak dihitung sebagai pekerjaan. Baris yang belum terhubung ke AHS membuat hasil berstatus DRAF. Format tujuh kolom dan keterangan yang sama digunakan pada CSV, cetak/PDF, serta cadangan JSON.
 
 Perhitungan: biaya langsung AHS = jumlah (koefisien × harga dasar). Biaya umum/keuntungan = persentase × biaya langsung. Harga satuan = biaya langsung + biaya umum/keuntungan. Jumlah pekerjaan = volume × harga satuan. Dasar pajak = total pekerjaan + biaya SMKK. Total RAB = dasar pajak + pajak efektif yang diisi pengguna. Komponen biaya, biaya umum/keuntungan, harga satuan, jumlah baris, SMKK, dan pajak dibulatkan ke dua desimal rupiah pada masing-masing tahap.
 
