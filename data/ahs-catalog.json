@@ -1,0 +1,893 @@
+[
+  {
+    "id": "iv:A.1.01.a.1",
+    "docId": "iv",
+    "page": 52,
+    "code": "A.1.01.a.1",
+    "title": "Pembersihan dan pengupasan permukaan tanah (striping) s.d. tanaman Ø 2 cm",
+    "unit": "m²",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.05,
+        "sourceCoefficient": "0,050"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.005,
+        "sourceCoefficient": "0,005"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.1.01.b1.1",
+    "docId": "iv",
+    "page": 52,
+    "code": "A.1.01.b1.1",
+    "title": "Penggalian batu sedalam > 0 s.d. 1 m, manual",
+    "unit": "m³",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 3.378,
+        "sourceCoefficient": "3,3780"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.3378,
+        "sourceCoefficient": "0,3378"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.1.01.b1.2",
+    "docId": "iv",
+    "page": 53,
+    "code": "A.1.01.b1.2",
+    "title": "Penggalian batu sedalam > 1 m s.d. 2 m, manual",
+    "unit": "m³",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 3.75,
+        "sourceCoefficient": "3,750"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.375,
+        "sourceCoefficient": "0,375"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.1.01.b1.3",
+    "docId": "iv",
+    "page": 53,
+    "code": "A.1.01.b1.3",
+    "title": "Penggalian batu sedalam > 2 m s.d. 3 m, manual",
+    "unit": "m³",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 4.125,
+        "sourceCoefficient": "4,125"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.413,
+        "sourceCoefficient": "0,413"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.1.01.b1.4",
+    "docId": "iv",
+    "page": 54,
+    "code": "A.1.01.b1.4",
+    "title": "Penggalian batu > 3 m, setiap tambahan kedalaman 1 m, manual",
+    "unit": "m³",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.375,
+        "sourceCoefficient": "0,3750"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.0375,
+        "sourceCoefficient": "0,0375"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.2.01.b1.1",
+    "docId": "iv",
+    "page": 54,
+    "code": "A.2.01.b1.1",
+    "title": "Penggalian batu sedalam > 0 s.d. 1 m, semi-mekanis",
+    "unit": "m³",
+    "note": "A.2 bersifat normatif. Koefisien sumber dikunci; penyesuaian mengikuti ketentuan pengajuan AHSP baru pada sumber halaman 54.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.531,
+        "sourceCoefficient": "0,5310"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.0531,
+        "sourceCoefficient": "0,0531"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Jack Hammer Drill + Kompressor 75 HP",
+        "unit": "Hari",
+        "coefficient": 0.1062,
+        "sourceCoefficient": "0,1062"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.2.01.b1.2",
+    "docId": "iv",
+    "page": 55,
+    "code": "A.2.01.b1.2",
+    "title": "Penggalian batu sedalam > 1 m s.d. 2 m, semi-mekanis",
+    "unit": "m³",
+    "note": "A.2 bersifat normatif. Koefisien sumber dikunci; penyesuaian mengikuti ketentuan pengajuan AHSP baru pada sumber halaman 54.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.6654,
+        "sourceCoefficient": "0,6654"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.0665,
+        "sourceCoefficient": "0,0665"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Jack Hammer Drill + Kompressor 75 HP",
+        "unit": "Hari",
+        "coefficient": 0.1109,
+        "sourceCoefficient": "0,1109"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.2.01.b1.3",
+    "docId": "iv",
+    "page": 55,
+    "code": "A.2.01.b1.3",
+    "title": "Penggalian batu sedalam > 2 m s.d. 3 m, semi-mekanis",
+    "unit": "m³",
+    "note": "A.2 bersifat normatif. Koefisien sumber dikunci; penyesuaian mengikuti ketentuan pengajuan AHSP baru pada sumber halaman 54.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.826,
+        "sourceCoefficient": "0,8260"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.0826,
+        "sourceCoefficient": "0,0826"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Jack Hammer Drill + Kompressor 75 HP",
+        "unit": "Hari",
+        "coefficient": 0.118,
+        "sourceCoefficient": "0,1180"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.2.01.b1.4",
+    "docId": "iv",
+    "page": 56,
+    "code": "A.2.01.b1.4",
+    "title": "Penggalian batu > 3 m, setiap tambahan kedalaman 1 m, semi-mekanis",
+    "unit": "m³",
+    "note": "A.2 bersifat normatif. Koefisien sumber dikunci; penyesuaian mengikuti ketentuan pengajuan AHSP baru pada sumber halaman 54.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.375,
+        "sourceCoefficient": "0,3750"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.0375,
+        "sourceCoefficient": "0,0375"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Jack Hammer Drill + Kompressor 75 HP",
+        "unit": "Hari",
+        "coefficient": 0.007,
+        "sourceCoefficient": "0,0070"
+      }
+    ]
+  },
+  {
+    "id": "iv:A.2.01.c1.1",
+    "docId": "iv",
+    "page": 57,
+    "code": "A.2.01.c1.1",
+    "title": "Pemadatan pasangan campuran tanah dan semen PC dengan pemadat timbris",
+    "unit": "m³",
+    "note": "Koefisien sumber dikunci. Pastikan lingkup dan metode sesuai pekerjaan proyek.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.4,
+        "sourceCoefficient": "0,400"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Batu",
+        "unit": "OH",
+        "coefficient": 0.2,
+        "sourceCoefficient": "0,200"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.04,
+        "sourceCoefficient": "0,040"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.1",
+    "docId": "vi",
+    "page": 158,
+    "code": "1.1.1.1",
+    "title": "Pagar sementara dari kayu, tinggi 2 m",
+    "unit": "m",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.6,
+        "sourceCoefficient": "0,600"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Kayu",
+        "unit": "OH",
+        "coefficient": 0.2,
+        "sourceCoefficient": "0,200"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang batu",
+        "unit": "OH",
+        "coefficient": 0.2,
+        "sourceCoefficient": "0,200"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.04,
+        "sourceCoefficient": "0,040"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.013,
+        "sourceCoefficient": "0,013"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kayu Kaso 5/7 kelas II",
+        "unit": "m³",
+        "coefficient": 0.0387,
+        "sourceCoefficient": "0,0387"
+      },
+      {
+        "group": "Bahan",
+        "name": "Papan Kayu 2/20",
+        "unit": "m³",
+        "coefficient": 0.0396,
+        "sourceCoefficient": "0,0396"
+      },
+      {
+        "group": "Bahan",
+        "name": "Paku biasa 5 inch",
+        "unit": "kg",
+        "coefficient": 0.5872,
+        "sourceCoefficient": "0,5872"
+      },
+      {
+        "group": "Bahan",
+        "name": "Semen Portland (PC)",
+        "unit": "kg",
+        "coefficient": 26.406,
+        "sourceCoefficient": "26,406"
+      },
+      {
+        "group": "Bahan",
+        "name": "Pasir beton",
+        "unit": "kg",
+        "coefficient": 61.56,
+        "sourceCoefficient": "61,56"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kerikil",
+        "unit": "kg",
+        "coefficient": 83.349,
+        "sourceCoefficient": "83,349"
+      },
+      {
+        "group": "Bahan",
+        "name": "Air",
+        "unit": "liter",
+        "coefficient": 17.415,
+        "sourceCoefficient": "17,415"
+      },
+      {
+        "group": "Bahan",
+        "name": "Residu",
+        "unit": "liter",
+        "coefficient": 0.4,
+        "sourceCoefficient": "0,400"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.2",
+    "docId": "vi",
+    "page": 159,
+    "code": "1.1.1.2",
+    "title": "Pagar sementara seng gelombang rangka kayu, tinggi 2 m",
+    "unit": "m",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.25,
+        "sourceCoefficient": "0,250"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Kayu",
+        "unit": "OH",
+        "coefficient": 0.125,
+        "sourceCoefficient": "0,125"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang batu",
+        "unit": "OH",
+        "coefficient": 0.125,
+        "sourceCoefficient": "0,125"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.025,
+        "sourceCoefficient": "0,025"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.008,
+        "sourceCoefficient": "0,008"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kayu Kaso 5/7 kelas II",
+        "unit": "m³",
+        "coefficient": 0.031,
+        "sourceCoefficient": "0,0310"
+      },
+      {
+        "group": "Bahan",
+        "name": "Seng gelombang",
+        "unit": "lembar",
+        "coefficient": 1.3125,
+        "sourceCoefficient": "1,3125"
+      },
+      {
+        "group": "Bahan",
+        "name": "Paku biasa 5 inch",
+        "unit": "kg",
+        "coefficient": 0.4271,
+        "sourceCoefficient": "0,4271"
+      },
+      {
+        "group": "Bahan",
+        "name": "Semen Portland (PC)",
+        "unit": "kg",
+        "coefficient": 26.406,
+        "sourceCoefficient": "26,406"
+      },
+      {
+        "group": "Bahan",
+        "name": "Pasir beton",
+        "unit": "kg",
+        "coefficient": 61.56,
+        "sourceCoefficient": "61,56"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kerikil",
+        "unit": "kg",
+        "coefficient": 83.349,
+        "sourceCoefficient": "83,349"
+      },
+      {
+        "group": "Bahan",
+        "name": "Air",
+        "unit": "liter",
+        "coefficient": 17.415,
+        "sourceCoefficient": "17,415"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.3",
+    "docId": "vi",
+    "page": 159,
+    "code": "1.1.1.3",
+    "title": "Pagar sementara kawat duri, tinggi 2 m",
+    "unit": "m",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.308,
+        "sourceCoefficient": "0,308"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Kayu",
+        "unit": "OH",
+        "coefficient": 0.154,
+        "sourceCoefficient": "0,154"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang batu",
+        "unit": "OH",
+        "coefficient": 0.154,
+        "sourceCoefficient": "0,154"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.031,
+        "sourceCoefficient": "0,031"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.01,
+        "sourceCoefficient": "0,01"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kayu Kaso 5/7 kelas II",
+        "unit": "m³",
+        "coefficient": 0.0139,
+        "sourceCoefficient": "0,0139"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kawat duri",
+        "unit": "m",
+        "coefficient": 20.4457,
+        "sourceCoefficient": "20,4457"
+      },
+      {
+        "group": "Bahan",
+        "name": "Paku biasa 5 inch",
+        "unit": "kg",
+        "coefficient": 0.4715,
+        "sourceCoefficient": "0,4715"
+      },
+      {
+        "group": "Bahan",
+        "name": "Semen Portland (PC)",
+        "unit": "kg",
+        "coefficient": 26.406,
+        "sourceCoefficient": "26,406"
+      },
+      {
+        "group": "Bahan",
+        "name": "Pasir beton",
+        "unit": "kg",
+        "coefficient": 61.56,
+        "sourceCoefficient": "61,56"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kerikil",
+        "unit": "kg",
+        "coefficient": 83.349,
+        "sourceCoefficient": "83,349"
+      },
+      {
+        "group": "Bahan",
+        "name": "Air",
+        "unit": "liter",
+        "coefficient": 17.415,
+        "sourceCoefficient": "17,415"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.4",
+    "docId": "vi",
+    "page": 160,
+    "code": "1.1.1.4",
+    "title": "Pagar sementara seng gelombang rangka baja L.40.40.4, tinggi 1,8 m",
+    "unit": "m",
+    "note": "Pasangan batu merupakan komponen harga dasar per m³; masukkan harga analisis pasangan batu yang sesuai. Dapat dimasukkan dalam mobilisasi/demobilisasi sesuai catatan sumber.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.2,
+        "sourceCoefficient": "0,200"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang besi",
+        "unit": "OH",
+        "coefficient": 0.1,
+        "sourceCoefficient": "0,100"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang tembok",
+        "unit": "OH",
+        "coefficient": 0.1,
+        "sourceCoefficient": "0,100"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.02,
+        "sourceCoefficient": "0,020"
+      },
+      {
+        "group": "Bahan",
+        "name": "Seng gelombang BJLS-30 (t=0,05) 0,9 m x 1,8 m",
+        "unit": "lembar",
+        "coefficient": 1.2,
+        "sourceCoefficient": "1,200"
+      },
+      {
+        "group": "Bahan",
+        "name": "Baja L 40.40.4",
+        "unit": "kg",
+        "coefficient": 13.5,
+        "sourceCoefficient": "13,500"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kawat seng 3mm",
+        "unit": "kg",
+        "coefficient": 0.3,
+        "sourceCoefficient": "0,300"
+      },
+      {
+        "group": "Bahan",
+        "name": "Pasangan batu ukuran 20/50, t=40cm",
+        "unit": "m³",
+        "coefficient": 0.15,
+        "sourceCoefficient": "0,150"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.5",
+    "docId": "vi",
+    "page": 160,
+    "code": "1.1.1.5",
+    "title": "Pagar BRC galvanis",
+    "unit": "m²",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.042,
+        "sourceCoefficient": "0,042"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Kayu",
+        "unit": "OH",
+        "coefficient": 0.04,
+        "sourceCoefficient": "0,040"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.004,
+        "sourceCoefficient": "0,004"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.001,
+        "sourceCoefficient": "0,001"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kawat jaring panjang 2,4 m dan aksesoris",
+        "unit": "lembar",
+        "coefficient": 0.01649,
+        "sourceCoefficient": "0,01649"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.1.6",
+    "docId": "vi",
+    "page": 161,
+    "code": "1.1.1.6",
+    "title": "Panel beton pracetak 50x50x240 untuk pagar",
+    "unit": "m²",
+    "note": "",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 0.375,
+        "sourceCoefficient": "0,3750"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang",
+        "unit": "OH",
+        "coefficient": 0.125,
+        "sourceCoefficient": "0,1250"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.0012,
+        "sourceCoefficient": "0,0012"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.019,
+        "sourceCoefficient": "0,019"
+      },
+      {
+        "group": "Bahan",
+        "name": "Panel beton pracetak",
+        "unit": "lembar",
+        "coefficient": 0.986,
+        "sourceCoefficient": "0,986"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kolom beton pracetak",
+        "unit": "batang",
+        "coefficient": 0.525,
+        "sourceCoefficient": "0,525"
+      },
+      {
+        "group": "Bahan",
+        "name": "Semen Portland (PC)",
+        "unit": "kg",
+        "coefficient": 45.0,
+        "sourceCoefficient": "45,000"
+      },
+      {
+        "group": "Bahan",
+        "name": "Pasir beton",
+        "unit": "m³",
+        "coefficient": 0.074,
+        "sourceCoefficient": "0,074"
+      },
+      {
+        "group": "Bahan",
+        "name": "Kerikil",
+        "unit": "m³",
+        "coefficient": 0.146,
+        "sourceCoefficient": "0,146"
+      }
+    ]
+  },
+  {
+    "id": "vi:1.1.2.1",
+    "docId": "vi",
+    "page": 161,
+    "code": "1.1.2.1",
+    "title": "Papan nama pekerjaan ukuran 0,8 x 1,2 m, multipleks 18 mm, frame besi siku, tiang kayu 8/12",
+    "unit": "buah",
+    "note": "Contoh ukuran 0,8 x 1,2 m. Kebutuhan cat, multipleks, dan frame mengikuti catatan sumber; template ini memakai koefisien contoh tersebut.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "OH",
+        "coefficient": 1.0,
+        "sourceCoefficient": "1,000"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang Kayu",
+        "unit": "OH",
+        "coefficient": 1.0,
+        "sourceCoefficient": "1,000"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Kepala Tukang",
+        "unit": "OH",
+        "coefficient": 0.1,
+        "sourceCoefficient": "0,100"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Tukang cat/pelitur",
+        "unit": "OH",
+        "coefficient": 1.5,
+        "sourceCoefficient": "1,500"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "OH",
+        "coefficient": 0.1,
+        "sourceCoefficient": "0,100"
+      },
+      {
+        "group": "Bahan",
+        "name": "Multiplek tebal 18 mm",
+        "unit": "lembar",
+        "coefficient": 0.35,
+        "sourceCoefficient": "0,35"
+      },
+      {
+        "group": "Bahan",
+        "name": "Tiang kayu 8/12 kelas II, tinggi 4m",
+        "unit": "m³",
+        "coefficient": 0.077,
+        "sourceCoefficient": "0,077"
+      },
+      {
+        "group": "Bahan",
+        "name": "Frame besi L.30.30.3",
+        "unit": "kg",
+        "coefficient": 5.8,
+        "sourceCoefficient": "5,80"
+      },
+      {
+        "group": "Bahan",
+        "name": "Paku campuran 5 cm + 7cm",
+        "unit": "kg",
+        "coefficient": 1.25,
+        "sourceCoefficient": "1,25"
+      },
+      {
+        "group": "Bahan",
+        "name": "Cat kayu",
+        "unit": "kg",
+        "coefficient": 2.5,
+        "sourceCoefficient": "2,50"
+      }
+    ]
+  },
+  {
+    "id": "v:2.1.(1)",
+    "docId": "v",
+    "page": 49,
+    "code": "2.1.(1)",
+    "title": "Galian untuk selokan drainase dan saluran air (contoh B.1)",
+    "unit": "m³",
+    "note": "Contoh informatif B.1, asumsi halaman PDF 47–48: tanah liat, angkut 2 km, jam kerja efektif 7 jam/hari. Harga alat mencakup BBM, bahan habis pakai, dan operator; jangan dihitung ganda. Harga contoh pada PDF tidak otomatis digunakan sebagai harga proyek.",
+    "components": [
+      {
+        "group": "Tenaga kerja",
+        "name": "Pekerja",
+        "unit": "jam",
+        "coefficient": 0.2914,
+        "sourceCoefficient": "0,2914"
+      },
+      {
+        "group": "Tenaga kerja",
+        "name": "Mandor",
+        "unit": "jam",
+        "coefficient": 0.0486,
+        "sourceCoefficient": "0,0486"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Mini Excavator",
+        "unit": "jam",
+        "coefficient": 0.0486,
+        "sourceCoefficient": "0,0486"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Dump Truck",
+        "unit": "jam",
+        "coefficient": 0.1137,
+        "sourceCoefficient": "0,1137"
+      },
+      {
+        "group": "Peralatan",
+        "name": "Alat Bantu",
+        "unit": "Ls",
+        "coefficient": 1.0,
+        "sourceCoefficient": "1,0000"
+      }
+    ]
+  }
+]
