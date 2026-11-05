@@ -1,0 +1,238 @@
+[
+  {
+    "id": "se",
+    "label": "Dokumen Utama",
+    "title": "Surat Edaran DJBK No. 47 Tahun 2026",
+    "description": "Ketentuan umum dan tata cara penyusunan perkiraan biaya pekerjaan konstruksi bidang pekerjaan umum untuk HPP, RAB, dan HPS.",
+    "category": "Pedoman",
+    "icon": "book",
+    "tags": [
+      "Ketentuan umum",
+      "HPP, RAB & HPS",
+      "Ruang lingkup"
+    ],
+    "available": true,
+    "pages": 13,
+    "file": "documents/se.pdf",
+    "index": "data/se.json",
+    "originalName": "Batang-Tubuh-SE-DJBK-No-47-Tahun-2026.pdf",
+    "textPages": 11,
+    "sources": [
+      {
+        "name": "Batang-Tubuh-SE-DJBK-No-47-Tahun-2026.pdf",
+        "pages": 13,
+        "startPage": 1,
+        "sha256": "cb350d0dc076d1b3064ffa2646cfe4946f8d26aabe19563f39829db36170e48b"
+      }
+    ],
+    "bytes": 1051423
+  },
+  {
+    "id": "i",
+    "label": "Lampiran I",
+    "title": "Pengumpulan Data Harga Satuan Pokok",
+    "description": "Organisasi, tahapan survei, pemeriksaan, dan penyebarluasan data harga satuan pokok sektor konstruksi di Kementerian PU.",
+    "category": "Pedoman",
+    "icon": "chart",
+    "tags": [
+      "Survei harga",
+      "Material & peralatan",
+      "Tenaga kerja"
+    ],
+    "available": true,
+    "pages": 109,
+    "file": "documents/i.pdf",
+    "index": "data/i.json",
+    "originalName": "Lampiran-I-SE-DJBK-No-47-Tahun-2026-Teknis-pengumpulan-data-Harga-pokok-sektor-konstruksi-di-Kementerian-PU.pdf",
+    "textPages": 108,
+    "sources": [
+      {
+        "name": "Lampiran-I-SE-DJBK-No-47-Tahun-2026-Teknis-pengumpulan-data-Harga-pokok-sektor-konstruksi-di-Kementerian-PU.pdf",
+        "pages": 109,
+        "startPage": 1,
+        "sha256": "e1dcfb6df5038579edd55c91853024389d69b5b96304cd046dcf611d7bc01603"
+      }
+    ],
+    "bytes": 5246337
+  },
+  {
+    "id": "ii",
+    "label": "Lampiran II",
+    "title": "Acuan dalam Penyusunan AHSP",
+    "description": "Faktor konversi bahan, berat isi, campuran, serta acuan teknis yang digunakan dalam penyusunan analisis harga satuan pekerjaan.",
+    "category": "Pedoman",
+    "icon": "layers",
+    "tags": [
+      "Faktor bahan",
+      "Konversi",
+      "Campuran"
+    ],
+    "available": true,
+    "pages": 85,
+    "file": "documents/ii.pdf",
+    "index": "data/ii.json",
+    "originalName": "Lampiran-II-SE-DJBK-No-47-Tahun-2026-Acuan-dalam-Penyusunan-AHSP.pdf",
+    "textPages": 84,
+    "sources": [
+      {
+        "name": "Lampiran-II-SE-DJBK-No-47-Tahun-2026-Acuan-dalam-Penyusunan-AHSP.pdf",
+        "pages": 85,
+        "startPage": 1,
+        "sha256": "f7d4cd6d28ea9a9e879dbcdd2efae9a0c89a8754f932da7ee6bd6c33a1afbe8f"
+      }
+    ],
+    "bytes": 3752154
+  },
+  {
+    "id": "iii",
+    "label": "Lampiran III",
+    "title": "Biaya Penerapan SMKK",
+    "description": "Tata cara penyusunan biaya keselamatan konstruksi berdasarkan identifikasi bahaya, pengendalian risiko, dan kebutuhan sumber daya.",
+    "category": "Keselamatan",
+    "icon": "shield",
+    "tags": [
+      "IBPRP",
+      "9 komponen biaya",
+      "Keselamatan"
+    ],
+    "available": true,
+    "pages": 74,
+    "file": "documents/iii.pdf",
+    "index": "data/iii.json",
+    "originalName": "Lampiran-III-SE-DJBK-No-47-Tahun-2026-Biaya-Penerapan-SMKK_rth_nv_20260218.pdf",
+    "textPages": 74,
+    "sources": [
+      {
+        "name": "Lampiran-III-SE-DJBK-No-47-Tahun-2026-Biaya-Penerapan-SMKK_rth_nv_20260218.pdf",
+        "pages": 74,
+        "startPage": 1,
+        "sha256": "48e6a02a7d2dacd9d837dc91e7843e5c8eac76b718eff9596f91ed6f7f3ab956"
+      }
+    ],
+    "bytes": 1501664
+  },
+  {
+    "id": "iv",
+    "label": "Lampiran IV",
+    "title": "AHSP Bidang Sumber Daya Air",
+    "description": "Analisis pekerjaan sumber daya air, meliputi bendung, jaringan irigasi, pengaman sungai, bendungan, pengaman pantai, serta infrastruktur air tanah dan air baku.",
+    "category": "Sumber Daya Air",
+    "icon": "water",
+    "tags": [
+      "Irigasi & bendungan",
+      "Sungai & pantai",
+      "Air baku"
+    ],
+    "available": true,
+    "pages": 1689,
+    "file": "documents/iv.pdf",
+    "index": "data/iv.json",
+    "originalName": "Lampiran-IV-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Sumber-Daya-Air.pdf",
+    "textPages": 1688,
+    "sources": [
+      {
+        "name": "Lampiran-IV-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Sumber-Daya-Air_(1).pdf",
+        "pages": 800,
+        "startPage": 1,
+        "sha256": "b0b0783dba79f376201773458393a658fd1bebbdcc9d01bec856b7d8bef3d7a5"
+      },
+      {
+        "name": "Lampiran-IV-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Sumber-Daya-Air_(2).pdf",
+        "pages": 889,
+        "startPage": 801,
+        "sha256": "2288d4eadf653015616077101572001a15e99a2ba332b0347c586b5840254f8d"
+      }
+    ],
+    "bytes": 56020610
+  },
+  {
+    "id": "v",
+    "label": "Lampiran V",
+    "title": "AHSP Bidang Bina Marga",
+    "description": "Analisis harga satuan pekerjaan konstruksi jalan dan jembatan: preservasi, rehabilitasi, pemeliharaan, pembangunan, dan peningkatan infrastruktur.",
+    "category": "Bina Marga",
+    "icon": "road",
+    "tags": [
+      "Jalan & jembatan",
+      "Analisis pekerjaan",
+      "Spesifikasi teknis"
+    ],
+    "available": true,
+    "pages": 3125,
+    "file": "documents/v.pdf",
+    "index": "data/v.json",
+    "originalName": "5.-Lampiran-V-Bidang-Bina-Marga-ok.pdf",
+    "textPages": 3125,
+    "sources": [
+      {
+        "name": "5.-Lampiran-V-Bidang-Bina-Marga-ok.pdf",
+        "pages": 3125,
+        "startPage": 1,
+        "sha256": "78e391305aded09a0b156711b7c7f0d7ce1e314317c87744808cadff36b036c0"
+      }
+    ],
+    "bytes": 21577263
+  },
+  {
+    "id": "vi",
+    "label": "Lampiran VI",
+    "title": "AHSP Bidang Cipta Karya",
+    "description": "Analisis pekerjaan bangunan gedung, struktur, arsitektur, lansekap, mekanikal dan elektrikal, plambing, serta SPAM, SPALD, dan bangunan persampahan.",
+    "category": "Cipta Karya",
+    "icon": "building",
+    "tags": [
+      "Bangunan gedung",
+      "SPAM & SPALD",
+      "Mekanikal & elektrikal"
+    ],
+    "available": true,
+    "pages": 1563,
+    "file": "documents/vi.pdf",
+    "index": "data/vi.json",
+    "originalName": "Lampiran-VI-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Cipta-Karya.pdf",
+    "textPages": 1563,
+    "sources": [
+      {
+        "name": "Lampiran-VI-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Cipta-Karya_(1).pdf",
+        "pages": 800,
+        "startPage": 1,
+        "sha256": "9b774170634d3c6f3e493ff9f91a20c93d30896ffe14c14e58eb45e689bb7c0d"
+      },
+      {
+        "name": "Lampiran-VI-SE-DJBK-No-47-Tahun-2026-AHSP-Bidang-Cipta-Karya_(2).pdf",
+        "pages": 763,
+        "startPage": 801,
+        "sha256": "aa53d5f9f93f34e146af38e9b324b8da6d509aac721f2fbd1d45904a4ebe6c58"
+      }
+    ],
+    "bytes": 50776936
+  },
+  {
+    "id": "vii",
+    "label": "Lampiran VII",
+    "title": "Tata Cara Pengajuan Usulan AHSP",
+    "description": "Prosedur pengajuan dan pemutakhiran AHSP baru maupun perubahan, dari internal dan eksternal Kementerian Pekerjaan Umum.",
+    "category": "Pedoman",
+    "icon": "send",
+    "tags": [
+      "Usulan baru",
+      "Pemutakhiran",
+      "Prosedur pengajuan"
+    ],
+    "available": true,
+    "pages": 42,
+    "file": "documents/vii.pdf",
+    "index": "data/vii.json",
+    "originalName": "Lampiran-VII-SE-DJBK-No-47-Tahun-2026-Tata-Cara-Pengajuan-Usulan-AHSP.pdf",
+    "textPages": 41,
+    "sources": [
+      {
+        "name": "Lampiran-VII-SE-DJBK-No-47-Tahun-2026-Tata-Cara-Pengajuan-Usulan-AHSP.pdf",
+        "pages": 42,
+        "startPage": 1,
+        "sha256": "d4663a0211e7f8b705e9db699ffe047790ba48c05ae1838cdd92bb43b7c6c276"
+      }
+    ],
+    "bytes": 1305832
+  }
+]
