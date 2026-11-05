@@ -7,7 +7,7 @@ export function nonnegative(value) {
 }
 export function rateKey(item, component) {
   // Codes such as L.02 cover multiple trades; units OH and jam must stay distinct.
-  return JSON.stringify([item.docId || 'manual', component.group, component.name.toLocaleLowerCase('id').replace(/\s+/g, ' ').trim(), component.unit.toLocaleLowerCase('id').trim()]);
+  return JSON.stringify([item.empirical ? 'empiris' : item.docId || 'manual', component.group, component.name.toLocaleLowerCase('id').replace(/\s+/g, ' ').trim(), component.unit.toLocaleLowerCase('id').trim()]);
 }
 export function calculateItem(item, rates, overhead) {
   const breakdown = item.components.map(c => {
@@ -35,7 +35,7 @@ export function resources(project) {
   const map = new Map();
   for (const item of project.items) for (const c of item.components) {
     const key = rateKey(item, c);
-    if (!map.has(key)) map.set(key, { ...c, key, docId: item.docId, quantity: 0, price: Object.hasOwn(project.rates, key) ? project.rates[key] : null });
+    if (!map.has(key)) map.set(key, { ...c, key, docId: item.empirical ? 'empiris' : item.docId, quantity: 0, price: Object.hasOwn(project.rates, key) ? project.rates[key] : null });
     map.get(key).quantity += c.coefficient * item.volume;
   }
   return [...map.values()].sort((a, b) => groups.indexOf(a.group) - groups.indexOf(b.group) || a.name.localeCompare(b.name, 'id'));
@@ -113,7 +113,8 @@ export function validateProject(p) {
     if (item.remarks != null && (typeof item.remarks !== 'string' || item.remarks.length > 4000)) throw Error('Keterangan tidak valid.');
     if (item.docId && !['se','i','ii','iii','iv','v','vi','vii'].includes(item.docId)) throw Error('Dokumen sumber tidak valid.');
     const page = Number(item.page || 1); if (!Number.isInteger(page) || page < 1 || page > 10000) throw Error('Halaman sumber tidak valid.');
-    return { id: crypto.randomUUID(), code: item.code, title: item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, manual: Boolean(item.manual), volume: nonnegative(item.volume), components: item.components.map(c => {
+    if(item.empirical && (item.code !== 'Empiris' || item.docId || item.heading || !item.components.length || typeof item.note !== 'string' || !item.note.trim())) throw Error('AHS Empiris harus berkode Empiris, memiliki komponen dan dasar empiris, tanpa rujukan PDF SE.');
+    return { id: crypto.randomUUID(), code: item.code, title: item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), manual: Boolean(item.manual || item.empirical), volume: nonnegative(item.volume), components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
       return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient), code: String(c.code||'').slice(0,100) };
     }) };
