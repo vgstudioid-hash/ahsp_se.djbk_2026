@@ -1,0 +1,14 @@
+{
+  "name": "pustaka-ahsp-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node tests/search.test.mjs",
+    "deploy": "npm run build && node scripts/deploy-pages.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
