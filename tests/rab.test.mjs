@@ -74,3 +74,14 @@ test('Empirical AHS uses fixed Empiris code, preserves independent rates and bas
  assert.notEqual(rateKey(i,i.components[0]),rateKey({...i,empirical:false},i.components[0]));
  assert.throws(()=>validateProject({...p,items:[{...i,code:'A.1'}]}));assert.throws(()=>validateProject({...p,items:[{...i,docId:'iv'}]}));assert.throws(()=>validateProject({...p,items:[{...i,note:''}]}));
 });
+
+test('Adjusted AHS component insertion/removal recalculates costs and preserves source catalog and backup flags',()=>{
+ const p=fixture(),item=p.items[0];p.smkk=[];p.tax=0;for(const c of item.components)p.rates[rateKey(item,c)]=0;
+ const original=JSON.stringify(catalog[0]);
+ for(const group of ['Tenaga kerja','Bahan','Peralatan','Lain-lain']){
+  const c={group,name:'Tambahan '+group,unit:'buah',coefficient:2};item.components.push(c);p.rates[rateKey(item,c)]=1000;
+ }
+ item.adjusted=true;item.manual=true;
+ assert.equal(calculateProject(p).subtotal,880000);const restored=validateProject(p);assert.equal(restored.items[0].adjusted,true);assert.equal(restored.items[0].manual,true);
+ item.components.splice(2,4);assert.equal(calculateProject(p).subtotal,0);assert.equal(JSON.stringify(catalog[0]),original);
+});

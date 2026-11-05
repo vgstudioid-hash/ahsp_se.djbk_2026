@@ -53,6 +53,12 @@ Tombol **+ AHS Empiris** tersedia pada menu Pilih AHS dan dialog pemilihan AHS p
 
 Analisis empiris tersimpan bersama proyek dan ikut pada cadangan, CSV, dan cetak/PDF dengan kode Empiris. Saat dibuat dari baris RAB, WBS, volume, keterangan, dan uraian yang telah diisi dipertahankan. Harga komponen empiris dipisahkan dari harga template SE, sehingga perubahan tidak mengubah harga pada analisis sumber. Analisis tidak dinyatakan sebagai AHS resmi dari SE.
 
+## Insert / hapus komponen per sub-AHS
+
+Pada rincian AHS proyek, setiap kelompok Tenaga Kerja, Bahan, Peralatan, dan Lain-lain memiliki tombol **+ Tambah** serta **−** untuk komponen terakhir kelompok. Tombol **−** pada masing-masing baris menghapus komponen tersebut. Form insert meminta uraian, kode opsional, satuan, koefisien, dan harga dasar opsional; harga kosong mengikuti HSD jika komponen sudah ada atau ditandai belum diisi. Minimal satu komponen harus dipertahankan pada AHS tersimpan. Form pembuatan/edit AHS manual dan Empiris juga memiliki tombol +/− per kelompok.
+
+Penyesuaian berlaku pada salinan AHS dalam proyek, menghitung ulang subtotal A–D dan total RAB, serta menyimpan tanda **DISESUAIKAN** pada rincian/cetakan. Template katalog sumber tidak diubah. Harga HSD komponen yang dihapus tetap tersimpan agar tidak mengubah pekerjaan lain. Penambahan harga untuk komponen yang sama mengikuti mekanisme harga bersama proyek. Pratinjau katalog tidak menampilkan tombol perubahan; tambahkan AHS ke RAB terlebih dahulu. Penyesuaian tidak otomatis dinyatakan memenuhi ketentuan AHS normatif.
+
 ## Harga, penyimpanan, dan ekspor
 
 - Proyek tersimpan di localStorage browser. Beberapa proyek dapat dibuat; tidak ada akun, server database, atau sinkronisasi antarperangkat. Cadangkan JSON secara berkala.
