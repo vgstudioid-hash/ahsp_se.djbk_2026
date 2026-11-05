@@ -1,6 +1,6 @@
 # Rujukan form: RAB JEMBATAN MJM.xlsm
 
-Workbook unggahan dibaca menggunakan openpyxl tanpa menjalankan VBA/makro atau mengevaluasi formula. Sheet yang ditemukan: VOLUME, RAB, AHS, HSD, JADWAL. Permintaan implementasi ini menggunakan format RAB, AHS, dan HSD. VOLUME dan JADWAL belum diimplementasikan sebagai form tersendiri.
+Workbook unggahan dibaca menggunakan openpyxl tanpa menjalankan VBA/makro atau mengevaluasi formula. Sheet yang ditemukan: VOLUME, RAB, AHS, HSD, JADWAL. Permintaan implementasi ini menggunakan format RAB, AHS, dan HSD. Dasar volume dikembangkan pada menu Quantity dengan rincian pengukuran geometris; sheet VOLUME Excel tidak diimpor otomatis. JADWAL belum diimplementasikan sebagai form tersendiri.
 
 - RAB: judul Rencana Anggaran Biaya; subjudul HPS sesuai jenis dokumen; pemberi tugas, nama proyek, lokasi, koordinat, tahun. Header A9:H10 memiliki tujuh kolom logis karena B:C digabung: NO, URAIAN PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KET. Kelompok WBS dan rincian pekerjaan tetap dipertahankan.
 - AHS: judul dan identitas proyek (baris 1–6), judul/kode pekerjaan (misalnya A8), tujuh kolom NO, URAIAN, KODE, SATUAN, KOEFISIEN, HARGA SATUAN, JUMLAH HARGA (baris 9). Kelompok A tenaga kerja, B bahan, C peralatan, D lain-lain dengan subtotal masing-masing; E biaya langsung A+B+C+D; F biaya umum/keuntungan; G harga satuan E+F. Harga/kode komponen di aplikasi terhubung ke HSD proyek.

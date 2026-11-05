@@ -39,7 +39,7 @@ Struktur form mengacu pada `RAB JEMBATAN MJM.xlsm` unggahan pengguna; rincian pe
 - HSD: NO, URAIAN, KODE, SATUAN, HARGA SHB, HARGA SATUAN, KETERANGAN. Harga SHB adalah pembanding yang tidak otomatis mengubah harga satuan aktual. Kode dan keterangan dapat diedit. Metadata ikut disimpan di cadangan JSON serta CSV HSD (kolom kode, harga shb, harga, keterangan).
 - Form AHS dan HSD dapat dicetak terpisah; cetak RAB juga menyertakan keduanya. Input diganti teks pada cetakan.
 
-Angka harga/koefisien proyek 2025, diskon, formula pajak, pembulatan, dan konversi satuan pada workbook tidak diimpor otomatis. Kelompok Lain-lain tersedia untuk analisis manual; tidak menambahkan biaya baru pada template SE yang tidak memiliki komponen tersebut. Sheet VOLUME dan JADWAL belum menjadi fitur aplikasi.
+Angka harga/koefisien proyek 2025, diskon, formula pajak, pembulatan, dan konversi satuan pada workbook tidak diimpor otomatis. Kelompok Lain-lain tersedia untuk analisis manual; tidak menambahkan biaya baru pada template SE yang tidak memiliki komponen tersebut. Dasar volume kini tersedia pada menu Quantity; sheet VOLUME Excel tidak diimpor otomatis. JADWAL belum menjadi fitur aplikasi.
 
 ## Cakupan analisis siap hitung
 
@@ -58,6 +58,21 @@ Analisis empiris tersimpan bersama proyek dan ikut pada cadangan, CSV, dan cetak
 Pada rincian AHS proyek, setiap kelompok Tenaga Kerja, Bahan, Peralatan, dan Lain-lain memiliki tombol **+ Tambah** serta **−** untuk komponen terakhir kelompok. Tombol **−** pada masing-masing baris menghapus komponen tersebut. Form insert meminta uraian, kode opsional, satuan, koefisien, dan harga dasar opsional; harga kosong mengikuti HSD jika komponen sudah ada atau ditandai belum diisi. Minimal satu komponen harus dipertahankan pada AHS tersimpan. Form pembuatan/edit AHS manual dan Empiris juga memiliki tombol +/− per kelompok.
 
 Penyesuaian berlaku pada salinan AHS dalam proyek, menghitung ulang subtotal A–D dan total RAB, serta menyimpan tanda **DISESUAIKAN** pada rincian/cetakan. Template katalog sumber tidak diubah. Harga HSD komponen yang dihapus tetap tersimpan agar tidak mengubah pekerjaan lain. Penambahan harga untuk komponen yang sama mengikuti mekanisme harga bersama proyek. Pratinjau katalog tidak menampilkan tombol perubahan; tambahkan AHS ke RAB terlebih dahulu. Penyesuaian tidak otomatis dinyatakan memenuhi ketentuan AHS normatif.
+
+## Quantity — dasar volume pekerjaan
+
+Menu **Quantity** menyimpan rincian pengukuran untuk setiap baris pekerjaan non-judul WBS. Tautan Quantity juga tersedia di kolom volume RAB. Pilih pekerjaan, tambah perhitungan, lalu isi dimensi dan faktor jumlah bagian.
+
+- **Jumlah:** nilai jumlah × faktor, dalam satuan pekerjaan yang dipilih (misalnya buah, unit, titik, set).
+- **Panjang:** panjang × faktor.
+- **Luas:** persegi, persegi panjang, segitiga, trapesium, jajar genjang, belah ketupat, layang-layang, lingkaran, dan elips. Rumus dan label dimensi ditampilkan; tinggi adalah tinggi tegak lurus, radius adalah jari-jari, dan sumbu elips adalah setengah sumbu.
+- **Volume:** balok, kubus, tabung, prisma segitiga, prisma trapesium, kerucut, dan bola.
+
+Dimensi geometri dapat diisi dalam m, cm, atau mm. Sistem menghitung dalam m/m²/m³ lalu mengonversi hasil ke satuan RAB yang dikenali; cm²/cm³ dan mm²/mm³ juga didukung. Bentuk-bentuk dalam satu pekerjaan boleh berbeda, tetapi kategorinya harus sesuai satuan pekerjaan. Campuran panjang dengan luas/volume ditolak. Untuk satuan pekerjaan di luar dimensi panjang/luas/volume, gunakan Jumlah sesuai satuan tersebut; tidak ada konversi massa otomatis.
+
+Setiap rincian mempunyai uraian/lokasi, bentuk, dimensi, faktor pengulangan, dan operasi Tambah/Kurangi. Pengurang dapat dipakai untuk bukaan. Hasil negatif tidak dapat diterapkan. Tombol **Terapkan ke volume RAB** mengaktifkan hubungan otomatis: perubahan rincian memperbarui volume dan biaya pekerjaan. Mengubah volume langsung pada RAB memutus hubungan otomatis, sambil mempertahankan rincian sebagai catatan. Penggantian AHS mempertahankan rincian; jika satuan tidak sesuai, hubungan dihentikan agar hasil tidak diterapkan ke satuan yang salah. Menghapus seluruh rincian yang terhubung mengubah volume menjadi 0.
+
+Rincian ikut tersimpan di browser, cadangan JSON, ekspor Quantity CSV, dan cetak/PDF Quantity. Cetak RAB juga menyertakan backup Quantity. Impor cadangan dengan hubungan aktif menghitung ulang volume dari dimensinya; tidak mempercayai total yang ditulis dalam file. Hasil akhir dibulatkan ke 6 desimal sebelum masuk RAB; π memakai Math.PI. Maksimal 500 rincian per pekerjaan.
 
 ## Harga, penyimpanan, dan ekspor
 
