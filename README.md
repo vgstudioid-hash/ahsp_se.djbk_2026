@@ -131,3 +131,10 @@ Pada GitHub, buka **Settings → Pages**, pilih **Deploy from a branch**, cabang
 Tombol **+ Lingkup Pekerjaan** membuat baris lingkup tanpa biaya, otomatis WBS tingkat 1. Uraian tingkat 1 disimpan dan ditampilkan dengan huruf kapital serta cetak tebal, termasuk saat cetak/PDF. WBS memakai A, B, C… (tingkat 1); 1, 2, 3… (tingkat 2); a, b, c… (tingkat 3); dan bullet • (tingkat 4). Nomor alfabet berlanjut ke AA/AB setelah Z.
 
 Tombol **+** pada kolom nomor setiap baris menyediakan penyisipan lingkup di atas baris, uraian di bawah, atau sub-uraian satu tingkat lebih dalam. Penyisipan mempertahankan AHS, volume, Quantity, dan keterangan baris yang sudah ada.
+
+
+## Lembar RAB ringkas dan Pengaturan Proyek
+
+Lembar RAB langsung menampilkan daftar pekerjaan. Blok pengantar, form identitas yang besar, dan kartu ringkasan atas dipindahkan ke menu **Pengaturan Proyek**. Nama proyek aktif tetap terlihat pada panel kecil yang dapat dilipat; buka **Kelola proyek** untuk memilih proyek, membuat proyek baru, mengimpor cadangan, atau menuju pengaturan. Tombol ekspor/cadangan/cetak tetap terlihat pada Lembar RAB.
+
+Identitas, koordinat, tanggal harga, jenis dokumen, biaya umum/keuntungan, pajak, dan ringkasan statistik dikelola pada Pengaturan Proyek. Kepala form RAB menampilkan identitas tersebut sebagai informasi dokumen (bukan form edit). Rekapitulasi biaya di bagian bawah Lembar RAB tetap tersedia. Pemindahan tampilan tidak menghapus data proyek, pekerjaan, AHS, HSD, atau Quantity.
