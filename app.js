@@ -49,7 +49,7 @@ function toggleSaved(id, page=1) {
 function route() { return (location.hash.slice(1).split('?')[0] || 'home'); }
 const names = { home: 'Ikhtisar', library: 'Pustaka Dokumen', fields: 'Bidang Pekerjaan', saved: 'Tersimpan', search: 'Pencarian' };
 function updateNav() {
-  $('#navigation').innerHTML = [['home','home','Ikhtisar'],['library','book','Pustaka Dokumen'],['fields','grid','Bidang Pekerjaan'],['saved','bookmark','Tersimpan']].map(([r,i,label]) => `<a href="#${r}" ${route()===r?'class="active" aria-current="page"':''}>${icon(i)}<span>${label}</span>${r==='library'?'<span class="nav-count">08</span>':r==='saved'?`<span class="nav-count">${saved.length}</span>`:''}</a>`).join('');
+  $('#navigation').innerHTML = [['project','home','Informasi Umum'],['quantity','chart','Quantity Pekerjaan'],['recap','chart','Rekapitulasi RAB'],['rab','list','Rencana Anggaran Biaya (RAB)'],['catalog','grid','Analisa Harga Satuan (AHS)'],['prices','layers','Harga Satuan Dasar (HSD)']].map(([r,i,label])=>`<a href="index.html#${r}">${icon(i)}<span>${label}</span></a>`).join('')+`<a href="#library" class="active" aria-current="page">${icon('book')}<span>Dasar-dasar Perhitungan (Pustaka)</span></a>`;
   $('#breadcrumb-current').textContent = names[route()] || names.home;
 }
 function blueprint() {
@@ -98,6 +98,7 @@ function render() {
   else if(r==='saved') main.innerHTML=savedPage();
   else if(r==='search') main.innerHTML=searchPage();
   else { titleQuery=''; main.innerHTML=hero()+library(true)+`<section class="guide-banner"><span class="guide-icon">${icon('shield')}</span><div><span class="eyebrow">KESELAMATAN ADALAH BAGIAN DARI PERENCANAAN</span><h2>Kenali biaya penerapan SMKK.</h2><p>Mulai dari identifikasi bahaya hingga kebutuhan sumber daya keselamatan konstruksi.</p></div><button class="button" data-open="iii">Pelajari Lampiran III ${icon('arrow')}</button></section>`; }
+  main.insertAdjacentHTML('afterbegin',`<div class="pustaka-view-nav" role="group" aria-label="Tampilan pustaka">${[['home','Ikhtisar'],['library','Dokumen'],['fields','Bidang pekerjaan'],['saved','Tersimpan']].map(([key,label])=>`<a href="#${key}" class="${r===key?'active':''}">${label}</a>`).join('')}</div>`);
   if($('#document-grid')) renderCards();
   if(r==='search') runSearch((new URLSearchParams(location.hash.split('?')[1]).get('q')||'').slice(0,120));
   document.title=`${names[r]||'Ikhtisar'} — Pustaka AHSP 2026`;

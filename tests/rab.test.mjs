@@ -93,3 +93,14 @@ test('Reviewed WBS format uses uppercase scope titles, uppercase/lowercase alpha
  assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:4}]),['A','1','a','•','•']);
  const p=fixture();p.items.unshift({id:'scope',code:'',title:'pekerjaan persiapan',unit:'',group:'Lingkup',volume:0,heading:true,wbsLevel:1,components:[]});assert.equal(validateProject(p).items[0].title,'PEKERJAAN PERSIAPAN');
 });
+
+test('Scope recap uses level-1 boundaries, preserves ungrouped work and duplicate scope names, and matches RAB totals',async()=>{
+ const {summarizeScopes}=await import('../rab-core.js');const p=fixture();p.overhead=10;p.tax=10;p.smkk=[{id:'s',name:'SMKK',unit:'ls',volume:1,price:20}];
+ const work=n=>({...structuredClone(p.items[0]),id:'work'+n,volume:n,wbsLevel:2,components:[{group:'Tenaga kerja',name:'Pekerja',unit:'OH',coefficient:1}]});
+ const heading=id=>({id,code:'',title:'LINGKUP SAMA',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});
+ p.items=[work(1),heading('scopeA'),work(2),{...heading('sub'),wbsLevel:2},heading('scopeB'),{...work(3),wbsLevel:3}];p.rates={[rateKey(p.items[0],p.items[0].components[0])]:100};
+ const r=summarizeScopes(p);assert.deepEqual(r.scopes.map(s=>s.amount),[110,220,330]);assert.deepEqual(r.scopes.map(s=>s.count),[1,1,1]);assert.deepEqual(r.scopes.map(s=>s.number),['—','A','B']);assert.equal(r.scopes[0].id,null);assert.equal(r.scopes[1].title,r.scopes[2].title);assert.notEqual(r.scopes[1].id,r.scopes[2].id);assert.equal(r.subtotal,660);assert.equal(r.smkk,20);assert.equal(r.tax,68);assert.equal(r.total,748);assert.equal(r.scopes.reduce((n,s)=>n+s.amount,0),calculateProject(p).subtotal);
+});
+test('Scope recap reports partial prices, unlinked work and empty scopes without inventing totals',async()=>{
+ const {summarizeScopes}=await import('../rab-core.js');const p=fixture();p.items.unshift({id:'h',code:'',title:'LINGKUP A',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});p.items.push({id:'empty',code:'',title:'LINGKUP B',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});const r=summarizeScopes(p);assert.equal(r.scopes[0].incomplete,true);assert.equal(r.scopes[0].missing,2);assert.equal(r.scopes[1].count,0);assert.equal(r.scopes[1].amount,0);assert.equal(r.incomplete,true);
+});

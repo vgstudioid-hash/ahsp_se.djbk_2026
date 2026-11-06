@@ -32,6 +32,26 @@ export function calculateProject(project) {
   const incomplete = !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
   return { items, subtotal, smkk, taxBase, tax, total: moneyRound(taxBase + tax), missing: missingKeys.size, incomplete };
 }
+
+// Scope boundaries follow level-1 WBS rows in sheet order, not duplicate titles.
+export function summarizeScopes(project) {
+  const result=calculateProject(project),numbers=wbsNumbers(project.items),scopes=[];
+  let current=null;
+  result.items.forEach((row,index)=>{
+    const item=row.item;
+    if((item.wbsLevel??2)===1){
+      current={id:item.id,number:numbers[index],title:wbsTitle(item)||'LINGKUP BELUM DIBERI NAMA',count:0,amount:0,incomplete:false,missingKeys:new Set()};
+      scopes.push(current);
+    }
+    if(item.heading)return;
+    if(!current){current={id:null,number:'—',title:'BELUM DIKELOMPOKKAN KE LINGKUP',count:0,amount:0,incomplete:false,missingKeys:new Set()};scopes.push(current);}
+    current.count++;
+    current.amount=moneyRound(current.amount+row.amount);
+    current.incomplete ||= row.missing>0||row.unlinked||item.volume<=0||!item.title.trim();
+    row.breakdown.filter(c=>c.price==null).forEach(c=>current.missingKeys.add(c.key));
+  });
+  return {...result,scopes:scopes.map(({missingKeys,...scope})=>({...scope,missing:missingKeys.size}))};
+}
 export function resources(project) {
   const map = new Map();
   for (const item of project.items) for (const c of item.components) {

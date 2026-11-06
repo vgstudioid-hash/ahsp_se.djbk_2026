@@ -135,6 +135,23 @@ Tombol **+** pada kolom nomor setiap baris menyediakan penyisipan lingkup di ata
 
 ## Lembar RAB ringkas dan Pengaturan Proyek
 
-Lembar RAB langsung menampilkan daftar pekerjaan. Blok pengantar, form identitas yang besar, dan kartu ringkasan atas dipindahkan ke menu **Pengaturan Proyek**. Nama proyek aktif tetap terlihat pada panel kecil yang dapat dilipat; buka **Kelola proyek** untuk memilih proyek, membuat proyek baru, mengimpor cadangan, atau menuju pengaturan. Tombol ekspor/cadangan/cetak tetap terlihat pada Lembar RAB.
+Lembar RAB langsung menampilkan daftar pekerjaan. Blok pengantar, form identitas yang besar, dan kartu ringkasan atas dipindahkan ke menu **Informasi Umum**. Nama proyek aktif tetap terlihat pada panel kecil yang dapat dilipat; buka **Kelola proyek** untuk memilih proyek, membuat proyek baru, mengimpor cadangan, atau menuju pengaturan. Tombol ekspor/cadangan/cetak tetap terlihat pada Lembar RAB.
 
-Identitas, koordinat, tanggal harga, jenis dokumen, biaya umum/keuntungan, pajak, dan ringkasan statistik dikelola pada Pengaturan Proyek. Kepala form RAB menampilkan identitas tersebut sebagai informasi dokumen (bukan form edit). Rekapitulasi biaya di bagian bawah Lembar RAB tetap tersedia. Pemindahan tampilan tidak menghapus data proyek, pekerjaan, AHS, HSD, atau Quantity.
+Identitas, koordinat, tanggal harga, jenis dokumen, biaya umum/keuntungan, pajak, dan ringkasan statistik dikelola pada Informasi Umum. Kepala form RAB menampilkan identitas tersebut sebagai informasi dokumen (bukan form edit). Rekapitulasi biaya di bagian bawah Lembar RAB tetap tersedia. Pemindahan tampilan tidak menghapus data proyek, pekerjaan, AHS, HSD, atau Quantity.
+
+
+## Urutan navigasi dan Rekapitulasi RAB
+
+Sidebar aplikasi dan Pustaka mengikuti urutan:
+
+1. Informasi Umum
+2. Quantity Pekerjaan
+3. Rekapitulasi RAB
+4. Rencana Anggaran Biaya (RAB)
+5. Analisa Harga Satuan (AHS)
+6. Harga Satuan Dasar (HSD)
+7. Dasar-dasar Perhitungan (Pustaka)
+
+Rekapitulasi RAB menjumlahkan nilai pekerjaan di bawah setiap baris WBS tingkat 1 hingga lingkup berikutnya. Lingkup dengan nama sama tetap terpisah menurut posisinya. Pekerjaan sebelum lingkup pertama ditampilkan sebagai **Belum dikelompokkan ke lingkup** agar nilainya tetap masuk total. Subjudul WBS tingkat 2–4 tidak dihitung sebagai biaya atau lingkup baru. Lingkup kosong ditandai belum memiliki pekerjaan.
+
+Jumlah lingkup sudah mencakup biaya umum/keuntungan AHS. SMKK dan pajak ditambahkan satu kali pada tingkat proyek; total akhir konsisten dengan Lembar RAB. Harga atau volume yang belum lengkap ditandai parsial/DRAF, tanpa menyembunyikan jumlah terhitung. Perubahan AHS, harga dasar, volume, dan Quantity langsung tercermin saat halaman rekap dibuka. Rekap dapat diekspor CSV atau dicetak/PDF. Rekap sumber daya tetap tersedia melalui tombol pada halaman HSD, tanpa menambah item sidebar. Navigasi bidang dan penanda Pustaka tersedia di tab dalam halaman Pustaka.
