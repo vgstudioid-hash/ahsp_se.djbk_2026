@@ -25,9 +25,9 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 
 Lembar RAB mengikuti tujuh kolom: **NO / WBS, URAIAN PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN**. Uraian dan keterangan dapat diketik langsung. Satuan dan harga satuan berasal dari AHS pilihan, sehingga mengganti AHS perlu diikuti pemeriksaan volume. Pemilihan AHS mempertahankan uraian, volume, WBS, dan keterangan pengguna. Tombol panah memindahkan urutan baris. Judul WBS tidak dihitung sebagai pekerjaan. Baris yang belum terhubung ke AHS membuat hasil berstatus DRAF. Format tujuh kolom dan keterangan yang sama digunakan pada CSV, cetak/PDF, serta cadangan JSON.
 
-Perhitungan: biaya langsung AHS = jumlah (koefisien × harga dasar). Biaya umum/keuntungan = persentase × biaya langsung. Harga satuan = biaya langsung + biaya umum/keuntungan. Jumlah pekerjaan = volume × harga satuan. Dasar pajak = total pekerjaan + biaya SMKK. Total RAB = dasar pajak + pajak efektif yang diisi pengguna. Komponen biaya, biaya umum/keuntungan, harga satuan, jumlah baris, SMKK, dan pajak dibulatkan ke dua desimal rupiah pada masing-masing tahap.
+Perhitungan: biaya langsung AHS = jumlah (koefisien × harga dasar). Biaya umum/keuntungan = persentase × biaya langsung. Harga satuan = biaya langsung + biaya umum/keuntungan. Jumlah pekerjaan = volume × harga satuan. Nilai sebelum pajak = total pekerjaan + biaya SMKK. DPP = faktor DPP × nilai sebelum pajak. PPN/pajak = tarif × DPP. Total RAB = nilai sebelum pajak + PPN/pajak (DPP tidak menggantikan nilai pekerjaan). Komponen biaya, biaya umum/keuntungan, harga satuan, jumlah baris, SMKK, dan pajak dibulatkan ke dua desimal rupiah pada masing-masing tahap.
 
-Biaya umum/keuntungan awal 10% dan pajak awal 0% adalah pengaturan yang dapat diubah; nilai tersebut bukan penentuan perlakuan pajak proyek. SMKK tidak dikenai biaya umum/keuntungan kedua kali. Rekap kebutuhan sumber daya mengalikan koefisien dengan volume sebelum menggabungkan komponen dan belum memuat SMKK. Harga per OH, per jam, dan per hari dibedakan. Kode tenaga kerja yang sama tidak menyatukan jenis tukang berbeda.
+Biaya umum/keuntungan awal 10%. Proyek baru memakai DPP 11/12 dan PPN 12% (efektif 11% dari nilai sebelum pajak); tarif dan skema dapat diubah sesuai proyek. Proyek lama mempertahankan tarif langsung yang tersimpan sampai pengguna memilih preset DPP. SMKK tidak dikenai biaya umum/keuntungan kedua kali. Rekap kebutuhan sumber daya mengalikan koefisien dengan volume sebelum menggabungkan komponen dan belum memuat SMKK. Harga per OH, per jam, dan per hari dibedakan. Kode tenaga kerja yang sama tidak menyatukan jenis tukang berbeda.
 
 ## Form mengikuti workbook rujukan
 
@@ -155,3 +155,12 @@ Sidebar aplikasi dan Pustaka mengikuti urutan:
 Rekapitulasi RAB menjumlahkan nilai pekerjaan di bawah setiap baris WBS tingkat 1 hingga lingkup berikutnya. Lingkup dengan nama sama tetap terpisah menurut posisinya. Pekerjaan sebelum lingkup pertama ditampilkan sebagai **Belum dikelompokkan ke lingkup** agar nilainya tetap masuk total. Subjudul WBS tingkat 2–4 tidak dihitung sebagai biaya atau lingkup baru. Lingkup kosong ditandai belum memiliki pekerjaan.
 
 Jumlah lingkup sudah mencakup biaya umum/keuntungan AHS. SMKK dan pajak ditambahkan satu kali pada tingkat proyek; total akhir konsisten dengan Lembar RAB. Harga atau volume yang belum lengkap ditandai parsial/DRAF, tanpa menyembunyikan jumlah terhitung. Perubahan AHS, harga dasar, volume, dan Quantity langsung tercermin saat halaman rekap dibuka. Rekap dapat diekspor CSV atau dicetak/PDF. Rekap sumber daya tetap tersedia melalui tombol pada halaman HSD, tanpa menambah item sidebar. Navigasi bidang dan penanda Pustaka tersedia di tab dalam halaman Pustaka.
+
+
+## Lanjut dan default DPP 11/12
+
+Pada Informasi Umum tersedia tombol **Lanjut → Quantity Pekerjaan** untuk menyimpan pengaturan dan membuka tahap Quantity. Keterangan awal pajak 0% dan kalimat tentang harga contoh yang dicoret pada koreksi pengguna telah dihapus dari form.
+
+Proyek baru otomatis memakai skema DPP nilai lain **11/12** dengan tarif **PPN 12%**. Faktor DPP ditampilkan hanya-baca. Perhitungan: `nilai sebelum pajak = pekerjaan + SMKK`; `DPP = 11/12 × nilai sebelum pajak`; `PPN = 12% × DPP`; `total RAB = nilai sebelum pajak + PPN`. Masing-masing tahap dibulatkan dua desimal rupiah. Contoh nilai Rp1.200.000 menghasilkan DPP Rp1.100.000, PPN Rp132.000, dan total Rp1.332.000.
+
+Skema dan tarif tersimpan dalam cadangan JSON. Proyek lama tanpa skema DPP dibaca sebagai tarif langsung atas 100% nilai sebelum pajak, sehingga nilai pajak sebelumnya tidak berubah otomatis. Tombol **Gunakan DPP 11/12 + PPN 12%** menerapkan default baru secara eksplisit pada proyek aktif. Pilihan skema 100%/tarif langsung tetap tersedia; tarif nol yang sengaja diisi juga dipertahankan. Label DPP dan PPN konsisten pada RAB, rekap, CSV, dan cetak/PDF.

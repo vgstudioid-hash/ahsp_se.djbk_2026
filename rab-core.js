@@ -25,12 +25,14 @@ export function calculateProject(project) {
   const items = project.items.map(item => ({ item, ...calculateItem(item, project.rates, project.overhead) }));
   const subtotal = moneyRound(items.reduce((n, r) => n + r.amount, 0));
   const smkk = moneyRound(project.smkk.reduce((n, r) => n + moneyRound(r.volume * r.price), 0));
-  const taxBase = moneyRound(subtotal + smkk);
+  const beforeTax = moneyRound(subtotal + smkk);
+  const taxFactor = project.taxScheme === 'dpp11of12' ? 11/12 : 1;
+  const taxBase = moneyRound(beforeTax * taxFactor);
   const tax = moneyRound(taxBase * project.tax / 100);
   const missingKeys = new Set(items.flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
   const work = items.filter(i => !i.item.heading);
   const incomplete = !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
-  return { items, subtotal, smkk, taxBase, tax, total: moneyRound(taxBase + tax), missing: missingKeys.size, incomplete };
+  return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total: moneyRound(beforeTax + tax), missing: missingKeys.size, incomplete };
 }
 
 // Scope boundaries follow level-1 WBS rows in sheet order, not duplicate titles.
@@ -149,7 +151,8 @@ export function validateProject(p) {
   });
   for(const field of ['year','coordinates','documentType'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>500))throw Error('Identitas form tidak valid.');
   if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
-  return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, year:p.year||p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+  if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
+  return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, year:p.year||p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
 }
 
 export function wbsNumbers(items) {

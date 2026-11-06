@@ -104,3 +104,13 @@ test('Scope recap uses level-1 boundaries, preserves ungrouped work and duplicat
 test('Scope recap reports partial prices, unlinked work and empty scopes without inventing totals',async()=>{
  const {summarizeScopes}=await import('../rab-core.js');const p=fixture();p.items.unshift({id:'h',code:'',title:'LINGKUP A',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});p.items.push({id:'empty',code:'',title:'LINGKUP B',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});const r=summarizeScopes(p);assert.equal(r.scopes[0].incomplete,true);assert.equal(r.scopes[0].missing,2);assert.equal(r.scopes[1].count,0);assert.equal(r.scopes[1].amount,0);assert.equal(r.incomplete,true);
 });
+
+test('DPP 11/12 with PPN 12% adds 11% effective tax while keeping the full contract value in the final total',()=>{
+ const p=fixture();p.taxScheme='dpp11of12';p.tax=12;p.smkk=[];p.overhead=0;p.items[0].volume=1;p.items[0].components=[{group:'Lain-lain',name:'Biaya pekerjaan',unit:'ls',coefficient:1}];p.rates={[rateKey(p.items[0],p.items[0].components[0])]:1200000};
+ const r=calculateProject(p);assert.equal(r.beforeTax,1200000);assert.equal(r.taxBase,1100000);assert.equal(r.tax,132000);assert.equal(r.total,1332000);assert.notEqual(r.total,r.taxBase+r.tax);
+ const restored=validateProject(p);assert.equal(restored.taxScheme,'dpp11of12');assert.equal(calculateProject(restored).total,1332000);
+ p.smkk=[{id:'s',name:'SMKK',unit:'ls',volume:1,price:120000}];const smkk=calculateProject(p);assert.equal(smkk.beforeTax,1320000);assert.equal(smkk.taxBase,1210000);assert.equal(smkk.tax,145200);assert.equal(smkk.total,1465200);
+});
+test('Legacy tax settings and explicit zero tax are preserved; invalid DPP schemes are rejected',()=>{
+ const p=fixture();p.tax=0;delete p.taxScheme;const old=validateProject(p);assert.equal(old.taxScheme,'full');assert.equal(old.tax,0);p.taxScheme='dpp11of12';p.tax=0;const exempt=validateProject(p);assert.equal(calculateProject(exempt).tax,0);p.taxScheme='unknown';assert.throws(()=>validateProject(p));
+});
