@@ -164,3 +164,10 @@ Pada Informasi Umum tersedia tombol **Lanjut → Quantity Pekerjaan** untuk meny
 Proyek baru otomatis memakai skema DPP nilai lain **11/12** dengan tarif **PPN 12%**. Faktor DPP ditampilkan hanya-baca. Perhitungan: `nilai sebelum pajak = pekerjaan + SMKK`; `DPP = 11/12 × nilai sebelum pajak`; `PPN = 12% × DPP`; `total RAB = nilai sebelum pajak + PPN`. Masing-masing tahap dibulatkan dua desimal rupiah. Contoh nilai Rp1.200.000 menghasilkan DPP Rp1.100.000, PPN Rp132.000, dan total Rp1.332.000.
 
 Skema dan tarif tersimpan dalam cadangan JSON. Proyek lama tanpa skema DPP dibaca sebagai tarif langsung atas 100% nilai sebelum pajak, sehingga nilai pajak sebelumnya tidak berubah otomatis. Tombol **Gunakan DPP 11/12 + PPN 12%** menerapkan default baru secara eksplisit pada proyek aktif. Pilihan skema 100%/tarif langsung tetap tersedia; tarif nol yang sengaja diisi juga dipertahankan. Label DPP dan PPN konsisten pada RAB, rekap, CSV, dan cetak/PDF.
+
+
+## Tombol Lanjut dan versi aset
+
+Pada Informasi Umum, tombol **Lanjut → Quantity Pekerjaan** tersedia pada bagian atas halaman serta di bawah form, di luar panel lipat. Menutup panel identitas tidak menyembunyikan kedua tombol.
+
+Build statis memberi penanda versi deterministik pada nama CSS dan seluruh modul JavaScript, termasuk dependensi dan worker pencarian. HTML menunjuk ke aset ber-versi; `dist/build-info.json` mencatat ID build dan pemetaan nama file. Jalur aset lama tetap tersedia selama perpindahan publikasi. Jika browser masih menampilkan HTML sebelumnya, buka `/?v=<buildId>#project` pada situs untuk mengambil HTML terbaru. Jangan menghapus data situs/localStorage karena proyek disimpan di sana.
