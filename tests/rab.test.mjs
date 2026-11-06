@@ -52,7 +52,7 @@ test('WBS headings do not add costs; unlinked work stays draft; row descriptions
  assert.equal(calculateProject(p).incomplete,false);
  const restored=validateProject(p);assert.equal(restored.items[0].heading,true);assert.equal(restored.items[1].remarks,'Sesuai gambar kerja');
  p.items.push({...heading,heading:false,wbsLevel:3,title:'Pekerjaan belum dipilih',id:'u'});assert.equal(calculateProject(p).incomplete,true);
- assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:3},{wbsLevel:2},{wbsLevel:1},{wbsLevel:2}]),['A','1','a','-','b','2','B','1']);
+ assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:3},{wbsLevel:2},{wbsLevel:1},{wbsLevel:2}]),['A','1','a','•','b','2','B','1']);
 });
 
 test('Workbook HSD metadata round-trips without replacing actual prices with SHB or copying sample discounts',()=>{
@@ -84,4 +84,12 @@ test('Adjusted AHS component insertion/removal recalculates costs and preserves 
  item.adjusted=true;item.manual=true;
  assert.equal(calculateProject(p).subtotal,880000);const restored=validateProject(p);assert.equal(restored.items[0].adjusted,true);assert.equal(restored.items[0].manual,true);
  item.components.splice(2,4);assert.equal(calculateProject(p).subtotal,0);assert.equal(JSON.stringify(catalog[0]),original);
+});
+
+test('Reviewed WBS format uses uppercase scope titles, uppercase/lowercase alphabetic numbering and bullets',async()=>{
+ const {wbsNumbers,wbsTitle}=await import('../rab-core.js');
+ assert.equal(wbsTitle({title:'Lingkup pekerjaan beton',wbsLevel:1}),'LINGKUP PEKERJAAN BETON');assert.equal(wbsTitle({title:'Uraian pekerjaan',wbsLevel:2}),'Uraian pekerjaan');
+ const items=Array.from({length:28},()=>({wbsLevel:1}));assert.equal(wbsNumbers(items)[26],'AA');assert.equal(wbsNumbers(items)[27],'AB');
+ assert.deepEqual(wbsNumbers([{wbsLevel:1},{wbsLevel:2},{wbsLevel:3},{wbsLevel:4},{wbsLevel:4}]),['A','1','a','•','•']);
+ const p=fixture();p.items.unshift({id:'scope',code:'',title:'pekerjaan persiapan',unit:'',group:'Lingkup',volume:0,heading:true,wbsLevel:1,components:[]});assert.equal(validateProject(p).items[0].title,'PEKERJAAN PERSIAPAN');
 });

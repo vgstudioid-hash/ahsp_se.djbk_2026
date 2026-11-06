@@ -18,7 +18,7 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 ## Alur penyusunan RAB
 
 1. Buat atau pilih proyek, isi lokasi dan tanggal harga.
-2. Tambah judul WBS atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → − dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
+2. Tambah lingkup pekerjaan atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → • dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
 3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
 4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK sesuai kebutuhan secara terpisah.
 5. Tinjau biaya umum/keuntungan dan persentase pajak efektif sesuai proyek, lalu ekspor CSV, cadangan JSON, atau cetak/simpan PDF.
@@ -124,3 +124,10 @@ npm run deploy
 Perintah ini membangun ulang website dan memublikasikan isi `dist/` ke cabang `gh-pages` melalui Git. Riwayat cabang deployment dipertahankan; tidak ada force push. Checkout sumber tidak dipindah dan tidak dibuat Git worktree. Tidak memerlukan token tambahan jika autentikasi Git platform sudah memiliki izin push.
 
 Pada GitHub, buka **Settings → Pages**, pilih **Deploy from a branch**, cabang **gh-pages**, folder **/ (root)**, lalu **Save**. Aktivasi ini diperlukan sekali jika Pages belum aktif. Untuk repositori privat, ketersediaan Pages bergantung pada paket GitHub. Alamat standar setelah aktivasi adalah `https://vgstudioid-hash.github.io/ahsp_se.djbk_2026/`; push cabang deployment saja belum membuktikan situs sudah aktif.
+
+
+## Koreksi tampilan WBS
+
+Tombol **+ Lingkup Pekerjaan** membuat baris lingkup tanpa biaya, otomatis WBS tingkat 1. Uraian tingkat 1 disimpan dan ditampilkan dengan huruf kapital serta cetak tebal, termasuk saat cetak/PDF. WBS memakai A, B, C… (tingkat 1); 1, 2, 3… (tingkat 2); a, b, c… (tingkat 3); dan bullet • (tingkat 4). Nomor alfabet berlanjut ke AA/AB setelah Z.
+
+Tombol **+** pada kolom nomor setiap baris menyediakan penyisipan lingkup di atas baris, uraian di bawah, atau sub-uraian satu tingkat lebih dalam. Penyisipan mempertahankan AHS, volume, Quantity, dan keterangan baris yang sudah ada.
