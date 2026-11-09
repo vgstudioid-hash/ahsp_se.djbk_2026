@@ -171,3 +171,12 @@ Skema dan tarif tersimpan dalam cadangan JSON. Proyek lama tanpa skema DPP dibac
 Pada Informasi Umum, tombol **Lanjut → Quantity Pekerjaan** tersedia pada bagian atas halaman serta di bawah form, di luar panel lipat. Menutup panel identitas tidak menyembunyikan kedua tombol.
 
 Build statis memberi penanda versi deterministik pada nama CSS dan seluruh modul JavaScript, termasuk dependensi dan worker pencarian. HTML menunjuk ke aset ber-versi; `dist/build-info.json` mencatat ID build dan pemetaan nama file. Jalur aset lama tetap tersedia selama perpindahan publikasi. Jika browser masih menampilkan HTML sebelumnya, buka `/?v=<buildId>#project` pada situs untuk mengambil HTML terbaru. Jangan menghapus data situs/localStorage karena proyek disimpan di sana.
+
+
+## Koreksi Informasi Umum dan aksi Project
+
+Bagian atas aplikasi menyediakan **Buat Project** (ikon ADD/plus) dan **Impor Project** (ikon IMPORT/panah). Buat Project membuka form nama project baru; dialog yang sama menyediakan pemilihan project tersimpan dan impor cadangan JSON. Project baru dan hasil impor dibuka pada Informasi Umum. Impor tetap membuat project terpisah dan tidak menimpa project lama.
+
+Informasi Umum hanya menampilkan enam isian: nama project, lokasi, pemberi tugas, tahun, koordinat, dan tanggal harga. Panel project aktif, tombol kembali, judul panel identitas, indikator biaya/pajak pada panel, isian biaya umum dan pajak, jenis dokumen, pengaturan DPP beserta catatan, dan seluruh kartu ringkasan di halaman ini dihapus sesuai koreksi bernomor. Nilai biaya/pajak/jenis dokumen yang sudah tersimpan tetap dipertahankan dalam perhitungan, cadangan, dan cetakan; yang dihapus adalah kontrol tampilannya. Default project baru tetap mengikuti konfigurasi aplikasi.
+
+Hanya ada satu tombol **Lanjut → Quantity Pekerjaan**, ditempatkan di kanan bawah setelah isian identitas. Tidak ada tombol Lanjut di atas atau panel penjelas tambahan. Aksi membuat/impor project tidak lagi membuka pencarian AHS.
