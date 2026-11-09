@@ -1,7 +1,8 @@
-import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.a6450ec8186b.js';
-import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.a6450ec8186b.js';
-import { formHeader, ahsForm, hsdForm } from './workbook-forms.a6450ec8186b.js';
-import { calculateProject, calculateItem, resources, rateKey, nonnegative, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, summarizeScopes, projectInformationErrors } from './rab-core.a6450ec8186b.js';
+import { mountAssistant } from './ai-ui.735a02c55948.js';
+import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.735a02c55948.js';
+import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.735a02c55948.js';
+import { formHeader, ahsForm, hsdForm } from './workbook-forms.735a02c55948.js';
+import { calculateProject, calculateItem, resources, rateKey, nonnegative, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, summarizeScopes, projectInformationErrors } from './rab-core.735a02c55948.js';
 
 const $ = s => document.querySelector(s);
 const main = $('#main'), dialog = $('#analysis-dialog');
@@ -10,6 +11,7 @@ const fmt = n => new Intl.NumberFormat('id-ID',{maximumFractionDigits:2}).format
 const rp = n => 'Rp ' + fmt(n);
 const svg = path => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
 const symbols = {
+  assistant:svg('<path d="M4 4h16v12H9l-5 4zM8 8h8M8 12h5"/>'),
   rab:svg('<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/>'),
   catalog:svg('<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>'),
   prices:svg('<path d="M3 7h13l5 5-5 5H3z"/><circle cx="6.5" cy="12" r="1"/>'),
@@ -33,9 +35,9 @@ function save() {
   catch {notify('Penyimpanan browser penuh/tidak tersedia. Segera ekspor cadangan proyek.');}
 }
 function notify(text) {$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,4500);}
-function view() {return ['project','quantity','recap','rab','catalog','prices','resources'].includes(location.hash.slice(1))?location.hash.slice(1):'rab';}
-const names = {project:'Informasi Umum',quantity:'Quantity Pekerjaan',recap:'Rekapitulasi RAB',rab:'Rencana Anggaran Biaya (RAB)',catalog:'Analisa Harga Satuan (AHS)',prices:'Harga Satuan Dasar (HSD)',resources:'Rekap Sumber Daya'};
-const sidebarRoutes=['project','quantity','recap','rab','catalog','prices'];
+function view() {return ['project','quantity','recap','rab','catalog','prices','resources','assistant'].includes(location.hash.slice(1))?location.hash.slice(1):'rab';}
+const names = {project:'Informasi Umum',quantity:'Quantity Pekerjaan',recap:'Rekapitulasi RAB',rab:'Rencana Anggaran Biaya (RAB)',catalog:'Analisa Harga Satuan (AHS)',prices:'Harga Satuan Dasar (HSD)',assistant:'Asisten AI',resources:'Rekap Sumber Daya'};
+const sidebarRoutes=['project','quantity','recap','rab','catalog','prices','assistant'];
 function nav(){ $('#navigation').innerHTML=sidebarRoutes.map(key=>`<a href="#${key}" ${view()===key?'class="active" aria-current="page"':''}><span class="nav-symbol">${symbols[key]}</span><span>${names[key]}</span>${key==='rab'?`<span class="nav-count">${project().items.filter(i=>!i.heading).length}</span>`:''}</a>`).join('')+'<a href="references.html#library" target="_blank" rel="noopener"><span class="nav-symbol">→</span><span>Dasar-dasar Perhitungan (Pustaka)</span></a>';$('#breadcrumb-current').textContent=names[view()]; }
 function header(title,description,actions=''){return `<div class="rab-heading"><div><div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div><h1>${title}</h1><p>${description}</p></div><div class="action-row">${actions}</div></div>`;}
 function sourceLink(item){if(item.empirical)return 'AHS Empiris · dasar pengamatan/perhitungan pengguna';return item.docId?`<a href="documents/${esc(item.docId)}.pdf#page=${item.page}" target="_blank" rel="noopener">Lampiran ${item.docId.toUpperCase()} · PDF hal. ${item.page} →</a>`:'Analisis manual';}
@@ -50,7 +52,7 @@ function filterCatalog(){const words=query.toLowerCase().trim().split(/\s+/);con
 function pricesView(){return header('Harga Satuan Dasar (HSD).','Form harga upah, bahan, peralatan, dan lain-lain mengikuti susunan workbook rujukan.','<a class="button subtle" href="#resources">Rekap sumber daya →</a><button class="button subtle" data-action="price-template">Ekspor / template HSD CSV ↓</button><button class="button subtle" data-action="print-hsd">Cetak HSD / PDF</button><button class="button" data-action="import-rates">Impor harga CSV ↑</button>')+formHeader(project(),'HARGA SATUAN DASAR (HSD)')+`<div class="rab-alert neutral">Harga SHB adalah pembanding. Harga satuan adalah harga yang digunakan dalam AHS. Keduanya dapat diisi terpisah; diskon, konversi satuan, dan penyesuaian tahun pada workbook tidak diterapkan otomatis. Tanggal harga: ${esc(project().date)}.</div><div class="catalog-tools"><label class="title-filter"><input id="price-query" type="search" value="${esc(priceQuery)}" placeholder="Cari nama sumber daya…" aria-label="Cari sumber daya"></label><select id="price-group" aria-label="Kelompok sumber daya">${['Semua',...groups].map(g=>`<option ${priceGroup===g?'selected':''}>${g}</option>`).join('')}</select></div><div id="price-results"></div>`;}
 function filterPrices(){const rows=resources(project()).filter(c=>(priceGroup==='Semua'||c.group===priceGroup)&&c.name.toLowerCase().includes(priceQuery.toLowerCase()));$('#price-results').innerHTML=rows.length?hsdForm(rows,project()):'<div class="empty-state"><h3>Belum ada sumber daya yang sesuai.</h3><p>Tambahkan pekerjaan ke RAB atau ubah filter.</p><a class="button" href="#catalog">Pilih AHS</a></div>';}
 function resourceView(){const rows=resources(project());return header('Kebutuhan proyek, terurai.','Kuantitas sumber daya = jumlah koefisien × volume pekerjaan. Rekap ini belum termasuk rincian sumber daya SMKK.','<button class="button" data-action="resource-csv">Ekspor kebutuhan CSV ↓</button>')+(rows.length?`<div class="table-wrap"><table class="rab-table"><thead><tr><th>Sumber daya</th><th>Bidang / kelompok</th><th>Satuan</th><th>Total kebutuhan</th><th>Harga dasar</th><th>Nilai kebutuhan</th></tr></thead><tbody>${rows.map(c=>`<tr><td><strong>${esc(c.name)}</strong></td><td>${fieldName(c.docId)}<small>${c.group}</small></td><td>${esc(c.unit)}</td><td class="numeric">${fmt(c.quantity)}</td><td class="numeric">${c.price==null?'Belum diisi':rp(c.price)}</td><td class="numeric">${c.price==null?'—':rp(c.quantity*c.price)}</td></tr>`).join('')}</tbody></table></div><p class="setting-note">Nilai kebutuhan tidak memuat biaya umum, keuntungan, dan pajak. Pembulatan rekap kuantitas dapat menimbulkan selisih sen dengan pembulatan tiap baris AHS.</p>`:'<div class="empty-state"><h3>Belum ada kebutuhan sumber daya.</h3><a href="#catalog" class="button">Tambahkan pekerjaan</a></div>');}
-function render(){nav();const v=view();main.classList.toggle('info-page',v==='project');main.innerHTML=v==='recap'?recapView():v==='project'?projectSettingsView():v==='quantity'?quantityView():v==='catalog'?catalogView():v==='prices'?pricesView():v==='resources'?resourceView():sheet();if(v==='catalog')filterCatalog();if(v==='prices')filterPrices();document.title=`${names[v]} — RAB Studio 2026`;}
+function render(){nav();const v=view();main.classList.toggle('info-page',v==='project');main.innerHTML=v==='assistant'?header('Asisten AI','Analisis RAB dan diskusikan pekerjaan tanpa meninggalkan aplikasi.')+'<section id="ai-panel"></section>':v==='recap'?recapView():v==='project'?projectSettingsView():v==='quantity'?quantityView():v==='catalog'?catalogView():v==='prices'?pricesView():v==='resources'?resourceView():sheet();if(v==='assistant')mountAssistant($('#ai-panel'),project);if(v==='catalog')filterCatalog();if(v==='prices')filterPrices();document.title=`${names[v]} — RAB Studio 2026`;}
 let refreshTimer;
 function refreshAfterEdit() {
   clearTimeout(refreshTimer);
