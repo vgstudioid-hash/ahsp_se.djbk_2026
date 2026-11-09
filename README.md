@@ -177,19 +177,22 @@ Build statis memberi penanda versi deterministik pada nama CSS dan seluruh modul
 
 Saat membuka **Informasi Umum**, pengguna melihat dua pilihan **Project Baru** dan **Impor Project**. Project tersimpan yang sudah diberi nama tetap dapat dibuka dari pilihan project tersimpan. Ikon Project Baru dan Impor memakai gaya garis hijau seperti ikon sidebar, tanpa latar gradasi.
 
-Project Baru membuka blangko kosong tanpa mengisi nama atau tahun otomatis. Form memiliki enam isian wajib:
+Project Baru membuka blangko kosong tanpa mengisi nama atau tahun otomatis. Form memiliki tujuh isian wajib:
 
 1. Nama Pekerjaan
-2. MA (teks, mempertahankan nol di depan)
-3. Sub MA (blangko tersendiri)
+2. MA (tepat 4 angka, mempertahankan nol di depan)
+3. Sub MA (tepat 4 angka, blangko berdampingan dengan MA)
 4. Unit Kerja
-5. Tahun (4 digit, minimal 1900)
-6. Pagu Anggaran (rupiah, lebih dari 0, maksimal 10^15)
+5. Kategori Program (dropdown Beban / Investasi)
+6. Tahun (4 digit, minimal 1900)
+7. Pagu Anggaran (rupiah, lebih dari 0, maksimal 10^15)
 
 Tombol **Lanjut → Quantity Pekerjaan** berada di kanan bawah dan benar-benar `disabled` selama ada isian kosong, hanya spasi, tahun tidak valid, atau pagu tidak positif. Status tombol diperbarui saat pengguna mengetik. Handler Lanjut memeriksa kembali isian sebelum berpindah halaman. Enter pada form tidak melewati validasi atau memuat ulang aplikasi.
 
 Impor cadangan JSON membuka form dengan data impor. Data baru ini disimpan pada kolom `ma`, `subMa`, `workUnit`, dan `budget` bersama nama/tahun, serta ikut pada backup dan keluaran RAB/rekap. Cadangan lama tetap dapat diimpor; isian tambahan yang belum ada dibiarkan kosong sehingga Lanjut terkunci sampai pengguna melengkapinya. Data lama seperti AHS, Quantity, harga, lokasi, dan pajak tetap dipertahankan. Pagu adalah informasi anggaran dan tidak otomatis mengubah nilai pekerjaan.
 
-Unit Kerja saat ini dapat diketik dan telah disiapkan sebagai input daftar saran (`datalist`). Sumber daftar adalah `public/data/work-units.json`, sementara berisi `[]` sambil menunggu data pengguna. Isi file itu dengan array nama Unit Kerja (string), lalu build/deploy ulang. Tidak ada nama Unit Kerja contoh yang diperlakukan sebagai data resmi.
+Unit Kerja menggunakan dropdown dari `public/data/work-units.json`: Unit Wilayah I, II, III, IV, V, VI, VII; Divisi Pengendalian Mutu Teknik; dan Divisi Operasi dan Pemerliharaan Sumber Daya Air / Listrik (mengikuti penulisan yang diberikan pengguna). Daftar dapat ditambah pada file tersebut dan dibuild ulang. Tidak ada pilihan bebas pada dropdown; Unit Kerja dari berkas lama yang belum terdaftar tetap ditampilkan sebagai data tersimpan tetapi harus dipilih ulang sebelum Lanjut aktif. Versi build dan permintaan daftar memperhitungkan perubahan file Unit Kerja untuk menghindari daftar lama dari cache.
+
+Kategori Program disimpan pada `programCategory` dan ikut pada cadangan, CSV RAB/rekap, serta kepala dokumen cetak. Project lama yang belum memiliki kategori tetap dapat dibuka, tetapi Lanjut menunggu kategori dipilih. MA/Sub MA berbentuk input teks numerik maksimal 4 karakter, tetap mempertahankan nol depan dan berdampingan dalam setengah kolom, termasuk pada ponsel.
 
 Navigasi kembali ke Informasi Umum menampilkan pilihan awal; membuka project tersimpan tidak menghapus atau mengosongkan isinya. Menekan Project Baru membuat blangko baru dan mempertahankan project yang telah diisi.

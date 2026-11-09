@@ -115,11 +115,18 @@ test('Legacy tax settings and explicit zero tax are preserved; invalid DPP schem
  const p=fixture();p.tax=0;delete p.taxScheme;const old=validateProject(p);assert.equal(old.taxScheme,'full');assert.equal(old.tax,0);p.taxScheme='dpp11of12';p.tax=0;const exempt=validateProject(p);assert.equal(calculateProject(exempt).tax,0);p.taxScheme='unknown';assert.throws(()=>validateProject(p));
 });
 
-test('General Information requires all six blanks and validates budget/year without dropping MA/Sub MA or Unit Kerja',async()=>{
- const {projectInformationErrors}=await import('../rab-core.js');const p=fixture();Object.assign(p,{name:'',ma:'',subMa:'',workUnit:'',year:'',budget:null});assert.equal(Object.keys(projectInformationErrors(p)).length,6);
- Object.assign(p,{name:'Pekerjaan',ma:'001',subMa:'002',workUnit:'Unit A',year:'2026',budget:1000000});assert.deepEqual(projectInformationErrors(p),{});
- for(const key of ['name','ma','subMa','workUnit','year','budget']){const bad={...p,[key]:key==='budget'?null:' '};assert(Object.hasOwn(projectInformationErrors(bad),key));}
+test('General Information requires all seven blanks and validates budget/year without dropping MA/Sub MA or Unit Kerja',async()=>{
+ const {projectInformationErrors}=await import('../rab-core.js');const p=fixture();Object.assign(p,{name:'',ma:'',subMa:'',workUnit:'',programCategory:'',year:'',budget:null});assert.equal(Object.keys(projectInformationErrors(p)).length,7);
+ Object.assign(p,{name:'Pekerjaan',ma:'0001',subMa:'0002',workUnit:'Unit A',programCategory:'Beban',year:'2026',budget:1000000});assert.deepEqual(projectInformationErrors(p),{});
+ for(const key of ['name','ma','subMa','workUnit','programCategory','year','budget']){const bad={...p,[key]:key==='budget'?null:' '};assert(Object.hasOwn(projectInformationErrors(bad),key));}
  assert(projectInformationErrors({...p,year:'20xx'}).year);assert(projectInformationErrors({...p,budget:-1}).budget);assert(projectInformationErrors({...p,budget:0}).budget);
- const restored=validateProject(p);assert.equal(restored.ma,'001');assert.equal(restored.subMa,'002');assert.equal(restored.workUnit,'Unit A');assert.equal(restored.budget,1000000);
+ const restored=validateProject(p);assert.equal(restored.ma,'0001');assert.equal(restored.subMa,'0002');assert.equal(restored.workUnit,'Unit A');assert.equal(restored.budget,1000000);
  p.year='';assert.equal(validateProject(p).year,'');assert.throws(()=>validateProject({...p,budget:-1}));
+});
+
+test('Program category and four-digit account codes validate and survive backup with listed work units',async()=>{
+ const {projectInformationErrors}=await import('../rab-core.js');const units=JSON.parse(await readFile(new URL('work-units.json',root),'utf8'));assert.equal(units.length,9);assert.deepEqual(units.slice(0,7),['I','II','III','IV','V','VI','VII'].map(n=>'Unit Wilayah '+n));
+ const p={...fixture(),ma:'0012',subMa:'0034',workUnit:units[0],programCategory:'Investasi',year:'2026',budget:1000000};assert.deepEqual(projectInformationErrors(p,units),{});assert.equal(validateProject(p).programCategory,'Investasi');assert.equal(validateProject(p).ma,'0012');
+ for(const code of ['123','12345','12ab'])assert(projectInformationErrors({...p,ma:code},units).ma);
+ assert(projectInformationErrors({...p,programCategory:''},units).programCategory);assert(projectInformationErrors({...p,workUnit:'Tidak terdaftar'},units).workUnit);assert.throws(()=>validateProject({...p,programCategory:'Lainnya'}));
 });
