@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.a39078b30f49.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.8f37542e30e2.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -150,9 +150,19 @@ export function validateProject(p) {
     return { id: crypto.randomUUID(), name: r.name, unit: r.unit, volume: nonnegative(r.volume), price: nonnegative(r.price) };
   });
   for(const field of ['year','coordinates','documentType'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>500))throw Error('Identitas form tidak valid.');
+  for(const field of ['ma','subMa','workUnit'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>1000))throw Error('Informasi pekerjaan tidak valid.');
+  const budget=p.budget==null||p.budget===''?null:nonnegative(p.budget);
   if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
   if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
-  return { id: crypto.randomUUID(), name: p.name, location: p.location, owner: p.owner, date: p.date, year:p.year||p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+}
+
+export function projectInformationErrors(p) {
+  const errors={};
+  for(const [field,label] of [['name','Nama Pekerjaan'],['ma','MA'],['subMa','Sub MA'],['workUnit','Unit Kerja']])if(typeof p[field]!=='string'||!p[field].trim())errors[field]=label+' wajib diisi.';
+  if(typeof p.year!=='string'||!/^\d{4}$/.test(p.year.trim())||Number(p.year)<1900)errors.year='Tahun harus 4 digit dan minimal 1900.';
+  if(typeof p.budget!=='number'||!Number.isFinite(p.budget)||p.budget<=0||p.budget>1e15)errors.budget='Pagu Anggaran harus lebih dari 0 dan maksimal 10^15.';
+  return errors;
 }
 
 export function wbsNumbers(items) {
