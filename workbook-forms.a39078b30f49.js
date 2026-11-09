@@ -1,4 +1,4 @@
-import { groups, moneyRound } from './rab-core.8f5dfe6aea94.js';
+import { groups, moneyRound } from './rab-core.a39078b30f49.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>new Intl.NumberFormat('id-ID',{maximumFractionDigits:2}).format(n);
 export function formHeader(p,title){return `<section class="workbook-header"><h2>${esc(title)}</h2>${title.startsWith('RENCANA')&&p.documentType==='HPS'?'<h3>HARGA PERKIRAAN SENDIRI (HPS)</h3>':''}<dl>${[['Pemberi Tugas',p.owner],['Nama Proyek',p.name],['Lokasi Proyek',p.location],['Koordinat',p.coordinates],['Tahun Proyek',p.year||p.date?.slice(0,4)]].map(([l,v])=>`<div><dt>${l}</dt><dd>: ${esc(v||'—')}</dd></div>`).join('')}</dl></section>`;}

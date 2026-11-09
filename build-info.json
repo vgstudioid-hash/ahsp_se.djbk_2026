@@ -1,15 +1,15 @@
 {
-  "buildId": "8f5dfe6aea94",
+  "buildId": "a39078b30f49",
   "assets": {
-    "styles.css": "styles.8f5dfe6aea94.css",
-    "rab.css": "rab.8f5dfe6aea94.css",
-    "app.js": "app.8f5dfe6aea94.js",
-    "rab-app.js": "rab-app.8f5dfe6aea94.js",
-    "rab-core.js": "rab-core.8f5dfe6aea94.js",
-    "workbook-forms.js": "workbook-forms.8f5dfe6aea94.js",
-    "quantity-core.js": "quantity-core.8f5dfe6aea94.js",
-    "quantity-ui.js": "quantity-ui.8f5dfe6aea94.js",
-    "search-worker.js": "search-worker.8f5dfe6aea94.js",
-    "search-core.js": "search-core.8f5dfe6aea94.js"
+    "styles.css": "styles.a39078b30f49.css",
+    "rab.css": "rab.a39078b30f49.css",
+    "app.js": "app.a39078b30f49.js",
+    "rab-app.js": "rab-app.a39078b30f49.js",
+    "rab-core.js": "rab-core.a39078b30f49.js",
+    "workbook-forms.js": "workbook-forms.a39078b30f49.js",
+    "quantity-core.js": "quantity-core.a39078b30f49.js",
+    "quantity-ui.js": "quantity-ui.a39078b30f49.js",
+    "search-worker.js": "search-worker.a39078b30f49.js",
+    "search-core.js": "search-core.a39078b30f49.js"
   }
 }
