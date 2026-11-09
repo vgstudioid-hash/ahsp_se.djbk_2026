@@ -17,7 +17,7 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 
 ## Alur penyusunan RAB
 
-1. Buat atau pilih proyek, isi lokasi dan tanggal harga.
+1. Buka Informasi Umum, pilih Project Baru atau Impor Project, lalu lengkapi Nama Pekerjaan, MA, Sub MA, Unit Kerja, Tahun, dan Pagu Anggaran. Tombol Lanjut terkunci sampai seluruh isian valid.
 2. Tambah lingkup pekerjaan atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → • dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
 3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
 4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK sesuai kebutuhan secara terpisah.
@@ -173,10 +173,23 @@ Pada Informasi Umum, tombol **Lanjut → Quantity Pekerjaan** tersedia pada bagi
 Build statis memberi penanda versi deterministik pada nama CSS dan seluruh modul JavaScript, termasuk dependensi dan worker pencarian. HTML menunjuk ke aset ber-versi; `dist/build-info.json` mencatat ID build dan pemetaan nama file. Jalur aset lama tetap tersedia selama perpindahan publikasi. Jika browser masih menampilkan HTML sebelumnya, buka `/?v=<buildId>#project` pada situs untuk mengambil HTML terbaru. Jangan menghapus data situs/localStorage karena proyek disimpan di sana.
 
 
-## Koreksi Informasi Umum dan aksi Project
+## Informasi Umum — pilihan Project dan blangko wajib
 
-Bagian atas aplikasi menyediakan **Buat Project** (ikon ADD/plus) dan **Impor Project** (ikon IMPORT/panah). Buat Project membuka form nama project baru; dialog yang sama menyediakan pemilihan project tersimpan dan impor cadangan JSON. Project baru dan hasil impor dibuka pada Informasi Umum. Impor tetap membuat project terpisah dan tidak menimpa project lama.
+Saat membuka **Informasi Umum**, pengguna melihat dua pilihan **Project Baru** dan **Impor Project**. Project tersimpan yang sudah diberi nama tetap dapat dibuka dari pilihan project tersimpan. Ikon Project Baru dan Impor memakai gaya garis hijau seperti ikon sidebar, tanpa latar gradasi.
 
-Informasi Umum hanya menampilkan enam isian: nama project, lokasi, pemberi tugas, tahun, koordinat, dan tanggal harga. Panel project aktif, tombol kembali, judul panel identitas, indikator biaya/pajak pada panel, isian biaya umum dan pajak, jenis dokumen, pengaturan DPP beserta catatan, dan seluruh kartu ringkasan di halaman ini dihapus sesuai koreksi bernomor. Nilai biaya/pajak/jenis dokumen yang sudah tersimpan tetap dipertahankan dalam perhitungan, cadangan, dan cetakan; yang dihapus adalah kontrol tampilannya. Default project baru tetap mengikuti konfigurasi aplikasi.
+Project Baru membuka blangko kosong tanpa mengisi nama atau tahun otomatis. Form memiliki enam isian wajib:
 
-Hanya ada satu tombol **Lanjut → Quantity Pekerjaan**, ditempatkan di kanan bawah setelah isian identitas. Tidak ada tombol Lanjut di atas atau panel penjelas tambahan. Aksi membuat/impor project tidak lagi membuka pencarian AHS.
+1. Nama Pekerjaan
+2. MA (teks, mempertahankan nol di depan)
+3. Sub MA (blangko tersendiri)
+4. Unit Kerja
+5. Tahun (4 digit, minimal 1900)
+6. Pagu Anggaran (rupiah, lebih dari 0, maksimal 10^15)
+
+Tombol **Lanjut → Quantity Pekerjaan** berada di kanan bawah dan benar-benar `disabled` selama ada isian kosong, hanya spasi, tahun tidak valid, atau pagu tidak positif. Status tombol diperbarui saat pengguna mengetik. Handler Lanjut memeriksa kembali isian sebelum berpindah halaman. Enter pada form tidak melewati validasi atau memuat ulang aplikasi.
+
+Impor cadangan JSON membuka form dengan data impor. Data baru ini disimpan pada kolom `ma`, `subMa`, `workUnit`, dan `budget` bersama nama/tahun, serta ikut pada backup dan keluaran RAB/rekap. Cadangan lama tetap dapat diimpor; isian tambahan yang belum ada dibiarkan kosong sehingga Lanjut terkunci sampai pengguna melengkapinya. Data lama seperti AHS, Quantity, harga, lokasi, dan pajak tetap dipertahankan. Pagu adalah informasi anggaran dan tidak otomatis mengubah nilai pekerjaan.
+
+Unit Kerja saat ini dapat diketik dan telah disiapkan sebagai input daftar saran (`datalist`). Sumber daftar adalah `public/data/work-units.json`, sementara berisi `[]` sambil menunggu data pengguna. Isi file itu dengan array nama Unit Kerja (string), lalu build/deploy ulang. Tidak ada nama Unit Kerja contoh yang diperlakukan sebagai data resmi.
+
+Navigasi kembali ke Informasi Umum menampilkan pilihan awal; membuka project tersimpan tidak menghapus atau mengosongkan isinya. Menekan Project Baru membuat blangko baru dan mempertahankan project yang telah diisi.
