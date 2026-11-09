@@ -200,3 +200,7 @@ Navigasi kembali ke Informasi Umum menampilkan pilihan awal; membuka project ter
 ## Asisten AI dalam aplikasi
 
 Menu **Asisten AI** menyediakan analisis proyek aktif dan pertanyaan lanjutan di dalam website. Backend Node memakai OpenAI Responses API, menghitung ulang hasil RAB, dan menyimpan API key hanya pada environment server. GitHub Pages tetap statis; fitur memerlukan hosting API terpisah sebelum bisa menghasilkan jawaban nyata. Lihat [panduan hosting dan aktivasi](docs/hosting-ai.md) untuk Render, akun OpenAI API, konfigurasi secret, batas penggunaan dan pemecahan masalah. Tidak ada perubahan RAB otomatis dari jawaban AI.
+
+### Kalkulator Quantity
+
+Halaman Quantity tidak lagi menampilkan bar pengelolaan proyek. Tombol ekspor/cetak memakai ikon dan tombol **+ Hitung Volume** membuka pilihan pekerjaan/bentuk di sebelah tabel dimensi yang mengikuti rumus. Pekerjaan pertama dapat dibuat langsung dari kalkulator tanpa mengisi RAB terlebih dahulu. Hasil dapat disimpan sebagai rincian dan diterapkan ke volume RAB; pekerjaan baru tetap memerlukan pemilihan AHS. Bentuk yang tidak cocok dengan satuan pekerjaan ditolak. Membatalkan dialog tidak mengubah data.
