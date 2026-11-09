@@ -196,3 +196,7 @@ Unit Kerja menggunakan dropdown dari `public/data/work-units.json`: Unit Wilayah
 Kategori Program disimpan pada `programCategory` dan ikut pada cadangan, CSV RAB/rekap, serta kepala dokumen cetak. Project lama yang belum memiliki kategori tetap dapat dibuka, tetapi Lanjut menunggu kategori dipilih. MA/Sub MA berbentuk input teks numerik maksimal 4 karakter, tetap mempertahankan nol depan dan berdampingan dalam setengah kolom, termasuk pada ponsel.
 
 Navigasi kembali ke Informasi Umum menampilkan pilihan awal; membuka project tersimpan tidak menghapus atau mengosongkan isinya. Menekan Project Baru membuat blangko baru dan mempertahankan project yang telah diisi.
+
+## Asisten AI dalam aplikasi
+
+Menu **Asisten AI** menyediakan analisis proyek aktif dan pertanyaan lanjutan di dalam website. Backend Node memakai OpenAI Responses API, menghitung ulang hasil RAB, dan menyimpan API key hanya pada environment server. GitHub Pages tetap statis; fitur memerlukan hosting API terpisah sebelum bisa menghasilkan jawaban nyata. Lihat [panduan hosting dan aktivasi](docs/hosting-ai.md) untuk Render, akun OpenAI API, konfigurasi secret, batas penggunaan dan pemecahan masalah. Tidak ada perubahan RAB otomatis dari jawaban AI.
