@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "documents": [
+    {
+      "docId": "iv",
+      "pages": 1689,
+      "sourceSha256": "6111af6a137041c631cfab47b468a59321b7b5b6baa0c72bc7b0edc11f96954a",
+      "detectedTables": 1273,
+      "catalogTables": 1273,
+      "tocCodes": 1544,
+      "tocRows": 1555,
+      "duplicateSourceCodes": [
+        "A.3.03.1",
+        "A.3.03.6a",
+        "A.3.08.3.4.b.6.a",
+        "A.3.08.3.4.b.6.b",
+        "A.3.08.3.4.b.6.c",
+        "A.3.08.3.4.b.6.d",
+        "A.3.08.3.4.b.6.e",
+        "A.3.08.3.4.b.6.f"
+      ],
+      "tocRepresented": 1544,
+      "missingTocCodes": [],
+      "statuses": {
+        "verified": 10,
+        "extracted": 1064,
+        "review": 199,
+        "reference": 340
+      }
+    },
+    {
+      "docId": "v",
+      "pages": 3125,
+      "sourceSha256": "1403fe2c6cd342c2ee27652546f6221c1836eb9d0b6dc12218d4b0b11271db14",
+      "detectedTables": 1100,
+      "catalogTables": 1100,
+      "tocCodes": 1132,
+      "tocRows": 1132,
+      "duplicateSourceCodes": [],
+      "tocRepresented": 1132,
+      "missingTocCodes": [],
+      "statuses": {
+        "extracted": 1018,
+        "review": 82,
+        "reference": 38
+      }
+    },
+    {
+      "docId": "vi",
+      "pages": 1563,
+      "sourceSha256": "2220fb0f2ba1702b725ca215b4feaed9ef250c50841e0f60dfa7897cdd70a7fb",
+      "detectedTables": 2817,
+      "catalogTables": 2817,
+      "tocCodes": 2816,
+      "tocRows": 2841,
+      "duplicateSourceCodes": [
+        "5.1.1.12.10",
+        "5.1.1.12.11",
+        "5.1.1.12.12"
+      ],
+      "tocRepresented": 2816,
+      "missingTocCodes": [],
+      "statuses": {
+        "verified": 7,
+        "extracted": 2758,
+        "review": 52,
+        "reference": 68
+      }
+    }
+  ],
+  "totalEntries": 5637,
+  "statuses": {
+    "verified": 18,
+    "extracted": 4840,
+    "review": 333,
+    "reference": 446
+  }
+}
