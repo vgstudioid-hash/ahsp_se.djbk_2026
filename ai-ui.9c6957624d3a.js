@@ -1,4 +1,4 @@
-import { calculateProject } from './rab-core.bc7b39a8fdaf.js';
+import { calculateProject } from './rab-core.9c6957624d3a.js';
 const sessions=new Map();
 let connection={url:'',token:''};
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,7 +15,7 @@ export function mountAssistant(root,getProject){
   try{endpoint=new URL(connection.url||'api/analysis',location.href);if(endpoint.protocol!=='https:'&&!(endpoint.protocol==='http:'&&['localhost','127.0.0.1'].includes(endpoint.hostname)))throw Error();}catch{status.textContent='Alamat layanan AI harus HTTPS.';return;}
   if(!connection.token){status.textContent='Koneksi AI belum diaktifkan. Isi alamat layanan dan token akses dari pengelola pada Pengaturan koneksi AI.';return;}
   if(state.messages.length>=20){status.textContent='Bersihkan percakapan untuk memulai analisis baru.';return;}
-  const snapshot=structuredClone(getProject());
+  const snapshot=structuredClone(getProject());delete snapshot.smkkDrafts;
   state.busy=true;state.messages.push({role:'user',content:question});mountAssistant(root,getProject);
   try{
    const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+connection.token},body:JSON.stringify({project:snapshot,messages:state.messages}),signal:AbortSignal.timeout(65000),credentials:'omit'});
