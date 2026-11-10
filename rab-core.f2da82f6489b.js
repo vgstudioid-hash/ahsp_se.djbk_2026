@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.438e25d6f227.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.f2da82f6489b.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -115,6 +115,7 @@ export function importRates(text, project) {
 }
 export function validateProject(p) {
   if (!p || typeof p !== 'object' || !Array.isArray(p.items) || !Array.isArray(p.smkk) || p.items.length > 1000 || p.smkk.length > 1000) throw Error('Data proyek tidak valid.');
+  if(p.items.reduce((n,i)=>n+(Array.isArray(i.quantityRows)?i.quantityRows.reduce((sum,r)=>sum+(typeof r.image==='string'?r.image.length:0),0):0),0)>2000000)throw Error('Total gambar proyek maksimal 2 MB.');
   for (const field of ['name', 'location', 'owner', 'date']) if (typeof p[field] !== 'string' || p[field].length > 1000) throw Error('Identitas proyek tidak valid.');
   for (const field of ['overhead', 'tax']) if (nonnegative(p[field]) > 100) throw Error('Persentase harus 0–100.');
   if (!p.rates || typeof p.rates !== 'object' || Array.isArray(p.rates)) throw Error('Harga dasar tidak valid.');

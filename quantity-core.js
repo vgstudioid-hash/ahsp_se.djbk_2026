@@ -36,7 +36,9 @@ export function validateQuantityRows(rows) {
   const shape=quantityShapes[row.shape];
   if(!shape||typeof row.label!=='string'||row.label.length>1000||!Object.hasOwn(metric,row.dimensionUnit)||![1,-1].includes(row.sign))throw Error('Rincian Quantity tidak valid.');
   const dimensions={};for(const [key] of shape.fields)dimensions[key]=num(row.dimensions?.[key]);
-  return {shape:row.shape,label:row.label,dimensionUnit:row.dimensionUnit,sign:row.sign,multiplier:num(row.multiplier),dimensions};
+  if(row.groupId!=null&&(typeof row.groupId!=='string'||row.groupId.length>100))throw Error('Kelompok perhitungan tidak valid.');
+  if(row.image!=null&&(typeof row.image!=='string'||row.image.length>400000||!/^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(row.image)))throw Error('Gambar ilustrasi tidak valid.');
+  return {...(row.groupId?{groupId:row.groupId}:{}),...(row.image?{image:row.image}:{}),shape:row.shape,label:row.label,dimensionUnit:row.dimensionUnit,sign:row.sign,multiplier:num(row.multiplier),dimensions};
  });
 }
 export function quantityRowValue(row) {
