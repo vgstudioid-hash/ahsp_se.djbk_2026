@@ -99,7 +99,7 @@ test('Scope recap uses level-1 boundaries, preserves ungrouped work and duplicat
  const work=n=>({...structuredClone(p.items[0]),id:'work'+n,volume:n,wbsLevel:2,components:[{group:'Tenaga kerja',name:'Pekerja',unit:'OH',coefficient:1}]});
  const heading=id=>({id,code:'',title:'LINGKUP SAMA',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});
  p.items=[work(1),heading('scopeA'),work(2),{...heading('sub'),wbsLevel:2},heading('scopeB'),{...work(3),wbsLevel:3}];p.rates={[rateKey(p.items[0],p.items[0].components[0])]:100};
- const r=summarizeScopes(p);assert.deepEqual(r.scopes.map(s=>s.amount),[110,220,330]);assert.deepEqual(r.scopes.map(s=>s.count),[1,1,1]);assert.deepEqual(r.scopes.map(s=>s.number),['—','A','B']);assert.equal(r.scopes[0].id,null);assert.equal(r.scopes[1].title,r.scopes[2].title);assert.notEqual(r.scopes[1].id,r.scopes[2].id);assert.equal(r.subtotal,660);assert.equal(r.smkk,20);assert.equal(r.tax,68);assert.equal(r.total,748);assert.equal(r.scopes.reduce((n,s)=>n+s.amount,0),calculateProject(p).subtotal);
+ const r=summarizeScopes(p);assert.deepEqual(r.scopes.map(s=>s.amount),[110,220,330,20]);assert.deepEqual(r.scopes.map(s=>s.count),[1,1,1,1]);assert.deepEqual(r.scopes.map(s=>s.number),['—','A','B','C']);assert.equal(r.scopes[0].id,null);assert.equal(r.scopes[1].title,r.scopes[2].title);assert.notEqual(r.scopes[1].id,r.scopes[2].id);assert.equal(r.subtotal,660);assert.equal(r.smkk,20);assert.equal(r.tax,68);assert.equal(r.total,748);assert.equal(r.scopes.reduce((n,s)=>n+s.amount,0),calculateProject(p).beforeTax);
 });
 test('Scope recap reports partial prices, unlinked work and empty scopes without inventing totals',async()=>{
  const {summarizeScopes}=await import('../rab-core.js');const p=fixture();p.items.unshift({id:'h',code:'',title:'LINGKUP A',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});p.items.push({id:'empty',code:'',title:'LINGKUP B',group:'Lingkup',unit:'',volume:0,components:[],heading:true,wbsLevel:1});const r=summarizeScopes(p);assert.equal(r.scopes[0].incomplete,true);assert.equal(r.scopes[0].missing,2);assert.equal(r.scopes[1].count,0);assert.equal(r.scopes[1].amount,0);assert.equal(r.incomplete,true);
@@ -129,4 +129,12 @@ test('Program category and four-digit account codes validate and survive backup 
  const p={...fixture(),ma:'0012',subMa:'0034',workUnit:units[0],programCategory:'Investasi',year:'2026',budget:1000000};assert.deepEqual(projectInformationErrors(p,units),{});assert.equal(validateProject(p).programCategory,'Investasi');assert.equal(validateProject(p).ma,'0012');
  for(const code of ['123','12345','12ab'])assert(projectInformationErrors({...p,ma:code},units).ma);
  assert(projectInformationErrors({...p,programCategory:''},units).programCategory);assert(projectInformationErrors({...p,workUnit:'Tidak terdaftar'},units).workUnit);assert.throws(()=>validateProject({...p,programCategory:'Lainnya'}));
+});
+
+test('SMKK is one fixed level-1 scope without mutating project rows or adding overhead/tax twice',async()=>{
+ const {summarizeScopes,smkkScope}=await import('../rab-core.js');const p=fixture();p.items[0].wbsLevel=2;p.overhead=15;p.tax=12;p.taxScheme='dpp11of12';p.smkk=[{id:'s1',name:'APD',unit:'set',volume:2,price:100}];
+ const before=JSON.stringify(p),base=calculateProject(p),first=summarizeScopes(p),second=summarizeScopes(p);
+ assert.equal(JSON.stringify(p),before);assert.equal(first.scopes.filter(s=>s.kind==='smkk').length,1);assert.equal(second.scopes.filter(s=>s.kind==='smkk').length,1);assert.equal(smkkScope(p).wbsLevel,1);assert.equal(first.scopes.at(-1).title,'BIAYA PENERAPAN SMKK');assert.equal(first.scopes.at(-1).amount,200);assert.equal(first.scopeSubtotal,base.subtotal+200);assert.equal(first.total,base.total);assert.equal(first.tax,base.tax);
+ const draft={...p,smkk:[]};assert.equal(summarizeScopes(draft).scopes.at(-1).amount,0);assert.equal(summarizeScopes(draft).scopes.at(-1).number,'A');
+ const restored=validateProject(p);assert.equal(restored.smkk.length,1);assert.equal(summarizeScopes(restored).scopes.filter(s=>s.kind==='smkk').length,1);
 });

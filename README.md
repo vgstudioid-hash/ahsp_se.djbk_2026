@@ -20,7 +20,7 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 1. Buka Informasi Umum, pilih Project Baru atau Impor Project, lalu lengkapi Nama Pekerjaan, MA, Sub MA, Unit Kerja, Tahun, dan Pagu Anggaran. Tombol Lanjut terkunci sampai seluruh isian valid.
 2. Tambah lingkup pekerjaan atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → • dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
 3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
-4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK sesuai kebutuhan secara terpisah.
+4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK pada lingkup otomatis level 1 di tabel RAB.
 5. Tinjau biaya umum/keuntungan dan persentase pajak efektif sesuai proyek, lalu ekspor CSV, cadangan JSON, atau cetak/simpan PDF.
 
 Lembar RAB mengikuti tujuh kolom: **NO / WBS, URAIAN PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN**. Uraian dan keterangan dapat diketik langsung. Satuan dan harga satuan berasal dari AHS pilihan, sehingga mengganti AHS perlu diikuti pemeriksaan volume. Pemilihan AHS mempertahankan uraian, volume, WBS, dan keterangan pengguna. Tombol panah memindahkan urutan baris. Judul WBS tidak dihitung sebagai pekerjaan. Baris yang belum terhubung ke AHS membuat hasil berstatus DRAF. Format tujuh kolom dan keterangan yang sama digunakan pada CSV, cetak/PDF, serta cadangan JSON.
@@ -174,12 +174,12 @@ Sidebar aplikasi dan Pustaka mengikuti urutan:
 
 Rekapitulasi RAB menjumlahkan nilai pekerjaan di bawah setiap baris WBS tingkat 1 hingga lingkup berikutnya. Lingkup dengan nama sama tetap terpisah menurut posisinya. Pekerjaan sebelum lingkup pertama ditampilkan sebagai **Belum dikelompokkan ke lingkup** agar nilainya tetap masuk total. Subjudul WBS tingkat 2–4 tidak dihitung sebagai biaya atau lingkup baru. Lingkup kosong ditandai belum memiliki pekerjaan.
 
-Jumlah lingkup sudah mencakup biaya umum/keuntungan AHS. SMKK dan pajak ditambahkan satu kali pada tingkat proyek; total akhir konsisten dengan Lembar RAB. Harga atau volume yang belum lengkap ditandai parsial/DRAF, tanpa menyembunyikan jumlah terhitung. Perubahan AHS, harga dasar, volume, dan Quantity langsung tercermin saat halaman rekap dibuka. Rekap dapat diekspor CSV atau dicetak/PDF. Rekap sumber daya tetap tersedia melalui tombol pada halaman HSD, tanpa menambah item sidebar. Navigasi bidang dan penanda Pustaka tersedia di tab dalam halaman Pustaka.
+Jumlah lingkup sudah mencakup biaya umum/keuntungan AHS. SMKK tampil sebagai lingkup level 1 tersendiri dan termasuk jumlah seluruh lingkup; pajak ditambahkan satu kali pada tingkat proyek. Total akhir konsisten dengan Lembar RAB. Harga atau volume yang belum lengkap ditandai parsial/DRAF, tanpa menyembunyikan jumlah terhitung. Perubahan AHS, harga dasar, volume, dan Quantity langsung tercermin saat halaman rekap dibuka. Rekap dapat diekspor CSV atau dicetak/PDF. Rekap sumber daya tetap tersedia melalui tombol pada halaman HSD, tanpa menambah item sidebar. Navigasi bidang dan penanda Pustaka tersedia di tab dalam halaman Pustaka.
 
 
 ## Lanjut dan default DPP 11/12
 
-Pada Informasi Umum tersedia tombol **Lanjut → Quantity Pekerjaan** untuk menyimpan pengaturan dan membuka tahap Quantity. Keterangan awal pajak 0% dan kalimat tentang harga contoh yang dicoret pada koreksi pengguna telah dihapus dari form.
+Pada Informasi Umum tersedia tombol **Lanjut → Rencana Anggaran Biaya (RAB)** untuk menyimpan pengaturan dan membuka Lembar RAB. Keterangan awal pajak 0% dan kalimat tentang harga contoh yang dicoret pada koreksi pengguna telah dihapus dari form.
 
 Proyek baru otomatis memakai skema DPP nilai lain **11/12** dengan tarif **PPN 12%**. Faktor DPP ditampilkan hanya-baca. Perhitungan: `nilai sebelum pajak = pekerjaan + SMKK`; `DPP = 11/12 × nilai sebelum pajak`; `PPN = 12% × DPP`; `total RAB = nilai sebelum pajak + PPN`. Masing-masing tahap dibulatkan dua desimal rupiah. Contoh nilai Rp1.200.000 menghasilkan DPP Rp1.100.000, PPN Rp132.000, dan total Rp1.332.000.
 
@@ -188,7 +188,7 @@ Skema dan tarif tersimpan dalam cadangan JSON. Proyek lama tanpa skema DPP dibac
 
 ## Tombol Lanjut dan versi aset
 
-Pada Informasi Umum, tombol **Lanjut → Quantity Pekerjaan** tersedia pada bagian atas halaman serta di bawah form, di luar panel lipat. Menutup panel identitas tidak menyembunyikan kedua tombol.
+Pada Informasi Umum, satu tombol **Lanjut → Rencana Anggaran Biaya (RAB)** berada di kanan bawah form.
 
 Build statis memberi penanda versi deterministik pada nama CSS dan seluruh modul JavaScript, termasuk dependensi dan worker pencarian. HTML menunjuk ke aset ber-versi; `dist/build-info.json` mencatat ID build dan pemetaan nama file. Jalur aset lama tetap tersedia selama perpindahan publikasi. Jika browser masih menampilkan HTML sebelumnya, buka `/?v=<buildId>#project` pada situs untuk mengambil HTML terbaru. Jangan menghapus data situs/localStorage karena proyek disimpan di sana.
 
@@ -207,7 +207,7 @@ Project Baru membuka blangko kosong tanpa mengisi nama atau tahun otomatis. Form
 6. Tahun (4 digit, minimal 1900)
 7. Pagu Anggaran (rupiah, lebih dari 0, maksimal 10^15)
 
-Tombol **Lanjut → Quantity Pekerjaan** berada di kanan bawah dan benar-benar `disabled` selama ada isian kosong, hanya spasi, tahun tidak valid, atau pagu tidak positif. Status tombol diperbarui saat pengguna mengetik. Handler Lanjut memeriksa kembali isian sebelum berpindah halaman. Enter pada form tidak melewati validasi atau memuat ulang aplikasi.
+Tombol **Lanjut → Rencana Anggaran Biaya (RAB)** berada di kanan bawah dan benar-benar `disabled` selama ada isian kosong, hanya spasi, tahun tidak valid, atau pagu tidak positif. Status tombol diperbarui saat pengguna mengetik. Handler Lanjut memeriksa kembali isian sebelum berpindah halaman. Enter pada form tidak melewati validasi atau memuat ulang aplikasi.
 
 Impor cadangan JSON membuka form dengan data impor. Data baru ini disimpan pada kolom `ma`, `subMa`, `workUnit`, dan `budget` bersama nama/tahun, serta ikut pada backup dan keluaran RAB/rekap. Cadangan lama tetap dapat diimpor; isian tambahan yang belum ada dibiarkan kosong sehingga Lanjut terkunci sampai pengguna melengkapinya. Data lama seperti AHS, Quantity, harga, lokasi, dan pajak tetap dipertahankan. Pagu adalah informasi anggaran dan tidak otomatis mengubah nilai pekerjaan.
 
@@ -234,3 +234,9 @@ Pagu Anggaran memakai pemisah ribuan titik saat diketik dan tetap disimpan sebag
 ### Palet antarmuka
 
 Tema layar memakai Forest `#1F3B2F`, Sage `#83906E`, Sand `#C7B58B`, dan Ivory `#F4F0E6`. Token serta penyesuaian bersama terdapat di `theme.css`, dimuat setelah stylesheet halaman RAB dan Pustaka. Sidebar/tombol utama menggunakan Forest, pilihan aktif/tombol sekunder Sand, aksen Sage dan latar Ivory. Teks, outline fokus keyboard, ukuran kontrol sentuh dan tampilan ponsel disesuaikan untuk keterbacaan. Aturan tema dibatasi ke layar agar lembar cetak tetap netral.
+
+### Navigasi RAB, kontrol WBS dan lingkup SMKK
+
+Tombol Lanjut pada Informasi Umum membuka RAB setelah validasi semua isian. Nomor WBS level 1 rata kiri, level 2 tengah, serta level 3–4 kanan. Ikon geser kiri/kanan mengganti dropdown level, dibatasi level 1–4; AHS, volume dan nilai biaya baris tetap dipertahankan. Kotak uraian/keterangan dapat diisi, berukuran tetap, dan menggulirkan teks panjang tanpa resize. Menu sisip memakai Lingkup Pekerjaan, Uraian Pekerjaan dan Sub Uraian Pekerjaan.
+
+**BIAYA PENERAPAN SMKK** diproyeksikan otomatis sebagai lingkup level 1 terakhir pada RAB dan rekap, termasuk saat belum ada komponen. Penyimpanan tetap menggunakan `project.smkk`, sehingga proyek lama tidak membuat biaya atau lingkup tersimpan ganda. Jumlah seluruh lingkup pada rekap adalah pekerjaan + SMKK (sebelum pajak); biaya umum tidak diterapkan lagi pada SMKK. Komponen SMKK dapat ditambah, diedit dan dihapus langsung pada tabel RAB. CSV dan cetak memakai lingkup yang sama.
