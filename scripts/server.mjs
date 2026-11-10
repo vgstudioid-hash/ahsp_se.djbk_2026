@@ -20,7 +20,7 @@ const server = http.createServer(async (req, res) => {
     const roots = relative.startsWith('documents/') || relative.startsWith('data/') ? [resolve(root, 'public')] : [root];
     const base = roots[0];
     const path = resolve(base, relative);
-    if (!path.startsWith(base + sep) || relative.split('/').some(x => x.startsWith('.')) || (!relative.startsWith('documents/') && !relative.startsWith('data/') && !['quantity-illustration.js','quantity-calculator.js','ai-ui.js','index.html','references.html','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','rab.css','styles.css','search-worker.js','search-core.js','favicon.svg'].includes(relative))) { res.writeHead(404).end(); return; }
+    if (!path.startsWith(base + sep) || relative.split('/').some(x => x.startsWith('.')) || (!relative.startsWith('documents/') && !relative.startsWith('data/') && !['quantity-illustration.js','quantity-calculator.js','ai-ui.js','index.html','references.html','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','rab.css','styles.css','theme.css','search-worker.js','search-core.js','favicon.svg'].includes(relative))) { res.writeHead(404).end(); return; }
     const meta = await stat(path);
     if (!meta.isFile()) { res.writeHead(404).end(); return; }
     const headers = { 'Content-Type': types[extname(path)] || 'application/octet-stream', 'X-Content-Type-Options': 'nosniff', 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache' };
