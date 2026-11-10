@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 const root = new URL('../', import.meta.url);
 await rm(new URL('dist/', root), { recursive: true, force: true });
 await mkdir(new URL('dist/', root), { recursive: true });
-const assets=['quantity-calculator.js','ai-ui.js','styles.css','rab.css','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','search-worker.js','search-core.js'];
+const assets=['quantity-illustration.js','quantity-calculator.js','ai-ui.js','styles.css','rab.css','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','search-worker.js','search-core.js'];
 const sources=new Map(await Promise.all(assets.map(async file=>[file,await readFile(new URL(file,root),'utf8')])));
 // All module URLs change together, including transitive dependencies and workers.
 const unitsMetadata=await readFile(new URL('public/data/work-units.json',root),'utf8');

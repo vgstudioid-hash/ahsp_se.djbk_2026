@@ -30,3 +30,11 @@ test('Linked quantities restore their computed volume and correct RAB cost, whil
  const restored=validateProject(p);assert.equal(restored.items[0].volume,12);assert.equal(calculateProject(restored).total,1320000);assert.equal(restored.items[0].quantityRows[0].dimensions.l,4);
  item.quantityLinked=false;item.volume=7;const manual=validateProject(p);assert.equal(manual.items[0].volume,7);assert.equal(manual.items[0].quantityRows.length,1);
 });
+
+test('Quantity segment groups and raster illustrations survive validation and reject unsafe image formats',()=>{
+ const row={...newQuantityRow('rectangle'),groupId:'calculation-1',image:'data:image/png;base64,aGVsbG8='};
+ const [clean]=validateQuantityRows([row]);assert.equal(clean.groupId,'calculation-1');assert.equal(clean.image,row.image);
+ assert.throws(()=>validateQuantityRows([{...row,image:'data:image/svg+xml;base64,aGVsbG8='}]));
+ assert.throws(()=>validateQuantityRows([{...row,image:'https://untrusted.example/image.png'}]));
+ assert.throws(()=>validateQuantityRows([{...row,image:'data:image/png;base64,'+'A'.repeat(400001)}]));
+});

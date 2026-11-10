@@ -204,3 +204,9 @@ Menu **Asisten AI** menyediakan analisis proyek aktif dan pertanyaan lanjutan di
 ### Kalkulator Quantity
 
 Halaman Quantity tidak lagi menampilkan bar pengelolaan proyek. Tombol ekspor/cetak memakai ikon dan tombol **+ Hitung Volume** membuka pilihan pekerjaan/bentuk di sebelah tabel dimensi yang mengikuti rumus. Pekerjaan pertama dapat dibuat langsung dari kalkulator tanpa mengisi RAB terlebih dahulu. Hasil dapat disimpan sebagai rincian dan diterapkan ke volume RAB; pekerjaan baru tetap memerlukan pemilihan AHS. Bentuk yang tidak cocok dengan satuan pekerjaan ditolak. Membatalkan dialog tidak mengubah data.
+
+### Segmen dan ilustrasi Quantity
+
+Pagu Anggaran memakai pemisah ribuan titik saat diketik dan tetap disimpan sebagai angka. Satuan pekerjaan baru ditentukan oleh jenis hitung dan dikunci. Kalkulator menampilkan ilustrasi bentuk otomatis; unggah PNG/JPEG/WebP maksimal 2 MB untuk menggantinya. Gambar diperkecil hingga 900 piksel dan disimpan bersama segmen (maksimal 2 MB gambar tersimpan per proyek). Cadangan JSON mempertahankan gambar dan kelompok segmen.
+
+**Add Segmen** menambah baris dalam perhitungan yang sama, **Edit** membuka kembali nilai sebelumnya, **Delete** menghapus segmen, dan **Delete perhitungan** menghapus seluruh kelompok tanpa menghapus pekerjaan RAB. Segmen pengurang tetap tersedia untuk bukaan/lubang; contoh luas 50 m² dikurangi bukaan 6 m² menghasilkan 44 m². Setelah terhubung, perubahan segmen memperbarui volume RAB otomatis. Menghapus rincian terakhir pada pekerjaan terhubung mengosongkan volume menjadi nol dan memutus tautan.
