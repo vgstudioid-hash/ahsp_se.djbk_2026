@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.13740475653e.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.60c2473acbea.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -35,6 +35,11 @@ export function calculateProject(project) {
   return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total: moneyRound(beforeTax + tax), missing: missingKeys.size, incomplete };
 }
 
+// SMKK is projected as a fixed level-1 scope; stored costs remain in project.smkk.
+export function smkkScope(project,result=calculateProject(project)){
+ const number=wbsNumbers([...project.items,{wbsLevel:1,heading:true}]).at(-1);
+ return {id:'__smkk__',kind:'smkk',wbsLevel:1,number,title:'BIAYA PENERAPAN SMKK',count:project.smkk.length,amount:result.smkk,incomplete:false,missing:0};
+}
 // Scope boundaries follow level-1 WBS rows in sheet order, not duplicate titles.
 export function summarizeScopes(project) {
   const result=calculateProject(project),numbers=wbsNumbers(project.items),scopes=[];
@@ -52,7 +57,7 @@ export function summarizeScopes(project) {
     current.incomplete ||= row.missing>0||row.unlinked||item.volume<=0||!item.title.trim();
     row.breakdown.filter(c=>c.price==null).forEach(c=>current.missingKeys.add(c.key));
   });
-  return {...result,scopes:scopes.map(({missingKeys,...scope})=>({...scope,missing:missingKeys.size}))};
+  return {...result,scopeSubtotal:result.beforeTax,scopes:[...scopes.map(({missingKeys,...scope})=>({...scope,missing:missingKeys.size})),smkkScope(project,result)]};
 }
 export function resources(project) {
   const map = new Map();
