@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.60c2473acbea.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.bc7b39a8fdaf.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -32,7 +32,9 @@ export function calculateProject(project) {
   const missingKeys = new Set(items.flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
   const work = items.filter(i => !i.item.heading);
   const incomplete = !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
-  return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total: moneyRound(beforeTax + tax), missing: missingKeys.size, incomplete };
+  const total=moneyRound(beforeTax+tax);
+  const roundedTotal=Math.round(total/100)*100;
+  return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total, roundedTotal, missing: missingKeys.size, incomplete };
 }
 
 // SMKK is projected as a fixed level-1 scope; stored costs remain in project.smkk.
