@@ -21,26 +21,32 @@ export function calculateItem(item, rates, overhead) {
   const unitPrice = moneyRound(direct + margin);
   return { breakdown, missing, unlinked: !item.heading && !item.components.length, direct, margin, unitPrice, amount: item.heading ? 0 : moneyRound(unitPrice * item.volume) };
 }
+export function smkkRowResult(row){
+ const enabled=row.enabled!==false,missing=enabled&&(row.volume==null||row.price==null||!row.unit.trim());
+ return {enabled,missing,amount:enabled&&!missing?moneyRound(row.volume*row.price):0};
+}
 export function calculateProject(project) {
   const items = project.items.map(item => ({ item, ...calculateItem(item, project.rates, project.overhead) }));
   const subtotal = moneyRound(items.reduce((n, r) => n + r.amount, 0));
-  const smkk = moneyRound(project.smkk.reduce((n, r) => n + moneyRound(r.volume * r.price), 0));
+  const smkkResults=project.smkk.map(smkkRowResult);
+  const smkk=moneyRound(smkkResults.reduce((n,r)=>n+r.amount,0));
+  const smkkMissing=smkkResults.filter(r=>r.missing).length;
   const beforeTax = moneyRound(subtotal + smkk);
   const taxFactor = project.taxScheme === 'dpp11of12' ? 11/12 : 1;
   const taxBase = moneyRound(beforeTax * taxFactor);
   const tax = moneyRound(taxBase * project.tax / 100);
   const missingKeys = new Set(items.flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
   const work = items.filter(i => !i.item.heading);
-  const incomplete = !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
+  const incomplete = smkkMissing>0 || !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
   const total=moneyRound(beforeTax+tax);
   const roundedTotal=Math.round(total/100)*100;
-  return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total, roundedTotal, missing: missingKeys.size, incomplete };
+  return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total, roundedTotal, smkkMissing, missing: missingKeys.size, incomplete };
 }
 
 // SMKK is projected as a fixed level-1 scope; stored costs remain in project.smkk.
 export function smkkScope(project,result=calculateProject(project)){
  const number=wbsNumbers([...project.items,{wbsLevel:1,heading:true}]).at(-1);
- return {id:'__smkk__',kind:'smkk',wbsLevel:1,number,title:'BIAYA PENERAPAN SMKK',count:project.smkk.length,amount:result.smkk,incomplete:false,missing:0};
+ return {id:'__smkk__',kind:'smkk',wbsLevel:1,number,title:'BIAYA PENERAPAN SMKK',count:project.smkk.filter(r=>r.enabled!==false).length,amount:result.smkk,incomplete:result.smkkMissing>0,missing:result.smkkMissing};
 }
 // Scope boundaries follow level-1 WBS rows in sheet order, not duplicate titles.
 export function summarizeScopes(project) {
@@ -153,17 +159,32 @@ export function validateProject(p) {
       return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient), code: String(c.code||'').slice(0,100) };
     }) };
   });
-  const smkk = p.smkk.map(r => {
-    if (typeof r.name !== 'string' || !r.name.trim() || r.name.length > 1000 || typeof r.unit !== 'string' || r.unit.length > 50) throw Error('Rincian SMKK tidak valid.');
-    return { id: crypto.randomUUID(), name: r.name, unit: r.unit, volume: nonnegative(r.volume), price: nonnegative(r.price) };
-  });
+  const validateSmkk=rows=>{
+   if(!Array.isArray(rows)||rows.length>1000)throw Error('Maksimal 1000 komponen SMKK.');
+   return rows.map(r=>{
+    if(!r||typeof r.name!=='string'||!r.name.trim()||r.name.length>1000||typeof r.unit!=='string'||r.unit.length>50)throw Error('Rincian SMKK tidak valid.');
+    const meta={};for(const field of ['sourceKey','sourceTable','sourceCode','sourceGroup','sourceGroupTitle','quantityText','quantityBasis','acceptance','evidence'])if(r[field]!=null){if(typeof r[field]!=='string'||r[field].length>6000)throw Error('Rujukan SMKK tidak valid.');meta[field]=r[field];}
+    if(r.sourcePage!=null){if(!Number.isInteger(r.sourcePage)||r.sourcePage<1||r.sourcePage>74)throw Error('Halaman SMKK tidak valid.');meta.sourcePage=r.sourcePage;}
+    if(r.sourceGroup!=null&&!/^[1-9]$/.test(r.sourceGroup))throw Error('Kelompok SMKK tidak valid.');
+    for(const field of ['enabled','manualVolume','manualPrice','manualEnabled'])if(r[field]!=null){if(typeof r[field]!=='boolean')throw Error('Pengaturan komponen SMKK tidak valid.');meta[field]=r[field];}
+    return {id:crypto.randomUUID(),name:r.name,unit:r.unit,volume:r.volume==null?null:nonnegative(r.volume),price:r.price==null?null:nonnegative(r.price),...meta,group:r.sourceGroup||''};
+   });
+  };
+  const smkk=validateSmkk(p.smkk),smkkRisk=p.smkkRisk||'',smkkSettings={},smkkDrafts={};
+  if(!['','Kecil','Sedang','Tinggi'].includes(smkkRisk))throw Error('Kategori risiko SMKK tidak valid.');
+  if(p.smkkSettings!=null&&(typeof p.smkkSettings!=='object'||Array.isArray(p.smkkSettings)))throw Error('Parameter SMKK tidak valid.');
+  for(const field of ['workers','months','insuredValue']){const value=p.smkkSettings?.[field];smkkSettings[field]=value==null?null:nonnegative(value);}
+  if(smkkSettings.workers!=null&&(!Number.isInteger(smkkSettings.workers)||smkkSettings.workers>1000000)||smkkSettings.months>1200)throw Error('Parameter tenaga/durasi SMKK melewati batas.');
+  if(p.smkkSettings?.highway!=null&&typeof p.smkkSettings.highway!=='boolean')throw Error('Jenis pekerjaan SMKK tidak valid.');smkkSettings.highway=Boolean(p.smkkSettings?.highway);
+  if(p.smkkDrafts!=null&&(typeof p.smkkDrafts!=='object'||Array.isArray(p.smkkDrafts)))throw Error('Cadangan kategori SMKK tidak valid.');
+  for(const [risk,rows]of Object.entries(p.smkkDrafts||{})){if(!['manual','Kecil','Sedang','Tinggi'].includes(risk))throw Error('Kategori cadangan SMKK tidak valid.');smkkDrafts[risk]=validateSmkk(rows);}
   for(const field of ['year','coordinates','documentType'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>500))throw Error('Identitas form tidak valid.');
   for(const field of ['ma','subMa','workUnit'])if(p[field]!=null&&(typeof p[field]!=='string'||p[field].length>1000))throw Error('Informasi pekerjaan tidak valid.');
   const budget=p.budget==null||p.budget===''?null:nonnegative(p.budget);
   if(p.programCategory!=null&&!['','Beban','Investasi'].includes(p.programCategory))throw Error('Kategori Program tidak valid.');
   if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
   if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
-  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk };
+  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
 }
 
 export function projectInformationErrors(p,allowedUnits=null) {

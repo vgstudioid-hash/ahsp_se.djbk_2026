@@ -5,3 +5,5 @@ import './quantity.test.mjs';
 import './ai.test.mjs';
 
 import './catalog.test.mjs';
+
+import './smkk.test.mjs';

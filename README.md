@@ -244,3 +244,18 @@ Tombol Lanjut pada Informasi Umum membuka RAB setelah validasi semua isian. Nomo
 ### Ringkasan biaya dan pembulatan ratusan
 
 Ringkasan pada RAB, rekapitulasi, CSV dan cetak memuat lima baris: **Jumlah**, **DPP 11/12**, **PPN 12%**, **Jumlah Total**, dan **Dibulatkan**. Pada skema standar, Jumlah = seluruh uraian pekerjaan + lingkup SMKK; DPP = 11/12 × Jumlah; PPN = 12% × DPP; Jumlah Total = Jumlah + PPN. Dibulatkan adalah ratusan terdekat (`Math.round(JumlahTotal / 100) * 100`), dengan pecahan tepat 50 dibulatkan ke atas. Nilai sebelum pembulatan tetap ditampilkan dan dipertahankan pada hasil perhitungan. Pengaturan tarif/skema lama atau pajak nol tetap dihormati dan label mengikuti nilai aktual proyek.
+
+### SMKK otomatis menurut Tabel III.1 dan III.2
+
+Pada lingkup **BIAYA PENERAPAN SMKK**, pilih **Kecil**, **Sedang**, atau **Tinggi**. Kecil memakai Tabel III.1 (halaman fisik PDF 30–38); Sedang dan Tinggi memakai Tabel III.2 (halaman 39–73). **Tinggi dipetakan ke “Besar” pada dokumen**, bukan tabel baru.
+
+Template memuat 45 komponen untuk III.1 dan 140 komponen untuk III.2, lengkap dengan sembilan kelompok, satuan, ketentuan kuantitas, keberterimaan, bukti dukung dan tautan halaman sumber. Kode konsultan yang berulang di sumber dipertahankan sebagai komponen berbeda. Satuan ear muff pada III.2 tidak dicantumkan pada sumber, sehingga tetap kosong untuk dilengkapi, bukan ditebak. Kelompok Asuransi dan Konsultasi pada risiko Kecil tetap tampil sebagai kelompok tidak wajib tanpa komponen/harga rekaan.
+
+- Isi jumlah pekerja dan durasi bulan untuk menghitung kebutuhan personel serta frekuensi kegiatan. Personel KK/K3 mengikuti rasio 60 pekerja untuk Kecil, 50 untuk Sedang dan 40 untuk Besar, dengan pembulatan jumlah personel ke atas. Tambahan Ahli utama/madya untuk risiko Besar dengan >100 pekerja dipisahkan dari Ahli muda agar harga keduanya dapat diisi berbeda.
+- Nilai pekerjaan yang diasuransikan digunakan untuk nilai awal premi CAR minimal 0,1%; nilai ini bukan otomatis Pagu Anggaran dan bukan hasil RAB yang dipakai berulang secara sirkular. Premi dapat diedit.
+- Centang Jalan Bebas Hambatan jika ketentuan khusus tabel berlaku pada proyek. Komponen bersyarat ditampilkan dan dapat diaktifkan melalui **Gunakan** berdasarkan kebutuhan/IBPRP; komponen nonaktif tidak menambah biaya.
+- Nama, satuan, kuantitas dan harga dapat diubah; perubahan kuantitas/harga manual tidak ditimpa saat parameter otomatis diperbarui. Kebutuhan yang belum dapat ditentukan tetap kosong. Harga setempat tidak tersedia di tabel, sehingga tidak diisi otomatis (kecuali perhitungan awal minimum CAR dari nilai yang dimasukkan).
+- Nilai kosong dibedakan dari nol yang diisi secara eksplisit. Komponen aktif dengan harga, kuantitas atau satuan kosong membuat RAB/rekap berstatus DRAF. Jumlah SMKK tetap merupakan jumlah biaya komponen aktif tanpa biaya umum tambahan.
+- Edit dan penghapusan komponen disimpan terpisah per kategori. Pilihan **Tanpa preset / rincian manual** memulihkan rincian manual sebelumnya; pergantian risiko tidak menumpuk komponen atau menimpa rincian kategori lain. Semua profil ikut cadangan JSON, sementara hanya profil aktif dikirim untuk analisis AI.
+
+Berkas template: `public/data/smkk-templates.json`. Bangun ulang dari PDF sumber dengan `python3 scripts/prepare-smkk.py` (memerlukan PyMuPDF). Perhitungan otomatis di `smkk-core.js` memakai aturan terpilih yang dijelaskan pada tiap komponen; ketentuan sumber tetap tersedia untuk pemeriksaan dan penyesuaian kondisi proyek.

@@ -1,0 +1,2846 @@
+{
+  "schemaVersion": 1,
+  "sourceDocument": "iii",
+  "pdfSha256": "48e6a02a7d2dacd9d837dc91e7843e5c8eac76b718eff9596f91ed6f7f3ab956",
+  "tables": {
+    "small": {
+      "sourceTable": "III.1",
+      "startPage": 30,
+      "endPage": 38,
+      "groups": {
+        "1": "Penyiapan dokumen Penerapan SMKK:",
+        "2": "Sosialisasi, Promosi dan Pelatihan:",
+        "3": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+        "4": "Asuransi: (komponen ini tidak bersifat wajib pada pekerjaan konstruksi dengan tingkat Risiko Keselamatan Konstruksi kecil)",
+        "5": "Personel Keselamatan Konstruksi:",
+        "6": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan:",
+        "7": "Rambu dan Perlengkapan Lalu Lintas:",
+        "8": "Konsultasi dengan Ahli terkait Keselamatan Konstruksi: (komponen ini tidak bersifat wajib pada pekerjaan konstruksi dengan tingkat",
+        "9": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:"
+      },
+      "rows": [
+        {
+          "key": "1.a",
+          "group": "1",
+          "groupTitle": "Penyiapan dokumen Penerapan SMKK:",
+          "name": "Pembuatan dokumen SMKK (RKK dan RMPK)",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen (3 buah) dan minimal satu kali pemutakhirannya (3 buah) (1 buah terdiri dari dokumen RKK dan RMPK).",
+          "acceptance": "1. Dokumen yang disahkan oleh GS/Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) 2. Pada saat PCM dibahas, dievaluasi, dan disepakati oleh pelaksana, pengawas, dan pemilik pekerjaan.",
+          "evidence": "Dokumen RKK dan RMPK",
+          "page": 30,
+          "pages": [
+            30
+          ],
+          "sourceCode": "1.a"
+        },
+        {
+          "key": "1.b",
+          "group": "1",
+          "groupTitle": "Penyiapan dokumen Penerapan SMKK:",
+          "name": "Pembuatan prosedur dan instruksi kerja",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen minimal 1 buah yang terdiri dari minimal 4 prosedur yaitu prosedur inspeksi, prosedur tanggap darurat, prosedur APD/APK, prosedur komunikasi (1 buah terdiri dari minimal 4 prosedur).",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) dan pimpinan UKK",
+          "evidence": "Dokumen prosedur dan instruksi kerja",
+          "page": 30,
+          "pages": [
+            30
+          ],
+          "sourceCode": "1.b"
+        },
+        {
+          "key": "1.c",
+          "group": "1",
+          "groupTitle": "Penyiapan dokumen Penerapan SMKK:",
+          "name": "Penyusunan pelaporan penerapan SMKK",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen pelaporan minimal 3 buah, (1 buah terdiri dari laporan harian, mingguan, bulanan, akhir).",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana KEBERTERIMAAN pekerjaan di lapangan), pemilik pekerjaan, pengawas pekerjaan, dan pimpinan UKK.",
+          "evidence": "Dokumen Laporan Bulanan BUKTI DUKUNG",
+          "page": 30,
+          "pages": [
+            30,
+            31
+          ],
+          "sourceCode": "1.c"
+        },
+        {
+          "key": "2.a",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Kegiatan Induksi Keselamatan Konstruksi (Safety Induction)",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah (1 kali) pelaksanaan kegiatan maksimal 25 orang",
+          "acceptance": "Form Induction ditandatangani oleh pimpinan UKK dan Penerima Induction",
+          "evidence": "Formulir induction, daftar hadir, dokumentasi foto/video, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 31,
+          "pages": [
+            31
+          ],
+          "sourceCode": "2.a"
+        },
+        {
+          "key": "2.b",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Kegiatan Pengarahan Keselamatan Konstruksi (Safety Briefing)",
+          "unit": "Buah",
+          "quantityText": "minimal 1 buah (1 kali) per bulan dan maksimal 25 orang untuk setiap kegiatan",
+          "acceptance": "Disahkan oleh pimpinan UKK",
+          "evidence": "Laporan, daftar hadir, dokumentasi, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 31,
+          "pages": [
+            31
+          ],
+          "sourceCode": "2.b"
+        },
+        {
+          "key": "2.c",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Kegiatan Pertemuan keselamatan (Safety Talk dan/atau Tool Box Meeting)",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan maksimal 3 buah (3 kali) per bulan",
+          "acceptance": "Disahkan oleh pimpinan UKK",
+          "evidence": "Laporan, daftar hadir, dokumentasi foto/video, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 31,
+          "pages": [
+            31
+          ],
+          "sourceCode": "2.c"
+        },
+        {
+          "key": "2.d.1",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Kegiatan perilaku berbasis keselamatan (budaya berkeselamatan konstruksi)",
+          "unit": "Buah",
+          "quantityText": "Pelatihan/ Awareness: APD, APK, perambuan, 5R. Pelaksanaan minimal 1 buah (1 kali) untuk seluruh pekerja)",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) atau pimpinan UKK",
+          "evidence": "Laporan/tanda bukti ikut pelatihan, daftar hadir, dokumentasi foto/video, modul sosialisasi, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 32,
+          "pages": [
+            32
+          ],
+          "sourceCode": "2.d.1"
+        },
+        {
+          "key": "2.e",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Kegiatan Simulasi Keselamatan Konstruksi (tanggap darurat)",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali) selama masa pelaksanaan untuk seluruh pekerja",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) atau pimpinan UKK",
+          "evidence": "Laporan/tanda bukti pelaksanaan simulasi, daftar hadir, dokumentasi foto/video, modul sosialisasi, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 32,
+          "pages": [
+            32
+          ],
+          "sourceCode": "2.e"
+        },
+        {
+          "key": "2.f",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Spanduk (banner) ukuran 200 cm x 75 cm",
+          "unit": "buah",
+          "quantityText": "Minimal 1 buah (spanduk utamakan keselamatan konstruksi)",
+          "acceptance": "Ukuran 200 cm x 75 cm",
+          "evidence": "Kuitansi pembelian dan dokumentasi spanduk",
+          "page": 32,
+          "pages": [
+            32
+          ],
+          "sourceCode": "2.f"
+        },
+        {
+          "key": "2.g",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Poster/leaflet/brosur",
+          "unit": "buah",
+          "quantityText": "Minimal 2 buah (5R, APD) terpasang di lokasi kantor / lapangan",
+          "acceptance": "Ukuran minimal A3 (untuk poster / leaflet)",
+          "evidence": "Kuitansi pembelian dan dokumentasi poster/leaflet/brosur",
+          "page": 32,
+          "pages": [
+            32
+          ],
+          "sourceCode": "2.g"
+        },
+        {
+          "key": "2.h",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi dan Pelatihan:",
+          "name": "Papan Informasi Keselamatan konstruksi",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah di lokasi pekerjaan",
+          "acceptance": "Ukuran minimal 4,8 m2",
+          "evidence": "Kuitansi pembelian dan dokumentasi papan informasi keselamatan konstruksi",
+          "page": 32,
+          "pages": [
+            32
+          ],
+          "sourceCode": "2.h"
+        },
+        {
+          "key": "3.a.1",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pembatas area (restricted area)",
+          "unit": "Buah",
+          "quantityText": "minimal 2 buah (2 rol)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian dan dokumentasi penggunaan",
+          "page": 33,
+          "pages": [
+            33
+          ],
+          "sourceCode": "3.a.1"
+        },
+        {
+          "key": "3.a.2",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Perlengkapan keselamatan bencana (Disaster Safety Equipment)",
+          "unit": "Buah",
+          "quantityText": "minimal 1 buah (1 set)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian, dokumentasi keberadaan, dan penempatan peralatannya",
+          "page": 33,
+          "pages": [
+            33
+          ],
+          "sourceCode": "3.a.2"
+        },
+        {
+          "key": "3.b.1",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Helm pelindung (safety helmet)",
+          "unit": "Buah",
+          "quantityText": "Helm tersedia minimal untuk pekerja, maksimal 25 buah",
+          "acceptance": "Kualitas helm sesuai dengan SNI ISO 3873- 2012",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan",
+          "page": 33,
+          "pages": [
+            33
+          ],
+          "sourceCode": "3.b.1"
+        },
+        {
+          "key": "3.b.2",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Penyumbat telinga (ear plug)",
+          "unit": "Buah",
+          "quantityText": "maksimal 25 buah (25 pasang)",
+          "acceptance": "Mampu menahan suara bising",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan",
+          "page": 33,
+          "pages": [
+            33
+          ],
+          "sourceCode": "3.b.2"
+        },
+        {
+          "key": "3.b.3",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sarung tangan (safety gloves)",
+          "unit": "Buah",
+          "quantityText": "sarung tangan kain minimal sejumlah pekerja, maksimal 25 buah (25 pasang)",
+          "acceptance": "Mampu melindungi jari tangan pada: - Pekerjaan pengangkatan - Pekerjaan pembesian - pekerjaan panas - pekerjaan listrik - pekerjaan dengan KEBERTERIMAAN bahan kimia, dll",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan BUKTI DUKUNG",
+          "page": 33,
+          "pages": [
+            33,
+            34
+          ],
+          "sourceCode": "3.b.3"
+        },
+        {
+          "key": "3.b.4",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sepatu keselamatan (rubber safety boots)",
+          "unit": "Buah",
+          "quantityText": "maksimal 25 buah (25 pasang)",
+          "acceptance": "Mampu melindungi kaki dari potensi bahaya mikrobiologi, iritasi bahan kimia, dan benturan benda keras",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan",
+          "page": 34,
+          "pages": [
+            34
+          ],
+          "sourceCode": "3.b.4"
+        },
+        {
+          "key": "3.b.5",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Rompi keselamatan (safety vest)",
+          "unit": "Buah",
+          "quantityText": "maksimal 25 buah",
+          "acceptance": "Terdapat 3 (tiga) garis reflector horizontal",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan",
+          "page": 34,
+          "pages": [
+            34
+          ],
+          "sourceCode": "3.b.5"
+        },
+        {
+          "key": "5.a",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas Keselamatan Konstruksi atau Petugas K3 Konstruksi",
+          "unit": "Org-Bln",
+          "quantityText": "penambahan 1 petugas KK/K3 Konstruksi setiap 60 pekerja",
+          "acceptance": "Mampu melaksanakan tugas sesuai dengan keterampilan yang tercantum dalam SKKNI Petugas K3 Konstruksi/Petugas Keselamatan Konstruksi",
+          "evidence": "Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi (LSP))",
+          "page": 34,
+          "pages": [
+            34
+          ],
+          "sourceCode": "5.a"
+        },
+        {
+          "key": "6.a",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan:",
+          "name": "Peralatan P3K (Kotak P3K, Alat pengukur suhu)",
+          "unit": "Buah",
+          "quantityText": "Sekurangnya terdapat 1 buah kotak tipe A untuk tenaga kerja kurang dari 26 orang",
+          "acceptance": "Kotak P3K terisi lengkap dan dapat digunakan dalam kondisi darurat.",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan, dan penggunaan",
+          "page": 35,
+          "pages": [
+            35
+          ],
+          "sourceCode": "6.a"
+        },
+        {
+          "key": "7.a",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu petunjuk",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah rambu titik kumpul evakuasi (muster point)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 35,
+          "pages": [
+            35
+          ],
+          "sourceCode": "7.a"
+        },
+        {
+          "key": "7.b",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu larangan",
+          "unit": "Buah",
+          "quantityText": "Minimal 2 buah rambu dilarang masuk dan 2 buah rambu dilarang merokok",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 35,
+          "pages": [
+            35
+          ],
+          "sourceCode": "7.b"
+        },
+        {
+          "key": "7.c",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu peringatan",
+          "unit": "Buah",
+          "quantityText": "Minimal1 buah bahaya listrik, 1 buah kejatuhan material, dan 1 buah jatuh dari ketinggian",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 35,
+          "pages": [
+            35
+          ],
+          "sourceCode": "7.c"
+        },
+        {
+          "key": "7.d",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu kewajiban",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah rambu kewajiban pemakaian APD",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 35,
+          "pages": [
+            35
+          ],
+          "sourceCode": "7.d"
+        },
+        {
+          "key": "7.e",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu informasi",
+          "unit": "Buah",
+          "quantityText": "Minimal 2 buah rambu APAR dan 2 rambu informasi K3",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan KEBERTERIMAAN",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan BUKTI DUKUNG",
+          "page": 35,
+          "pages": [
+            35,
+            36
+          ],
+          "sourceCode": "7.e"
+        },
+        {
+          "key": "7.f",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu pekerjaan sementara",
+          "unit": "Buah",
+          "quantityText": "Sekurangnya 2 buah rambu konstruksi di lokasi pekerjaan",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.f"
+        },
+        {
+          "key": "7.g",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Jalur Evakuasi (Petunjuk escape route)",
+          "unit": "Buah",
+          "quantityText": "Sekurangnya 3 buah rambu evakuasi",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.g"
+        },
+        {
+          "key": "7.h",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu putar (rotary lamp)",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah di keluar/masuk kendaraan proyek",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.h"
+        },
+        {
+          "key": "7.i",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu/alat penerangan sementara",
+          "unit": "Buah",
+          "quantityText": "Minimal terpasang 2 buah untuk pekerjaan yang memerlukan penerangan sementara",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.i"
+        },
+        {
+          "key": "7.j",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu darurat (emergency lamp)",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah di kantor lapangan",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan / penggunaan",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.j"
+        },
+        {
+          "key": "7.k",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Jembatan Sementara manajemen dan Keselamatan lalu lintas (Traffic management and safety)",
+          "unit": "Lumsum",
+          "quantityText": "Jumlah dan jenis disesuaikan tercantum pada spesifikasi",
+          "acceptance": "",
+          "evidence": "",
+          "page": 36,
+          "pages": [
+            36
+          ],
+          "sourceCode": "7.k"
+        },
+        {
+          "key": "9.a.1",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas A",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah (ukuran 5 kg)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun",
+          "evidence": "Kuitansi pembelian serta dokumentasi",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.a.1"
+        },
+        {
+          "key": "9.a.2",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas B",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "aan di lokasi pekerjaan",
+          "evidence": "penempatan dan penggunaan",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.a.2"
+        },
+        {
+          "key": "9.a.3",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas C",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.a.3"
+        },
+        {
+          "key": "9.a.4",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas D",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.a.4"
+        },
+        {
+          "key": "9.b",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Bendera K3",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan dan penggunaan",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.b"
+        },
+        {
+          "key": "9.c",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pembuatan Kartu Identitas Pekerja (KIP)",
+          "unit": "Buah",
+          "quantityText": "Maksimal 25 buah",
+          "acceptance": "Dibuktikan dengan tanda pengenal pekerja yang digunakan",
+          "evidence": "Kuitansi pembelian serta dokumentasi penempatan dan penggunaan",
+          "page": 37,
+          "pages": [
+            37
+          ],
+          "sourceCode": "9.c"
+        },
+        {
+          "key": "9.d",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Kegiatan Patroli Keselamatan Konstruksi",
+          "unit": "Buah",
+          "quantityText": "Minimal 3 buah (3 kali) selama masa pelaksanaan",
+          "acceptance": "Bukti hasil pemeriksaan penerapan keselamatan konstruksi yang disahkan oleh pimpinan UKK, pengawas pekerjaan, dan pemilik pekerjaan. KEBERTERIMAAN",
+          "evidence": "Laporan, daftar hadir, dan dokumentasi pelaksanaan BUKTI DUKUNG",
+          "page": 37,
+          "pages": [
+            37,
+            38
+          ],
+          "sourceCode": "9.d"
+        },
+        {
+          "key": "9.e.1",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 1 Lengkap",
+          "unit": "Buah",
+          "quantityText": "Pengujian dilakukan 3 kali (sebelum, sedang, dan setelah pelaksanaan pekerjaan) pada lokasi yang sama",
+          "acceptance": "Dibuktikan dengan hasil pengujian yang",
+          "evidence": "Laporan hasil uji dan kuitansi pembayaran",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.1"
+        },
+        {
+          "key": "9.e.2",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 2 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "dikeluarkan oleh instansi yang",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.2"
+        },
+        {
+          "key": "9.e.3",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 3 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "berwenang.",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.3"
+        },
+        {
+          "key": "9.e.4",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 4 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.4"
+        },
+        {
+          "key": "9.e.5",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Udara Ambien",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.5"
+        },
+        {
+          "key": "9.e.6",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Vibrasi Lingkungan untuk Kenyamanan dan Kesehatan",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.6"
+        },
+        {
+          "key": "9.e.7",
+          "group": "9",
+          "groupTitle": "Kegiatan dan peralatan terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Tingkat Getaran Kendaraan Bermotor",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 38,
+          "pages": [
+            38
+          ],
+          "sourceCode": "9.e.7"
+        }
+      ]
+    },
+    "mediumHigh": {
+      "sourceTable": "III.2",
+      "startPage": 39,
+      "endPage": 73,
+      "groups": {
+        "1": "Penyiapan Dokumen Penerapan SMKK:",
+        "2": "Sosialisasi, Promosi, dan Pelatihan:",
+        "3": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+        "4": "Asuransi:",
+        "5": "Personel Keselamatan Konstruksi:",
+        "6": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+        "7": "Rambu dan Perlengkapan Lalu Lintas:",
+        "8": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+        "9": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:"
+      },
+      "rows": [
+        {
+          "key": "1.a",
+          "group": "1",
+          "groupTitle": "Penyiapan Dokumen Penerapan SMKK:",
+          "name": "Pembuatan dokumen SMKK (RKK, RMPK, RKPPL, RMLLP)",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen (3 buah) dan minimal satu kali pemutakhirannya (3 buah) (1 buah terdiri dari dokumen RKK, RMPK, RKPPL dan RMLLP).",
+          "acceptance": "1. Dokumen yang disahkan oleh GS / Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) 2. Pada saat PCM dibahas, dievaluasi, dan disepakati oleh pelaksana, pengawas dan pemilik pekerjaan.",
+          "evidence": "Sesuai dengan Peraturan Menteri PUPR No. 10 Tahun 2021, sublampiran D, E, G, dan H. Sesuai dengan Peraturan Menteri PUPR No. 10 Tahun 2021, sublampiran D, E, G, dan H.",
+          "page": 39,
+          "pages": [
+            39
+          ],
+          "sourceCode": "1.a"
+        },
+        {
+          "key": "1.b",
+          "group": "1",
+          "groupTitle": "Penyiapan Dokumen Penerapan SMKK:",
+          "name": "Pembuatan Prosedur dan Instruksi Kerja",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen minimal 1 buah yang terdiri dari minimal 12 prosedur/IK yaitu prosedur inspeksi, prosedur tanggap darurat, prosedur APD/APK, prosedur komunikasi dan konsultansi, prosedur 5R, bekerja di ketinggian, penggunaan alat angkat angkut, prosedur audit, prosedur IBPRP, prosedur izin kerja, prosedur pemeriksaan material (1 buah terdiri dari minimal 12 prosedur).",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan), pengawas, dan pimpinan UKK Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan), pengawas, dan pimpinan UKK",
+          "evidence": "Dokumen mengacu pada Tabel 4-1 sublampiran D Peraturan Menteri PUPR No.10 Tahun 2021 yang disahkan oleh direktur dan Project Manager",
+          "page": 39,
+          "pages": [
+            39,
+            40
+          ],
+          "sourceCode": "1.b"
+        },
+        {
+          "key": "1.c",
+          "group": "1",
+          "groupTitle": "Penyiapan Dokumen Penerapan SMKK:",
+          "name": "Penyusunan pelaporan penerapan SMKK",
+          "unit": "Buah",
+          "quantityText": "Penggandaan dokumen pelaporan minimal 3 buah (1 buah terdiri dari laporan harian, mingguan, bulanan, akhir).",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan), pemilik pekerjaan, pengawas pekerjaan, dan pimpinan UKK.",
+          "evidence": "Form Laporan pada sublampiran I Peraturan Menteri PUPR No. 10 Tahun 2021: 1. Laporan harian ditandatangani oleh pengawas pekerjaan. 2. Laporan mingguan ditandatangani oleh Direksi Lapangan. 3. Laporan bulanan (Rangkap 3) merupakan kompilasi dari laporan harian dan mingguan ditandatangani oleh pemilik pekerjaan (Jumlah bulan pelaksanaan proyek).",
+          "page": 40,
+          "pages": [
+            40,
+            41
+          ],
+          "sourceCode": "1.c"
+        },
+        {
+          "key": "2.a",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Induksi Keselamatan Konstruksi (Safety Induction)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: Minimal 1 buah (1 kali) pelaksanaan kegiatan dengan maksimal 50 orang Risiko Besar: Minimal 1 buah pelaksanaan kegiatan dengan maksimal 100 orang",
+          "acceptance": "Form Induction ditandatangani oleh anggota UKK dan Penerima Induction",
+          "evidence": "Formulir induction, daftar hadir, dokumentasi foto/video, kuitansi honor instruktur, nota pembelian snack dan air kemasan. Formulir induction, daftar hadir, dokumentasi foto/video, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 41,
+          "pages": [
+            41
+          ],
+          "sourceCode": "2.a"
+        },
+        {
+          "key": "2.b",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Pengarahan Keselamatan Konstruksi (Safety Briefing)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah (1 kali) per bulan dan maksimal 25 orang untuk setiap kegiatan Risiko Besar: minimal 2 buah (2 kali) per bulan dan maksimal 50 orang untuk setiap kegiatan",
+          "acceptance": "Disahkan oleh pimpinan UKK atau Ahli Keselamatan Konstruksi atau Ahli K3 Konstruksi",
+          "evidence": "Laporan, daftar hadir, dokumentasi foto/video, nota pembelian snack dan air kemasan.",
+          "page": 41,
+          "pages": [
+            41
+          ],
+          "sourceCode": "2.b"
+        },
+        {
+          "key": "2.c",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Pertemuan keselamatan (Safety Talk)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: Pelaksanaan minimal 2 buah (2 kali) per bulan Risiko Besar: Pelaksanaan minimal 4 buah (4 kali) per bulan",
+          "acceptance": "Disahkan oleh pimpinan UKK atau Petugas Keselamatan Konstruksi atau yang memberi dan menerima hasil kegiatan Konstruksi atau yang memberi dan menerima hasil kegiatan",
+          "evidence": "Laporan, daftar hadir, dokumentasi foto/video, nota pembelian snack dan air kemasan. pembelian snack dan air kemasan.",
+          "page": 41,
+          "pages": [
+            41,
+            42
+          ],
+          "sourceCode": "2.c"
+        },
+        {
+          "key": "2.d",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Tool Box Meeting untuk pekerja",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 buah (2 kali) per bulan Risiko Besar: minimal 4 buah (4 kali) per bulan",
+          "acceptance": "Disahkan oleh pimpinan UKK dan Engineer",
+          "evidence": "Laporan, daftar hadir, dokumentasi foto/video, nota pembelian snack dan air kemasan.",
+          "page": 42,
+          "pages": [
+            42
+          ],
+          "sourceCode": "2.d"
+        },
+        {
+          "key": "2.e",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Rapat keselamatan konstruksi (Construction Safety Meeting)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 buah (2 kali) per bulan Risiko Besar: minimal 4 buah (4 kali) per bulan",
+          "acceptance": "Disahkan oleh pimpinan UKK atau Petugas Keselamatan Konstruksi",
+          "evidence": "Laporan, daftar hadir, dokumentasi foto/video, nota pembelian snack dan air kemasan.",
+          "page": 42,
+          "pages": [
+            42
+          ],
+          "sourceCode": "2.e"
+        },
+        {
+          "key": "2.f.1",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Bekerja di ketinggian",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali) untuk memastikan kompetensi pekerja di ketinggian",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 42,
+          "pages": [
+            42,
+            43
+          ],
+          "sourceCode": "2.f.1"
+        },
+        {
+          "key": "2.f.2",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Bekerja di lokasi dengan risiko jatuh ke dalam air",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali) untuk memastikan kemampuan pekerja dengan risiko jatuh dalam air",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 43,
+          "pages": [
+            43
+          ],
+          "sourceCode": "2.f.2"
+        },
+        {
+          "key": "2.f.3",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Penggunaan bahan kimia",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali) untuk pekerja pada lokasi dengan bahan kimia/berbahaya",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 43,
+          "pages": [
+            43
+          ],
+          "sourceCode": "2.f.3"
+        },
+        {
+          "key": "2.f.4",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Analisis Keselamatan Konstruksi (AKK)",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali)",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 43,
+          "pages": [
+            43
+          ],
+          "sourceCode": "2.f.4"
+        },
+        {
+          "key": "2.f.5",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan perilaku berbasis keselamatan (Budaya berkeselamatan konstruksi)",
+          "unit": "Buah",
+          "quantityText": "Pelatihan/ Awareness: APD, APK, perambuan, 5R. Pelaksanaan minimal 1 buah (1 kali) untuk seluruh pekerja)",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan) Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 44,
+          "pages": [
+            44
+          ],
+          "sourceCode": "2.f.5"
+        },
+        {
+          "key": "2.f.6",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegitatan P3K",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali)",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 44,
+          "pages": [
+            44
+          ],
+          "sourceCode": "2.f.6"
+        },
+        {
+          "key": "2.f.7",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "dll. (daftar pelatihan basic safety)",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali)",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul pelatihan, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 44,
+          "pages": [
+            44
+          ],
+          "sourceCode": "2.f.7"
+        },
+        {
+          "key": "2.g",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Sosialisasi/penyuluhan HIV/AIDS/pencegahan penyakit menular",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan maksimal 4 buah (4 kali) selama masa pelaksanaan untuk seluruh pekerja",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/surat keterangan bukti pelatihan, daftar hadir, dokumentasi foto/video, modul sosialisasi, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 44,
+          "pages": [
+            44,
+            45
+          ],
+          "sourceCode": "2.g"
+        },
+        {
+          "key": "2.h",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Kegiatan Simulasi Keselamatan Konstruksi (tanggap darurat)",
+          "unit": "Buah",
+          "quantityText": "Pelaksanaan minimal 1 buah (1 kali) selama masa pelaksanaan untuk seluruh pekerja",
+          "acceptance": "Disahkan oleh Project Manager (pimpinan tertinggi pelaksana pekerjaan di lapangan)",
+          "evidence": "Laporan/tanda bukti pelaksanaan simulasi, daftar hadir, dokumentasi foto/video, kuitansi honor instruktur, nota pembelian snack dan air kemasan.",
+          "page": 45,
+          "pages": [
+            45
+          ],
+          "sourceCode": "2.h"
+        },
+        {
+          "key": "2.i",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Spanduk (banner) ukuran 400 x 150 cm",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: Minimal 3 buah (spanduk utamakan keselamatan konstruksi, peringatan bahaya di tempat kerja, spanduk himbuan) Risiko Besar: Minimal 6 buah (spanduk utamakan keselamatan konstruksi, peringatan bahaya di tempat kerja, spanduk himbuan)",
+          "acceptance": "Ukuran 400 xm x 150 cm",
+          "evidence": "Kuitansi pembelian dan dokumentasi spanduk. Kuitansi pembelian dan dokumentasi spanduk.",
+          "page": 45,
+          "pages": [
+            45
+          ],
+          "sourceCode": "2.i"
+        },
+        {
+          "key": "2.j",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Spanduk di atas kepala (overhead banner)",
+          "unit": "Buah",
+          "quantityText": "Kecuali ditunjukkan lain dalam Gambar, untuk Jalan Bebas Hambatan minimal 8 buah",
+          "acceptance": "Ukuran disesuaikan dengan yang tercantum pada spesifikasi Ukuran disesuaikan dengan yang tercantum pada spesifikasi",
+          "evidence": "Kuitansi pembelian dan dokumentasi spanduk. Kuitansi pembelian dan dokumentasi spanduk.",
+          "page": 46,
+          "pages": [
+            46
+          ],
+          "sourceCode": "2.j"
+        },
+        {
+          "key": "2.k",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Poster/leaflet/brosur",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: Minimal 6 buah Risiko Besar: Minimal 10 buah (untuk Jalan Bebas Hambatan minimal 10.000 buah, kecuali ditunjukkan lain dalam Gambar)",
+          "acceptance": "Ukuran minimal A3 (untuk poster/leaflet)",
+          "evidence": "Kuitansi pembelian dan dokumentasi poster/leaflet/brosur",
+          "page": 46,
+          "pages": [
+            46
+          ],
+          "sourceCode": "2.k"
+        },
+        {
+          "key": "2.l",
+          "group": "2",
+          "groupTitle": "Sosialisasi, Promosi, dan Pelatihan:",
+          "name": "Papan Informasi Keselamatan konstruksi",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang/Besar: 2 buah di lokasi pekerjaan",
+          "acceptance": "Ukuran minimal 6 m2",
+          "evidence": "Kuitansi pembelian dan dokumentasi papan informasi keselamatan konstruksi",
+          "page": 46,
+          "pages": [
+            46
+          ],
+          "sourceCode": "2.l"
+        },
+        {
+          "key": "3.a.1",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Jaring pengaman (safety net)",
+          "unit": "Buah",
+          "quantityText": "Minimal sepanjang sisi terbuka pekerjaan, dengan tinggi area kerja lebih dari 2 m (1 buah = 1 m2)",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan 2. Spesifikasi dan kualitas disesuaikan dengan risiko pekerjaan",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan jaring pengaman (foto/video)",
+          "page": 46,
+          "pages": [
+            46,
+            47
+          ],
+          "sourceCode": "3.a.1"
+        },
+        {
+          "key": "3.a.2",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Tali keselamatan (safety/life line)",
+          "unit": "Buah",
+          "quantityText": "Minimal sepanjang area kerja pada ketinggian yang diperuntukkan maksimal 2 aktivitas pekerja",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan 2. Spesifikasi dan kualitas disesuaikan dengan risiko pekerjaan",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan tali keselamatan (foto/video)",
+          "page": 47,
+          "pages": [
+            47
+          ],
+          "sourceCode": "3.a.2"
+        },
+        {
+          "key": "3.a.3",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pagar pengaman penahan jatuh (guard railing)",
+          "unit": "Meter Panjang",
+          "quantityText": "Keliling area kerja terbuka dikalikan jumlah area kerja (1 buah = 1 m1)",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan 2. Spesifikasi dan kualitas disesuaikan dengan risiko pekerjaan",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan pagar pengaman penahan jatuh (foto/video)",
+          "page": 47,
+          "pages": [
+            47
+          ],
+          "sourceCode": "3.a.3"
+        },
+        {
+          "key": "3.a.4",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Lantai penahan jatuh (safety deck)",
+          "unit": "Meter Persegi",
+          "quantityText": "Sepanjang sisi terbuka area kerja pada ketinggian atau per 3 lantai untuk bangunan gedung atau 10 meter (1 buah = 1m2)",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan; 2. Terdiri dari rangka baja dan jaring; dan 3. Jaring menggunakan bahan yang kuat menahan benda jatuh.",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi pengaman lantai penahan jatuh (foto/video)",
+          "page": 47,
+          "pages": [
+            47,
+            48
+          ],
+          "sourceCode": "3.a.4"
+        },
+        {
+          "key": "3.a.5",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Tangga pekerja",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah area kerja dengan risiko ketinggian",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan; dan 2. Spesifikasi dan kualitas disesuaikan dengan risiko pekerjaan.",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan tangga pekerja (foto/video)",
+          "page": 48,
+          "pages": [
+            48
+          ],
+          "sourceCode": "3.a.5"
+        },
+        {
+          "key": "3.a.6",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pembatas area (restricted area)",
+          "unit": "Buah",
+          "quantityText": "panjang keliling area kerja yang dibatasi (1 buah = 1 rol)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penggunaan pembatas area (foto/video)",
+          "page": 48,
+          "pages": [
+            48
+          ],
+          "sourceCode": "3.a.6"
+        },
+        {
+          "key": "3.a.7",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Perlengkapan keselamatan bencana (Disaster Safety Equipment)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah (1 set) Risiko Besar: minimal 2 buah (2 set)",
+          "acceptance": "Dibuktikan dengan penempatan/ penggunaan di lokasi pekerjaan. Perlengkapan keselamatan bencana berupa ransel yang berisi obat P3K, senter, powerbank, kabel charger, peluit, jas hujan, alat komunikasi, dll.",
+          "evidence": "Kuitansi pembelian, dokumentasi keberadaan, dan penempatan peralatannya. Kuitansi pembelian, dokumentasi keberadaan, dan penempatan peralatannya.",
+          "page": 48,
+          "pages": [
+            48,
+            49
+          ],
+          "sourceCode": "3.a.7"
+        },
+        {
+          "key": "3.a.8",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Penutup lubang",
+          "unit": "Meter Persegi",
+          "quantityText": "Tergantung jumlah lubang",
+          "acceptance": "Bahan penutup lubang harus mampu menahan beban. Bahan penutup lubang harus mampu menahan beban.",
+          "evidence": "Gambar kerja, kuitansi pembelian, dokumentasi keberadaan (foto/video), dan penempatan peralatannya",
+          "page": 49,
+          "pages": [
+            49
+          ],
+          "sourceCode": "3.a.8"
+        },
+        {
+          "key": "3.a.9",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Shelter (pelindung tenaga kerja)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja peledakan",
+          "acceptance": "Bahan shelter harus mampu menahan daya ledak, pecahan batu (flying rock).",
+          "evidence": "Kuitansi pembelian, dokumentasi keberadaan, dan penempatan peralatannya",
+          "page": 49,
+          "pages": [
+            49
+          ],
+          "sourceCode": "3.a.9"
+        },
+        {
+          "key": "3.a.10",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pagar sementara pengaman jalan dengan spanduk Tinggi 2 meter (untuk pekerjaan jalan bebas hambatan)",
+          "unit": "Meter Panjang",
+          "quantityText": "Disesuaikan dengan kebutuhan",
+          "acceptance": "1. Gambar kerja disetujui oleh pengawas dan pemilik pekerjaan 2. Spesifikasi dan kualitas disesuaikan dengan risiko pekerjaan",
+          "evidence": "Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan pagar sementara (foto/video) Gambar kerja, kuitansi pembelian/sewa dan dokumentasi penggunaan pagar sementara (foto/video)",
+          "page": 49,
+          "pages": [
+            49
+          ],
+          "sourceCode": "3.a.10"
+        },
+        {
+          "key": "3.b.1",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Helm pelindung (safety helmet)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 25 buah dan maksimal 100 buah Risiko Besar: minimal 100 buah",
+          "acceptance": "Kualitas helm sesuai dengan SNI ISO 3873- 2012 dan standar warna helm sesuai dengan Peraturan Menteri PUPR No. 10 Tahun 2021 Sublampiran K.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video) penggunaan (foto/video)",
+          "page": 49,
+          "pages": [
+            49,
+            50
+          ],
+          "sourceCode": "3.b.1"
+        },
+        {
+          "key": "3.b.2",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pelindung mata (goggles, spectacles)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah pekerja pada pekerjaan yang berisiko pada mata",
+          "acceptance": "Harus bisa melindungi mata dari debu dan serbuk Harus bisa melindungi mata dari debu dan serbuk",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 50,
+          "pages": [
+            50
+          ],
+          "sourceCode": "3.b.2"
+        },
+        {
+          "key": "3.b.3",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Tameng muka (Face Shield)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang berisiko cidera pada wajah",
+          "acceptance": "Harus bisa melindungi mata dari percikan api dan sinar yang membahayakan mata",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 50,
+          "pages": [
+            50
+          ],
+          "sourceCode": "3.b.3"
+        },
+        {
+          "key": "3.b.4",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Perlengkapan selam (Breathing Apparatus)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang bekerja dalam air",
+          "acceptance": "Digunakan pada saat pekerjaan khusus yang membutuhkan penyelaman di dalam air.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 50,
+          "pages": [
+            50
+          ],
+          "sourceCode": "3.b.4"
+        },
+        {
+          "key": "3.b.5",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Penyumbat telinga (ear plug)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 25 buah (25 pasang) dan maksimal 50 buah (50 pasang) Risiko Besar: minimal 100 buah (100 pasang). Ear muff",
+          "acceptance": "Mampu menahan suara bising.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video) penggunaan (foto/video)",
+          "page": 50,
+          "pages": [
+            50,
+            51
+          ],
+          "sourceCode": "3.b.5"
+        },
+        {
+          "key": "3.b.6",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pelindung telinga (ear muff)",
+          "unit": "",
+          "quantityText": "Tergantung jumlah pekerja yang terpapar kebisingan lebih dari 85 db",
+          "acceptance": "Mampu menahan suara bising.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 51,
+          "pages": [
+            51
+          ],
+          "sourceCode": "3.b.6"
+        },
+        {
+          "key": "3.b.7",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pelindung pernafasan dan mulut (masker respirator/masker non- medis 3 ply)",
+          "unit": "Buah",
+          "quantityText": "Untuk masker non- medis 3 ply digunakan seluruh pekerja yang berisiko pada penyakit dan debu Masker respirator untuk tenaga kerja yang berisiko terpapar partikel berbahaya seperti bahan kimia",
+          "acceptance": "Mampu melindungi pernafasan dari partikel debu dan bakteri.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video) Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 51,
+          "pages": [
+            51
+          ],
+          "sourceCode": "3.b.7"
+        },
+        {
+          "key": "3.b.8",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sarung tangan kerja (safety gloves)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja dan masa pelaksanaan proyek",
+          "acceptance": "Mampu melindungi jari tangan pada pekerjaan pembesian, atau pekerjaan dengan kontak bahan kimia.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 51,
+          "pages": [
+            51,
+            52
+          ],
+          "sourceCode": "3.b.8"
+        },
+        {
+          "key": "3.b.9",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sarung tangan karet/sarung tangan listrik",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang terpapar bahan kimia atau arus listrik rendah sampai menengah",
+          "acceptance": "Mampu melindungi tangan dari bahan kimia atau sengatan arus listrik. Mampu melindungi tangan dari bahan kimia atau sengatan arus listrik.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 52,
+          "pages": [
+            52
+          ],
+          "sourceCode": "3.b.9"
+        },
+        {
+          "key": "3.b.10",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sarung tangan las",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja pengelasan",
+          "acceptance": "Mampu melindungi tangan pada pekerjaan pengelasan.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 52,
+          "pages": [
+            52
+          ],
+          "sourceCode": "3.b.10"
+        },
+        {
+          "key": "3.b.11",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sepatu keselamatan (rubber safety boots)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 25 buah (25 pasang) dan maksimal 50 buah (50 pasang) Risiko Besar: minimal 100 buah (100 pasang)",
+          "acceptance": "Mampu melindungi kaki dari potensi bahaya mikrobiologi, dan iritasi bahan kimia.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video) Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 52,
+          "pages": [
+            52
+          ],
+          "sourceCode": "3.b.11"
+        },
+        {
+          "key": "3.b.12",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Sepatu keselamatan (toe cap)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang berisiko terhadap benturan benda terhadap ujung kaki",
+          "acceptance": "Mampu melindungi kaki dari benturan benda keras.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 52,
+          "pages": [
+            52,
+            53
+          ],
+          "sourceCode": "3.b.12"
+        },
+        {
+          "key": "3.b.13",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Penunjang seluruh tubuh (full body harness) (double lanyard + full absorber)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang bekerja di ketinggian",
+          "acceptance": "Sesuai dengan SNI yang berlaku.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 53,
+          "pages": [
+            53
+          ],
+          "sourceCode": "3.b.13"
+        },
+        {
+          "key": "3.b.14",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Pelindung jatuh perorangan (fall arrester)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang bekerja di ketinggian yang menggunakan tali dengan ketimggian minimal 10 m",
+          "acceptance": "Mampu melindungi bahaya jatuh dari ketinggian.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video) Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 53,
+          "pages": [
+            53
+          ],
+          "sourceCode": "3.b.14"
+        },
+        {
+          "key": "3.b.15",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Jaket pelampung (life vest)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang berhubungan dengan air/pekerjaan dengan risiko jatuh ke dalam air",
+          "acceptance": "Mampu menyelamatkan dari bahaya tenggelam.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 53,
+          "pages": [
+            53
+          ],
+          "sourceCode": "3.b.15"
+        },
+        {
+          "key": "3.b.16",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Ban Pelampung (life buoy)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja yang berhubungan dengan air/pekerjaan dengan risiko jatuh ke dalam air",
+          "acceptance": "Mampu menyelamatkan dari bahaya tenggelam.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 53,
+          "pages": [
+            53,
+            54
+          ],
+          "sourceCode": "3.b.16"
+        },
+        {
+          "key": "3.b.17",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Rompi keselamatan (safety vest)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja dan tamu",
+          "acceptance": "Berwarna jingga dan terdapat 3 (tiga) garis reflector horizontal.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 54,
+          "pages": [
+            54
+          ],
+          "sourceCode": "3.b.17"
+        },
+        {
+          "key": "3.b.18",
+          "group": "3",
+          "groupTitle": "Alat Pelindung Kerja dan Alat Pelindung Diri:",
+          "name": "Celemek (apron/coveralls)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah tenaga kerja pengelasan",
+          "acceptance": "Berbahan kulit, mampu melindungi dari percikan bunga api las dan tidak mudah terbakar.",
+          "evidence": "Kuitansi pembelian, tanda terima ke pekerja, dan dokumentasi penggunaan (foto/video)",
+          "page": 54,
+          "pages": [
+            54
+          ],
+          "sourceCode": "3.b.18"
+        },
+        {
+          "key": "4.a",
+          "group": "4",
+          "groupTitle": "Asuransi:",
+          "name": "Asuransi (Construction All Risk/CAR)",
+          "unit": "Ls",
+          "quantityText": "Minimal 0,1% dari nilai pekerjaan yang diasuransikan Asuransi CAR yang mencakup: Pekerjaan itu sendiri dan asuransi pihak ketiga, sebagaimana yang disyaratkan dalam SSUK harus berlaku",
+          "acceptance": "Melindungi seluruh biaya dampak kecelakaan konstruksi yang terjadi termasuk kepada pihak ketiga.",
+          "evidence": "Bukti bayar premi dan polis Bukti bayar premi dan polis",
+          "page": 54,
+          "pages": [
+            54,
+            55
+          ],
+          "sourceCode": "4.a"
+        },
+        {
+          "key": "5.a",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Ahli K3 Konstruksi atau Ahli Keselamatan Konstruksi",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: anggota UKK 1 (satu) orang Ahli muda KK/K3 Konstruksi Risiko Besar: ● Penambahan 1 orang Ahli muda KK/K3 Konstruksi (pengalaman paling singkat 3 (tiga) tahun) ● Penambahan 1 Ahli utama/madya (pengalaman paling singkat 3 (tiga) tahun) KK/K3 Konstruksi untuk jumlah pekerja lebih dari 100 (seratus) orang.",
+          "acceptance": "Mampu melaksanakan tugas sesuai dengan keahlian yang tercantum dalam SKKNI ahli K3 konstruksi/Ahli keselamatan konstruksi.",
+          "evidence": "Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi/LSP) Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi/LSP)",
+          "page": 55,
+          "pages": [
+            55
+          ],
+          "sourceCode": "5.a"
+        },
+        {
+          "key": "5.b",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas Keselamatan Konstruksi atau Petugas K3 Konstruksi",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: 1 (satu) orang Petugas Keselamatan Konstruksi/Petugas K3 Konstruksi muda setiap 50 (lima puluh) orang pekerja (berlaku kelipatan) Risiko Besar: 1 (satu) orang Petugas Keselamatan Konstruksi/Petugas K3 Konstruksi setiap 40 (empat puluh) orang pekerja (berlaku kelipatan)",
+          "acceptance": "Mampu melaksanakan tugas sesuai dengan keterampilan yang tercantum dalam SKKNI Petugas K3 Konstruksi/Petugas keselamatan konstruksi. Mampu melaksanakan tugas sesuai dengan keterampilan yang tercantum dalam SKKNI Petugas K3 Konstruksi/Petugas keselamatan konstruksi.",
+          "evidence": "Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi (LSP) Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi (LSP)",
+          "page": 56,
+          "pages": [
+            56
+          ],
+          "sourceCode": "5.b"
+        },
+        {
+          "key": "5.c",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas tanggap darurat",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: minimal 1 orang Risiko Besar: minimal 2 orang",
+          "acceptance": "Mampu melaksanakan tugas kedaruratan seperti yang tercantum pada Peraturan Menteri PUPR No. 10 Tahun 2021 Sublampiran I.",
+          "evidence": "Sertifikat Pelatihan yang diterbitkan oleh lembaga pelatihan/instansi teknis terkait",
+          "page": 56,
+          "pages": [
+            56
+          ],
+          "sourceCode": "5.c"
+        },
+        {
+          "key": "5.d",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas pemadam kebakaran",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: minimal 1 orang Risiko Besar: minimal 2 orang",
+          "acceptance": "Mampu melaksanakan tugas kedaruratan seperti yang tercantum pada Peraturan Menteri PUPR No. 10 Tahun 2021 Sublampiran I.",
+          "evidence": "Sertifikat Pelatihan yang diterbitkan oleh lembaga pelatihan/instansi teknis terkait lembaga pelatihan/instansi teknis terkait",
+          "page": 56,
+          "pages": [
+            56,
+            57
+          ],
+          "sourceCode": "5.d"
+        },
+        {
+          "key": "5.e",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas P3K",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: minimal 1 orang Risiko Besar: minimal 2 orang",
+          "acceptance": "Mampu melaksanakan tugas kedaruratan seperti yang tercantum pada Peraturan Menteri PUPR No. 10 Tahun 2021 Sublampiran I.",
+          "evidence": "Sertifikat Pelatihan yang diterbitkan oleh lembaga pelatihan/instansi teknis terkait",
+          "page": 57,
+          "pages": [
+            57
+          ],
+          "sourceCode": "5.e"
+        },
+        {
+          "key": "5.f",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas pengatur lalu lintas/flagman",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: minimal 2 orang Risiko Besar: minimal 4 orang untuk Jalan Bebas Hambatan minimal 12 orang kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "Mampu melaksanakan pekerjaan sesuai dengan rencana manajemen lalu lintas. Mampu melaksanakan pekerjaan sesuai dengan rencana manajemen lalu lintas.",
+          "evidence": "SK dari Project Manager, Curriculum Vitae (CV)",
+          "page": 57,
+          "pages": [
+            57
+          ],
+          "sourceCode": "5.f"
+        },
+        {
+          "key": "5.g",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Tenaga medis dan/atau kesehatan (Dokter)",
+          "unit": "Org-Bln",
+          "quantityText": "Minimal memiliki MoU dengan pihak Rumah Sakit yang memiliki Dokter pemeriksa kesehatan tenaga kerja",
+          "acceptance": "Mampu memeriksa kesehatan tenaga kerja lebih lanjut.",
+          "evidence": "Sertifikat Dokter Pemeriksa Kesehatan Tenaga Kerja (diterbitkan oleh Kemnaker) dan MoU dengan fasilitas kesehatan",
+          "page": 57,
+          "pages": [
+            57,
+            58
+          ],
+          "sourceCode": "5.g"
+        },
+        {
+          "key": "5.h",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas paramedis",
+          "unit": "Org-Bln",
+          "quantityText": "Risiko Sedang: minimal 1 orang Risiko Besar: minimal 2 orang",
+          "acceptance": "Mampu memeriksa kesehatan tenaga kerja dan berkoordinasi dengan dokter.",
+          "evidence": "Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi/LSP) Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi/LSP)",
+          "page": 58,
+          "pages": [
+            58
+          ],
+          "sourceCode": "5.h"
+        },
+        {
+          "key": "5.i",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Petugas pengelolaan lingkungan/limbah B3",
+          "unit": "Org-Bln",
+          "quantityText": "minimal 1 orang (jika digunakan)",
+          "acceptance": "Mampu melaksanakan tugas kedaruratan seperti yang tercantum pada Peraturan Menteri PUPR No. 10 Tahun 2021 Sublampiran I dalam Tim penanganan pencemaran.",
+          "evidence": "Sertifikat Kompetensi Kerja (diterbitkan oleh Lembaga Sertifikasi Profesi/LSP)",
+          "page": 58,
+          "pages": [
+            58
+          ],
+          "sourceCode": "5.i"
+        },
+        {
+          "key": "5.j",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Koordinator Manajemen dan Keselamatan Lalu Lintas (KMKL)",
+          "unit": "Org-Bln",
+          "quantityText": "KMKL boleh dirangkap oleh Ahli KK/K3 Konstruksi untuk jalan non bebas hambatan Untuk Jalan Bebas Hambatan: KMKL harus tersedia 2 orang kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "Berkoordinasi dengan instansi yang berhubungan dengan manajemen lalu lintas (Dishub, Polantas, Ditjen Bina Marga, Kementerian PUPR, BPJT, dan/atau BUJT).",
+          "evidence": "SK dari Project Manager, Curriculum Vitae (CV)",
+          "page": 58,
+          "pages": [
+            58,
+            59
+          ],
+          "sourceCode": "5.j"
+        },
+        {
+          "key": "5.k",
+          "group": "5",
+          "groupTitle": "Personel Keselamatan Konstruksi:",
+          "name": "Staf Koordinator Manajemen dan Keselamatan Lalu Lintas (KMKL). (Khusus Jalan Bebas Hambatan)",
+          "unit": "Org-Bln",
+          "quantityText": "Staf KMKL harus tersedia untuk Jalan Bebas Hambatan, boleh dirangkap oleh Petugas KK/K3 Konstruksi untuk Jalan Non Bebas Hambatan",
+          "acceptance": "Berkoordinasi dengan instansi yang berhubungan dengan manajemen lalu lintas (Dishub, Polantas, Ditjen Bina Marga, Kementerian PUPR, BPJT, dan/atau BUJT).",
+          "evidence": "SK dari Project Manager, Curriculum Vitae (CV)",
+          "page": 59,
+          "pages": [
+            59
+          ],
+          "sourceCode": "5.k"
+        },
+        {
+          "key": "6.a",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Peralatan P3K (Kotak P3K, Alat pengukur suhu badan, tandu, obat luka, dll)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 buah Tipe A atau 1 buah Tipe B Risiko Besar: minimal 4 buah Tipe A, 2 buah Tipe B, atau 1 buah Tipe C",
+          "acceptance": "Kotak P3K terisi dan dapat digunakan dalam kondisi darurat.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan, penggunaan Kuitansi pembelian dan dokumentasi penempatan, penggunaan",
+          "page": 59,
+          "pages": [
+            59
+          ],
+          "sourceCode": "6.a"
+        },
+        {
+          "key": "6.b",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Ruang P3K/Klinik",
+          "unit": "Buah",
+          "quantityText": "Untuk tingkat risiko KK sedang dan besar minimal 1 buah",
+          "acceptance": "Ruang P3K beserta fasilitas di dalmnya berfungsi dan dapat digunakan dalam kondisi darurat.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 59,
+          "pages": [
+            59
+          ],
+          "sourceCode": "6.b"
+        },
+        {
+          "key": "6.c",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Peralatan Pengasapan (Obat dan mesin fogging)",
+          "unit": "Buah",
+          "quantityText": "minimal 1 buah",
+          "acceptance": "Alat berfungsi baik dan efektif. Alat berfungsi baik dan efektif.",
+          "evidence": "Kuitansi pembelian/bukti sewa dan dokumentasi penempatan/penggun aan",
+          "page": 60,
+          "pages": [
+            60
+          ],
+          "sourceCode": "6.c"
+        },
+        {
+          "key": "6.d",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Protokol kesehatan wabah menular",
+          "unit": "Ls",
+          "quantityText": "dikeluarkan atas peraturan pemerintah terhadap pengelolaan wabah penyakit",
+          "acceptance": "Dibuktikan dengan pemeriksaan kesehatan terkait wabah menular.",
+          "evidence": "Kuitansi pemeriksaan atau pembelian, serta MoU dengan fasilitas kesehatan Kuitansi pemeriksaan atau pembelian, serta MoU dengan fasilitas kesehatan",
+          "page": 60,
+          "pages": [
+            60
+          ],
+          "sourceCode": "6.d"
+        },
+        {
+          "key": "6.e",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Kegiatan Pemeriksaan psikotropika atau HIV",
+          "unit": "Buah",
+          "quantityText": "minimal semua pekerja apabila ada ketentuan dari pemerintah",
+          "acceptance": "Dibuktikan dengan pemeriksaan dan sosialisasi terkait psikotropika atau HIV.",
+          "evidence": "Hasil pemeriksaan dan kuitansi pembayaran atau MoU dengan fasilitas kesehatan",
+          "page": 60,
+          "pages": [
+            60
+          ],
+          "sourceCode": "6.e"
+        },
+        {
+          "key": "6.f",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Ambulans (sewa)",
+          "unit": "Buah",
+          "quantityText": "minimal 1 buah",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan.",
+          "evidence": "Bukti sewa atau MoU dengan fasilitas kesehatan Bukti sewa atau MoU dengan fasilitas kesehatan",
+          "page": 60,
+          "pages": [
+            60
+          ],
+          "sourceCode": "6.f"
+        },
+        {
+          "key": "6.g",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Tempat cuci tangan (wastafel)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah Risiko Besar: minimal 2 buah",
+          "acceptance": "Tersedia di lapangan dan berfungsi dengan baik. Tersedia di lapangan dan berfungsi dengan baik.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 60,
+          "pages": [
+            60
+          ],
+          "sourceCode": "6.g"
+        },
+        {
+          "key": "6.j",
+          "group": "6",
+          "groupTitle": "Fasilitas Sarana, Prasarana, dan Alat Kesehatan",
+          "name": "Handy transceiver (untuk pekerjaan Jalan Bebas Hambatan)",
+          "unit": "Buah",
+          "quantityText": "Minimal 12 buah, kecuali ditunjukkan lain dalam gambar",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 60,
+          "pages": [
+            60,
+            61
+          ],
+          "sourceCode": "6.j"
+        },
+        {
+          "key": "7.a",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu petunjuk",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: Minimal 1 buah rambu titik kumpul evakuasi (muster point) Risiko Besar: minimal 2 buah rambu titik kumpul evakuasi (muster point)",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 61,
+          "pages": [
+            61
+          ],
+          "sourceCode": "7.a"
+        },
+        {
+          "key": "7.b",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu larangan",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 3 buah rambu dilarang masuk dan 3 buah rambu dilarang merokok Risiko Besar: minimal 5 buah rambu dilarang masuk dan 5 buah rambu dilarang merokok",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 61,
+          "pages": [
+            61,
+            62
+          ],
+          "sourceCode": "7.b"
+        },
+        {
+          "key": "7.c",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu peringatan",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: masing-masing minimal 2 buah (bahaya listrik, kejatuhan material, jatuh dari ketinggian, kebakaran) Risiko Besar: masing-masing minimal 3 buah (bahaya listrik, kejatuhan material, jatuh dari ketinggian, kebakaran)",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 62,
+          "pages": [
+            62
+          ],
+          "sourceCode": "7.c"
+        },
+        {
+          "key": "7.d",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu kewajiban",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 buah Risiko Besar: minimal 4 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 62,
+          "pages": [
+            62
+          ],
+          "sourceCode": "7.d"
+        },
+        {
+          "key": "7.e",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu informasi",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: masing-masing minimal 2 buah (APAR, kotak P3K, informasi K3, limbah B3) Risiko Besar: masing-masing minimal 3 buah (APAR, kotak P3K, informasi K3, limbah B3, telepon darurat)",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan penempatan/ penggunaan",
+          "page": 62,
+          "pages": [
+            62,
+            63
+          ],
+          "sourceCode": "7.e"
+        },
+        {
+          "key": "7.f",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu pekerjaan sementara",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: masing-masing minimal 4 buah (rambu peringatan, rambu kurangi kecepatan, rambu informasi pekerjaan sementara) Risiko Besar: masing-masing minimal 8 buah (rambu peringatan, rambu kurangi kecepatan, rambu informasi pekerjaan sementara) untuk Jalan Bebas Hambatan minimal 96 buah kecuali ditunjukkan lain dalam Gambar.",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 63,
+          "pages": [
+            63,
+            64
+          ],
+          "sourceCode": "7.f"
+        },
+        {
+          "key": "7.g",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Jalur evakuasi (petunjuk escape route)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 6 buah rambu evakuasi Risiko Besar: minimal 12 buah rambu evakuasi",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 64,
+          "pages": [
+            64
+          ],
+          "sourceCode": "7.g"
+        },
+        {
+          "key": "7.h",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Tongkat pengatur lalu lintas (Warning Lights Stick)",
+          "unit": "Buah",
+          "quantityText": "Tergantung jumlah lokasi kerja yang pelaksanaannya simultan",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 64,
+          "pages": [
+            64
+          ],
+          "sourceCode": "7.h"
+        },
+        {
+          "key": "7.i",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Kerucut lalu lintas (traffic cone)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 20 buah Risiko Besar: minimal 40 buah Minimal 500 buah untuk Jalan Bebas Hambatan kecuali disebutkan lain dalam Gambar",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 64,
+          "pages": [
+            64,
+            65
+          ],
+          "sourceCode": "7.i"
+        },
+        {
+          "key": "7.j",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu putar (rotary lamp)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah Risiko Besar: minimal 2 buah untuk Jalan Bebas Hambatan minimal 20 buah kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 65,
+          "pages": [
+            65
+          ],
+          "sourceCode": "7.j"
+        },
+        {
+          "key": "7.k",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu selang (Panjang 100 m)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah (rol) Risiko Besar: minimal 2 buah (rol)",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 65,
+          "pages": [
+            65
+          ],
+          "sourceCode": "7.k"
+        },
+        {
+          "key": "7.l",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Pembatas Jalan (water tank barrier)",
+          "unit": "Meter Panjang",
+          "quantityText": "Risiko Sedang: minimal 5 buah Risiko Besar: minimal 10 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 65,
+          "pages": [
+            65
+          ],
+          "sourceCode": "7.l"
+        },
+        {
+          "key": "7.m",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Beton pembatas jalan (concrete barrier)",
+          "unit": "Meter Panjang",
+          "quantityText": "Risiko Sedang: minimal 25 meter Risiko Besar: minimal 50 meter Untuk Jalan Bebas Hambatan minimal 200 meter kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/penggun aan",
+          "page": 65,
+          "pages": [
+            65,
+            66
+          ],
+          "sourceCode": "7.m"
+        },
+        {
+          "key": "7.n",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu/alat penerangan sementara",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 4 buah Risiko Besar: minimal 8 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 66,
+          "pages": [
+            66
+          ],
+          "sourceCode": "7.n"
+        },
+        {
+          "key": "7.o",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu peringatan termasuk sumber tenaga (Khusus Jalan Bebas Hambatan)",
+          "unit": "Meter Panjang",
+          "quantityText": "Minimal 1.000 meter panjang untuk Jalan Bebas Hambatan kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 66,
+          "pages": [
+            66
+          ],
+          "sourceCode": "7.o"
+        },
+        {
+          "key": "7.p",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu senter (Flashlight) (Khusus Jalan Bebas Hambatan)",
+          "unit": "Buah",
+          "quantityText": "Lampu senter di luar isi kotak P3K, minimal 20 buah untuk Jalan Bebas Hambatan kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 66,
+          "pages": [
+            66
+          ],
+          "sourceCode": "7.p"
+        },
+        {
+          "key": "7.q",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Rambu/alat pemberi isyarat lalu lintas sementara",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 buah Risiko Besar: minimal 4 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.q"
+        },
+        {
+          "key": "7.r",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Marka jalan sementara",
+          "unit": "Meter persegi",
+          "quantityText": "Disesuaikan dengan kebutuhan pengaturan lalu lintas sementara",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.r"
+        },
+        {
+          "key": "7.s.1",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "alat pembatas kecepatan",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah Untuk Jalan Bebas Hambatan sesuai dengan jumlah lokasi kerja",
+          "acceptance": "",
+          "evidence": "penempatan/ penggunaan",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.s.1"
+        },
+        {
+          "key": "7.s.2",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "alat pembatas tinggi dan lebar kendaraan (portal)",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah Untuk Jalan Bebas Hambatan sesuai dengan jumlah lokasi kerja",
+          "acceptance": "",
+          "evidence": "",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.s.2"
+        },
+        {
+          "key": "7.t.1",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Penghalang Lalu Lintas",
+          "unit": "Buah",
+          "quantityText": "Masing-masing minimal 1 buah",
+          "acceptance": "",
+          "evidence": "penempatan/",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.t.1"
+        },
+        {
+          "key": "7.t.2",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Cermin Tikungan",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "penggunaan",
+          "page": 67,
+          "pages": [
+            67
+          ],
+          "sourceCode": "7.t.2"
+        },
+        {
+          "key": "7.t.3",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Patok Pengarah/Delineator",
+          "unit": "Buah",
+          "quantityText": "Untuk Jalan Bebas Hambatan sesuai dengan jumlah lokasi kerja yang pelaksanaannya simultan",
+          "acceptance": "",
+          "evidence": "",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "7.t.3"
+        },
+        {
+          "key": "7.t.4",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Pulau-Pulau Lalu Lintas Sementara",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "7.t.4"
+        },
+        {
+          "key": "7.t.5",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Pita Penggaduh- shoulder strip atau rumble area",
+          "unit": "Meter Persegi",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "7.t.5"
+        },
+        {
+          "key": "7.u",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Lampu darurat (emergency lamp)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 1 buah Risiko Besar: minimal 2 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "7.u"
+        },
+        {
+          "key": "7.v",
+          "group": "7",
+          "groupTitle": "Rambu dan Perlengkapan Lalu Lintas:",
+          "name": "Jembatan Sementara (untuk pekerjaan jalan dan jembatan)",
+          "unit": "Lumsum",
+          "quantityText": "1 Ls",
+          "acceptance": "Terpasang di lapangan, diterima dan disetujui oleh Pengawas Pekerjaan",
+          "evidence": "Dokumentasi penggunaan",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "7.v"
+        },
+        {
+          "key": "8.a",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Lingkungan",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "Bukti hasil konsultasi tenaga ahli dan berita acara.",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "8.a"
+        },
+        {
+          "key": "8.b",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Jembatan",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "8.b"
+        },
+        {
+          "key": "8.c",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Bangunan Gedung",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "8.c"
+        },
+        {
+          "key": "8.d",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Perencana Struktur",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 68,
+          "pages": [
+            68
+          ],
+          "sourceCode": "8.d"
+        },
+        {
+          "key": "8.e",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Perencana Pondasi",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.e"
+        },
+        {
+          "key": "8.f",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Bendungan Besar",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.f"
+        },
+        {
+          "key": "8.g",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli gempa",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.g"
+        },
+        {
+          "key": "8.h",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Likuifaksi",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.h"
+        },
+        {
+          "key": "8.i",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Geoteknik",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.i"
+        },
+        {
+          "key": "8.i~2",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Geologi",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.i"
+        },
+        {
+          "key": "8.i~3",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Landasan Terbang",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.i"
+        },
+        {
+          "key": "8.j",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli mekanikal",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.j"
+        },
+        {
+          "key": "8.k",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli pertambangan",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.k"
+        },
+        {
+          "key": "8.l",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli peledakan",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.l"
+        },
+        {
+          "key": "8.m",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli elektrikal",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.m"
+        },
+        {
+          "key": "8.n",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli perminyakan dan gas",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.n"
+        },
+        {
+          "key": "8.o",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli manajemen konstruksi",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 69,
+          "pages": [
+            69
+          ],
+          "sourceCode": "8.o"
+        },
+        {
+          "key": "8.p",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli Teknik Proteksi Kebakaran",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "8.p"
+        },
+        {
+          "key": "8.q",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli K3 Pesawat Angkat Angkut",
+          "unit": "OJ",
+          "quantityText": "Minimal 1",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "8.q"
+        },
+        {
+          "key": "8.r",
+          "group": "8",
+          "groupTitle": "Konsultasi dengan Ahli Terkait Keselamatan Konstruksi:",
+          "name": "Ahli terkait lainnya sesuai dengan kebutuhan pekerjaan",
+          "unit": "OJ",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "Sertifikat Ahli dan kuitansi pembayaran",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "8.r"
+        },
+        {
+          "key": "9.a",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Manajemen Mutu",
+          "unit": "Ls",
+          "quantityText": "1 (satu)",
+          "acceptance": "Jika output produk dari quality control manager tersedia (dilaksanakan).",
+          "evidence": "Hasil pekerjaan terkait dengan tugas sebagai quality control manager",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.a"
+        },
+        {
+          "key": "9.b",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Testing and commissioning",
+          "unit": "Ls",
+          "quantityText": "1 (satu)",
+          "acceptance": "Persyaratan terkait dengan uji sistem secara menyeluruh sebelum serah terima akhir.",
+          "evidence": "Hasil pengujian dan berita acara yang dilaksanakan oleh instansi yang berwenang",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.b"
+        },
+        {
+          "key": "9.c.1",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas A",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 3 buah (ukuran 5 kg) Risiko Besar: minimal 5 buah (ukuran 5 kg)",
+          "acceptance": "aan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan / penggunaan",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.c.1"
+        },
+        {
+          "key": "9.c.2",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas B",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.c.2"
+        },
+        {
+          "key": "9.c.3",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas C",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.c.3"
+        },
+        {
+          "key": "9.c.4",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Alat Pemadam Api Ringan (APAR) Kelas D",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 70,
+          "pages": [
+            70
+          ],
+          "sourceCode": "9.c.4"
+        },
+        {
+          "key": "9.d",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Penangkal petir",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 Buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi hasil pengukuran, penempatan/ penggunaan",
+          "page": 71,
+          "pages": [
+            71
+          ],
+          "sourceCode": "9.d"
+        },
+        {
+          "key": "9.e",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Anemometer dan windsock",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: masing-masing minimal 1 Buah Risiko Besar: masing-masing minimal 2 Buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 71,
+          "pages": [
+            71
+          ],
+          "sourceCode": "9.e"
+        },
+        {
+          "key": "9.f",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Bendera K3",
+          "unit": "Buah",
+          "quantityText": "Minimal 1 buah",
+          "acceptance": "",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 71,
+          "pages": [
+            71
+          ],
+          "sourceCode": "9.f"
+        },
+        {
+          "key": "9.g",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Bendera Merah (Red Flag) (Khusus untuk pekerjaan Jalan Bebas Hambatan)",
+          "unit": "Buah",
+          "quantityText": "Minimal 36 buah kecuali ditunjukkan lain dalam Gambar",
+          "acceptance": "Dibuktikan dengan penempatan/penggun aan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penempatan/ penggunaan",
+          "page": 71,
+          "pages": [
+            71
+          ],
+          "sourceCode": "9.g"
+        },
+        {
+          "key": "9.h",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pembuatan Kartu Identitas Pekerja (KIP)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: maksimal 50 buah Risiko Besar: minimal 100 buah",
+          "acceptance": "Dibuktikan dengan tanda pengenal pekerja yang digunakan. Dibuktikan dengan tanda pengenal pekerja yang digunakan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi penggunaan",
+          "page": 71,
+          "pages": [
+            71
+          ],
+          "sourceCode": "9.h"
+        },
+        {
+          "key": "9.i",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Kegiatan Audit Internal",
+          "unit": "Buah",
+          "quantityText": "Minimal dilaksanakan setahun 1 buah (1 kali)",
+          "acceptance": "Hasil bukti audit internal. Hasil bukti audit internal.",
+          "evidence": "Laporan audit dan dokumentasi pelaksanaan Laporan audit dan dokumentasi pelaksanaan",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.i"
+        },
+        {
+          "key": "9.j",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Kegiatan Patroli Keselamatan Konstruksi",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 4 buah kegiatan selama masa pelaksanaan Risiko Besar: minimal 12 buah kegiatan selama masa pelaksanaan",
+          "acceptance": "Bukti hasil pemeriksaan penerapan keselamatan konstruksi yang disahkan oleh pimpinan UKK, pengawas pekerjaan, dan pemilik pekerjaan.",
+          "evidence": "Laporan, daftar hadir, dan dokumentasi pelaksanaan",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.j"
+        },
+        {
+          "key": "9.k.1",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 1 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "dikeluarkan oleh instansi yang",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.k.1"
+        },
+        {
+          "key": "9.k.2",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 2 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "berwenang.",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.k.2"
+        },
+        {
+          "key": "9.k.3",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 3 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.k.3"
+        },
+        {
+          "key": "9.k.4",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Air Kelas 4 Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.k.4"
+        },
+        {
+          "key": "9.k.5",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Baku Mutu Udara Ambien Lengkap",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72
+          ],
+          "sourceCode": "9.k.5"
+        },
+        {
+          "key": "9.k.6",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Vibrasi Lingkungan untuk Kenyamanan dan Kesehatan",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 72,
+          "pages": [
+            72,
+            73
+          ],
+          "sourceCode": "9.k.6"
+        },
+        {
+          "key": "9.k.7",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Pengujian Tingkat Getaran Kendaraan Bermotor",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "",
+          "evidence": "",
+          "page": 73,
+          "pages": [
+            73
+          ],
+          "sourceCode": "9.k.7"
+        },
+        {
+          "key": "9.l",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Closed-circuit Television (CCTV)",
+          "unit": "Buah",
+          "quantityText": "Risiko Sedang: minimal 2 Risiko Besar: minimal 4",
+          "acceptance": "Dibuktikan dengan penempatan/ penggunaan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembelian dan dokumentasi hasil pemantauan CCTV",
+          "page": 73,
+          "pages": [
+            73
+          ],
+          "sourceCode": "9.l"
+        },
+        {
+          "key": "9.m",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "washing bay",
+          "unit": "Buah",
+          "quantityText": "Minimal 1",
+          "acceptance": "Dibuktikan dengan penempatan/ penggunaan di lokasi pekerjaan.",
+          "evidence": "Dokumentasi penempatan/ penggunaan",
+          "page": 73,
+          "pages": [
+            73
+          ],
+          "sourceCode": "9.m"
+        },
+        {
+          "key": "9.n",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Kendaraan penarik semitrailer kapasitas min.40 feet (sewa) (jika dibutuhkan)",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "Dibuktikan dengan penggunaan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembayaran dan dokumentasi penggunaan",
+          "page": 73,
+          "pages": [
+            73
+          ],
+          "sourceCode": "9.n"
+        },
+        {
+          "key": "9.o",
+          "group": "9",
+          "groupTitle": "Kegiatan dan Peralatan Terkait Pengendalian Risiko Keselamatan Konstruksi:",
+          "name": "Truk derek flatbed min.3 ton (sewa) (jika dibutuhkan)",
+          "unit": "Buah",
+          "quantityText": "",
+          "acceptance": "Dibuktikan dengan penggunaan di lokasi pekerjaan.",
+          "evidence": "Kuitansi pembayaran dan dokumentasi penggunaan",
+          "page": 73,
+          "pages": [
+            73
+          ],
+          "sourceCode": "9.o"
+        }
+      ]
+    }
+  }
+}
