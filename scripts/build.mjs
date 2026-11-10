@@ -6,7 +6,7 @@ await mkdir(new URL('dist/', root), { recursive: true });
 const assets=['quantity-illustration.js','quantity-calculator.js','ai-ui.js','styles.css','rab.css','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','search-worker.js','search-core.js'];
 const sources=new Map(await Promise.all(assets.map(async file=>[file,await readFile(new URL(file,root),'utf8')])));
 // All module URLs change together, including transitive dependencies and workers.
-const unitsMetadata=await readFile(new URL('public/data/work-units.json',root),'utf8');
+const unitsMetadata=(await Promise.all(['work-units.json','ahs-catalog.json','ahs-coverage.json','ahs-source.json','ahs-inventory.json'].map(file=>readFile(new URL('public/data/'+file,root),'utf8')))).join('\0');
 const buildId=createHash('sha256').update([...sources].map(([file,body])=>file+'\0'+body).join('\0')).update('\0'+unitsMetadata).digest('hex').slice(0,12);
 const manifest=Object.fromEntries(assets.map(file=>[file,file.replace(/\.(js|css)$/,`.${buildId}.$1`)]));
 const rewrite=body=>{

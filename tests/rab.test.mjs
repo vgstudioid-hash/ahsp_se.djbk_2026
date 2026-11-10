@@ -37,8 +37,8 @@ test('Backup schema rejects invalid quantities and component types and preserves
  p.items[0].volume=-1;assert.throws(()=>validateProject(p));p.items[0].volume=1;p.items[0].components[0].group='Unknown';assert.throws(()=>validateProject(p));
 });
 test('Every curated AHS coefficient and code is present in its declared source page',async()=>{
- assert.equal(catalog.length,18);
- const cache={};for(const a of catalog){cache[a.docId]??=JSON.parse(await readFile(new URL(`${a.docId}.json`,root),'utf8'));const text=cache[a.docId][a.page-1];
+ const verified=JSON.parse(await readFile(new URL('ahs-verified.json',root),'utf8'));assert.equal(verified.length,18);
+ const cache={};for(const a of verified){cache[a.docId]??=JSON.parse(await readFile(new URL(`${a.docId}.json`,root),'utf8'));const text=cache[a.docId][a.page-1];
  assert(text, a.id);if(a.docId!=='v')assert(text.includes(a.code),a.id);
  for(const c of a.components){assert(text.includes(c.sourceCoefficient),`${a.id}: ${c.name} ${c.sourceCoefficient}`);assert.equal(c.coefficient,Number(c.sourceCoefficient.replace(',','.')));}
  }

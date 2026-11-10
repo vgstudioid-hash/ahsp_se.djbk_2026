@@ -41,11 +41,31 @@ Struktur form mengacu pada `RAB JEMBATAN MJM.xlsm` unggahan pengguna; rincian pe
 
 Angka harga/koefisien proyek 2025, diskon, formula pajak, pembulatan, dan konversi satuan pada workbook tidak diimpor otomatis. Kelompok Lain-lain tersedia untuk analisis manual; tidak menambahkan biaya baru pada template SE yang tidak memiliki komponen tersebut. Dasar volume kini tersedia pada menu Quantity; sheet VOLUME Excel tidak diimpor otomatis. JADWAL belum menjadi fitur aplikasi.
 
-## Cakupan analisis siap hitung
+## Cakupan katalog AHSP SE DJBK 2026
 
-Tersedia **18 template AHS**: 10 pekerjaan SDA (pembersihan, galian batu manual/semi-mekanis, dan pemadatan timbris), 7 pekerjaan CK (pagar dan papan nama), serta 1 contoh BM (galian drainase B.1). Koefisien telah diperiksa terhadap halaman PDF yang dicantumkan; asumsi khusus ditampilkan pada rincian. Koefisien template dikunci. Harga dasar tidak diisi otomatis.
+Katalog mencakup **5.637 entri** yang diperoleh dari tabel analisis serta daftar isi Lampiran IV, V, dan VI. Semua kode yang terbaca pada daftar isi masing-masing lampiran terwakili; kode/varian sumber yang berulang tetap dicatat dalam inventaris. Jumlah entri bukan jumlah AHSP unik yang sudah tervalidasi.
 
-**Belum seluruh AHS pada 6.700 halaman PDF menjadi data perhitungan terstruktur.** Gunakan pencarian dokumen untuk analisis lain, lalu masukkan seluruh komponen, koefisien, satuan, dan halaman sumber melalui form AHS manual. Analisis manual ditandai pada lembar RAB dan hasil cetak. Contoh BM bersifat informatif dan memakai asumsi angkut 2 km, tanah liat, serta 7 jam kerja efektif; harga alat sudah mencakup operator, BBM, dan bahan habis pakai sesuai catatan sumber. Jangan menambahkan biaya tersebut dua kali.
+| Lampiran | Kode unik daftar isi tercakup | Tabel analisis terdeteksi/tercakup |
+| --- | ---: | ---: |
+| IV — SDA | 1.544/1.544 | 1.273/1.273 |
+| V — Bina Marga | 1.132/1.132 | 1.100/1.100 |
+| VI — Cipta Karya | 2.816/2.816 | 2.817/2.817 |
+
+**Status data:** 18 template diperiksa, 4.840 ekstraksi tabel numerik. 333 tabel memerlukan pemeriksaan/parameter. dan 446 rujukan sumber tanpa rincian koefisien lengkap yang terhubung. Cakupan kode bukan jaminan seluruh AHSP siap hitung tanpa pemeriksaan: sumber memuat rumus produktivitas, tabel gabungan, rujukan Peraturan Menteri PUPR 8/2023, dan ketidakseragaman kode. Nilai yang tidak tersedia tidak diganti nol atau koefisien rekaan.
+
+Menu AHS dan pemilih AHS pada RAB mencari seluruh katalog, dengan filter bidang/status dan pemuatan bertahap 48 entri. Entri hasil ekstraksi/rujukan menampilkan koefisien serta teks sumber, lalu membuka form pemeriksaan untuk melengkapi atau mengoreksi data. Pengguna wajib menyatakan pemeriksaan seluruh komponen, satuan, asumsi dan koefisien sebelum menyimpan sebagai analisis manual pada proyek. Halaman rujukan, identitas baris RAB, uraian, volume dan Quantity dipertahankan saat menghubungkan hasil pemeriksaan. Harga contoh PDF tidak diimpor ke HSD.
+
+Sumber data dan cara membangun ulang:
+
+- `public/data/ahs-catalog.json`: katalog, komponen numerik dan status pemeriksaan.
+- `public/data/ahs-verified.json`: 18 template yang sebelumnya diperiksa, dipertahankan sebagai acuan regresi.
+- `public/data/ahs-inventory.json`: semua baris kode daftar isi, termasuk kode berulang dan teks sumber.
+- `public/data/ahs-source.json`: bukti teks tabel/rujukan, dimuat hanya saat analisis dibuka.
+- `public/data/ahs-coverage.json`: jumlah, status, serta hash teks sumber per lampiran; dapat diunduh dari aplikasi.
+- `python3 scripts/extract-ahs.py`: ekstraksi deterministik dari indeks teks PDF unggahan; tidak mengeksekusi rumus dari dokumen.
+- `npm test`: memeriksa keberadaan setiap tabel per halaman, seluruh kode inventaris, token koefisien lengkap, satuan/skema, serta kasus nama komponen multibaris.
+
+Template contoh BM memakai asumsi pelaksanaan yang dijelaskan pada sumber; harga alat dapat sudah mencakup operator, BBM dan bahan habis pakai. Analisis gabungan yang memakai harga pekerjaan lain memerlukan pemeriksaan agar biaya umum tidak dikenakan dua kali.
 
 ## AHS Empiris
 
