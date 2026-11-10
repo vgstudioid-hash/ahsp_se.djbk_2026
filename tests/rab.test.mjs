@@ -138,3 +138,9 @@ test('SMKK is one fixed level-1 scope without mutating project rows or adding ov
  const draft={...p,smkk:[]};assert.equal(summarizeScopes(draft).scopes.at(-1).amount,0);assert.equal(summarizeScopes(draft).scopes.at(-1).number,'A');
  const restored=validateProject(p);assert.equal(restored.smkk.length,1);assert.equal(summarizeScopes(restored).scopes.filter(s=>s.kind==='smkk').length,1);
 });
+
+test('Budget summary uses all work plus SMKK, DPP 11/12, PPN 12%, and rounds only the final total to nearest hundred',()=>{
+ const p=fixture();p.taxScheme='dpp11of12';p.tax=12;p.overhead=0;p.items[0].volume=1;p.items[0].components=[{group:'Lain-lain',name:'Biaya pekerjaan',unit:'ls',coefficient:1}];p.rates={[rateKey(p.items[0],p.items[0].components[0])]:1234567.89};p.smkk=[{id:'smkk',name:'SMKK',unit:'ls',volume:1,price:321.11}];
+ const r=calculateProject(p);assert.equal(r.beforeTax,1234889);assert.equal(r.taxBase,1131981.58);assert.equal(r.tax,135837.79);assert.equal(r.total,1370726.79);assert.equal(r.roundedTotal,1370700);
+ p.tax=0;p.smkk=[];for(const [price,rounded]of [[0,0],[49.99,0],[50,100],[149.99,100],[150,200],[199.99,200],[123450,123500]]){p.rates[rateKey(p.items[0],p.items[0].components[0])]=price;const row=calculateProject(p);assert.equal(row.total,price);assert.equal(row.roundedTotal,rounded);}
+});
