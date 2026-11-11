@@ -20,7 +20,7 @@ Gunakan checkout yang ada; tugas cloud sudah terisolasi sehingga tidak perlu Git
 1. Buka Informasi Umum, pilih Project Baru atau Impor Project, lalu lengkapi Nama Pekerjaan, MA, Sub MA, Unit Kerja, Tahun, dan Pagu Anggaran. Tombol Lanjut terkunci sampai seluruh isian valid.
 2. Tambah lingkup pekerjaan atau klik **+ Tambah uraian pekerjaan**. Ketik uraian langsung, pilih AHS pada barisnya, lalu isi volume hasil pengukuran. Tingkat WBS A → 1 → a → • dapat dipilih pada kolom NO; nomor diperbarui mengikuti urutan baris.
 3. Isi harga dasar upah, bahan, dan peralatan di menu Harga Dasar atau impor CSV. Daftar harga daerah/proyek pengguna masih menunggu unggahan; tidak ada harga contoh PDF yang dipakai otomatis.
-4. Periksa rincian analisis dan sumber PDF. Masukkan biaya penerapan SMKK pada lingkup otomatis level 1 di tabel RAB.
+4. Periksa rincian analisis dan sumber PDF. Kelola biaya penerapan SMKK pada bagian terakhir halaman AHS; nilainya tersambung ke lingkup level 1 di RAB.
 5. Tinjau biaya umum/keuntungan dan persentase pajak efektif sesuai proyek, lalu ekspor CSV, cadangan JSON, atau cetak/simpan PDF.
 
 Lembar RAB mengikuti tujuh kolom: **NO / WBS, URAIAN PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN**. Uraian dan keterangan dapat diketik langsung. Satuan dan harga satuan berasal dari AHS pilihan, sehingga mengganti AHS perlu diikuti pemeriksaan volume. Pemilihan AHS mempertahankan uraian, volume, WBS, dan keterangan pengguna. Tombol panah memindahkan urutan baris. Judul WBS tidak dihitung sebagai pekerjaan. Baris yang belum terhubung ke AHS membuat hasil berstatus DRAF. Format tujuh kolom dan keterangan yang sama digunakan pada CSV, cetak/PDF, serta cadangan JSON.
@@ -239,7 +239,7 @@ Tema layar memakai Forest `#1F3B2F`, Sage `#83906E`, Sand `#C7B58B`, dan Ivory `
 
 Tombol Lanjut pada Informasi Umum membuka RAB setelah validasi semua isian. Nomor WBS level 1 rata kiri, level 2 tengah, serta level 3–4 kanan. Ikon geser kiri/kanan mengganti dropdown level, dibatasi level 1–4; AHS, volume dan nilai biaya baris tetap dipertahankan. Kotak uraian/keterangan dapat diisi, berukuran tetap, dan menggulirkan teks panjang tanpa resize. Menu sisip memakai Lingkup Pekerjaan, Uraian Pekerjaan dan Sub Uraian Pekerjaan.
 
-**BIAYA PENERAPAN SMKK** diproyeksikan otomatis sebagai lingkup level 1 terakhir pada RAB dan rekap, termasuk saat belum ada komponen. Penyimpanan tetap menggunakan `project.smkk`, sehingga proyek lama tidak membuat biaya atau lingkup tersimpan ganda. Jumlah seluruh lingkup pada rekap adalah pekerjaan + SMKK (sebelum pajak); biaya umum tidak diterapkan lagi pada SMKK. Komponen SMKK dapat ditambah, diedit dan dihapus langsung pada tabel RAB. CSV dan cetak memakai lingkup yang sama.
+**BIAYA PENERAPAN SMKK** diproyeksikan otomatis sebagai lingkup level 1 terakhir pada RAB dan rekap, termasuk saat belum ada komponen. Penyimpanan tetap menggunakan `project.smkk`, sehingga proyek lama tidak membuat biaya atau lingkup tersimpan ganda. Jumlah seluruh lingkup pada rekap adalah pekerjaan + SMKK (sebelum pajak); biaya umum tidak diterapkan lagi pada SMKK. RAB hanya menampilkan satu baris lingkup SMKK tanpa uraian/suburaian, termasuk pada CSV dan tabel cetak RAB. Komponen SMKK ditambah, diedit dan dihapus pada bagian permanen paling akhir halaman AHS. Rincian tersedia dalam ekspor CSV AHS SMKK dan lampiran cetak tersendiri. Penyimpanan proyek lama tetap digunakan tanpa migrasi.
 
 ### Ringkasan biaya dan pembulatan ratusan
 
@@ -247,7 +247,7 @@ Ringkasan pada RAB, rekapitulasi, CSV dan cetak memuat lima baris: **Jumlah**, *
 
 ### SMKK otomatis menurut Tabel III.1 dan III.2
 
-Pada lingkup **BIAYA PENERAPAN SMKK**, pilih **Kecil**, **Sedang**, atau **Tinggi**. Kecil memakai Tabel III.1 (halaman fisik PDF 30–38); Sedang dan Tinggi memakai Tabel III.2 (halaman 39–73). **Tinggi dipetakan ke “Besar” pada dokumen**, bukan tabel baru.
+Pada bagian terakhir halaman **Analisa Harga Satuan (AHS)**, pilih **Kecil**, **Sedang**, atau **Tinggi**. Kecil memakai Tabel III.1 (halaman fisik PDF 30–38); Sedang dan Tinggi memakai Tabel III.2 (halaman 39–73). **Tinggi dipetakan ke “Besar” pada dokumen**, bukan tabel baru.
 
 Template memuat 45 komponen untuk III.1 dan 140 komponen untuk III.2, lengkap dengan sembilan kelompok, satuan, ketentuan kuantitas, keberterimaan, bukti dukung dan tautan halaman sumber. Kode konsultan yang berulang di sumber dipertahankan sebagai komponen berbeda. Satuan ear muff pada III.2 tidak dicantumkan pada sumber, sehingga tetap kosong untuk dilengkapi, bukan ditebak. Kelompok Asuransi dan Konsultasi pada risiko Kecil tetap tampil sebagai kelompok tidak wajib tanpa komponen/harga rekaan.
 
@@ -262,4 +262,4 @@ Berkas template: `public/data/smkk-templates.json`. Bangun ulang dari PDF sumber
 
 ### Buka/tutup seluruh rincian SMKK
 
-Tombol panah di pojok kanan header SMKK menyembunyikan atau membuka seluruh pengaturan, kelompok dan rincian komponennya. Halaman dimulai dengan rincian tertutup; judul dan jumlah biaya tetap terlihat. Menutup panel tidak mengubah data, total, atau status buka/tutup kelompok di dalamnya. Tombol dapat digunakan dengan keyboard. Menambah komponen membuka panel otomatis, dan hasil cetak tetap memuat seluruh komponen aktif meskipun panel layar ditutup.
+Tombol panah di pojok kanan header SMKK pada halaman AHS menyembunyikan atau membuka seluruh pengaturan, kelompok dan rincian komponennya. Halaman dimulai dengan rincian tertutup; judul dan jumlah biaya tetap terlihat. Menutup panel tidak mengubah data, total, atau status buka/tutup kelompok di dalamnya. Tombol dapat digunakan dengan keyboard. Menambah komponen membuka panel otomatis, dan hasil cetak tetap memuat seluruh komponen aktif meskipun panel layar ditutup.
