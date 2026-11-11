@@ -259,3 +259,7 @@ Template memuat 45 komponen untuk III.1 dan 140 komponen untuk III.2, lengkap de
 - Edit dan penghapusan komponen disimpan terpisah per kategori. Pilihan **Tanpa preset / rincian manual** memulihkan rincian manual sebelumnya; pergantian risiko tidak menumpuk komponen atau menimpa rincian kategori lain. Semua profil ikut cadangan JSON, sementara hanya profil aktif dikirim untuk analisis AI.
 
 Berkas template: `public/data/smkk-templates.json`. Bangun ulang dari PDF sumber dengan `python3 scripts/prepare-smkk.py` (memerlukan PyMuPDF). Perhitungan otomatis di `smkk-core.js` memakai aturan terpilih yang dijelaskan pada tiap komponen; ketentuan sumber tetap tersedia untuk pemeriksaan dan penyesuaian kondisi proyek.
+
+### Buka/tutup seluruh rincian SMKK
+
+Tombol panah di pojok kanan header SMKK menyembunyikan atau membuka seluruh pengaturan, kelompok dan rincian komponennya. Halaman dimulai dengan rincian tertutup; judul dan jumlah biaya tetap terlihat. Menutup panel tidak mengubah data, total, atau status buka/tutup kelompok di dalamnya. Tombol dapat digunakan dengan keyboard. Menambah komponen membuka panel otomatis, dan hasil cetak tetap memuat seluruh komponen aktif meskipun panel layar ditutup.
