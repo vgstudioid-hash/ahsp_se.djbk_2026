@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.572e834fb494.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.177434ff14f2.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -66,6 +66,18 @@ export function summarizeScopes(project) {
     row.breakdown.filter(c=>c.price==null).forEach(c=>current.missingKeys.add(c.key));
   });
   return {...result,scopeSubtotal:result.beforeTax,scopes:[...scopes.map(({missingKeys,...scope})=>({...scope,missing:missingKeys.size})),smkkScope(project,result)]};
+}
+// Package quantities belong to the recap; source RAB quantities and AHS remain unchanged.
+export function summarizeScopePackages(project) {
+ const result=summarizeScopes(project);
+ const scopes=result.scopes.map(scope=>{
+  const raw=scope.kind==='smkk'?project.smkkRecapVolume:scope.id?project.items.find(i=>i.id===scope.id)?.recapVolume:project.recapUnassignedVolume;
+  const volume=raw==null?1:nonnegative(raw);
+  return {...scope,volume,unit:'paket',unitPrice:scope.amount,packageAmount:moneyRound(volume*scope.amount)};
+ });
+ const beforeTax=moneyRound(scopes.reduce((n,s)=>n+s.packageAmount,0));
+ const taxBase=moneyRound(beforeTax*result.taxFactor),tax=moneyRound(taxBase*project.tax/100),total=moneyRound(beforeTax+tax);
+ return {...result,scopes,scopeSubtotal:beforeTax,beforeTax,taxBase,tax,total,roundedTotal:Math.round(total/100)*100};
 }
 export function resources(project) {
   const map = new Map();
@@ -154,7 +166,7 @@ export function validateProject(p) {
     const quantityRows=validateQuantityRows(item.quantityRows||[]),quantityLinked=Boolean(item.quantityLinked);
     if(item.heading&&quantityRows.length)throw Error('Judul WBS tidak memiliki rincian Quantity.');
     const volume=quantityLinked?quantitySummary(quantityRows,item.unit).total:nonnegative(item.volume);
-    return { id: crypto.randomUUID(), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
+    return { id: crypto.randomUUID(), recapVolume:item.recapVolume==null?1:nonnegative(item.recapVolume), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
       return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient), code: String(c.code||'').slice(0,100) };
     }) };
@@ -184,7 +196,7 @@ export function validateProject(p) {
   if(p.programCategory!=null&&!['','Beban','Investasi'].includes(p.programCategory))throw Error('Kategori Program tidak valid.');
   if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
   if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
-  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
+  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
 }
 
 export function projectInformationErrors(p,allowedUnits=null) {
