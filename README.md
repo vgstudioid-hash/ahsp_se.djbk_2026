@@ -263,3 +263,7 @@ Berkas template: `public/data/smkk-templates.json`. Bangun ulang dari PDF sumber
 ### Buka/tutup seluruh rincian SMKK
 
 Tombol panah di pojok kanan header SMKK pada halaman AHS menyembunyikan atau membuka seluruh pengaturan, kelompok dan rincian komponennya. Halaman dimulai dengan rincian tertutup; judul dan jumlah biaya tetap terlihat. Menutup panel tidak mengubah data, total, atau status buka/tutup kelompok di dalamnya. Tombol dapat digunakan dengan keyboard. Menambah komponen membuka panel otomatis, dan hasil cetak tetap memuat seluruh komponen aktif meskipun panel layar ditutup.
+
+### Rekapitulasi sebagai paket lingkup
+
+Rekap memakai kolom NO., LINGKUP PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN. Nomor berurutan; volume awal 1 dapat diubah menjadi angka nonnegatif (termasuk pecahan/nol), satuan tetap paket. Harga satuan mengikuti total asli lingkup RAB/AHS, termasuk SMKK. Jumlah harga = volume paket × harga satuan; ringkasan, pajak, CSV dan cetak rekap memakai jumlah harga tersebut. Bila volume paket diubah, total rekap mengikuti pengalinya; rincian sumber RAB/AHS tidak diubah. Volume disimpan bersama lingkup, termasuk saat cadangan dipulihkan dengan ID baru.

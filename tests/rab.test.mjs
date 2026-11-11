@@ -144,3 +144,16 @@ test('Budget summary uses all work plus SMKK, DPP 11/12, PPN 12%, and rounds onl
  const r=calculateProject(p);assert.equal(r.beforeTax,1234889);assert.equal(r.taxBase,1131981.58);assert.equal(r.tax,135837.79);assert.equal(r.total,1370726.79);assert.equal(r.roundedTotal,1370700);
  p.tax=0;p.smkk=[];for(const [price,rounded]of [[0,0],[49.99,0],[50,100],[149.99,100],[150,200],[199.99,200],[123450,123500]]){p.rates[rateKey(p.items[0],p.items[0].components[0])]=price;const row=calculateProject(p);assert.equal(row.total,price);assert.equal(row.roundedTotal,rounded);}
 });
+
+test('Recap package quantities default to one, multiply scope prices, survive restored IDs and preserve source RAB',async()=>{
+ const {summarizeScopePackages}=await import('../rab-core.js');const p=fixture();
+ p.items.unshift({id:'scope',code:'',title:'LINGKUP',unit:'',group:'',heading:true,wbsLevel:1,volume:0,components:[]});
+ for(const c of p.items[1].components)p.rates[rateKey(p.items[1],c)]=1000;
+ p.taxScheme='dpp11of12';p.tax=12;
+ const base=calculateProject(p),first=summarizeScopePackages(p);assert.equal(first.total,base.total);assert(first.scopes.every(s=>s.volume===1&&s.unit==='paket'&&s.unitPrice===s.packageAmount));
+ p.items[0].recapVolume=2.5;p.smkkRecapVolume=0;const changed=summarizeScopePackages(p);
+ assert.equal(changed.scopes[0].packageAmount,Math.round(base.subtotal*2.5*100)/100);assert.equal(changed.beforeTax,changed.scopes[0].packageAmount);assert.equal(changed.taxBase,Math.round(changed.beforeTax*11/12*100)/100);assert.deepEqual(calculateProject(p),base);
+ const restored=validateProject(JSON.parse(JSON.stringify(p)));assert.equal(restored.items[0].recapVolume,2.5);assert.equal(restored.smkkRecapVolume,0);assert.equal(summarizeScopePackages(restored).total,changed.total);
+ assert.throws(()=>validateProject({...p,smkkRecapVolume:-1}));assert.throws(()=>validateProject({...p,items:p.items.map(i=>({...i,recapVolume:-1}))}));
+ p.items.shift();p.recapUnassignedVolume=3;assert.equal(summarizeScopePackages(validateProject(p)).scopes[0].volume,3);
+});
