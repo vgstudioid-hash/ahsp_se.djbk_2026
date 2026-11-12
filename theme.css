@@ -246,3 +246,47 @@ button:has(>.action-symbol-icon){display:inline-flex;align-items:center;justify-
 #main #rab-table [data-wbs-shift] svg g path{stroke:var(--symbol-blue)}
 .add-icon rect{stroke:var(--symbol-green-dark)}.button:not(.subtle) .add-icon rect{stroke:var(--symbol-green-light)}
 }
+/* Consistent light rounded action surfaces; role colours stay on the symbols. */
+@media screen {
+:root{--control-bg:#fffdf7;--control-line:#cbd4c3;--control-text:#173d32;--control-hover:#edf5ed;--control-radius:9px}
+.balloon-control{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;background:var(--control-bg)!important;color:var(--control-text)!important;border:1px solid var(--control-line)!important;border-radius:var(--control-radius)!important;box-shadow:0 1px 2px #123d2910;line-height:1.4;text-decoration:none}
+.balloon-control.button,.balloon-control.project-header-button{min-height:40px;padding:9px 12px;font-size:12px;font-weight:600}
+button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.5px;font-weight:600}
+.balloon-control:hover:not(:disabled){background:var(--control-hover)!important;border-color:#8bb992!important;box-shadow:0 0 0 3px #8bb99226;text-decoration:none}
+.balloon-control.symbol-direction:hover:not(:disabled),.balloon-control.navigation-button:hover{background:#e7f3fc!important;border-color:#90bee3!important;box-shadow:0 0 0 3px #4ab4ef26}
+.balloon-control.symbol-destructive:hover:not(:disabled){background:#fff0ed!important;border-color:#eb7373!important;box-shadow:0 0 0 3px #ff6b6b26}
+.balloon-control:disabled{background:#ecefe7!important;color:#788374!important;box-shadow:none;opacity:.55}
+.balloon-control.active{background:#e6f2e9!important;border-color:#27835f!important}
+.balloon-control.icon-only-control{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:2px!important;gap:0}
+#main #rab-table .balloon-control{background:var(--control-bg)!important;border:1px solid var(--control-line)!important;border-radius:var(--control-radius)!important}
+#main #rab-table .balloon-control:hover:not(:disabled){background:var(--control-hover)!important;box-shadow:0 0 0 3px #8bb99226}
+#main #rab-table .balloon-control.symbol-direction:hover:not(:disabled),#main #rab-table .balloon-control.navigation-button:hover{background:#e7f3fc!important;box-shadow:0 0 0 3px #4ab4ef26}
+#main #rab-table .balloon-control.symbol-destructive:hover:not(:disabled){background:#fff0ed!important;box-shadow:0 0 0 3px #ff6b6b26}
+#main #rab-table .wbs-source .row-navigation-button,#main #rab-table .quantity-row-link{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:32px;padding:5px 6px;font-size:11.5px;font-weight:600;line-height:1.4;white-space:nowrap;border:1px solid var(--control-line)!important;border-radius:var(--control-radius)!important;background:var(--control-bg)!important;text-decoration:none}
+#main #rab-table .quantity-row-link{margin-top:6px;width:max-content;max-width:none}
+#main #rab-table th:nth-child(3){width:120px}
+#main #rab-table .row-navigation-button svg,#main #rab-table .quantity-row-link svg{width:20px;height:20px}
+.balloon-control svg{stroke-width:2.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.balloon-control .navigation-direction-icon{width:20px;height:20px;stroke-width:2.8!important}
+.balloon-control .symbol-general svg,.balloon-control.symbol-general svg,.balloon-control .project-action-icon svg,.balloon-control .add-icon,.balloon-control .rab-add-symbol{color:var(--symbol-green);stroke:var(--symbol-green)}
+.balloon-control.symbol-direction svg,.balloon-control.symbol-direction .project-action-icon svg{color:var(--symbol-blue-dark);stroke:var(--symbol-blue-dark)}
+.balloon-control .add-icon rect{stroke:var(--symbol-green)}
+.project-entry-choice .entry-line-icon{width:44px;height:44px;background:#edf5ed!important;border:1px solid #bcd2c0;border-radius:10px}
+.project-entry-choice .entry-line-icon svg{width:25px;height:25px;color:var(--symbol-green);stroke:var(--symbol-green);stroke-width:2.8}
+.project-entry-choice.symbol-direction .entry-line-icon{background:#e7f3fc!important;border-color:#b2d1e9}
+.project-entry-choice.symbol-direction .entry-line-icon svg{color:var(--symbol-blue-dark);stroke:var(--symbol-blue-dark)}
+#analysis-dialog .ahs-frozen-head .balloon-control,#close-reader.balloon-control{background:var(--control-bg)!important;border:1px solid var(--control-line)!important}
+#navigation .nav-symbol svg{stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+}
+@media screen {
+:root{--control-bg:#eef5ec;--control-line:#b5c5ad}
+.project-entry-choice.balloon-control{display:flex;align-items:flex-start;justify-content:flex-start;gap:16px;background:var(--surface)!important}
+.balloon-control.button .add-icon rect,.balloon-control .project-action-icon.add-project-icon svg rect{stroke:var(--symbol-green)!important}
+.balloon-control .add-icon path{stroke:var(--symbol-green-mid)!important}
+.balloon-control .navigation-direction-icon path:first-child{stroke:var(--symbol-blue)!important}.balloon-control .navigation-direction-icon path:last-child{stroke:var(--symbol-blue-dark)!important}
+.balloon-control svg rect{rx:4px;ry:4px}
+}
+@media screen {
+.project-entry-choice .entry-line-icon,.project-entry-choice.symbol-direction .entry-line-icon{background:var(--control-bg)!important;border-color:var(--control-line)}
+.balloon-control.navigation-button:not(.button):not(.quantity-row-link):not(.text-action){padding:6px 9px;min-height:32px;font-size:12px}
+}
