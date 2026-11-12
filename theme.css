@@ -19,4 +19,11 @@ dialog{background:var(--surface);color:var(--forest);border:1px solid var(--line
 @media screen {
 .ahs-actions .button,.action-row .button,.rab-section-heading .button{font-size:12px}.ahs-actions .text-action{font-size:12px}.ahs-card .ahs-note{font-size:11px;color:#46543f;background:#eae7d9;border-left-color:var(--sage)}.entry-line-icon{background:var(--sage)}#analysis-dialog,#reader{background:var(--surface);border-color:var(--line)}.sidebar-edition{border-top:2px solid var(--sage)}
 @media(max-width:600px){.ahs-actions{gap:10px;flex-wrap:wrap}.ahs-actions .button,.ahs-actions .text-action{font-size:12px}}
+/* Shared add icons and a single focus frame on the AHS search field. */
+.rab-add-symbol,.wbs-insert-button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px;width:28px;height:28px;min-height:28px;padding:0;border:1px solid #b8c5a9;border-radius:6px;background:#f8fbf3;color:var(--forest);line-height:1}
+.rab-add-symbol svg,.wbs-insert-button svg{display:block;flex:none;width:18px;height:18px;margin:0;stroke-width:2}
+#analysis-dialog .title-filter:has(#picker-query){box-sizing:border-box;padding:0;transition:border-color .15s;outline:none;box-shadow:none}
+#analysis-dialog .title-filter:has(#picker-query):focus-within{border-color:var(--forest);outline:2px solid var(--forest);outline-offset:2px;box-shadow:none}
+#analysis-dialog #picker-query{min-width:0;width:100%;padding:13px 15px;border:0;border-radius:inherit;background:transparent;outline:none;box-shadow:none}
+#analysis-dialog #picker-query:focus,#analysis-dialog #picker-query:focus-visible{outline:none;box-shadow:none}
 }
