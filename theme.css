@@ -27,3 +27,10 @@ dialog{background:var(--surface);color:var(--forest);border:1px solid var(--line
 #analysis-dialog #picker-query{min-width:0;width:100%;padding:13px 15px;border:0;border-radius:inherit;background:transparent;outline:none;box-shadow:none}
 #analysis-dialog #picker-query:focus,#analysis-dialog #picker-query:focus-visible{outline:none;box-shadow:none}
 }
+@media screen {
+button .add-icon{display:inline-block;width:26px;height:26px;flex:0 0 26px;vertical-align:middle;margin-right:7px;color:inherit}
+.rab-add-symbol,.wbs-insert-button{border:0;background:transparent;color:var(--forest);padding:0;width:28px;height:28px}
+.rab-add-work .rab-add-symbol{color:var(--ivory)}
+.rab-add-symbol .add-icon,.wbs-insert-button .add-icon{width:28px;height:28px;margin:0;stroke-width:2.4}
+.project-action-icon svg,.entry-line-icon svg{stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+}
