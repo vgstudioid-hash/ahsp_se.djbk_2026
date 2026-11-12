@@ -1,5 +1,5 @@
-import { shapeIllustration } from './quantity-illustration.77155ae93a33.js';
-import { quantityShapes, quantityCategoryNames, newQuantityRow, validateQuantityRows, quantityRowValue, quantityUnit } from './quantity-core.77155ae93a33.js';
+import { shapeIllustration } from './quantity-illustration.efb9ec54b938.js';
+import { quantityShapes, quantityCategoryNames, newQuantityRow, validateQuantityRows, quantityRowValue, quantityUnit } from './quantity-core.efb9ec54b938.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function openQuantityCalculator(dialog,project,selectedId,onSave,options={}){
  const source=project.items.find(i=>i.id===selectedId)?.quantityRows?.[options.index];
