@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=1058e0824760")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=1058e0824760")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=1058e0824760")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=62b86ac7dd98")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=62b86ac7dd98")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=62b86ac7dd98")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -213,3 +213,36 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=1058e0824
 .hsd-bottom-actions{display:flex;justify-content:flex-end;margin-top:22px}
 }
 @media print{.hsd-controls{position:static}}
+@media screen {
+:root{--symbol-blue-dark:#2f5fa9;--symbol-blue:#1592d4;--symbol-blue-light:#4ab4ef;--symbol-blue-pale:#c5e5f4;--symbol-green-dark:#09272a;--symbol-green:#125650;--symbol-green-mid:#27835f;--symbol-green-light:#8bb992;--symbol-red:#eb4545;--symbol-red-light:#ff6b6b;--symbol-red-pale:#ffa6a6;--symbol-red-cream:#ffedc6}
+.page-freeze-controls{position:sticky;top:0;z-index:31;background:var(--ivory);padding:0 0 12px}
+.page-freeze-controls .rab-heading{margin-bottom:18px}.page-freeze-controls .catalog-tools{margin-bottom:0}.page-freeze-controls .quantity-create-bar{margin-bottom:0}.page-freeze-controls .project-switch{margin-bottom:0}
+.page-freeze-controls .compact-rab-toolbar{margin-bottom:18px;padding-bottom:16px}.page-freeze-controls .rab-section-heading{margin:0}
+.page-freeze-controls:has(.rab-heading) .rab-heading{flex-wrap:wrap}.page-freeze-controls .action-row{max-width:650px}
+.used-ahs-entry .workbook-ahs>thead th:nth-child(1),.used-ahs-entry .ahs-component-row>td:nth-child(1),.smkk-analysis-table>thead th:nth-child(1),.smkk-analysis-table>tbody>tr>td:nth-child(1):not([colspan]){position:sticky;left:0;z-index:2}
+.used-ahs-entry .workbook-ahs>thead th:nth-child(2),.used-ahs-entry .ahs-component-row>td:nth-child(2),.smkk-analysis-table>thead th:nth-child(2),.smkk-analysis-table>tbody>tr>td:nth-child(2):not([colspan]){position:sticky;left:var(--freeze-first-col,100px);z-index:2}
+.used-ahs-entry .ahs-component-row>td:nth-child(-n+2){background:var(--surface);box-shadow:1px 0 0 var(--line)}
+.symbol-direction svg,.symbol-direction .project-action-icon svg{color:var(--symbol-blue);stroke:var(--symbol-blue)}
+.symbol-direction svg rect,.symbol-direction svg path:first-child{stroke:var(--symbol-blue-dark)}
+.navigation-direction-icon path:first-child{stroke:var(--symbol-blue-light)}.navigation-direction-icon path:last-child{stroke:var(--symbol-blue-dark)}
+.action-symbol-icon{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+button:has(>.action-symbol-icon){display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.symbol-general svg,.symbol-general .project-action-icon svg{color:var(--symbol-green);stroke:var(--symbol-green)}
+.add-icon,.project-entry-choice .entry-line-icon svg,.add-project-icon svg{color:var(--symbol-green-mid);stroke:currentColor}
+.button:not(.subtle) .add-icon,.rab-add-work .rab-add-symbol{color:var(--symbol-green-light)}
+#main #rab-table button[data-move],#main #rab-table button[data-wbs-shift]{color:var(--symbol-blue)}
+#main #rab-table button[data-move] svg rect,#main #rab-table button[data-wbs-shift] svg rect{stroke:var(--symbol-blue-dark)}
+#main #rab-table button[data-move]:hover:not(:disabled),#main #rab-table button[data-wbs-shift]:hover:not(:disabled),.symbol-direction:hover:not(:disabled){background:var(--symbol-blue-pale)!important;box-shadow:0 0 0 3px #4ab4ef33}
+#main #rab-table button.wbs-insert-button:hover:not(:disabled),button.edit-icon-button:hover{background:#8bb99233!important;box-shadow:0 0 0 3px #8bb99233}
+#main button:is(.trash-button,[data-component-remove],[data-component-last]):hover:not(:disabled),#analysis-dialog button:is(.trash-button,[data-component-remove],[data-component-last],[data-close-dialog].icon-button):hover:not(:disabled),#close-reader:hover{background:#ffa6a633!important;box-shadow:0 0 0 3px #ff6b6b33}
+.smkk-collapse-toggle{background:var(--symbol-blue-pale);color:var(--symbol-blue-dark)}.smkk-collapse-toggle:hover{background:#4ab4ef55}
+.used-ahs-entry>summary::after{color:var(--symbol-blue-dark)}
+#navigation .nav-symbol{color:var(--symbol-green-light)}#navigation .active .nav-symbol{color:var(--symbol-green-dark)}
+@media(max-width:600px){.page-freeze-controls,.hsd-controls{max-height:48dvh;overflow:auto}}
+}
+@media print{.page-freeze-controls{position:static}}
+@media screen {
+.symbol-direction .navigation-direction-icon path:first-child{stroke:var(--symbol-blue-light)}.symbol-direction .navigation-direction-icon path:last-child{stroke:var(--symbol-blue-dark)}
+#main #rab-table [data-wbs-shift] svg g path{stroke:var(--symbol-blue)}
+.add-icon rect{stroke:var(--symbol-green-dark)}.button:not(.subtle) .add-icon rect{stroke:var(--symbol-green-light)}
+}

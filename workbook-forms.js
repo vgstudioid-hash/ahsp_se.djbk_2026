@@ -1,4 +1,4 @@
-import { groups, moneyRound } from './rab-core.1058e0824760.js';
+import { groups, moneyRound } from './rab-core.62b86ac7dd98.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>new Intl.NumberFormat('id-ID',{maximumFractionDigits:2}).format(n);
 export function formHeader(p,title){const identity=[['Nama Pekerjaan',p.name],['MA',p.ma],['Sub MA',p.subMa],['Unit Kerja',p.workUnit],['Kategori Program',p.programCategory],['Tahun',p.year],['Pagu Anggaran',p.budget==null?'—':'Rp '+fmt(p.budget)]];for(const [label,value] of [['Pemberi Tugas',p.owner],['Lokasi',p.location],['Koordinat',p.coordinates]])if(value)identity.push([label,value]);return `<section class="workbook-header"><h2>${esc(title)}</h2>${title.startsWith('RENCANA')&&p.documentType==='HPS'?'<h3>HARGA PERKIRAAN SENDIRI (HPS)</h3>':''}<dl>${identity.map(([label,value])=>`<div><dt>${label}</dt><dd>: ${esc(value||'—')}</dd></div>`).join('')}</dl></section>`;}
