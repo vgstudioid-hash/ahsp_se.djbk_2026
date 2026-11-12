@@ -1,4 +1,4 @@
-import { normalize } from './search-core.b9c266fa566a.js';
+import { normalize } from './search-core.77155ae93a33.js';
 
 const icons = {
   home: '<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
@@ -78,7 +78,7 @@ function runSearch(q) {
   $('#search-input').value=q;
   if (q.trim().length<2) { $('#search-results').innerHTML='<div class="empty-state">Masukkan minimal dua karakter untuk mulai mencari.</div>'; return; }
   if (!worker) {
-    worker=new Worker(new URL('./search-worker.b9c266fa566a.js', import.meta.url),{type:'module'});
+    worker=new Worker(new URL('./search-worker.77155ae93a33.js', import.meta.url),{type:'module'});
     worker.onmessage=({data})=>{
       if(data.id!==searchId || route()!=='search') return;
       const total=data.groups.reduce((n,g)=>n+g.total,0); const query=new URLSearchParams(location.hash.split('?')[1]).get('q')||'';
