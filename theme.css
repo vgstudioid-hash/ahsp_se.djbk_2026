@@ -95,3 +95,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 .ahs-inline-source{font-size:12px}
 #analysis-dialog .ahs-frozen-head .icon-button[data-close-dialog]{flex:0 0 28px;width:28px;height:28px;min-width:28px;min-height:28px}
 }
+@media screen {
+#navigation a.nav-locked{opacity:.45;cursor:not-allowed;background:transparent;color:var(--ivory)}
+#navigation a.nav-locked:hover{background:transparent;color:var(--ivory)}
+.nav-lock{margin-left:auto;display:inline-flex;flex-shrink:0}.nav-lock svg{width:14px;height:14px}
+.information-heading h1{margin-top:0;margin-bottom:14px}.information-heading .eyebrow{line-height:1.7}
+}
