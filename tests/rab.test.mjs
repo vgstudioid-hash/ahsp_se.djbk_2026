@@ -165,3 +165,12 @@ test('Empirical numbering is sequential, survives backups and deletion, and pres
  assert.throws(()=>validateProject({...p,empiricalSequence:-1}));assert.throws(()=>validateProject({...p,items:[{...item,code:'Empiris-000'}]}));
  const legacy=validateProject({...p,items:[{...item,code:'Empiris'}]});assert.equal(legacy.items[0].code,'Empiris');assert.equal(nextEmpiricalCode(legacy),'Empiris-001');
 });
+
+test('Nested WBS parents roll up leaf costs without billing their own AHS, volumes or resources twice',async()=>{
+ const {summarizeScopes,wbsStructure}=await import('../rab-core.js');const p=fixture();p.overhead=0;p.tax=0;p.smkk=[];p.rates={};
+ const work=(id,level,volume,price)=>{const item={id,code:id,title:id,unit:'m³',group:'Pekerjaan',docId:'',page:1,wbsLevel:level,volume,components:[{group:'Bahan',name:id,unit:'m³',coefficient:1}]};if(price!=null)p.rates[rateKey(item,item.components[0])]=price;return item;};
+ p.items=[{...work('Scope',1,0,null),heading:true,components:[]},work('Parent',2,999,null),work('Sub-parent',3,2,null),work('Leaf a',4,3,20),work('Leaf b',3,4,5),work('Sibling',2,2,15)];
+ const r=calculateProject(p);assert.deepEqual(r.items.map(r=>r.amount),[110,80,60,60,20,30]);assert.equal(r.subtotal,110);assert.equal(r.missing,0);assert.equal(r.incomplete,false);assert.deepEqual(r.items.map(r=>r.billable),[false,false,false,true,true,true]);assert.equal(summarizeScopes(p).scopes[0].amount,110);assert.equal(summarizeScopes(p).scopes[0].count,3);assert.deepEqual(resources(p).map(r=>r.name).sort(),['Leaf a','Leaf b','Sibling']);assert.equal(wbsStructure(p.items)[1].children.length,2);
+ p.items.splice(3,1);p.rates[rateKey(p.items[2],p.items[2].components[0])]=10;const next=calculateProject(p);assert.equal(next.items[2].billable,true);assert.equal(next.items[2].amount,20);assert.equal(next.subtotal,70);assert.equal(calculateProject(validateProject(p)).subtotal,70);
+ p.items[1].components=[];assert.equal(calculateProject(p).incomplete,false);p.items.splice(2,2);assert.equal(calculateProject(p).items[1].unlinked,true);assert.equal(calculateProject(p).incomplete,true);
+});

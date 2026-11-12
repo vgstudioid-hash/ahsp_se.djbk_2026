@@ -285,3 +285,9 @@ Quantity mempertahankan kolom No/Segmen saat digeser; Rekapitulasi mempertahanka
 Dialog Pilih Analisa Harga Satuan tidak menampilkan daftar sebelum kata kunci diisi; mengosongkan pencarian menyembunyikan hasil. Pada rincian AHS, tautan sumber sejajar dengan judul, header dan dua kolom kiri tetap saat scroll, dan tombol hapus komponen berada di ujung kanan baris tanpa menambah kolom cetak.
 
 Halaman AHS menyembunyikan kartu dan jumlah hasil saat pencarian kosong; kata kunci memunculkan hasil dan mengosongkannya menyembunyikan kembali. Cakupan katalog berada paling bawah sesudah SMKK. Tombol Analisis manual tidak ditampilkan pada header; alur pemeriksaan sumber tetap tersedia dari hasil pencarian. Semua tombol, termasuk dialog dan kontrol yang dibuat setelah render, memperoleh tooltip native dari nama aksesibel atau label tombolnya.
+
+### Akumulasi induk WBS dan daftar AHS proyek
+
+Setiap baris dengan turunan pada susunan WBS menjadi baris akumulasi otomatis. Jumlah harga induk adalah jumlah anak langsung (yang dapat memiliki akumulasi turunannya sendiri); subtotal proyek, rekap, pajak, dan kebutuhan sumber daya memakai pekerjaan daun saja. Volume/satuan/harga satuan dan pemilihan AHS induk disembunyikan. Analisis/Quantity lama tetap tersimpan dan kembali berlaku bila baris tidak lagi memiliki turunan. CSV/cetak menampilkan nilai akumulasi, tanpa menghitungnya dua kali.
+
+AHS yang telah dipilih pada baris RAB ditampilkan sebagai panel tersendiri di halaman AHS, di atas SMKK, termasuk variasi penyesuaian per baris. Panel dapat dibuka/ditutup, harga mengikuti HSD proyek yang sama, dan penambahan/penghapusan komponen dapat dilakukan langsung. Panel tidak membuat salinan biaya baru. Judul, penjelasan, banner dan ekspor terpisah di atas tabel SMKK disembunyikan; tabel dan kontrol buka/tutup SMKK tetap tersedia.

@@ -1,7 +1,8 @@
+import { wbsStructure } from './rab-core.js';
 import { quantityShapes, quantityCategoryNames, quantitySummary, quantityRowValue } from './quantity-core.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>new Intl.NumberFormat('id-ID',{maximumFractionDigits:6}).format(n);
-export const quantityWork=(p,id)=>p.items.find(i=>i.id===id&&!i.heading)||p.items.find(i=>!i.heading);
+export const quantityWork=(p,id)=>{const structure=wbsStructure(p.items),work=p.items.filter((i,n)=>!i.heading&&!structure[n].rollup);return work.find(i=>i.id===id)||work[0];};
 export function quantityExpression(row){const s=quantityShapes[row.shape];return `${s.formula}; ${s.fields.map(([key,label])=>`${label}=${fmt(row.dimensions[key])}${s.category==='count'?'':' '+row.dimensionUnit}`).join(', ')}; faktor=${fmt(row.multiplier)}`;}
 export function quantitySheet(p,selectedId) {
  const item=quantityWork(p,selectedId);
@@ -18,7 +19,7 @@ function quantityDetails(item,rows){
  }).join('')}</tbody></table></div></section>`).join('');
 }
 export function quantityReport(p) {
- const work=p.items.filter(i=>!i.heading&&i.quantityRows?.length);
+ const structure=wbsStructure(p.items),work=p.items.filter((i,n)=>!i.heading&&!structure[n].rollup&&i.quantityRows?.length);
  if(!work.length)return '<p>Belum ada rincian Quantity pada proyek.</p>';
  return work.map(item=>{let s,error;try{s=quantitySummary(item.quantityRows,item.unit);}catch(e){error=e.message;}
  return `<section class="quantity-print-item"><h2>${esc(item.title||'Uraian belum diisi')}</h2><p>Kode AHS: ${esc(item.code||'—')} · ${item.quantityLinked?'Terhubung ke RAB':'Volume manual / hasil belum diterapkan'} · Volume RAB ${fmt(item.volume)} ${esc(item.unit)}</p><table><thead><tr><th>No</th><th>Operasi</th><th>Segmen</th><th>Bentuk</th><th>Dasar perhitungan</th><th>Volume</th></tr></thead><tbody>${item.quantityRows.map((row,i)=>{const r=quantityRowValue(row);return `<tr><td>${i+1}</td><td>${row.sign===1?'Tambah':'Kurangi'}</td><td>${esc(row.label)}${row.image?`<img class="quantity-segment-image" src="${esc(row.image)}" alt="Gambar segmen">`:""}</td><td>${quantityShapes[row.shape].label}</td><td>${esc(quantityExpression(row))}</td><td>${fmt(r.value)} ${esc(r.category==='count'?item.unit:r.baseUnit)}</td></tr>`;}).join('')}</tbody></table><p><strong>${s?`Jumlah hasil Quantity: ${fmt(s.total)} ${esc(item.unit)}`:esc(error)}</strong></p></section>`;}).join('');
