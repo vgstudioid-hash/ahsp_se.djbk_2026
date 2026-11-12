@@ -127,3 +127,22 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg")!important
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]):hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;filter:none}
 }
 @media screen{.app-build-version{display:block;width:100%;text-align:right;font-size:10px;color:var(--muted);overflow-wrap:anywhere}}
+@media screen {
+#main #rab-table>tbody>tr:not(.smkk-scope-row)>td:nth-child(1),#main #rab-table>tbody>tr:not(.smkk-scope-row)>td:nth-child(2){position:sticky;z-index:2;background:var(--surface)}
+#main #rab-table>tbody>tr:not(.smkk-scope-row)>td:nth-child(1){left:0}
+#main #rab-table>tbody>tr:not(.smkk-scope-row)>td:nth-child(2){left:var(--rab-first-col,105px);box-shadow:2px 0 0 var(--line)}
+#main #rab-table>tbody>tr.wbs-heading>td:nth-child(-n+2){background:#edf2e6}
+#main #rab-table>thead th:nth-child(1){position:sticky;left:0;z-index:3}#main #rab-table>thead th:nth-child(2){position:sticky;left:var(--rab-first-col,105px);z-index:3}
+.rab-frozen-header{pointer-events:auto;background:var(--ivory)}
+.frozen-rab-title{display:flex;align-items:center;justify-content:space-between;gap:12px;box-sizing:border-box;background:var(--ivory);padding:6px 0}
+.frozen-rab-title h2{font-size:23px;margin:0}.frozen-rab-title .action-row{flex-shrink:0}
+#rab-table .trash-button::before{width:20px;height:20px}
+#rab-table .add-sheet-row{font-weight:700;font-size:12px;display:inline-flex;align-items:center;gap:8px;border-radius:6px;width:auto;min-height:36px;padding:8px 12px;margin:6px}
+#rab-table .add-sheet-row:hover,#main #rab-table button.wbs-level-button:hover:not(:disabled),#main #rab-table button[data-move]:hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55}
+.budget-bottom{flex-wrap:wrap;gap:18px;align-items:flex-end}.rab-recap-button{order:0;margin-left:auto}.budget-bottom .budget-summary{order:1}
+.project-switch>label{font-size:11px;letter-spacing:.8px;line-height:1.6}
+}
+@media screen{
+#main #rab-table>tbody>tr.smkk-scope-row>td:nth-child(1){position:sticky;left:0;z-index:2}
+#main #rab-table>tbody>tr.smkk-scope-row>td:nth-child(2){position:sticky;left:var(--rab-first-col,105px);z-index:2;box-shadow:2px 0 0 var(--line)}
+}
