@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 const root = new URL('../', import.meta.url);
 await rm(new URL('dist/', root), { recursive: true, force: true });
 await mkdir(new URL('dist/', root), { recursive: true });
-const assets=['theme.css','smkk-core.js','quantity-illustration.js','quantity-calculator.js','ai-ui.js','styles.css','rab.css','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','search-worker.js','search-core.js'];
+const assets=['button-navigation.js','theme.css','smkk-core.js','quantity-illustration.js','quantity-calculator.js','ai-ui.js','styles.css','rab.css','app.js','rab-app.js','rab-core.js','workbook-forms.js','quantity-core.js','quantity-ui.js','search-worker.js','search-core.js'];
 const iconSources=(await Promise.all(['edit','delete','close'].map(name=>readFile(new URL('public/icons/'+name+'.svg',root),'utf8')))).join('\0');
 const loaderSource=await readFile(new URL('asset-loader.js',root),'utf8');
 const sources=new Map(await Promise.all(assets.map(async file=>[file,await readFile(new URL(file,root),'utf8')])));
