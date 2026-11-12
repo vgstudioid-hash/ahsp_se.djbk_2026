@@ -45,3 +45,16 @@ button.trash-button:hover{background:#ed3249;border-color:#cc2c41;color:#fff;tex
 button.trash-button svg{display:block;width:100%;height:100%;margin:0;fill:none;stroke:currentColor;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 button.trash-button:disabled{opacity:.5;cursor:not-allowed}
 }
+@media screen {
+:root{--action-size:36px;--action-icon-size:32px}
+.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,button.trash-button,.row-tools button[data-move]{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 var(--action-size);width:var(--action-size);height:var(--action-size);min-width:var(--action-size);min-height:var(--action-size);padding:0;border:0;border-radius:7px;background:transparent;color:var(--forest);line-height:1;box-shadow:none;vertical-align:middle}
+button.trash-button,.row-tools button.trash-button{color:#df354c;background:transparent;border:0}
+button.trash-button:hover{color:#bd2339;background:#df354c12;border:0}
+.rab-add-work .rab-add-symbol{color:var(--ivory)}
+.rab-add-symbol .add-icon,button.wbs-insert-button .add-icon,button.trash-button svg,.row-tools button[data-move] svg{display:block;width:var(--action-icon-size);height:var(--action-icon-size);margin:0;flex:none;stroke-width:2.2}
+button.wbs-level-button{border:2px solid currentColor}
+button.wbs-level-button svg{width:24px;height:24px}
+button .add-icon{width:var(--action-icon-size);height:var(--action-icon-size);flex-basis:var(--action-icon-size)}
+button.button{min-height:44px;box-sizing:border-box}
+button.trash-button{min-height:var(--action-size)}
+}
