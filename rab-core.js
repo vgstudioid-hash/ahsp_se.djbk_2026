@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.ef143ddb7620.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.bd16a9ce871d.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -25,9 +25,16 @@ export function smkkRowResult(row){
  const enabled=row.enabled!==false,missing=enabled&&(row.volume==null||row.price==null||!row.unit.trim());
  return {enabled,missing,amount:enabled&&!missing?moneyRound(row.volume*row.price):0};
 }
+export function wbsStructure(items){
+ const rows=items.map(()=>({parentIndex:null,children:[],rollup:false})),stack=[];
+ items.forEach((item,index)=>{const level=item.wbsLevel??2;while(stack.length&&(items[stack.at(-1)].wbsLevel??2)>=level)stack.pop();if(stack.length){rows[index].parentIndex=stack.at(-1);rows[stack.at(-1)].children.push(index);}stack.push(index);});
+ rows.forEach(row=>row.rollup=row.children.length>0);return rows;
+}
 export function calculateProject(project) {
-  const items = project.items.map(item => ({ item, ...calculateItem(item, project.rates, project.overhead) }));
-  const subtotal = moneyRound(items.reduce((n, r) => n + r.amount, 0));
+  const structure=wbsStructure(project.items);
+  const items=project.items.map((item,index)=>({item,...calculateItem(structure[index].rollup?{...item,heading:true,components:[]}:item,project.rates,project.overhead),rollup:structure[index].rollup,billable:!item.heading&&!structure[index].rollup}));
+  for(let i=items.length-1;i>=0;i--)if(items[i].rollup)items[i].amount=moneyRound(structure[i].children.reduce((sum,j)=>sum+items[j].amount,0));
+  const subtotal=moneyRound(items.filter(r=>r.billable).reduce((n,r)=>n+r.amount,0));
   const smkkResults=project.smkk.map(smkkRowResult);
   const smkk=moneyRound(smkkResults.reduce((n,r)=>n+r.amount,0));
   const smkkMissing=smkkResults.filter(r=>r.missing).length;
@@ -35,8 +42,8 @@ export function calculateProject(project) {
   const taxFactor = project.taxScheme === 'dpp11of12' ? 11/12 : 1;
   const taxBase = moneyRound(beforeTax * taxFactor);
   const tax = moneyRound(taxBase * project.tax / 100);
-  const missingKeys = new Set(items.flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
-  const work = items.filter(i => !i.item.heading);
+  const missingKeys = new Set(items.filter(i=>i.billable).flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
+  const work = items.filter(i => i.billable);
   const incomplete = smkkMissing>0 || !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
   const total=moneyRound(beforeTax+tax);
   const roundedTotal=Math.round(total/100)*100;
@@ -58,7 +65,7 @@ export function summarizeScopes(project) {
       current={id:item.id,number:numbers[index],title:wbsTitle(item)||'LINGKUP BELUM DIBERI NAMA',count:0,amount:0,incomplete:false,missingKeys:new Set()};
       scopes.push(current);
     }
-    if(item.heading)return;
+    if(!row.billable)return;
     if(!current){current={id:null,number:'—',title:'BELUM DIKELOMPOKKAN KE LINGKUP',count:0,amount:0,incomplete:false,missingKeys:new Set()};scopes.push(current);}
     current.count++;
     current.amount=moneyRound(current.amount+row.amount);
@@ -81,7 +88,8 @@ export function summarizeScopePackages(project) {
 }
 export function resources(project) {
   const map = new Map();
-  for (const item of project.items) for (const c of item.components) {
+  const structure=wbsStructure(project.items);
+  for (const [index,item] of project.items.entries()) if(!item.heading&&!structure[index].rollup) for (const c of item.components) {
     const key = rateKey(item, c);
     if (!map.has(key)) map.set(key, { ...c, key, docId: item.empirical ? 'empiris' : item.docId, quantity: 0, price: Object.hasOwn(project.rates, key) ? project.rates[key] : null });
     map.get(key).quantity += c.coefficient * item.volume;

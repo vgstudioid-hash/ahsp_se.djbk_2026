@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=ef143ddb7620")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=ef143ddb7620")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=ef143ddb7620")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=bd16a9ce871d")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=bd16a9ce871d")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=bd16a9ce871d")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -184,3 +184,13 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=ef143ddb7
 @media(max-width:600px){#analysis-dialog .ahs-frozen-head h2{font-size:18px}#analysis-dialog .ahs-dialog-heading{gap:8px}}
 }
 @media screen{#analysis-dialog .workbook-ahs .ahs-group-name{font-size:12px;line-height:1.6}#analysis-dialog .workbook-ahs .workbook-grand td{font-weight:650}}
+@media screen {
+.frozen-rab-title{padding:0}
+.used-ahs-section{margin-top:28px}.used-ahs-section>h2{font-size:20px;margin-bottom:18px}
+.used-ahs-entry{border:1px solid var(--line);border-radius:8px;background:var(--surface);margin-bottom:14px;overflow:hidden}
+.used-ahs-entry>summary{display:flex;align-items:center;gap:16px;cursor:pointer;padding:16px 18px;background:#e0e3d2;list-style:none}
+.used-ahs-entry>summary::after{content:'⌄';margin-left:8px;font-size:20px}.used-ahs-entry[open]>summary::after{content:'⌃'}
+.used-ahs-entry>summary strong{min-width:100px;font-size:12px}.used-ahs-entry>summary>span{font-size:13px}.used-ahs-price{margin-left:auto;white-space:nowrap}
+.used-ahs-details{padding:16px}.used-ahs-entry>summary:hover{background:#d5d9c6}.smkk-ahs-section{margin-top:24px;border-top:0;padding-top:0}
+@media(max-width:600px){.used-ahs-entry>summary{flex-wrap:wrap;gap:10px}.used-ahs-details{padding:10px}.used-ahs-price{margin-left:0}}
+}
