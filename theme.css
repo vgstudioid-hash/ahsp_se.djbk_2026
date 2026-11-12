@@ -77,3 +77,14 @@ button.edit-icon-button svg{width:var(--action-icon-size);height:var(--action-ic
 .calculator-image-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:16px}
 #quantity-calculator-form>.dialog-actions{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}
 }
+@media screen {
+.quantity-summary{margin-top:12px;align-items:start}
+.quantity-summary-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;align-self:start}
+.quantity-table textarea[data-q-field="label"],.quantity-table select,.quantity-table input{height:42px;min-height:42px;box-sizing:border-box;resize:none}
+.quantity-dimensions label{display:flex;flex-direction:column-reverse;gap:6px}
+.quantity-table td{vertical-align:top}
+button.trash-button.button.subtle{background:transparent;color:#df354c;border:0;padding:0;min-height:var(--action-size);width:var(--action-size);height:var(--action-size);min-width:var(--action-size)}
+button.trash-button.button.subtle:hover,button.trash-button:active{background:#df354c12;color:#bd2339}
+button.edit-icon-button:hover,button.edit-icon-button:active{background:#2675c412;color:#185a9b}
+button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:2px solid currentColor;outline-offset:2px;box-shadow:none}
+}
