@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=99cfb9ab65f0")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=99cfb9ab65f0")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=99cfb9ab65f0")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=ef143ddb7620")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=ef143ddb7620")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=ef143ddb7620")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -169,3 +169,18 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=99cfb9ab6
 }
 @media print{.ahs-table-frozen-header{display:none!important}}
 @media screen{#analysis-content:has(.ahs-frozen-head){overflow:visible}}
+@media screen {
+#analysis-dialog .ahs-frozen-head h2{font-size:20px;line-height:1.4;font-weight:650;letter-spacing:-.3px}
+#analysis-dialog .ahs-inline-source{font-size:12px;line-height:1.5}
+#analysis-dialog .workbook-ahs-title,.ahs-table-frozen-header .workbook-ahs-title{font-size:13px;line-height:1.6;padding:14px 16px;font-weight:600}
+#analysis-dialog .workbook-ahs-title>span,.ahs-table-frozen-header .workbook-ahs-title>span{font-size:12px;font-weight:400}
+#analysis-dialog .workbook-ahs thead th{font-size:11px;line-height:1.5;padding:12px 13px}
+#analysis-dialog .workbook-ahs tbody td,#analysis-dialog .workbook-ahs tbody th{font-size:12px;line-height:1.6;padding:12px 13px}
+#analysis-dialog .workbook-ahs input{font-size:12px;line-height:1.4;min-height:38px;padding:8px 10px}
+#analysis-dialog .workbook-ahs .component-controls button{font-size:11px;line-height:1.4}
+#analysis-dialog .ahs-dialog-heading{gap:16px}
+#analysis-dialog:has(.ahs-frozen-head) .dialog-actions .button{font-size:12px}
+.catalog-coverage{margin-top:28px}
+@media(max-width:600px){#analysis-dialog .ahs-frozen-head h2{font-size:18px}#analysis-dialog .ahs-dialog-heading{gap:8px}}
+}
+@media screen{#analysis-dialog .workbook-ahs .ahs-group-name{font-size:12px;line-height:1.6}#analysis-dialog .workbook-ahs .workbook-grand td{font-weight:650}}
