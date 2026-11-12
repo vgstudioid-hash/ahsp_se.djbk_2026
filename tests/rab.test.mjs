@@ -174,3 +174,11 @@ test('Nested WBS parents roll up leaf costs without billing their own AHS, volum
  p.items.splice(3,1);p.rates[rateKey(p.items[2],p.items[2].components[0])]=10;const next=calculateProject(p);assert.equal(next.items[2].billable,true);assert.equal(next.items[2].amount,20);assert.equal(next.subtotal,70);assert.equal(calculateProject(validateProject(p)).subtotal,70);
  p.items[1].components=[];assert.equal(calculateProject(p).incomplete,false);p.items.splice(2,2);assert.equal(calculateProject(p).items[1].unlinked,true);assert.equal(calculateProject(p).incomplete,true);
 });
+
+test('Resource categories distinguish material, wages, equipment, explicit rentals and other costs; source/KDN metadata survives import and backup',async()=>{
+ const {resourceCategories,resourceCategory}=await import('../rab-core.js');assert.deepEqual(resourceCategories,['BAHAN/ MATERIAL','TENAGA KERJA','ALAT','SEWA','LAINNYA']);
+ for(const [group,name,expected]of [['Bahan','Semen','BAHAN/ MATERIAL'],['Tenaga kerja','Mandor','TENAGA KERJA'],['Peralatan','Excavator','ALAT'],['Peralatan','Sewa crane','SEWA'],['Lain-lain','Biaya rental pompa','SEWA'],['Lain-lain','Biaya pengujian','LAINNYA']])assert.equal(resourceCategory({group,name}),expected);
+ const p=fixture(),key=rateKey(p.items[0],p.items[0].components[0]);p.resourceMeta={[key]:{code:'L1',remarks:'Upah lokal',priceSource:'Survei proyek',kdn:'85%',shb:100}};const restored=validateProject(p);assert.deepEqual(restored.resourceMeta[key],p.resourceMeta[key]);
+ const imported=importRates(toCsv([['kunci','harga','sumber harga','nilai kdn','keterangan'],[key,'120000','Survei toko','90','Sesuai lokasi']]),restored);assert.equal(imported.resourceMeta[key].priceSource,'Survei toko');assert.equal(imported.resourceMeta[key].kdn,'90');assert.equal(imported.resourceMeta[key].remarks,'Sesuai lokasi');assert.equal(imported.rates[key],120000);assert.equal(validateProject({...restored,...imported}).resourceMeta[key].kdn,'90');
+ assert.throws(()=>validateProject({...p,resourceMeta:{[key]:{kdn:42}}}));assert.throws(()=>validateProject({...p,resourceMeta:{[key]:{priceSource:'x'.repeat(2001)}}}));
+});

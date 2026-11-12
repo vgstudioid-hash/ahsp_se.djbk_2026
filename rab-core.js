@@ -86,6 +86,14 @@ export function summarizeScopePackages(project) {
  const taxBase=moneyRound(beforeTax*result.taxFactor),tax=moneyRound(taxBase*project.tax/100),total=moneyRound(beforeTax+tax);
  return {...result,scopes,scopeSubtotal:beforeTax,beforeTax,taxBase,tax,total,roundedTotal:Math.round(total/100)*100};
 }
+export const resourceCategories=['BAHAN/ MATERIAL','TENAGA KERJA','ALAT','SEWA','LAINNYA'];
+export function resourceCategory(resource){
+ if(resource.group==='Bahan')return 'BAHAN/ MATERIAL';
+ if(resource.group==='Tenaga kerja')return 'TENAGA KERJA';
+ if(/\b(?:sewa|rental)\b/i.test(resource.name))return 'SEWA';
+ if(resource.group==='Peralatan')return 'ALAT';
+ return 'LAINNYA';
+}
 export function resources(project) {
   const map = new Map();
   const structure=wbsStructure(project.items);
@@ -130,7 +138,7 @@ export function importRates(text, project) {
   for (const row of rows) {
     const key = row[keyIndex], raw = row[priceIndex]?.trim();
     if (!allowed.has(key)) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
-    for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000]]) {
+    for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000],['sumber harga','priceSource',2000],['nilai kdn','kdn',100]]) {
       const index=header.indexOf(column);
       if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');resourceMeta[key]??={};resourceMeta[key][field]=value;}
     }
@@ -166,6 +174,7 @@ export function validateProject(p) {
     if (key.length > 3000 || !m || typeof m !== 'object') throw Error('Metadata sumber daya tidak valid.');
     if (typeof (m.code||'') !== 'string' || (m.code||'').length>100 || typeof (m.remarks||'') !== 'string' || (m.remarks||'').length>4000) throw Error('Kode/keterangan HSD tidak valid.');
     resourceMeta[key]={code:m.code||'',remarks:m.remarks||''};
+    for(const [field,max] of [['priceSource',2000],['kdn',100]])if(m[field]!=null){if(typeof m[field]!=='string'||m[field].length>max)throw Error('Sumber harga/Nilai KDN tidak valid.');resourceMeta[key][field]=m[field];}
     if(m.shb!=null && m.shb!=='')resourceMeta[key].shb=nonnegative(m.shb);
   }
   const items = p.items.map(item => {

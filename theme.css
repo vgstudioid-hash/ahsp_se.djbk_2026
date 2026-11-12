@@ -194,3 +194,10 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg")!important
 .used-ahs-details{padding:16px}.used-ahs-entry>summary:hover{background:#d5d9c6}.smkk-ahs-section{margin-top:24px;border-top:0;padding-top:0}
 @media(max-width:600px){.used-ahs-entry>summary{flex-wrap:wrap;gap:10px}.used-ahs-details{padding:10px}.used-ahs-price{margin-left:0}}
 }
+@media screen {
+.resource-sheet{min-width:1000px}.resource-sheet th:nth-child(1){width:26%}.resource-sheet th:nth-child(2){width:7%}.resource-sheet th:nth-child(3){width:15%}.resource-sheet th:nth-child(4){width:21%}.resource-sheet th:nth-child(5){width:12%}.resource-sheet th:nth-child(6){width:19%}
+.resource-sheet input,.resource-sheet textarea{display:block;width:100%;box-sizing:border-box;min-width:80px;font:inherit;color:var(--forest);background:var(--surface);border:1px solid #babda8;border-radius:6px;padding:9px 10px;min-height:40px}
+.resource-sheet input[data-rate]{text-align:right}.resource-sheet textarea{height:58px;resize:none}
+.resource-sheet .resource-category th{padding:13px 15px;background:#e0e3d2;color:var(--forest);font-size:12px;letter-spacing:.5px;text-align:left}
+.resource-sheet .resource-empty{padding:15px;color:var(--muted);font-size:11px}
+}
