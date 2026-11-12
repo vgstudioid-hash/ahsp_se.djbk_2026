@@ -110,3 +110,19 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg")!important
 #analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
+@media screen {
+.wbs-row-actions,.wbs-row-actions .wbs-level-controls{display:flex;align-items:center;justify-content:inherit;gap:5px;margin:0;flex-wrap:nowrap}
+.wbs-row-actions{justify-content:flex-start}.wbs-level-controls{margin-top:0}
+.wbs-table tr[data-wbs-level="2"] .wbs-row-actions{justify-content:center}.wbs-table tr[data-wbs-level="3"] .wbs-row-actions,.wbs-table tr[data-wbs-level="4"] .wbs-row-actions{justify-content:flex-end}
+.wbs-table :is(button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move],button.trash-button){border-radius:6px;background:transparent!important;box-shadow:none}
+.wbs-table :is(button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move],button.trash-button):hover:not(:disabled),.wbs-source .text-action:hover{background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;text-decoration:none}
+.wbs-source{margin-top:4px;gap:8px}.wbs-source .text-action{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:2px 4px;font-size:11px;line-height:1.3;border-radius:5px}
+.wbs-source .text-action .add-icon{width:20px;height:20px;flex-basis:20px;margin:0}
+.rab-frozen-header{position:fixed;top:0;z-index:30;overflow:hidden;pointer-events:none;background:var(--forest);box-shadow:0 2px 5px #1f3b2f22}
+.rab-frozen-header[hidden]{display:none}.rab-frozen-header table{margin:0;table-layout:fixed}
+}
+@media print{.rab-frozen-header{display:none!important}}
+@media screen {
+#main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]){background:transparent!important;filter:none}
+#main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]):hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;filter:none}
+}
