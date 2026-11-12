@@ -58,3 +58,12 @@ button .add-icon{width:var(--action-icon-size);height:var(--action-icon-size);fl
 button.button{min-height:44px;box-sizing:border-box}
 button.trash-button{min-height:var(--action-size)}
 }
+/* Match the Project Baru / Impor Project header icons (reference A). */
+@media screen {
+:root{--action-size:28px;--action-icon-size:20px}
+button.wbs-level-button{border:0;background:transparent}
+button.wbs-level-button svg{width:var(--action-icon-size);height:var(--action-icon-size);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.rab-add-symbol .add-icon,button.wbs-insert-button .add-icon,button.trash-button svg,.row-tools button[data-move] svg{stroke-width:2.4}
+.rab-add-work{gap:6px}
+@media(max-width:600px){:root{--action-icon-size:18px}}
+}
