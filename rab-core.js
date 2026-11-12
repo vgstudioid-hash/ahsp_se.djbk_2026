@@ -138,6 +138,12 @@ export function importRates(text, project) {
   }
   return { rates, resourceMeta, count };
 }
+export function nextEmpiricalCode(project){
+ const used=project.items.filter(i=>i.empirical).map(i=>Number(/^Empiris-(\d+)$/.exec(i.code)?.[1]||0));
+ const next=Math.max(project.empiricalSequence||0,0,...used)+1;
+ if(next>999999999)throw Error('Nomor AHS empiris mencapai batas.');
+ return 'Empiris-'+String(next).padStart(3,'0');
+}
 export function validateProject(p) {
   if (!p || typeof p !== 'object' || !Array.isArray(p.items) || !Array.isArray(p.smkk) || p.items.length > 1000 || p.smkk.length > 1000) throw Error('Data proyek tidak valid.');
   if(p.items.reduce((n,i)=>n+(Array.isArray(i.quantityRows)?i.quantityRows.reduce((sum,r)=>sum+(typeof r.image==='string'?r.image.length:0),0):0),0)>2000000)throw Error('Total gambar proyek maksimal 2 MB.');
@@ -162,7 +168,7 @@ export function validateProject(p) {
     if (item.remarks != null && (typeof item.remarks !== 'string' || item.remarks.length > 4000)) throw Error('Keterangan tidak valid.');
     if (item.docId && !['se','i','ii','iii','iv','v','vi','vii'].includes(item.docId)) throw Error('Dokumen sumber tidak valid.');
     const page = Number(item.page || 1); if (!Number.isInteger(page) || page < 1 || page > 10000) throw Error('Halaman sumber tidak valid.');
-    if(item.empirical && (item.code !== 'Empiris' || item.docId || item.heading || !item.components.length || typeof item.note !== 'string' || !item.note.trim())) throw Error('AHS Empiris harus berkode Empiris, memiliki komponen dan dasar empiris, tanpa rujukan PDF SE.');
+    if(item.empirical && (!(item.code==='Empiris'||(/^Empiris-\d{3,9}$/.test(item.code)&&Number(item.code.slice(8))>0)) || item.docId || item.heading || !item.components.length || typeof item.note !== 'string' || !item.note.trim())) throw Error('AHS Empiris harus berkode Empiris-NNN, memiliki komponen dan dasar empiris, tanpa rujukan PDF SE.');
     const quantityRows=validateQuantityRows(item.quantityRows||[]),quantityLinked=Boolean(item.quantityLinked);
     if(item.heading&&quantityRows.length)throw Error('Judul WBS tidak memiliki rincian Quantity.');
     const volume=quantityLinked?quantitySummary(quantityRows,item.unit).total:nonnegative(item.volume);
@@ -196,7 +202,9 @@ export function validateProject(p) {
   if(p.programCategory!=null&&!['','Beban','Investasi'].includes(p.programCategory))throw Error('Kategori Program tidak valid.');
   if(p.documentType && !['RAB','HPS'].includes(p.documentType))throw Error('Jenis dokumen tidak valid.');
   if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
-  return { id: crypto.randomUUID(), name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
+  if(p.empiricalSequence!=null&&(!Number.isInteger(p.empiricalSequence)||p.empiricalSequence<0||p.empiricalSequence>999999999))throw Error('Nomor urut empiris tidak valid.');
+  const empiricalSequence=Math.max(p.empiricalSequence||0,0,...items.filter(i=>i.empirical).map(i=>Number(/^Empiris-(\d+)$/.exec(i.code)?.[1]||0)));
+  return { id: crypto.randomUUID(), empiricalSequence, name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
 }
 
 export function projectInformationErrors(p,allowedUnits=null) {

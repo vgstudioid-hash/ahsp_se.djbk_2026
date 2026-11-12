@@ -157,3 +157,11 @@ test('Recap package quantities default to one, multiply scope prices, survive re
  assert.throws(()=>validateProject({...p,smkkRecapVolume:-1}));assert.throws(()=>validateProject({...p,items:p.items.map(i=>({...i,recapVolume:-1}))}));
  p.items.shift();p.recapUnassignedVolume=3;assert.equal(summarizeScopePackages(validateProject(p)).scopes[0].volume,3);
 });
+
+test('Empirical numbering is sequential, survives backups and deletion, and preserves legacy codes',async()=>{
+ const {nextEmpiricalCode}=await import('../rab-core.js');const p=fixture();p.items=[];assert.equal(nextEmpiricalCode(p),'Empiris-001');
+ const item={...fixture().items[0],empirical:true,code:'Empiris-011',docId:'',note:'Observasi lapangan'};p.items=[item];assert.equal(nextEmpiricalCode(p),'Empiris-012');
+ const restored=validateProject(p);assert.equal(restored.empiricalSequence,11);assert.equal(restored.items[0].code,'Empiris-011');restored.items=[];assert.equal(nextEmpiricalCode(validateProject(restored)),'Empiris-012');
+ assert.throws(()=>validateProject({...p,empiricalSequence:-1}));assert.throws(()=>validateProject({...p,items:[{...item,code:'Empiris-000'}]}));
+ const legacy=validateProject({...p,items:[{...item,code:'Empiris'}]});assert.equal(legacy.items[0].code,'Empiris');assert.equal(nextEmpiricalCode(legacy),'Empiris-001');
+});

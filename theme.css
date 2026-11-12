@@ -158,3 +158,14 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg")!important
 .other-frozen-header[hidden]{display:none}.other-frozen-header table{margin:0}
 }
 @media print{.other-frozen-header{display:none!important}}
+@media screen {
+.ahs-dialog-heading{align-items:baseline}.ahs-dialog-heading h2{margin:0}.ahs-inline-source{align-self:baseline}
+.ahs-row-amount{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:28px}.ahs-row-amount [data-component-remove]{margin:0 0 0 4px;flex-shrink:0}
+#analysis-dialog .workbook-ahs>thead th:nth-child(1),#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(1){position:sticky;left:0;z-index:2}
+#analysis-dialog .workbook-ahs>thead th:nth-child(2),#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(2){position:sticky;left:var(--ahs-first-col,65px);z-index:2}
+#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(-n+2){background:var(--surface);box-shadow:1px 0 0 var(--line)}
+.ahs-table-frozen-header{position:fixed;z-index:8;overflow:hidden;pointer-events:none;background:var(--surface);box-shadow:0 2px 5px #1f3b2f22}
+.ahs-table-frozen-header[hidden]{display:none}.ahs-table-frozen-header table{margin:0}.ahs-table-frozen-header .workbook-ahs-title{margin:0}
+}
+@media print{.ahs-table-frozen-header{display:none!important}}
+@media screen{#analysis-content:has(.ahs-frozen-head){overflow:visible}}

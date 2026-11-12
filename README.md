@@ -71,7 +71,7 @@ Template contoh BM memakai asumsi pelaksanaan yang dijelaskan pada sumber; harga
 
 Tombol **+ AHS Empiris** tersedia pada menu Pilih AHS dan dialog pemilihan AHS per baris RAB. Gunakan untuk pekerjaan yang belum tersedia pada daftar. Kode selalu **Empiris** (dikunci), tanpa mengaitkan analisis dengan nomor halaman PDF SE. Isi uraian, satuan hasil, kelompok RAB, komponen/koefisien, dan dasar pengamatan atau asumsi produktivitas. Harga dasar dikelola melalui HSD. Pengguna dapat membuka rincian dan memilih **Ubah AHS Empiris** untuk mengubah koefisien; perubahan menghitung ulang RAB.
 
-Analisis empiris tersimpan bersama proyek dan ikut pada cadangan, CSV, dan cetak/PDF dengan kode Empiris. Saat dibuat dari baris RAB, WBS, volume, keterangan, dan uraian yang telah diisi dipertahankan. Harga komponen empiris dipisahkan dari harga template SE, sehingga perubahan tidak mengubah harga pada analisis sumber. Analisis tidak dinyatakan sebagai AHS resmi dari SE.
+Analisis empiris tersimpan bersama proyek dan ikut pada cadangan, CSV, dan cetak/PDF dengan kode otomatis Empiris-001, Empiris-002, dan seterusnya. Nomor urut disimpan per proyek dan tidak mundur setelah item dihapus; kode lama Empiris tetap dapat diimpor. Saat dibuat dari baris RAB, WBS, volume, keterangan, dan uraian yang telah diisi dipertahankan. Harga komponen empiris dipisahkan dari harga template SE, sehingga perubahan tidak mengubah harga pada analisis sumber. Analisis tidak dinyatakan sebagai AHS resmi dari SE.
 
 ## Insert / hapus komponen per sub-AHS
 
@@ -281,3 +281,5 @@ HTML hasil build menyertakan pemuat inline yang mengambil `build-info.json` tanp
 Tombol Pekerjaan di RAB membuka pilihan Lingkup/Uraian/Sub Uraian tanpa menambah baris sebelum dipilih. Kelompok judul dan tombol beserta header kolom tetap terlihat saat menggulir halaman; dua kolom kiri tetap saat tabel digeser horizontal. Tombol Rekapitulasi RAB tersedia di bagian bawah. Hasil cetak tetap memakai tabel biasa tanpa header layar mengambang.
 
 Quantity mempertahankan kolom No/Segmen saat digeser; Rekapitulasi mempertahankan No/Lingkup. Header kolom keduanya tetap terlihat saat menggulir halaman dan mengikuti posisi geser horizontal. Judul Rekapitulasi/Quantity mengikuti posisi Informasi Umum Pekerjaan, dan metadata proyek Rekap hanya ditampilkan dalam hasil cetak. Header tetap RAB mempertahankan susunan kontrol saat menggulir tanpa membuat ulang kontrol pada setiap perubahan posisi.
+
+Dialog Pilih Analisa Harga Satuan tidak menampilkan daftar sebelum kata kunci diisi; mengosongkan pencarian menyembunyikan hasil. Pada rincian AHS, tautan sumber sejajar dengan judul, header dan dua kolom kiri tetap saat scroll, dan tombol hapus komponen berada di ujung kanan baris tanpa menambah kolom cetak.
