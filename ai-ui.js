@@ -1,4 +1,4 @@
-import { calculateProject } from './rab-core.bf4b64b5ebf1.js';
+import { calculateProject } from './rab-core.aca639ae8419.js';
 const sessions=new Map();
 let connection={url:'',token:''};
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

@@ -1,10 +1,10 @@
-import { smkkRisks, createSmkkRows, updateSmkkDefaults, riskQuantityText } from './smkk-core.bf4b64b5ebf1.js';
-import { openQuantityCalculator } from './quantity-calculator.bf4b64b5ebf1.js';
-import { mountAssistant } from './ai-ui.bf4b64b5ebf1.js';
-import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.bf4b64b5ebf1.js';
-import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.bf4b64b5ebf1.js';
-import { formHeader, ahsForm, hsdForm } from './workbook-forms.bf4b64b5ebf1.js';
-import { calculateProject, calculateItem, resources, resourceCategory, resourceCategories, rateKey, nonnegative, nextEmpiricalCode, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, wbsStructure, summarizeScopes, summarizeScopePackages, smkkScope, smkkRowResult, moneyRound, projectInformationErrors } from './rab-core.bf4b64b5ebf1.js';
+import { smkkRisks, createSmkkRows, updateSmkkDefaults, riskQuantityText } from './smkk-core.aca639ae8419.js';
+import { openQuantityCalculator } from './quantity-calculator.aca639ae8419.js';
+import { mountAssistant } from './ai-ui.aca639ae8419.js';
+import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.aca639ae8419.js';
+import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.aca639ae8419.js';
+import { formHeader, ahsForm, hsdForm } from './workbook-forms.aca639ae8419.js';
+import { calculateProject, calculateItem, resources, resourceCategory, resourceCategories, rateKey, nonnegative, nextEmpiricalCode, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, wbsStructure, summarizeScopes, summarizeScopePackages, smkkScope, smkkRowResult, moneyRound, projectInformationErrors } from './rab-core.aca639ae8419.js';
 
 const smkkGroupNames={'1':'Penyiapan Dokumen Penerapan SMKK','2':'Sosialisasi, Promosi dan Pelatihan','3':'Alat Pelindung Kerja dan Alat Pelindung Diri','4':'Asuransi','5':'Personel Keselamatan Konstruksi','6':'Fasilitas Sarana, Prasarana dan Alat Kesehatan','7':'Rambu dan Perlengkapan Lalu Lintas','8':'Konsultasi dengan Ahli terkait Keselamatan Konstruksi','9':'Kegiatan dan Peralatan terkait Pengendalian Risiko Keselamatan Konstruksi'};
 const $ = s => document.querySelector(s);
@@ -45,7 +45,7 @@ function workspaceUnlocked(){return projectChosen&&!Object.keys(projectInformati
 function nav(){const locked=!workspaceUnlocked();$('#navigation').innerHTML=sidebarRoutes.map(key=>`<a href="#${key}" class="${view()===key?'active ':''}${locked&&key!=='project'?'nav-locked':''}" ${view()===key?'aria-current="page"':''} ${locked&&key!=='project'?'aria-disabled="true" tabindex="-1" title="Pilih proyek dan lengkapi Informasi Umum Pekerjaan terlebih dahulu"':''}><span class="nav-symbol">${symbols[key]}</span><span>${names[key]}</span>${locked&&key!=='project'?'<span class="nav-lock" aria-hidden="true">'+svg('<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>')+'</span>':key==='rab'?`<span class="nav-count">${project().items.filter(i=>!i.heading).length}</span>`:''}</a>`).join('')+`<a href="references.html#library" target="_blank" rel="noopener" ${locked?'class="nav-locked" aria-disabled="true" tabindex="-1" title="Pilih proyek dan lengkapi informasi wajib terlebih dahulu"':''}><span class="nav-symbol">→</span><span>Dasar-dasar Perhitungan (Pustaka)</span>${locked?'<span class="nav-lock" aria-hidden="true">'+svg('<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>')+'</span>':''}</a>`;$('#breadcrumb-current').textContent=names[view()]; }
 function informationHeader(){return '<div class="rab-heading information-heading"><div><h1>Informasi Umum Pekerjaan</h1><div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div></div></div>';}
 
-function header(title,description,actions=''){const below=['Rekapitulasi RAB','Quantity Pekerjaan','Analisa Harga Satuan (AHS)','Kebutuhan proyek, terurai.'].includes(title);return `<div class="rab-heading ${below?'aligned-information-heading':''}"><div>${below?'':'<div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div>'}<h1>${title}</h1>${below?'<div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div>':description?`<p>${description}</p>`:''}</div><div class="action-row">${actions}</div></div>`;}
+function header(title,description,actions=''){const below=['Rekapitulasi RAB','Quantity Pekerjaan','Analisa Harga Satuan (AHS)','Kebutuhan proyek, terurai.','Harga Satuan Dasar (HSD)'].includes(title);return `<div class="rab-heading ${below?'aligned-information-heading':''}"><div>${below?'':'<div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div>'}<h1>${title}</h1>${below?'<div class="eyebrow">AHSP SE DJBK NO. 47 TAHUN 2026</div>':description?`<p>${description}</p>`:''}</div><div class="action-row">${actions}</div></div>`;}
 function sourceLink(item){if(item.empirical)return 'AHS Empiris · dasar pengamatan/perhitungan pengguna';return item.docId?`<a href="documents/${esc(item.docId)}.pdf#page=${item.page}" target="_blank" rel="noopener">Lampiran ${item.docId.toUpperCase()} · PDF hal. ${item.page} →</a>`:'Analisis manual';}
 function taxName(p=project()){return p.taxScheme==='dpp11of12'?'PPN':'Pajak tarif langsung';}
 function dppName(p=project()){return p.taxScheme==='dpp11of12'?'DPP 11/12 × (pekerjaan + SMKK)':'Dasar pengenaan pajak (100%)';}
@@ -58,8 +58,12 @@ function catalogView(){return header('Analisa Harga Satuan (AHS)','','<button cl
 const fieldName=id=>({iv:'Sumber Daya Air',vi:'Cipta Karya',v:'Bina Marga',empiris:'Empiris'}[id]||'Manual');
 const catalogMatches=(a,words)=>words.every(w=>(a.code+' '+(a.aliases||[]).join(' ')+' '+a.title).toLowerCase().includes(w));
 function filterCatalog(){const empty=!query.trim();$('#catalog-results').hidden=empty;$('#catalog-more').hidden=empty;$('#catalog-count').hidden=empty;if(empty){$('#catalog-results').replaceChildren();$('#catalog-more').replaceChildren();$('#catalog-count').textContent='';return;}const words=query.toLowerCase().trim().split(/\s+/);const matches=catalog.filter(a=>(field==='Semua'||fieldName(a.docId)===field)&&(catalogStatus==='Semua'||a.extractionStatus===catalogStatus)&&catalogMatches(a,words));$('#catalog-count').textContent=`${fmt(matches.length)} hasil · menampilkan ${fmt(Math.min(catalogLimit,matches.length))}`;$('#catalog-results').innerHTML=matches.slice(0,catalogLimit).map(a=>`<article class="ahs-card"><div class="card-label">${fieldName(a.docId)} <span>·</span> ${esc(a.unit||'Satuan perlu diperiksa')}</div><h3>${esc(a.title)}</h3><code>${esc(a.code)}</code><p>${catalogState(a)} · ${a.components.length} komponen · ${sourceLink(a)}</p>${a.note?`<p class="ahs-note">${esc(a.note)}</p>`:''}<div class="ahs-actions"><button class="text-action" data-preview="${a.id}">Lihat analisis →</button><button class="button" data-add="${a.id}">${a.extractionStatus==='verified'?'<svg class="add-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></svg> Tambah ke RAB':'Periksa & gunakan'}</button></div></article>`).join('')||'<div class="empty-state"><h3>Tidak ada hasil untuk pencarian ini.</h3><p>Coba kode atau uraian lain, atau ubah filter bidang/status.</p></div>';$('#catalog-more').innerHTML=matches.length>catalogLimit?'<button class="button subtle" data-action="catalog-more">Tampilkan 48 berikutnya</button>':'';}
-function pricesView(){return header('Harga Satuan Dasar (HSD).','Form harga upah, bahan, peralatan, dan lain-lain mengikuti susunan workbook rujukan.','<a class="button subtle" href="#resources">Rekap sumber daya →</a><button class="button subtle" data-action="price-template">Ekspor / template HSD CSV ↓</button><button class="button subtle" data-action="print-hsd">Cetak HSD / PDF</button><button class="button" data-action="import-rates">Impor harga CSV ↑</button>')+formHeader(project(),'HARGA SATUAN DASAR (HSD)')+`<div class="rab-alert neutral">Harga SHB adalah pembanding. Harga satuan adalah harga yang digunakan dalam AHS. Keduanya dapat diisi terpisah; diskon, konversi satuan, dan penyesuaian tahun pada workbook tidak diterapkan otomatis. Tanggal harga: ${esc(project().date)}.</div><div class="catalog-tools"><label class="title-filter"><input id="price-query" type="search" value="${esc(priceQuery)}" placeholder="Cari nama sumber daya…" aria-label="Cari sumber daya"></label><select id="price-group" aria-label="Kelompok sumber daya">${['Semua',...groups].map(g=>`<option ${priceGroup===g?'selected':''}>${g}</option>`).join('')}</select></div><div id="price-results"></div>`;}
-function filterPrices(){const rows=resources(project()).filter(c=>(priceGroup==='Semua'||c.group===priceGroup)&&c.name.toLowerCase().includes(priceQuery.toLowerCase()));$('#price-results').innerHTML=rows.length?hsdForm(rows,project()):'<div class="empty-state"><h3>Belum ada sumber daya yang sesuai.</h3><p>Tambahkan pekerjaan ke RAB atau ubah filter.</p><a class="button" href="#catalog">Pilih AHS</a></div>';}
+function pricesView(){
+ const action=(name,label,path,primary=false)=>`<button class="button ${primary?'':'subtle'} icon-label-button" data-action="${name}">${svg(path)}<span>${label}</span></button>`;
+ return `<section class="hsd-workspace"><div class="hsd-controls">${header('Harga Satuan Dasar (HSD)','','<a class="button subtle" href="#resources">Rekapitulasi</a>'+action('price-template','Ekspor CSV','<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>')+action('print-hsd','Cetak / PDF','<path d="M6 9V3h12v6M6 17H3V9h18v8h-3M6 14h12v7H6z"/>')+action('import-rates','Impor CSV','<path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/>',true))}<div class="catalog-tools"><label class="title-filter"><input id="price-query" type="search" value="${esc(priceQuery)}" placeholder="Cari nama sumber daya…" aria-label="Cari sumber daya"></label><select id="price-group" aria-label="Kelompok sumber daya">${['Semua',...groups].map(g=>`<option ${priceGroup===g?'selected':''}>${g}</option>`).join('')}</select></div></div><div id="price-results"></div><div class="hsd-bottom-actions"><a class="button subtle" href="#catalog">Kembali ke AHS</a></div></section>`;
+}
+
+function filterPrices(){const rows=resources(project()).filter(c=>(priceGroup==='Semua'||c.group===priceGroup)&&c.name.toLowerCase().includes(priceQuery.toLowerCase()));$('#price-results').innerHTML=rows.length?hsdForm(rows,project()):'<div class="empty-state"><h3>Belum ada sumber daya yang sesuai.</h3><p>Tambahkan pekerjaan ke RAB atau ubah filter.</p><a class="button" href="#catalog">Pilih AHS</a></div>';requestAnimationFrame(updateRabFrozenHeader);}
 function resourceView(){
  const p=project(),rows=resources(p);
  return header('Kebutuhan proyek, terurai.','','<button class="button" data-action="resource-csv">Ekspor sumber daya CSV ↓</button>')+`<div class="table-wrap"><table class="rab-table resource-sheet"><thead><tr><th>Uraian Sumber Daya</th><th>Satuan</th><th>Harga Satuan</th><th>Sumber Harga</th><th>Nilai KDN</th><th>Keterangan</th></tr></thead><tbody>${resourceCategories.map(category=>{const list=rows.filter(c=>resourceCategory(c)===category);return `<tr class="resource-category"><th colspan="6">${category}</th></tr>${list.map(c=>{const m=p.resourceMeta?.[c.key]||{};return `<tr><td><strong title="${esc(fieldName(c.docId)+' · '+c.group)}">${esc(c.name)}</strong></td><td>${esc(c.unit)}</td><td><input type="number" min="0" step="any" data-rate="${esc(c.key)}" value="${c.price??''}" placeholder="Belum diisi" aria-label="Harga satuan ${esc(c.name)}"></td><td><input type="text" data-hsd-key="${esc(c.key)}" data-field="priceSource" maxlength="2000" value="${esc(m.priceSource||'')}" placeholder="Sumber harga" aria-label="Sumber harga ${esc(c.name)}"></td><td><input type="text" data-hsd-key="${esc(c.key)}" data-field="kdn" maxlength="100" value="${esc(m.kdn||'')}" placeholder="Nilai KDN" aria-label="Nilai KDN ${esc(c.name)}"></td><td><textarea rows="2" data-hsd-key="${esc(c.key)}" data-field="remarks" maxlength="4000" placeholder="Keterangan" aria-label="Keterangan ${esc(c.name)}">${esc(m.remarks||'')}</textarea></td></tr>`;}).join('')||'<tr><td colspan="6" class="resource-empty">Belum ada sumber daya dalam kelompok ini.</td></tr>'}`;}).join('')}</tbody></table></div>`;
@@ -429,15 +433,15 @@ window.addEventListener('resize',()=>requestAnimationFrame(updateRabFrozenHeader
 
 function updateOtherFrozenHeaders(){
  for(const [table,overlay] of frozenTableHeaders){if(!main.contains(table)){overlay.remove();frozenTableHeaders.delete(table);}}
- for(const table of main.querySelectorAll('.quantity-table,.scope-recap-table')){
+ for(const table of main.querySelectorAll('.quantity-table,.scope-recap-table,.workbook-hsd')){
   const wrap=table.parentElement,head=table.tHead,first=head.rows[0].cells[0].getBoundingClientRect().width,rect=table.getBoundingClientRect(),h=head.getBoundingClientRect(),box=wrap.getBoundingClientRect();
-  table.style.setProperty('--freeze-first-col',first+'px');
+  table.style.setProperty('--freeze-first-col',first+'px');const isHsd=table.matches('.workbook-hsd'),top=isHsd?main.querySelector('.hsd-controls').getBoundingClientRect().bottom:0,pinned=isHsd?0:2;
   let overlay=frozenTableHeaders.get(table);
-  if(h.top>=0||rect.bottom<=h.height){if(overlay)overlay.hidden=true;continue;}
+  if(h.top>=top||rect.bottom<=top+h.height){if(overlay)overlay.hidden=true;continue;}
   if(!overlay){overlay=document.createElement('div');overlay.className='other-frozen-header';overlay.setAttribute('aria-hidden','true');document.body.append(overlay);frozenTableHeaders.set(table,overlay);}
-  overlay.hidden=false;Object.assign(overlay.style,{left:box.left+'px',top:'0px',width:wrap.clientWidth+'px',height:h.height+'px'});
+  overlay.hidden=false;Object.assign(overlay.style,{left:box.left+'px',top:top+'px',width:wrap.clientWidth+'px',height:h.height+'px'});
   const copy=head.cloneNode(true),clone=document.createElement('table');clone.className=table.className;Object.assign(clone.style,{width:rect.width+'px',minWidth:rect.width+'px',tableLayout:'fixed',transform:`translateX(${-wrap.scrollLeft}px)`});
-  [...copy.querySelectorAll('th')].forEach((th,i)=>{th.style.width=head.rows[0].cells[i].getBoundingClientRect().width+'px';if(i<2){Object.assign(th.style,{position:'relative',left:'0px',transform:`translateX(${wrap.scrollLeft}px)`,zIndex:'2'});}});clone.append(copy);overlay.replaceChildren(clone);
+  [...copy.querySelectorAll('th')].forEach((th,i)=>{th.style.width=head.rows[0].cells[i].getBoundingClientRect().width+'px';if(i<pinned){Object.assign(th.style,{position:'relative',left:'0px',transform:`translateX(${wrap.scrollLeft}px)`,zIndex:'2'});}});clone.append(copy);overlay.replaceChildren(clone);
  }
 }
 
@@ -457,11 +461,11 @@ dialog.addEventListener('close',()=>{ahsFrozenHeader?.remove();ahsFrozenHeader=n
 // Include dialog and table controls that are inserted after initial render.
 if(!globalThis.__rabButtonTooltips){
  globalThis.__rabButtonTooltips=true;
- const describeButtons=()=>document.querySelectorAll('button').forEach(button=>{
+ const describeButtons=()=>{decorateNavigationButtons();document.querySelectorAll('button').forEach(button=>{
   if(button.hasAttribute('title')&&!button.dataset.autoTooltip)return;
   const label=button.getAttribute('aria-label')||button.textContent.replace(/\s+/g,' ').trim();
   if(label){button.title=label;button.dataset.autoTooltip='true';}
- });
+ });};
  describeButtons();new MutationObserver(describeButtons).observe(document.body,{childList:true,subtree:true,characterData:true});
 }
 
@@ -471,3 +475,14 @@ function usedAhsView(p){
  return `<section class="used-ahs-section" aria-label="AHS yang digunakan di RAB"><h2>Analisa Harga Satuan Pekerjaan</h2>${items.map(item=>{const r=calculateItem(item,p.rates,p.overhead);return `<details class="used-ahs-entry" data-used-ahs="${item.id}" ${openUsedAhs.has(item.id)?'open':''}><summary><strong>${esc(item.code||'AHS Manual')}</strong><span>${esc(item.title)}</span><span class="used-ahs-price">${rp(r.unitPrice)} / ${esc(item.unit)}</span></summary><div class="used-ahs-details">${ahsForm(item,r,p,true,false)}</div></details>`;}).join('')}</section>`;
 }
 document.addEventListener('toggle',e=>{const el=e.target;if(el.matches?.('details[data-used-ahs]')){if(el.open)openUsedAhs.add(el.dataset.usedAhs);else openUsedAhs.delete(el.dataset.usedAhs);}},true);
+
+function decorateNavigationButtons(){
+ for(const button of document.querySelectorAll('button,a.button')){
+  if(button.querySelector('.navigation-direction-icon'))continue;
+  const label=button.textContent.trim(),back=/^Kembali\b/i.test(label),forward=/^(Menuju|Buka|Rekapitulasi)\b/i.test(label);
+  if(!back&&!forward)continue;
+  const walker=document.createTreeWalker(button,NodeFilter.SHOW_TEXT);let node;while(node=walker.nextNode())node.textContent=node.textContent.replace(/[←→]/g,'').trim();
+  const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.classList.add('navigation-direction-icon');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.innerHTML=back?'<path d="m11 6-6 6 6 6" stroke="#65b5f0"/><path d="m19 6-6 6 6 6" stroke="#238de1"/>':'<path d="m5 6 6 6-6 6" stroke="#65b5f0"/><path d="m13 6 6 6-6 6" stroke="#238de1"/>';
+  button.classList.add('navigation-button');if(back)button.prepend(icon);else button.append(icon);
+ }
+}
