@@ -67,3 +67,13 @@ button.wbs-level-button svg{width:var(--action-icon-size);height:var(--action-ic
 .rab-add-work{gap:6px}
 @media(max-width:600px){:root{--action-icon-size:18px}}
 }
+@media screen {
+.quantity-calculation-heading>strong{flex:1;min-width:0}
+.quantity-calculation-heading>.quantity-heading-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-shrink:0;margin-left:auto}
+button.edit-icon-button{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 var(--action-size);width:var(--action-size);height:var(--action-size);min-width:var(--action-size);padding:0;border:0;border-radius:6px;background:transparent;color:#2675c4}
+button.edit-icon-button:hover{background:#2675c412;color:#185a9b}
+button.edit-icon-button svg{width:var(--action-icon-size);height:var(--action-icon-size);display:block;margin:0}
+.icon-button[data-close-dialog],#close-reader{flex:0 0 var(--action-size);width:var(--action-size);height:var(--action-size);min-width:var(--action-size);min-height:var(--action-size);padding:5px;border-width:2px;border-radius:7px}
+.calculator-image-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:16px}
+#quantity-calculator-form>.dialog-actions{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+}
