@@ -267,3 +267,7 @@ Tombol panah di pojok kanan header SMKK pada halaman AHS menyembunyikan atau mem
 ### Rekapitulasi sebagai paket lingkup
 
 Rekap memakai kolom NO., LINGKUP PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH HARGA, KETERANGAN. Nomor berurutan; volume awal 1 dapat diubah menjadi angka nonnegatif (termasuk pecahan/nol), satuan tetap paket. Harga satuan mengikuti total asli lingkup RAB/AHS, termasuk SMKK. Jumlah harga = volume paket × harga satuan; ringkasan, pajak, CSV dan cetak rekap memakai jumlah harga tersebut. Bila volume paket diubah, total rekap mengikuti pengalinya; rincian sumber RAB/AHS tidak diubah. Volume disimpan bersama lingkup, termasuk saat cadangan dipulihkan dengan ID baru.
+
+### Aset versi lama saat deploy
+
+Deploy mempertahankan berkas JS/CSS berpenanda versi, sehingga HTML atau modul yang masih tersimpan di cache browser/CDN tetap dapat memuat dependensinya setelah versi baru terbit. Skrip juga memulihkan aset dari 30 commit deploy terakhir untuk memperbaiki tautan versi yang terhapus oleh deploy lama. Berkas HTML, alias tanpa penanda versi, dan data tetap diperbarui dari build terkini.
