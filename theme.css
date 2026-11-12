@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=750a7be26d23")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=750a7be26d23")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=750a7be26d23")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=99cfb9ab65f0")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=99cfb9ab65f0")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=99cfb9ab65f0")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -158,3 +158,14 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=750a7be26
 .other-frozen-header[hidden]{display:none}.other-frozen-header table{margin:0}
 }
 @media print{.other-frozen-header{display:none!important}}
+@media screen {
+.ahs-dialog-heading{align-items:baseline}.ahs-dialog-heading h2{margin:0}.ahs-inline-source{align-self:baseline}
+.ahs-row-amount{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:28px}.ahs-row-amount [data-component-remove]{margin:0 0 0 4px;flex-shrink:0}
+#analysis-dialog .workbook-ahs>thead th:nth-child(1),#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(1){position:sticky;left:0;z-index:2}
+#analysis-dialog .workbook-ahs>thead th:nth-child(2),#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(2){position:sticky;left:var(--ahs-first-col,65px);z-index:2}
+#analysis-dialog .workbook-ahs .ahs-component-row>td:nth-child(-n+2){background:var(--surface);box-shadow:1px 0 0 var(--line)}
+.ahs-table-frozen-header{position:fixed;z-index:8;overflow:hidden;pointer-events:none;background:var(--surface);box-shadow:0 2px 5px #1f3b2f22}
+.ahs-table-frozen-header[hidden]{display:none}.ahs-table-frozen-header table{margin:0}.ahs-table-frozen-header .workbook-ahs-title{margin:0}
+}
+@media print{.ahs-table-frozen-header{display:none!important}}
+@media screen{#analysis-content:has(.ahs-frozen-head){overflow:visible}}
