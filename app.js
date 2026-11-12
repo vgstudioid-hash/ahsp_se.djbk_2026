@@ -1,4 +1,5 @@
-import { normalize } from './search-core.aca639ae8419.js';
+import { initButtonNavigation } from './button-navigation.1058e0824760.js';
+import { normalize } from './search-core.1058e0824760.js';
 
 const icons = {
   home: '<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
@@ -78,7 +79,7 @@ function runSearch(q) {
   $('#search-input').value=q;
   if (q.trim().length<2) { $('#search-results').innerHTML='<div class="empty-state">Masukkan minimal dua karakter untuk mulai mencari.</div>'; return; }
   if (!worker) {
-    worker=new Worker(new URL('./search-worker.aca639ae8419.js', import.meta.url),{type:'module'});
+    worker=new Worker(new URL('./search-worker.1058e0824760.js', import.meta.url),{type:'module'});
     worker.onmessage=({data})=>{
       if(data.id!==searchId || route()!=='search') return;
       const total=data.groups.reduce((n,g)=>n+g.total,0); const query=new URLSearchParams(location.hash.split('?')[1]).get('q')||'';
@@ -152,13 +153,4 @@ window.addEventListener('hashchange',()=>{render();window.scrollTo({top:0});});
 try {const response=await fetch('data/documents.json');if(!response.ok)throw Error('Collection');docs=await response.json();render();}
 catch{main.innerHTML='<div class="empty-state large"><h1>Pustaka tidak dapat dimuat.</h1><p>Periksa koneksi lalu muat ulang halaman.</p><button class="button" onclick="location.reload()">Muat ulang</button></div>';}
 
-// Include dialog and table controls that are inserted after initial render.
-if(!globalThis.__rabButtonTooltips){
- globalThis.__rabButtonTooltips=true;
- const describeButtons=()=>document.querySelectorAll('button').forEach(button=>{
-  if(button.hasAttribute('title')&&!button.dataset.autoTooltip)return;
-  const label=button.getAttribute('aria-label')||button.textContent.replace(/\s+/g,' ').trim();
-  if(label){button.title=label;button.dataset.autoTooltip='true';}
- });
- describeButtons();new MutationObserver(describeButtons).observe(document.body,{childList:true,subtree:true,characterData:true});
-}
+initButtonNavigation();

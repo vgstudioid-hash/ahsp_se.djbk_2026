@@ -1,10 +1,11 @@
-import { smkkRisks, createSmkkRows, updateSmkkDefaults, riskQuantityText } from './smkk-core.aca639ae8419.js';
-import { openQuantityCalculator } from './quantity-calculator.aca639ae8419.js';
-import { mountAssistant } from './ai-ui.aca639ae8419.js';
-import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.aca639ae8419.js';
-import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.aca639ae8419.js';
-import { formHeader, ahsForm, hsdForm } from './workbook-forms.aca639ae8419.js';
-import { calculateProject, calculateItem, resources, resourceCategory, resourceCategories, rateKey, nonnegative, nextEmpiricalCode, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, wbsStructure, summarizeScopes, summarizeScopePackages, smkkScope, smkkRowResult, moneyRound, projectInformationErrors } from './rab-core.aca639ae8419.js';
+import { initButtonNavigation } from './button-navigation.1058e0824760.js';
+import { smkkRisks, createSmkkRows, updateSmkkDefaults, riskQuantityText } from './smkk-core.1058e0824760.js';
+import { openQuantityCalculator } from './quantity-calculator.1058e0824760.js';
+import { mountAssistant } from './ai-ui.1058e0824760.js';
+import { quantityShapes, quantitySummary, quantityRowValue, quantityUnit, newQuantityRow, validateQuantityRows } from './quantity-core.1058e0824760.js';
+import { quantityWork, quantitySheet, quantityReport, quantityExpression } from './quantity-ui.1058e0824760.js';
+import { formHeader, ahsForm, hsdForm } from './workbook-forms.1058e0824760.js';
+import { calculateProject, calculateItem, resources, resourceCategory, resourceCategories, rateKey, nonnegative, nextEmpiricalCode, toCsv, importRates, validateProject, groups, wbsNumbers, wbsTitle, wbsStructure, summarizeScopes, summarizeScopePackages, smkkScope, smkkRowResult, moneyRound, projectInformationErrors } from './rab-core.1058e0824760.js';
 
 const smkkGroupNames={'1':'Penyiapan Dokumen Penerapan SMKK','2':'Sosialisasi, Promosi dan Pelatihan','3':'Alat Pelindung Kerja dan Alat Pelindung Diri','4':'Asuransi','5':'Personel Keselamatan Konstruksi','6':'Fasilitas Sarana, Prasarana dan Alat Kesehatan','7':'Rambu dan Perlengkapan Lalu Lintas','8':'Konsultasi dengan Ahli terkait Keselamatan Konstruksi','9':'Kegiatan dan Peralatan terkait Pengendalian Risiko Keselamatan Konstruksi'};
 const $ = s => document.querySelector(s);
@@ -458,16 +459,7 @@ function updateAhsFrozenHeader(){
 }
 dialog.addEventListener('close',()=>{ahsFrozenHeader?.remove();ahsFrozenHeader=null;});
 
-// Include dialog and table controls that are inserted after initial render.
-if(!globalThis.__rabButtonTooltips){
- globalThis.__rabButtonTooltips=true;
- const describeButtons=()=>{decorateNavigationButtons();document.querySelectorAll('button').forEach(button=>{
-  if(button.hasAttribute('title')&&!button.dataset.autoTooltip)return;
-  const label=button.getAttribute('aria-label')||button.textContent.replace(/\s+/g,' ').trim();
-  if(label){button.title=label;button.dataset.autoTooltip='true';}
- });};
- describeButtons();new MutationObserver(describeButtons).observe(document.body,{childList:true,subtree:true,characterData:true});
-}
+initButtonNavigation();
 
 function usedAhsView(p){
  const items=p.items.filter(item=>!item.heading&&item.components.length);
@@ -475,14 +467,3 @@ function usedAhsView(p){
  return `<section class="used-ahs-section" aria-label="AHS yang digunakan di RAB"><h2>Analisa Harga Satuan Pekerjaan</h2>${items.map(item=>{const r=calculateItem(item,p.rates,p.overhead);return `<details class="used-ahs-entry" data-used-ahs="${item.id}" ${openUsedAhs.has(item.id)?'open':''}><summary><strong>${esc(item.code||'AHS Manual')}</strong><span>${esc(item.title)}</span><span class="used-ahs-price">${rp(r.unitPrice)} / ${esc(item.unit)}</span></summary><div class="used-ahs-details">${ahsForm(item,r,p,true,false)}</div></details>`;}).join('')}</section>`;
 }
 document.addEventListener('toggle',e=>{const el=e.target;if(el.matches?.('details[data-used-ahs]')){if(el.open)openUsedAhs.add(el.dataset.usedAhs);else openUsedAhs.delete(el.dataset.usedAhs);}},true);
-
-function decorateNavigationButtons(){
- for(const button of document.querySelectorAll('button,a.button')){
-  if(button.querySelector('.navigation-direction-icon'))continue;
-  const label=button.textContent.trim(),back=/^Kembali\b/i.test(label),forward=/^(Menuju|Buka|Rekapitulasi)\b/i.test(label);
-  if(!back&&!forward)continue;
-  const walker=document.createTreeWalker(button,NodeFilter.SHOW_TEXT);let node;while(node=walker.nextNode())node.textContent=node.textContent.replace(/[←→]/g,'').trim();
-  const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.classList.add('navigation-direction-icon');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.innerHTML=back?'<path d="m11 6-6 6 6 6" stroke="#65b5f0"/><path d="m19 6-6 6 6 6" stroke="#238de1"/>':'<path d="m5 6 6 6-6 6" stroke="#65b5f0"/><path d="m13 6 6 6-6 6" stroke="#238de1"/>';
-  button.classList.add('navigation-button');if(back)button.prepend(icon);else button.append(icon);
- }
-}
