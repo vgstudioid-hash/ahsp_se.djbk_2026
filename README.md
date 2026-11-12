@@ -275,3 +275,5 @@ Deploy mempertahankan berkas JS/CSS berpenanda versi, sehingga HTML atau modul y
 ### Kunci ruang kerja sebelum memilih proyek
 
 Setiap sesi halaman dimulai di **Informasi Umum Pekerjaan**. Pilih Project Baru, Impor Project, atau proyek tersimpan. Menu kerja (termasuk Pustaka) baru aktif setelah ketujuh isian wajib valid. Membuka hash halaman kerja langsung juga kembali ke pilihan/formulir informasi; menu terkunci diberi `aria-disabled`, penanda gembok dan dikeluarkan dari urutan Tab. Tombol mulai/impor serta formulir tetap dapat digunakan. Mengosongkan informasi wajib atau membuat proyek baru mengunci kembali ruang kerja; tidak menghapus data proyek lama. Pembukaan ulang halaman meminta pemilihan proyek kembali.
+
+HTML hasil build menyertakan pemuat inline yang mengambil `build-info.json` tanpa cache sebelum memuat CSS dan modul utama. Manifest divalidasi terhadap nama aset yang diizinkan; bila manifest tidak tersedia, aset bawaan HTML digunakan. Nomor versi yang benar-benar dimuat ditampilkan di footer. Ini membantu pemeriksaan versi publik tanpa menghapus penyimpanan proyek pengguna.
