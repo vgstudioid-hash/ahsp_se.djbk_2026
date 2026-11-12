@@ -88,3 +88,10 @@ button.trash-button.button.subtle:hover,button.trash-button:active{background:#d
 button.edit-icon-button:hover,button.edit-icon-button:active{background:#2675c412;color:#185a9b}
 button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:2px solid currentColor;outline-offset:2px;box-shadow:none}
 }
+@media screen {
+.quantity-bottom-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin-top:20px}
+#analysis-dialog .ahs-frozen-head{position:sticky;top:0;z-index:5;background:var(--surface);padding:12px 0 16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.ahs-dialog-heading{display:flex;align-items:center;gap:18px;flex-wrap:wrap;min-width:0}
+.ahs-inline-source{font-size:12px}
+#analysis-dialog .ahs-frozen-head .icon-button[data-close-dialog]{flex:0 0 28px;width:28px;height:28px;min-width:28px;min-height:28px}
+}
