@@ -7,11 +7,38 @@
   <meta name="description" content="Aplikasi penyusunan RAB berdasarkan AHS SE DJBK No. 47 Tahun 2026. Hitung volume, harga dasar, analisis harga satuan, dan rekap biaya proyek.">
   <title>RAB Studio — AHSP 2026</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.791780e14db4.css">
-  <link rel="stylesheet" href="rab.791780e14db4.css">
-  <link rel="stylesheet" href="theme.791780e14db4.css">
-  <script type="module" src="rab-app.791780e14db4.js"></script>
-  <meta name="rab-build" content="791780e14db4">
+  <link rel="stylesheet" data-asset="styles.css" href="styles.8c1a81732a4a.css">
+  <link rel="stylesheet" data-asset="rab.css" href="rab.8c1a81732a4a.css">
+  <link rel="stylesheet" data-asset="theme.css" href="theme.8c1a81732a4a.css">
+  <script type="module">// Generated into each HTML entry point by the static build.
+(async()=>{
+ const fallback={"theme.css":"theme.8c1a81732a4a.css","smkk-core.js":"smkk-core.8c1a81732a4a.js","quantity-illustration.js":"quantity-illustration.8c1a81732a4a.js","quantity-calculator.js":"quantity-calculator.8c1a81732a4a.js","ai-ui.js":"ai-ui.8c1a81732a4a.js","styles.css":"styles.8c1a81732a4a.css","rab.css":"rab.8c1a81732a4a.css","app.js":"app.8c1a81732a4a.js","rab-app.js":"rab-app.8c1a81732a4a.js","rab-core.js":"rab-core.8c1a81732a4a.js","workbook-forms.js":"workbook-forms.8c1a81732a4a.js","quantity-core.js":"quantity-core.8c1a81732a4a.js","quantity-ui.js":"quantity-ui.8c1a81732a4a.js","search-worker.js":"search-worker.8c1a81732a4a.js","search-core.js":"search-core.8c1a81732a4a.js"},entry="rab-app.js";
+ let manifest=fallback,build="8c1a81732a4a";
+ try{
+  const response=await fetch('./build-info.json?check='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('Manifest unavailable');
+  const latest=await response.json();
+  if(!/^[a-f0-9]{12}$/.test(latest.buildId)||!latest.assets)throw Error('Invalid manifest');
+  for(const name of ['styles.css','rab.css','theme.css',entry]){
+   const expected=name.replace(/\.(js|css)$/,'.'+latest.buildId+'.$1');
+   if(latest.assets[name]!==expected)throw Error('Invalid asset URL');
+  }
+  manifest=latest.assets;build=latest.buildId;
+ }catch{/* Use the bundled, retained assets when the fresh manifest cannot be fetched. */}
+ const styles=[...document.querySelectorAll('link[rel="stylesheet"]')].map(link=>{
+  const name=link.dataset.asset;
+  if(!manifest[name])return Promise.resolve();
+  return new Promise(resolve=>{link.onload=resolve;link.onerror=resolve;link.href=manifest[name]+'?v='+build;});
+ });
+ await Promise.all(styles);
+ document.documentElement.dataset.rabBuild=build;
+ document.querySelector('meta[name="rab-build"]')?.setAttribute('content',build);
+ const stamp=document.createElement('small');stamp.className='app-build-version';stamp.textContent='Versi '+build;stamp.setAttribute('aria-label','Versi aplikasi '+build);document.querySelector('footer')?.append(stamp);
+ try{await import('./'+manifest[entry]);}
+ catch{const main=document.querySelector('#main');if(main){main.textContent='Aplikasi belum berhasil dimuat. ';const retry=document.createElement('button');retry.className='button';retry.textContent='Muat ulang versi terbaru';retry.onclick=()=>{const url=new URL(location.href);url.searchParams.set('reload',Date.now());location.replace(url);};main.append(retry);}}
+})();
+</script>
+  <meta name="rab-build" content="8c1a81732a4a">
 </head>
 <body>
   <a class="skip-link" href="#main">Lewati ke konten</a>

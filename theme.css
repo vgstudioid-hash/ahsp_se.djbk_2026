@@ -126,3 +126,4 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg")!important
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]){background:transparent!important;filter:none}
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]):hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;filter:none}
 }
+@media screen{.app-build-version{display:block;width:100%;text-align:right;font-size:10px;color:var(--muted);overflow-wrap:anywhere}}

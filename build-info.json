@@ -1,20 +1,20 @@
 {
-  "buildId": "791780e14db4",
+  "buildId": "8c1a81732a4a",
   "assets": {
-    "theme.css": "theme.791780e14db4.css",
-    "smkk-core.js": "smkk-core.791780e14db4.js",
-    "quantity-illustration.js": "quantity-illustration.791780e14db4.js",
-    "quantity-calculator.js": "quantity-calculator.791780e14db4.js",
-    "ai-ui.js": "ai-ui.791780e14db4.js",
-    "styles.css": "styles.791780e14db4.css",
-    "rab.css": "rab.791780e14db4.css",
-    "app.js": "app.791780e14db4.js",
-    "rab-app.js": "rab-app.791780e14db4.js",
-    "rab-core.js": "rab-core.791780e14db4.js",
-    "workbook-forms.js": "workbook-forms.791780e14db4.js",
-    "quantity-core.js": "quantity-core.791780e14db4.js",
-    "quantity-ui.js": "quantity-ui.791780e14db4.js",
-    "search-worker.js": "search-worker.791780e14db4.js",
-    "search-core.js": "search-core.791780e14db4.js"
+    "theme.css": "theme.8c1a81732a4a.css",
+    "smkk-core.js": "smkk-core.8c1a81732a4a.js",
+    "quantity-illustration.js": "quantity-illustration.8c1a81732a4a.js",
+    "quantity-calculator.js": "quantity-calculator.8c1a81732a4a.js",
+    "ai-ui.js": "ai-ui.8c1a81732a4a.js",
+    "styles.css": "styles.8c1a81732a4a.css",
+    "rab.css": "rab.8c1a81732a4a.css",
+    "app.js": "app.8c1a81732a4a.js",
+    "rab-app.js": "rab-app.8c1a81732a4a.js",
+    "rab-core.js": "rab-core.8c1a81732a4a.js",
+    "workbook-forms.js": "workbook-forms.8c1a81732a4a.js",
+    "quantity-core.js": "quantity-core.8c1a81732a4a.js",
+    "quantity-ui.js": "quantity-ui.8c1a81732a4a.js",
+    "search-worker.js": "search-worker.8c1a81732a4a.js",
+    "search-core.js": "search-core.8c1a81732a4a.js"
   }
 }
