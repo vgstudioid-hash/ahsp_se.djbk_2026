@@ -1,4 +1,4 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.62b86ac7dd98.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.3311791c88bc.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
