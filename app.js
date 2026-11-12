@@ -151,3 +151,14 @@ $('#bookmark-page').onclick=()=>{if(readerDoc)toggleSaved(readerDoc.id,readerPag
 window.addEventListener('hashchange',()=>{render();window.scrollTo({top:0});});
 try {const response=await fetch('data/documents.json');if(!response.ok)throw Error('Collection');docs=await response.json();render();}
 catch{main.innerHTML='<div class="empty-state large"><h1>Pustaka tidak dapat dimuat.</h1><p>Periksa koneksi lalu muat ulang halaman.</p><button class="button" onclick="location.reload()">Muat ulang</button></div>';}
+
+// Include dialog and table controls that are inserted after initial render.
+if(!globalThis.__rabButtonTooltips){
+ globalThis.__rabButtonTooltips=true;
+ const describeButtons=()=>document.querySelectorAll('button').forEach(button=>{
+  if(button.hasAttribute('title')&&!button.dataset.autoTooltip)return;
+  const label=button.getAttribute('aria-label')||button.textContent.replace(/\s+/g,' ').trim();
+  if(label){button.title=label;button.dataset.autoTooltip='true';}
+ });
+ describeButtons();new MutationObserver(describeButtons).observe(document.body,{childList:true,subtree:true,characterData:true});
+}
