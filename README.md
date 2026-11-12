@@ -271,3 +271,7 @@ Rekap memakai kolom NO., LINGKUP PEKERJAAN, VOLUME, SATUAN, HARGA SATUAN, JUMLAH
 ### Aset versi lama saat deploy
 
 Deploy mempertahankan berkas JS/CSS berpenanda versi, sehingga HTML atau modul yang masih tersimpan di cache browser/CDN tetap dapat memuat dependensinya setelah versi baru terbit. Skrip juga memulihkan aset dari 30 commit deploy terakhir untuk memperbaiki tautan versi yang terhapus oleh deploy lama. Berkas HTML, alias tanpa penanda versi, dan data tetap diperbarui dari build terkini.
+
+### Kunci ruang kerja sebelum memilih proyek
+
+Setiap sesi halaman dimulai di **Informasi Umum Pekerjaan**. Pilih Project Baru, Impor Project, atau proyek tersimpan. Menu kerja (termasuk Pustaka) baru aktif setelah ketujuh isian wajib valid. Membuka hash halaman kerja langsung juga kembali ke pilihan/formulir informasi; menu terkunci diberi `aria-disabled`, penanda gembok dan dikeluarkan dari urutan Tab. Tombol mulai/impor serta formulir tetap dapat digunakan. Mengosongkan informasi wajib atau membuat proyek baru mengunci kembali ruang kerja; tidak menghapus data proyek lama. Pembukaan ulang halaman meminta pemilihan proyek kembali.
