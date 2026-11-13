@@ -1,14 +1,20 @@
-import { wbsStructure } from './rab-core.da1fe58408e5.js';
-import { quantityShapes, quantityCategoryNames, quantitySummary, quantityRowValue } from './quantity-core.da1fe58408e5.js';
+import { wbsStructure } from './rab-core.44baf8863384.js';
+import { quantityShapes, quantityCategoryNames, quantitySummary, quantityRowValue } from './quantity-core.44baf8863384.js';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>new Intl.NumberFormat('id-ID',{maximumFractionDigits:6}).format(n);
 export const quantityWork=(p,id)=>{const structure=wbsStructure(p.items),work=p.items.filter((i,n)=>!i.heading&&!structure[n].rollup);return work.find(i=>i.id===id)||work[0];};
 export function quantityExpression(row){const s=quantityShapes[row.shape];return `${s.formula}; ${s.fields.map(([key,label])=>`${label}=${fmt(row.dimensions[key])}${s.category==='count'?'':' '+row.dimensionUnit}`).join(', ')}; faktor=${fmt(row.multiplier)}`;}
+export function quantityOverview(p,selectedId){
+ const item=quantityWork(p,selectedId);let summary;try{if(item)summary=quantitySummary(item.quantityRows||[],item.unit);}catch{}
+ const create='<button class="button" data-action="calculate-volume"><svg class="add-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></svg> Hitung Volume</button>';
+ if(!item)return `<div class="quantity-summary-actions">${create}<button class="button" data-action="return-rab">Kembali ke RAB</button></div>`;
+ return `<div class="quantity-summary"><div><span>VOLUME PADA RAB</span><strong>${fmt(item.volume)} <small>${esc(item.unit)}</small></strong></div><div><span>HASIL QUANTITY</span><strong>${summary?fmt(summary.total):'—'} <small>${esc(item.unit)}</small></strong></div><div class="quantity-summary-actions">${create}<button class="button" data-quantity-apply ${summary?'':'disabled'}>Perbarui Volume</button><button class="button subtle" data-action="return-rab">Kembali ke RAB</button></div></div>`;
+}
 export function quantitySheet(p,selectedId) {
  const item=quantityWork(p,selectedId);
  if(!item)return '<div class="empty-state"><h2>Belum ada pekerjaan untuk dihitung.</h2><p>Tekan Hitung Volume untuk membuat pekerjaan dan menghitung dimensinya.</p><a href="#rab" class="button">Buka Lembar RAB</a></div>';
  const rows=item.quantityRows||[];let summary,error='';try{summary=quantitySummary(rows,item.unit);}catch(e){error=e.message;}
- return `<div class="quantity-summary"><div><span>VOLUME PADA RAB</span><strong>${fmt(item.volume)} <small>${esc(item.unit)}</small></strong></div><div><span>HASIL QUANTITY</span><strong>${summary?fmt(summary.total):'—'} <small>${esc(item.unit)}</small></strong></div><div class="quantity-summary-actions"><button class="button" data-quantity-apply ${summary?'':'disabled'}>Perbarui Volume</button><button class="button subtle" data-action="return-rab">Kembali ke RAB</button></div></div>${error?`<div class="rab-alert neutral">${esc(error)}</div>`:''}<div class="section-heading rab-section-heading"><div><h2>Rincian perhitungan</h2></div></div>${quantityDetails(item,rows)}<div class="quantity-bottom-actions"><button class="button" data-quantity-apply ${summary?'':'disabled'}>Perbarui Volume</button><button class="button subtle" data-action="return-rab">Kembali ke RAB</button></div>`;
+ return `${error?`<div class="rab-alert neutral">${esc(error)}</div>`:''}${quantityDetails(item,rows)}`;
 }
 function quantityDetails(item,rows){
  const groups=new Map();rows.forEach((row,index)=>{const key=row.groupId||`legacy-${index}`;if(!groups.has(key))groups.set(key,[]);groups.get(key).push({row,index});});
