@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=4cec43c9cc74")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=4cec43c9cc74")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=4cec43c9cc74")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=ed212b48e7f4")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=ed212b48e7f4")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=ed212b48e7f4")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -353,4 +353,15 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 .ahs-disclosure-toggle>.ahs-disclosure-icon{width:22px;height:22px;min-width:0;stroke:var(--symbol-blue-dark);fill:none}
 .used-ahs-entry[open]>summary>.ahs-disclosure-toggle>.ahs-disclosure-icon{transform:rotate(180deg)}
 [data-freeze-page="recap"]>.rab-heading>.action-row{max-width:none;gap:8px;flex-wrap:wrap}
+}
+
+/* SMKK uses the same disclosure panel as the other project AHS entries. */
+@media screen {
+.used-ahs-entry .ahs-disclosure-toggle{width:24px!important;height:24px!important;min-width:24px!important;min-height:24px!important;flex:0 0 24px!important;padding:2px!important;border-radius:7px!important}
+.used-ahs-entry .ahs-disclosure-toggle>.ahs-disclosure-icon{width:18px;height:18px;min-width:0}
+#smkk-ahs.used-ahs-entry{padding:0;border:1px solid var(--line)}
+.smkk-panel-actions{display:flex;justify-content:flex-end;margin-bottom:14px}
+[data-action="open-smkk"]>.smkk-jump-icon{width:20px;height:20px;flex:none;stroke:var(--symbol-blue-dark)!important;stroke-linecap:round;stroke-linejoin:round}
+[data-action="open-smkk"]>.smkk-jump-icon rect{fill:var(--symbol-blue-pale);stroke:var(--symbol-blue-dark)!important;stroke-width:1.8!important}
+[data-action="open-smkk"]>.smkk-jump-icon path{stroke:var(--symbol-blue-dark)!important;stroke-width:2.4!important}
 }
