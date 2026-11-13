@@ -312,3 +312,12 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 [data-freeze-page="rab"] .compact-rab-toolbar{display:block;margin:0;padding:0;border:0}
 [data-freeze-page="rab"] .compact-project{width:100%;max-width:none}
 }
+
+@media screen {
+[data-freeze-page="catalog"]>.rab-heading>.action-row{max-width:none;flex-wrap:wrap;gap:8px}
+.title-filter .search-symbol{width:24px;height:24px;min-width:24px;flex:none;stroke:#1679d5;stroke-width:2.6}
+.title-filter .search-symbol rect{stroke:#2694ed;stroke-width:2.8}
+[data-freeze-page="resources"]>.rab-heading{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+[data-freeze-page="resources"]>.rab-heading>div:first-child{flex:1 0 100%}
+[data-freeze-page="resources"]>.rab-heading>.action-row{flex:1 1 100%;max-width:none;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+}
