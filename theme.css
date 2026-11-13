@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=ed212b48e7f4")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=ed212b48e7f4")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=ed212b48e7f4")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=e55a69794eff")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=e55a69794eff")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=e55a69794eff")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -364,4 +364,13 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 [data-action="open-smkk"]>.smkk-jump-icon{width:20px;height:20px;flex:none;stroke:var(--symbol-blue-dark)!important;stroke-linecap:round;stroke-linejoin:round}
 [data-action="open-smkk"]>.smkk-jump-icon rect{fill:var(--symbol-blue-pale);stroke:var(--symbol-blue-dark)!important;stroke-width:1.8!important}
 [data-action="open-smkk"]>.smkk-jump-icon path{stroke:var(--symbol-blue-dark)!important;stroke-width:2.4!important}
+}
+
+/* Additional HSD region filters only; keep the accepted page styling. */
+@media screen {
+.hsd-controls .catalog-tools{flex-wrap:wrap;align-items:center}
+.hsd-controls .catalog-tools>.title-filter{flex:1 1 300px;min-width:0}
+.hsd-controls #price-group,.hsd-controls #price-region,.hsd-controls #price-sub-region{flex:0 1 150px;min-width:120px;max-width:190px}
+.hsd-controls #price-sub-region{flex-basis:170px}
+@media(max-width:600px){.hsd-controls .catalog-tools>.title-filter{flex-basis:100%;width:100%}.hsd-controls #price-group,.hsd-controls #price-region,.hsd-controls #price-sub-region{flex:1 1 120px;max-width:none;width:100%}}
 }
