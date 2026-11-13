@@ -7,3 +7,5 @@ import './ai.test.mjs';
 import './catalog.test.mjs';
 
 import './smkk.test.mjs';
+
+import './regional-prices.test.mjs';

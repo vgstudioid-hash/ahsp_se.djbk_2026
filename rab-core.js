@@ -127,7 +127,7 @@ export function readCsv(text) {
   if (value || row.length) { row.push(value.replace(/\r$/, '')); rows.push(row); }
   return rows.filter(r => r.some(c => c.trim())).map(r => r.map(c => c.replace(/^\uFEFF/, '')));
 }
-export function importRates(text, project) {
+function importSingleRates(text, project) {
   const rows = readCsv(text);
   if (!rows.length) throw Error('CSV kosong.');
   const header = rows.shift().map(c => c.trim().toLowerCase());
@@ -154,17 +154,32 @@ export function importRates(text, project) {
   }
   return { rates, resourceMeta, count };
 }
+export function importRates(text,project){
+ const rows=readCsv(text),header=rows[0]?.map(c=>c.trim().toLowerCase())||[],ri=header.indexOf('region'),si=header.indexOf('sub region');
+ if(ri<0&&si<0){if(project.priceRegion&&!project.priceSubRegion)throw Error('Pilih Sub Region sebelum mengimpor harga.');return importSingleRates(text,project);}
+ if(ri<0||si<0)throw Error('CSV wilayah harus memiliki kolom Region dan Sub Region.');
+ const draft=structuredClone(project);snapshotPriceProfile(draft);let count=0;const buckets=new Map();
+ for(const row of rows.slice(1)){const key=priceProfileKey((row[ri]||'').trim(),(row[si]||'').trim());if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(row);}
+ for(const [key,list]of buckets){const profile=draft.priceProfiles[key]||{rates:{},resourceMeta:{}};const result=importSingleRates(toCsv([rows[0],...list]),{...project,...profile});draft.priceProfiles[key]={rates:result.rates,resourceMeta:result.resourceMeta};count+=result.count;}
+ const key=project.priceRegion&&!project.priceSubRegion?null:priceProfileKey(project.priceRegion||'',project.priceSubRegion||''),active=key?draft.priceProfiles[key]:null;
+ return {rates:active?.rates||{},resourceMeta:active?.resourceMeta||{},priceProfiles:draft.priceProfiles,count};
+}
 export function nextEmpiricalCode(project){
  const used=project.items.filter(i=>i.empirical).map(i=>Number(/^Empiris-(\d+)$/.exec(i.code)?.[1]||0));
  const next=Math.max(project.empiricalSequence||0,0,...used)+1;
  if(next>999999999)throw Error('Nomor AHS empiris mencapai batas.');
  return 'Empiris-'+String(next).padStart(3,'0');
 }
-export function validateProject(p) {
-  if (!p || typeof p !== 'object' || !Array.isArray(p.items) || !Array.isArray(p.smkk) || p.items.length > 1000 || p.smkk.length > 1000) throw Error('Data proyek tidak valid.');
-  if(p.items.reduce((n,i)=>n+(Array.isArray(i.quantityRows)?i.quantityRows.reduce((sum,r)=>sum+(typeof r.image==='string'?r.image.length:0),0):0),0)>2000000)throw Error('Total gambar proyek maksimal 2 MB.');
-  for (const field of ['name', 'location', 'owner', 'date']) if (typeof p[field] !== 'string' || p[field].length > 1000) throw Error('Identitas proyek tidak valid.');
-  for (const field of ['overhead', 'tax']) if (nonnegative(p[field]) > 100) throw Error('Persentase harus 0–100.');
+export const priceRegions=Object.freeze({
+ 'Jawa Barat':Object.freeze(['Purwakarta','Karawang','Kab. Bekasi','Kota Bekasi','Kota Bandung','Kab. Bogor','Indramayu','Subang']),
+ Jakarta:Object.freeze(['Jakarta']),Banten:Object.freeze(['Banten']),Lampung:Object.freeze(['Lampung'])
+});
+export function priceProfileKey(region='',subRegion=''){
+ if(!region&&!subRegion)return 'general';
+ if(!Object.hasOwn(priceRegions,region)||!priceRegions[region].includes(subRegion))throw Error('Pilih Region dan Sub Region yang sesuai.');
+ return region+'|'+subRegion;
+}
+function validatePriceProfile(p){
   if (!p.rates || typeof p.rates !== 'object' || Array.isArray(p.rates)) throw Error('Harga dasar tidak valid.');
   const rates = {};
   for (const [key, value] of Object.entries(p.rates)) { if (key.length > 3000) throw Error('Kunci harga terlalu panjang.'); rates[key] = nonnegative(value); }
@@ -177,6 +192,40 @@ export function validateProject(p) {
     for(const [field,max] of [['priceSource',2000],['kdn',100]])if(m[field]!=null){if(typeof m[field]!=='string'||m[field].length>max)throw Error('Sumber harga/Nilai KDN tidak valid.');resourceMeta[key][field]=m[field];}
     if(m.shb!=null && m.shb!=='')resourceMeta[key].shb=nonnegative(m.shb);
   }
+ return {rates,resourceMeta};
+}
+export function snapshotPriceProfile(p){
+ const region=p.priceRegion||'',sub=p.priceSubRegion||'';
+ if(region&&!sub)return;
+ p.priceProfiles??={};p.priceProfiles[priceProfileKey(region,sub)]=structuredClone({rates:p.rates,resourceMeta:p.resourceMeta||{}});
+}
+export function selectPriceRegion(p,region,subRegion=''){
+ if(region&&!Object.hasOwn(priceRegions,region))throw Error('Region tidak valid.');
+ if(subRegion)priceProfileKey(region,subRegion);
+ if(!region&&subRegion)throw Error('Pilih Region dahulu.');
+ snapshotPriceProfile(p);p.priceRegion=region;p.priceSubRegion=subRegion;
+ const profile=region&&!subRegion?null:p.priceProfiles[priceProfileKey(region,subRegion)];
+ p.rates=structuredClone(profile?.rates||{});p.resourceMeta=structuredClone(profile?.resourceMeta||{});
+}
+function validatePriceRegions(p,rates,resourceMeta){
+ const priceRegion=p.priceRegion||'',priceSubRegion=p.priceSubRegion||'',priceProfiles={};
+ if(typeof priceRegion!=='string'||typeof priceSubRegion!=='string'||priceRegion&&!Object.hasOwn(priceRegions,priceRegion)||!priceRegion&&priceSubRegion)throw Error('Region harga tidak valid.');
+ if(priceSubRegion)priceProfileKey(priceRegion,priceSubRegion);
+ if(p.priceProfiles!=null&&(!p.priceProfiles||typeof p.priceProfiles!=='object'||Array.isArray(p.priceProfiles)))throw Error('Kelompok harga wilayah tidak valid.');
+ const allowed=new Set(['general',...Object.entries(priceRegions).flatMap(([r,subs])=>subs.map(sub=>priceProfileKey(r,sub)))]);
+ for(const [key,profile]of Object.entries(p.priceProfiles||{})){if(!allowed.has(key)||!profile||typeof profile!=='object')throw Error('Kelompok harga wilayah tidak valid.');priceProfiles[key]=validatePriceProfile(profile);}
+ if(!priceRegion||priceSubRegion)priceProfiles[priceProfileKey(priceRegion,priceSubRegion)]={rates:structuredClone(rates),resourceMeta:structuredClone(resourceMeta)};
+ else if(Object.keys(rates).length||Object.keys(resourceMeta).length)throw Error('Harga wilayah memerlukan Sub Region.');
+ return {priceRegion,priceSubRegion,priceProfiles};
+}
+
+export function validateProject(p) {
+  if (!p || typeof p !== 'object' || !Array.isArray(p.items) || !Array.isArray(p.smkk) || p.items.length > 1000 || p.smkk.length > 1000) throw Error('Data proyek tidak valid.');
+  if(p.items.reduce((n,i)=>n+(Array.isArray(i.quantityRows)?i.quantityRows.reduce((sum,r)=>sum+(typeof r.image==='string'?r.image.length:0),0):0),0)>2000000)throw Error('Total gambar proyek maksimal 2 MB.');
+  for (const field of ['name', 'location', 'owner', 'date']) if (typeof p[field] !== 'string' || p[field].length > 1000) throw Error('Identitas proyek tidak valid.');
+  for (const field of ['overhead', 'tax']) if (nonnegative(p[field]) > 100) throw Error('Persentase harus 0–100.');
+  const {rates,resourceMeta}=validatePriceProfile(p);
+  const regional=validatePriceRegions(p,rates,resourceMeta);
   const items = p.items.map(item => {
     for (const k of ['code', 'title', 'unit', 'group']) if (typeof item[k] !== 'string' || item[k].length > 2000) throw Error('Identitas pekerjaan tidak valid.');
     if (!Array.isArray(item.components) || item.components.length > 300 || (item.heading && item.components.length)) throw Error('Rincian analisis tidak valid.');
@@ -221,7 +270,7 @@ export function validateProject(p) {
   if(p.taxScheme!=null&&!['full','dpp11of12'].includes(p.taxScheme))throw Error('Skema DPP tidak valid.');
   if(p.empiricalSequence!=null&&(!Number.isInteger(p.empiricalSequence)||p.empiricalSequence<0||p.empiricalSequence>999999999))throw Error('Nomor urut empiris tidak valid.');
   const empiricalSequence=Math.max(p.empiricalSequence||0,0,...items.filter(i=>i.empirical).map(i=>Number(/^Empiris-(\d+)$/.exec(i.code)?.[1]||0)));
-  return { id: crypto.randomUUID(), empiricalSequence, name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
+  return { id: crypto.randomUUID(), empiricalSequence, name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,...regional,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
 }
 
 export function projectInformationErrors(p,allowedUnits=null) {

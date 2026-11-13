@@ -365,3 +365,12 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 [data-action="open-smkk"]>.smkk-jump-icon rect{fill:var(--symbol-blue-pale);stroke:var(--symbol-blue-dark)!important;stroke-width:1.8!important}
 [data-action="open-smkk"]>.smkk-jump-icon path{stroke:var(--symbol-blue-dark)!important;stroke-width:2.4!important}
 }
+
+/* Additional HSD region filters only; keep the accepted page styling. */
+@media screen {
+.hsd-controls .catalog-tools{flex-wrap:wrap;align-items:center}
+.hsd-controls .catalog-tools>.title-filter{flex:1 1 300px;min-width:0}
+.hsd-controls #price-group,.hsd-controls #price-region,.hsd-controls #price-sub-region{flex:0 1 150px;min-width:120px;max-width:190px}
+.hsd-controls #price-sub-region{flex-basis:170px}
+@media(max-width:600px){.hsd-controls .catalog-tools>.title-filter{flex-basis:100%;width:100%}.hsd-controls #price-group,.hsd-controls #price-region,.hsd-controls #price-sub-region{flex:1 1 120px;max-width:none;width:100%}}
+}
