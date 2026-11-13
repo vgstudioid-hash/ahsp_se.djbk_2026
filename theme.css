@@ -354,3 +354,14 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 .used-ahs-entry[open]>summary>.ahs-disclosure-toggle>.ahs-disclosure-icon{transform:rotate(180deg)}
 [data-freeze-page="recap"]>.rab-heading>.action-row{max-width:none;gap:8px;flex-wrap:wrap}
 }
+
+/* SMKK uses the same disclosure panel as the other project AHS entries. */
+@media screen {
+.used-ahs-entry .ahs-disclosure-toggle{width:24px!important;height:24px!important;min-width:24px!important;min-height:24px!important;flex:0 0 24px!important;padding:2px!important;border-radius:7px!important}
+.used-ahs-entry .ahs-disclosure-toggle>.ahs-disclosure-icon{width:18px;height:18px;min-width:0}
+#smkk-ahs.used-ahs-entry{padding:0;border:1px solid var(--line)}
+.smkk-panel-actions{display:flex;justify-content:flex-end;margin-bottom:14px}
+[data-action="open-smkk"]>.smkk-jump-icon{width:20px;height:20px;flex:none;stroke:var(--symbol-blue-dark)!important;stroke-linecap:round;stroke-linejoin:round}
+[data-action="open-smkk"]>.smkk-jump-icon rect{fill:var(--symbol-blue-pale);stroke:var(--symbol-blue-dark)!important;stroke-width:1.8!important}
+[data-action="open-smkk"]>.smkk-jump-icon path{stroke:var(--symbol-blue-dark)!important;stroke-width:2.4!important}
+}
