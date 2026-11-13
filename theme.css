@@ -347,3 +347,10 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 @media(max-width:900px){[data-freeze-page="quantity"] .quantity-summary{grid-template-columns:1fr 1fr}[data-freeze-page="quantity"] .quantity-summary-actions{grid-column:1/-1;justify-content:flex-end}.recap-project-row>.action-row{width:100%}}
 @media(prefers-reduced-motion:reduce){.ahs-disclosure-icon{transition:none}}
 }
+
+/* Requested adjustments only; preserve the accepted layout elsewhere. */
+@media screen {
+.ahs-disclosure-toggle>.ahs-disclosure-icon{width:22px;height:22px;min-width:0;stroke:var(--symbol-blue-dark);fill:none}
+.used-ahs-entry[open]>summary>.ahs-disclosure-toggle>.ahs-disclosure-icon{transform:rotate(180deg)}
+[data-freeze-page="recap"]>.rab-heading>.action-row{max-width:none;gap:8px;flex-wrap:wrap}
+}

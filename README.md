@@ -1,5 +1,7 @@
 # RAB Studio — AHSP SE DJBK 2026
 
+**Acuan tampilan disetujui pengguna (13 November 2026): pertahankan tampilan saat ini. Jangan mengubah desain, komposisi, ukuran, warna atau posisi di luar instruksi eksplisit pengguna. Batasi perubahan pada elemen yang diminta.**
+
 Aplikasi penyusunan Rencana Anggaran Biaya (RAB) berbahasa Indonesia berdasarkan analisis dalam PDF SE DJBK No. 47 Tahun 2026 yang diunggah pengguna. Halaman utama adalah lembar perhitungan proyek. Pustaka PDF dipertahankan sebagai fitur pendukung pada `references.html`.
 
 ## Menjalankan
@@ -315,3 +317,5 @@ Navigasi ← RAB / HSD → pada AHS berada di toolbar header yang ikut freeze, t
 Build juga menyediakan `release-<buildId>.html` untuk membuka versi tertentu tanpa bergantung pada cache HTML atau manifest terbaru. Halaman ini memakai manifest aset bawaannya dan penyimpanan proyek pada origin yang sama; tidak menghapus data pengguna. Publikasi mempertahankan halaman rilis serta aset berpenanda versi agar tautan tetap tersedia setelah pembaruan berikutnya.
 
 Penataan layar berikutnya menghapus navigasi bawah berulang pada RAB/Rekapitulasi dan Quantity. Rekapitulasi menempatkan Proyek baru/Impor cadangan pada header, sedangkan ← RAB dan ekspor/cetak sejajar dengan baris proyek. Toolbar AHS berada di bawah judul. Pencarian AHS/HSD/picker/Pustaka memakai satu batas fokus pada pembungkus, tanpa outline tambahan pada input. Dropdown panel AHS memakai ikon SVG biru berbingkai membulat dan berputar saat terbuka. Ringkasan Quantity serta Hitung Volume/Perbarui Volume/← RAB berada dalam header sticky yang sama; judul Rincian perhitungan dan tombol bawah berulang dihapus. Header kolom tabel mengikuti batas bawah kontrol halaman secara dinamis.
+
+Penyesuaian terbatas: kontrol buka/tutup AHS mengikuti ukuran tombol hapus (28 × 28 px) dan chevron sederhana milik SMKK; navigasi RAB/ekspor/cetak Rekapitulasi dipindahkan ke kiri Proyek baru/Impor cadangan dalam toolbar header yang sama.
