@@ -3,10 +3,15 @@ export function cleanResourceName(value){
  let name=String(value??'').replace(/(?:\b\d{1,2}\s*\*+\s*\)?|\*+\s*\d{0,2}\s*\)?)/g,' ').replace(/[†‡•]/g,' ').replace(/^\s*\d{1,2}[.)]\s+(?=[A-Za-z])/,'');
  // Remove unmatched extraction brackets, keeping balanced technical descriptions.
  const chars=[...name],stack=[],drop=new Set();for(let i=0;i<chars.length;i++){if(chars[i]==='(')stack.push(i);else if(chars[i]===')'){if(stack.length)stack.pop();else drop.add(i);}}for(const i of stack)drop.add(i);
- name=chars.filter((_,i)=>!drop.has(i)).join('').replace(/\s+/g,' ').trim();return name||String(value).trim();
+ name=chars.filter((_,i)=>!drop.has(i)).join('').replace(/\s+/g,' ').trim();
+ name=name.replace(/^\d{1,3}\s+(?=(?:Pekerja|Mandor|Tukang|Kepala Tukang|Operator|Bulldozer|Excavator)\b)/i,'');
+ for(const [pattern,text]of [[/\bakhli\b/gi,'Ahli'],[/\bexavator\b/gi,'Excavator'],[/\bvibator\b/gi,'Vibrator'],[/\bkaso\b/gi,'Kaso'],[/\brapia\b/gi,'Rafia'],[/\bnylon\b/gi,'Nilon'],[/\bkrikil\b/gi,'Kerikil'],[/\baggregat\b/gi,'Agregat']])name=name.replace(pattern,text);
+ if(/^(?:PC\s*[:/]\s*)?(?:Portland Cement|Semen Portland)(?:\s*\(PC\))?$/i.test(name))name='Semen Portland';
+ name=name.replace(/^(?:PB\s*:\s*)(?=Pasir Beton\b)/i,'').replace(/^(?:Kr\s*:\s*)(?=Kerikil\b)/i,'');
+ return name||String(value).trim();
 }
-export function normalizedResourceUnit(unit){const value=String(unit||'').normalize('NFKC').toLocaleLowerCase('id').replace(/\s+/g,'').replace(/[’′']/g,'');return ({bh:'buah'})[value]||value;}
-export function resourceIdentity(c){return JSON.stringify([c.group,cleanResourceName(c.name).normalize('NFKC').toLocaleLowerCase('id').replace(/\s*([/(),])\s*/g,'$1'),normalizedResourceUnit(c.unit)]);}
+export function normalizedResourceUnit(unit){const value=String(unit||'').normalize('NFKC').toLocaleLowerCase('id').replace(/\s+/g,'').replace(/[’′']/g,'');return ({bh:'buah',ltr:'liter',lbr:'lembar',btg:'batang'})[value]||value;}
+export function resourceIdentity(c){return JSON.stringify([c.group,cleanResourceName(c.name).normalize('NFKC').toLocaleLowerCase('id').replace(/[Øø∅⌀]/g,'ø').replace(/\bD\s+(?=\d)/gi,'d').replace(/(\d)\s+(?=(?:mm|cm|m|kg|MPa)\b)/gi,'$1').replace(/\s*([/(),])\s*/g,'$1'),normalizedResourceUnit(c.unit)]);}
 function parseResourceAlternatives(raw){
  const name=cleanResourceName(raw);
  if(!/\/|\satau\s/i.test(name))return {names:[name],reason:'Tidak memuat pemisah alternatif.'};
@@ -33,7 +38,8 @@ function parseResourceAlternatives(raw){
 }
 export function resourceAlternatives(raw){const parsed=parseResourceAlternatives(raw),seen=new Set();return {...parsed,names:parsed.names.filter(name=>{const key=name.toLocaleLowerCase('id').trim();if(seen.has(key))return false;seen.add(key);return true;})};}
 export function buildResourceCodeIndex(catalog){const map=new Map();for(const item of catalog)for(const c of item.components||[]){if(!c.code||resourceAlternatives(c.name).names.length>1)continue;const key=resourceIdentity(c);if(!map.has(key))map.set(key,new Set());map.get(key).add(c.code.trim());}return new Map([...map].filter(([,codes])=>codes.size===1).map(([key,codes])=>[key,[...codes][0]]));}
-export function normalizeItemResources(item,codes=new Map()){
- const components=(item.components||[]).flatMap(c=>{const raw=c.sourceName||c.name,choice=resourceAlternatives(c.name),split=choice.names.length>1;return choice.names.map(name=>{const next={...c,name,sourceName:raw};if(split){next.alternativeSet=c.alternativeSet||`${c.group}|${raw}|${c.unit}|${c.coefficient}`;next.code=codes.get(resourceIdentity(next))||'';}else if(!next.code)next.code=codes.get(resourceIdentity(next))||'';return next;});});
+export function buildResourceNameIndex(catalog){const map=new Map();for(const item of catalog)for(const c of item.components||[])for(const name of resourceAlternatives(c.name).names){const id=resourceIdentity({...c,name});if(!map.has(id))map.set(id,new Map());const counts=map.get(id);counts.set(name,(counts.get(name)||0)+1);}return new Map([...map].map(([id,counts])=>[id,[...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'id'))[0][0]]));}
+export function normalizeItemResources(item,codes=new Map(),names=new Map()){
+ const components=(item.components||[]).flatMap(c=>{const raw=c.sourceName||c.name,choice=resourceAlternatives(c.name),split=choice.names.length>1;return choice.names.map(name=>{const next={...c,name:names.get(resourceIdentity({...c,name}))||name,sourceName:raw};if(split){next.alternativeSet=c.alternativeSet||`${c.group}|${raw}|${c.unit}|${c.coefficient}`;next.code=codes.get(resourceIdentity(next))||'';}else if(!next.code)next.code=codes.get(resourceIdentity(next))||'';return next;});});
  return {...item,components};
 }

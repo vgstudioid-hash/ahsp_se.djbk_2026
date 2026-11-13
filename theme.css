@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=af1c2af68322")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=af1c2af68322")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=af1c2af68322")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=8edfc8020309")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=8edfc8020309")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=8edfc8020309")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -384,3 +384,12 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 @media(prefers-reduced-motion:reduce){.resource-alternative-warning{animation:none}}
 }
 @media print{.resource-alternative-warning{width:14px;height:14px;fill:#d62839;animation:none}.resource-alternative-warning .warning-mark{stroke:white;stroke-width:2.3;stroke-linecap:round}}
+
+/* Requested sidebar artwork and centered delete controls only. */
+@media screen {
+#navigation .nav-symbol:has(.sidebar-menu-icon){width:24px;min-width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
+#navigation .sidebar-menu-icon{width:24px;height:24px;display:block;flex:none}
+:is(button.trash-button,button[data-component-remove],button[data-component-last]).balloon-control{display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:0!important;gap:0!important;line-height:0!important}
+:is(button.trash-button,button[data-component-remove],button[data-component-last]).balloon-control::before{width:24px;height:24px;margin:0;position:static;transform:none;flex:0 0 24px}
+}
+@media screen{#navigation .sidebar-menu-icon{stroke-width:1.2}}
