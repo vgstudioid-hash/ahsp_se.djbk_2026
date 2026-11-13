@@ -1,0 +1,7484 @@
+{
+  "summary": {
+    "catalog": 5637,
+    "componentsBefore": 33267,
+    "componentsAfter": 33734,
+    "correctedAhs": 537,
+    "changedGroups": 700,
+    "statuses": {
+      "Perlu pemeriksaan sumber": 3602,
+      "Baris terdeteksi cocok / tidak ada koreksi pasti": 1066,
+      "Dikoreksi terhadap baris sumber": 537,
+      "Rujukan: rincian belum terhubung": 432
+    },
+    "namingChanges": 577,
+    "correctedWithRemainingQuestions": 207
+  },
+  "names": [
+    {
+      "group": "Peralatan",
+      "before": "*) Mesin Las HDPE 800 Watt (SM) To.20.c",
+      "after": "Mesin Las HDPE 800 Watt (SM) To.20.c",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 324"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "*) Operator",
+      "after": "Operator",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 174"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "** 2 KW; 5\"",
+      "after": "KW; 5\"",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 1503"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "**) Tenaga ahli pratama",
+      "after": "Tenaga ahli pratama",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 174"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "**2 Ijuk tebal minimum 2,5 cm",
+      "after": "Ijuk tebal minimum 2,5 cm",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 328"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Bahan construction joint",
+      "after": "Bahan construction joint",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 327"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Batu alam/batu gunung/ batu kali (Boulder kecil) > 25 - 50 cm",
+      "after": "Batu alam/batu gunung/ batu kali (Boulder kecil) > 25 - 50 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 785",
+        "IV hal. 786"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Batu alam/batu gunung/ batu kali (Boulder kecil) > 50 - 100 cm",
+      "after": "Batu alam/batu gunung/ batu kali (Boulder kecil) > 50 - 100 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 787"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Bronjong Tambang A.1.02.4b Nylon/Rami, Hexagonal .1.f.1 100x100 mm",
+      "after": "Bronjong Tambang A.1.02.4b Nilon/Rami, Hexagonal .1.f.1 100x100 mm",
+      "unit": "Unit",
+      "refs": [
+        "IV hal. 820",
+        "IV hal. 823"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Kawat las listrik",
+      "after": "Kawat las listrik",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 550",
+        "IV hal. 551"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Pasangan Kubus beton Berongga 60 cm",
+      "after": "Pasangan Kubus beton Berongga 60 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 824",
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Pasir urug",
+      "after": "Pasir Urug",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1357",
+        "IV hal. 1358"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Pipa PVC ø 2\"",
+      "after": "Pipa PVC ø 2\"",
+      "unit": "m",
+      "refs": [
+        "IV hal. 328"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Seng Gelombang BJLS-30 (t=0,05) panjang 1,8 m’ dan lebar",
+      "after": "Seng Gelombang BJLS-30 (t=0,05) panjang 1,8 m’ dan lebar",
+      "unit": "Lembar",
+      "refs": [
+        "IV hal. 1338"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Seng Gelombang BJLS-30 (t=0,05) pjg 1,8 m’ dan lebar",
+      "after": "Seng Gelombang BJLS-30 (t=0,05) pjg 1,8 m’ dan lebar",
+      "unit": "Lembar",
+      "refs": [
+        "IV hal. 1337"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*1 Tanah biasa berkualitas baik",
+      "after": "Tanah biasa berkualitas baik",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1356",
+        "IV hal. 1358"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*2 = 1-2",
+      "after": "= 1-2",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 1503",
+        "IV hal. 1504",
+        "IV hal. 1505",
+        "IV hal. 1506",
+        "IV hal. 1507",
+        "IV hal. 1508"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*2 Bronjong Kawat (Fab.) 1 m3",
+      "after": "Bronjong Kawat (Fab.) 1 m3",
+      "unit": "unit",
+      "refs": [
+        "IV hal. 318"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*2 Kerakal Kasar/cobble, batu ukuran > 6 cm - 25 cm",
+      "after": "Kerakal Kasar/cobble, batu ukuran > 6 cm - 25 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 785"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*2 Tambang Nylon/plastik ø 8 mm",
+      "after": "Tambang Nilon ø 8 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 316"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "*2 Tambang Nylon/plastik ø 8 mm",
+      "after": "Tambang plastik ø 8 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 316"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "*3 Las listrik Diesel 500 A",
+      "after": "Las listrik Diesel 500 A",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 550",
+        "IV hal. 551"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "1 Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "after": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 94"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "1 Excavator 155 HP gali dan muat",
+      "after": "Excavator 155 HP gali dan muat",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 839"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "1,0 m3*) Sewa Tripot/Tackel",
+      "after": "1,0 m3 Sewa Tripot/Tackel",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1502",
+        "VI hal. 1503",
+        "VI hal. 1504",
+        "VI hal. 1505",
+        "VI hal. 1506"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1. Beton f`c 30 Mpa",
+      "after": "Beton f`c 30 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 0,4 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "after": "Armor Blok Beton 0,4 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 764"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 0,5 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "after": "Armor Blok Beton 0,5 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 765"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 0,75 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "after": "Armor Blok Beton 0,75 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 766"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 1,0 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "after": "Armor Blok Beton 1,0 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 767"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 1,5 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "after": "Armor Blok Beton 1,5 Ton quadripod, tetrapod, dolos, tribar, dll.",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 768"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Blok Beton 2,5 Ton quadripod, tetrapod, dolos,",
+      "after": "Armor Blok Beton 2,5 Ton quadripod, tetrapod, dolos,",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 770"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Kubus Beton 0,3 m'",
+      "after": "Armor Kubus Beton 0,3 m'",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 760",
+        "IV hal. 761"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Armor Kubus Beton 0,6 m' Masif",
+      "after": "Armor Kubus Beton 0,6 m' Masif",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 762"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Bronjong Batu Kali A.1.02.4b .1.e.1",
+      "after": "Bronjong Batu Kali A.1.02.4b .1.e.1",
+      "unit": "Unit",
+      "refs": [
+        "IV hal. 818"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Cerucuk dolken ∅ 8-10 cm",
+      "after": "Cerucuk dolken ∅ 8-10 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 374"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Cerucuk dolken ∅ 8-10 cm Modul capping penutup 2",
+      "after": "Cerucuk dolken ∅ 8-10 cm Modul capping penutup 2",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 374"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Cerucuk dolken ∅ 8-10 cm Modul dinding/lantai Tipe S 2",
+      "after": "Cerucuk dolken ∅ 8-10 cm Modul dinding/lantai Tipe S 2",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 373"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "1* Drill_Rig-WaterW. G.13.a Tractor; 20 HP, 60 m'",
+      "after": "Drill_Rig-WaterW. G.13.a Tractor; 20 HP, 60 m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 865"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "1* Drill_Rig-WaterW. G.13.d Tractor; 100 HP, 150 m'",
+      "after": "Drill_Rig-WaterW. G.13.d Tractor; 100 HP, 150 m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 880",
+        "IV hal. 881"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Kawat las listrik",
+      "after": "Kawat las listrik",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 462"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Patok kayu kaso 5/7 - 0,5m'",
+      "after": "Patok kayu Kaso 5/7 - 0,5m'",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 899"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Pipa GI Medium ø 1,25\"",
+      "after": "Pipa GI Medium ø 1,25\"",
+      "unit": "Batang",
+      "refs": [
+        "IV hal. 890"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Pipa GI Medium ø 2\"- Socket",
+      "after": "Pipa GI Medium ø 2\"- Socket",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 889"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Sistem Perkuatan Wadah",
+      "after": "Sistem Perkuatan Wadah",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1510"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1* Tetrapod",
+      "after": "Tetrapod",
+      "unit": "buah",
+      "refs": [
+        "IV hal. 773"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1** Karung plastik/bagor",
+      "after": "Karung plastik",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 716",
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "1** Karung plastik/bagor",
+      "after": "Karung bagor",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 716",
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "10. Pasir",
+      "after": "Pasir",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "11. Kaso 5/7",
+      "after": "Kaso 5/7",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "12. Triplek",
+      "after": "Triplek",
+      "unit": "Lbr",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "13. Paku",
+      "after": "Paku",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "2 Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "after": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 823",
+        "IV hal. 824",
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Lain-lain",
+      "before": "2,5 cm) Lapis Resap Pengikat",
+      "after": "2,5 cm Lapis Resap Pengikat",
+      "unit": "liter",
+      "refs": [
+        "VI hal. 166"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "2. Beton f`c 15 Mpa",
+      "after": "Beton f`c 15 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 97",
+        "V hal. 106"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "2. Beton f`c 20 Mpa",
+      "after": "Beton f`c 20 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 91",
+        "V hal. 100",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "2* Ponton besi, kapasitas 15 Ton, mesin 180 HP",
+      "after": "Ponton besi, kapasitas 15 Ton, mesin 180 HP",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 283"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "2* Ponton-2 (jarak angkut 1 km)",
+      "after": "Ponton-2 (jarak angkut 1 km)",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 277"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "2** Material isi",
+      "after": "Material isi",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1510"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "3 Ponton besi, kapasitas 8 Ton, mesin 100 HP b) Alat Pengangkut",
+      "after": "3 Ponton besi, kapasitas 8 Ton, mesin 100 HP b Alat Pengangkut",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 824",
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "3. Beton f`c 10 Mpa",
+      "after": "Beton f`c 10 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "3* Pasir Kasar",
+      "after": "Pasir Kasar",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 716",
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "3* Trailler, DumpTruck, Truck (Berbagai sarana angkutan)",
+      "after": "Trailler, DumpTruck, Truck (Berbagai sarana angkutan)",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 826"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "4 Kapal Kayu, Angkutan Material, Daya 100 Ton c) Alat Penempatan",
+      "after": "4 Kapal Kayu, Angkutan Material, Daya 100 Ton c Alat Penempatan",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "4 Kapal Kayu, Angkutan Material, Daya 100 Ton c) Alat Penempatan/",
+      "after": "4 Kapal Kayu, Angkutan Material, Daya 100 Ton c Alat Penempatan/",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 824"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "4 m3; 130 HP Pompa beton (D) 90 KW, 130 bar, 4*",
+      "after": "4 m3; 130 HP Pompa beton (D) 90 KW, 130 bar,",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 702"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "4. Batu Belah",
+      "after": "Batu belah",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "4* Las listrik 500 A diesel E.25 f",
+      "after": "Las listrik 500 A diesel E.25 f",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 462"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "4** Las listrik 500 A diesel",
+      "after": "Las listrik 500 A diesel",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 439",
+        "IV hal. 440",
+        "IV hal. 441"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "4*** Grouting",
+      "after": "Grouting",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1510"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "5. Baja Tulangan",
+      "after": "Baja Tulangan",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "5*** Capping beam",
+      "after": "Capping beam",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1510"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "6 Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "after": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "6 Excavator (Std.); Bucket 0,90 m3; 155 HP; Dmax = 6,6m'",
+      "after": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dmax = 6,6m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 824"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "6 Excavator (Std.); Bucket 2,2 m3; 310 HP",
+      "after": "Excavator (Std.); Bucket 2,2 m3; 310 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 823"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "6. Timbunan Pilihan",
+      "after": "Timbunan Pilihan",
+      "unit": "M3",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "7. Cetakan gorong-gorong beton diameter dalam 40 cm",
+      "after": "Cetakan gorong-gorong beton diameter dalam 40 cm",
+      "unit": "bh/M'",
+      "refs": [
+        "V hal. 79"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "72 x 6 mm) Besi Pengikat (Block Piece Profil U Uk 350",
+      "after": "72 x 6 mm Besi Pengikat Block Piece Profil U Uk 350",
+      "unit": "M",
+      "refs": [
+        "V hal. 3041",
+        "V hal. 3044",
+        "V hal. 3047",
+        "V hal. 3050"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "75 KW; V=0,8 m3 Truck Mixer Beton - 10 Ton, kap. 3*",
+      "after": "75 KW; V=0,8 m3 Truck Mixer Beton - 10 Ton, kap.",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 702",
+        "IV hal. 706"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "8. Rubber Ring Dia. 100 cm",
+      "after": "Rubber Ring Dia. 100 cm",
+      "unit": "Unit",
+      "refs": [
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "8. Rubber Ring Dia. 40 cm",
+      "after": "Rubber Ring Dia. 40 cm",
+      "unit": "unit",
+      "refs": [
+        "V hal. 79"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "8. Rubber Ring Dia. 60 cm",
+      "after": "Rubber Ring Dia. 60 cm",
+      "unit": "Unit",
+      "refs": [
+        "V hal. 91"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "8. Rubber Ring Dia. 80 cm",
+      "after": "Rubber Ring Dia. 80 cm",
+      "unit": "Unit",
+      "refs": [
+        "V hal. 97",
+        "V hal. 100"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "9. Semen",
+      "after": "Semen",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 79",
+        "V hal. 91",
+        "V hal. 97",
+        "V hal. 100",
+        "V hal. 106",
+        "V hal. 109"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "a bambu* dia. 10-12 cm",
+      "after": "a bambu dia. 10-12 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 658",
+        "VI hal. 659",
+        "VI hal. 660",
+        "VI hal. 661",
+        "VI hal. 662",
+        "VI hal. 663",
+        "VI hal. 664",
+        "VI hal. 665",
+        "VI hal. 666",
+        "VI hal. 667",
+        "VI hal. 668",
+        "VI hal. 669",
+        "VI hal. 670",
+        "VI hal. 671"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "a bambu* dia. 3-5 cm tali ijuk/pengikat",
+      "after": "a bambu dia. 3-5 cm tali ijuk/pengikat",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 571",
+        "VI hal. 572",
+        "VI hal. 573",
+        "VI hal. 574",
+        "VI hal. 575",
+        "VI hal. 576",
+        "VI hal. 577",
+        "VI hal. 578",
+        "VI hal. 579",
+        "VI hal. 580",
+        "VI hal. 581",
+        "VI hal. 582",
+        "VI hal. 583",
+        "VI hal. 584",
+        "VI hal. 585",
+        "VI hal. 586",
+        "VI hal. 587",
+        "VI hal. 588",
+        "VI hal. 589",
+        "VI hal. 590",
+        "VI hal. 591",
+        "VI hal. 592",
+        "VI hal. 593",
+        "VI hal. 594",
+        "VI hal. 595",
+        "VI hal. 596",
+        "VI hal. 597",
+        "VI hal. 598",
+        "VI hal. 599"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "a bambu* dia. 5-8 cm",
+      "after": "a bambu dia. 5-8 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 600",
+        "VI hal. 601",
+        "VI hal. 602",
+        "VI hal. 603",
+        "VI hal. 604",
+        "VI hal. 605",
+        "VI hal. 606",
+        "VI hal. 607",
+        "VI hal. 608",
+        "VI hal. 609",
+        "VI hal. 610",
+        "VI hal. 611",
+        "VI hal. 612",
+        "VI hal. 613",
+        "VI hal. 614",
+        "VI hal. 615",
+        "VI hal. 616",
+        "VI hal. 617",
+        "VI hal. 618",
+        "VI hal. 619",
+        "VI hal. 620",
+        "VI hal. 621",
+        "VI hal. 622",
+        "VI hal. 623",
+        "VI hal. 624",
+        "VI hal. 625",
+        "VI hal. 626",
+        "VI hal. 627",
+        "VI hal. 628",
+        "VI hal. 629",
+        "VI hal. 630",
+        "VI hal. 631",
+        "VI hal. 632",
+        "VI hal. 633",
+        "VI hal. 634",
+        "VI hal. 635",
+        "VI hal. 678",
+        "VI hal. 679",
+        "VI hal. 680",
+        "VI hal. 684",
+        "VI hal. 685",
+        "VI hal. 686"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "a bambu* dia. 8-10 cm",
+      "after": "a bambu dia. 8-10 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 636",
+        "VI hal. 637",
+        "VI hal. 638",
+        "VI hal. 639",
+        "VI hal. 640",
+        "VI hal. 641",
+        "VI hal. 642",
+        "VI hal. 643",
+        "VI hal. 644",
+        "VI hal. 645",
+        "VI hal. 646",
+        "VI hal. 647",
+        "VI hal. 648",
+        "VI hal. 649",
+        "VI hal. 650",
+        "VI hal. 651",
+        "VI hal. 652",
+        "VI hal. 653",
+        "VI hal. 654",
+        "VI hal. 655",
+        "VI hal. 656",
+        "VI hal. 657",
+        "VI hal. 687",
+        "VI hal. 688",
+        "VI hal. 689",
+        "VI hal. 690",
+        "VI hal. 691",
+        "VI hal. 692",
+        "VI hal. 693",
+        "VI hal. 694",
+        "VI hal. 695",
+        "VI hal. 696",
+        "VI hal. 697",
+        "VI hal. 698",
+        "VI hal. 699",
+        "VI hal. 700",
+        "VI hal. 701",
+        "VI hal. 702"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "a) Alat Pemuat 1 Tripod tinggi 9 m, B_max. 1 ton dan Hoist 3 Ton",
+      "after": "a Alat Pemuat 1 Tripod tinggi 9 m, B_max. 1 ton dan Hoist 3 Ton",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 823",
+        "IV hal. 824"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "a) Alat Pemuat 1 Tripod tinggi 9 m, B_max. 3 ton + Hoist 2 Ton",
+      "after": "a Alat Pemuat 1 Tripod tinggi 9 m, B_max. 3 ton + Hoist 2 Ton",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 825"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Acuan / bekisting",
+      "after": "Acuan",
+      "unit": "m2",
+      "refs": [
+        "V hal. 1707",
+        "V hal. 1709",
+        "V hal. 1711"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Acuan / bekisting",
+      "after": "bekisting",
+      "unit": "m2",
+      "refs": [
+        "V hal. 1707",
+        "V hal. 1709",
+        "V hal. 1711"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Acuan / bekisting",
+      "after": "Acuan",
+      "unit": "m3",
+      "refs": [
+        "V hal. 3114"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Acuan / bekisting",
+      "after": "bekisting",
+      "unit": "m3",
+      "refs": [
+        "V hal. 3114"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aggregat B",
+      "after": "Agregat B",
+      "unit": "M3",
+      "refs": [
+        "V hal. 629",
+        "V hal. 633"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Aggregat Kasar",
+      "after": "Agregat Kasar",
+      "unit": "M3",
+      "refs": [
+        "V hal. 161",
+        "V hal. 165",
+        "V hal. 169",
+        "V hal. 173",
+        "V hal. 177",
+        "V hal. 181",
+        "V hal. 185",
+        "V hal. 189",
+        "V hal. 193",
+        "V hal. 197",
+        "V hal. 201",
+        "V hal. 205",
+        "V hal. 209",
+        "V hal. 213",
+        "V hal. 217",
+        "V hal. 221",
+        "V hal. 225",
+        "V hal. 229",
+        "V hal. 233",
+        "V hal. 237",
+        "V hal. 244",
+        "V hal. 247",
+        "V hal. 262",
+        "V hal. 265",
+        "V hal. 268",
+        "V hal. 271",
+        "V hal. 274",
+        "V hal. 277",
+        "V hal. 280",
+        "V hal. 283",
+        "V hal. 2166",
+        "V hal. 2170",
+        "V hal. 2174",
+        "V hal. 2178",
+        "V hal. 2182",
+        "V hal. 2186",
+        "V hal. 2190",
+        "V hal. 2194",
+        "V hal. 2342",
+        "V hal. 2345",
+        "V hal. 2358",
+        "V hal. 2657"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aggregat Kasar",
+      "after": "Agregat Kasar",
+      "unit": "M3",
+      "refs": [
+        "V hal. 1953",
+        "V hal. 1957",
+        "V hal. 1960",
+        "V hal. 1963",
+        "V hal. 1966",
+        "V hal. 1970",
+        "V hal. 1973",
+        "V hal. 1976",
+        "V hal. 1979",
+        "V hal. 1982",
+        "V hal. 2008",
+        "V hal. 2011",
+        "V hal. 2018",
+        "V hal. 2021",
+        "V hal. 2024",
+        "V hal. 2027",
+        "V hal. 2030",
+        "V hal. 2039",
+        "V hal. 2044",
+        "V hal. 2047",
+        "V hal. 2050",
+        "V hal. 2053",
+        "V hal. 2056",
+        "V hal. 2059",
+        "V hal. 2062",
+        "V hal. 2065",
+        "V hal. 2068",
+        "V hal. 2071",
+        "V hal. 2074",
+        "V hal. 2077",
+        "V hal. 2080",
+        "V hal. 2083",
+        "V hal. 2086",
+        "V hal. 2089",
+        "V hal. 2092",
+        "V hal. 2095",
+        "V hal. 2098",
+        "V hal. 2101",
+        "V hal. 2104",
+        "V hal. 2107",
+        "V hal. 2110",
+        "V hal. 2113",
+        "V hal. 2116",
+        "V hal. 2119",
+        "V hal. 2122",
+        "V hal. 2125",
+        "V hal. 2128",
+        "V hal. 2131",
+        "V hal. 2134",
+        "V hal. 2137",
+        "V hal. 2140",
+        "V hal. 2143",
+        "V hal. 2146",
+        "V hal. 2149",
+        "V hal. 2152",
+        "V hal. 2213",
+        "V hal. 2216",
+        "V hal. 2223",
+        "V hal. 2235",
+        "V hal. 2806"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aggregat S",
+      "after": "Agregat S",
+      "unit": "M3",
+      "refs": [
+        "V hal. 637",
+        "V hal. 641"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "agregat halus Kr : krikil / agregat kasar Air",
+      "after": "agregat halus Kr : Kerikil / agregat kasar Air",
+      "unit": "Kg Liter",
+      "refs": [
+        "IV hal. 390"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "agregat halus Kr: krikil / agregat kasar Air",
+      "after": "agregat halus Kr: Kerikil / agregat kasar Air",
+      "unit": "Kg Liter",
+      "refs": [
+        "IV hal. 393"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Agregat kasar",
+      "after": "Agregat Kasar",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 289",
+        "VI hal. 290",
+        "VI hal. 291"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Agregate Halus",
+      "after": "Agregate halus",
+      "unit": "M3",
+      "refs": [
+        "V hal. 473",
+        "V hal. 476"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Agregate Kasar",
+      "after": "Agregate kasar",
+      "unit": "M3",
+      "refs": [
+        "V hal. 473",
+        "V hal. 476"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Air Bersih",
+      "after": "Air bersih",
+      "unit": "liter",
+      "refs": [
+        "VI hal. 747",
+        "VI hal. 748",
+        "VI hal. 749",
+        "VI hal. 750",
+        "VI hal. 751",
+        "VI hal. 752",
+        "VI hal. 753",
+        "VI hal. 754",
+        "VI hal. 755",
+        "VI hal. 756",
+        "VI hal. 757",
+        "VI hal. 758",
+        "VI hal. 779",
+        "VI hal. 780"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "AIR COMPRESSOR",
+      "after": "Air Compressor",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 785",
+        "V hal. 1818",
+        "V hal. 1821",
+        "V hal. 1824",
+        "V hal. 1827",
+        "V hal. 1830",
+        "V hal. 1833",
+        "V hal. 1836",
+        "V hal. 1856",
+        "V hal. 1859"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "air M170",
+      "after": "Air M170",
+      "unit": "liter",
+      "refs": [
+        "V hal. 1714"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Akhli Madya (sipil/geologi)",
+      "after": "Ahli Madya (sipil/geologi)",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 899"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Akhli madya (sipil/hidrologi)",
+      "after": "Ahli madya (sipil/hidrologi)",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 327"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Akhli Madya Lingkungan",
+      "after": "Ahli Madya Lingkungan",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 898"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Alat bantu",
+      "after": "Alat Bantu",
+      "unit": "Ls",
+      "refs": [
+        "V hal. 322",
+        "V hal. 326",
+        "V hal. 328",
+        "V hal. 330",
+        "V hal. 332",
+        "V hal. 334",
+        "V hal. 336",
+        "V hal. 339"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Alat Las Listrik",
+      "after": "Alat las Listrik",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1554",
+        "VI hal. 1555"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Alat Pancang Mini Pile Driver (Vibratory) Hammer 50 kg (1 HP)",
+      "after": "Alat pancang Mini Pile Driver (Vibratory) Hammer 50 kg (1 HP)",
+      "unit": "Jam",
+      "refs": [
+        "VI hal. 326"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung balok ∆ 1 28 cm",
+      "after": "Alat penyambung balok ∆ 1 28 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 508"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat penyambung kaso 5/7",
+      "after": "Alat penyambung Kaso 5/7",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 437",
+        "IV hal. 458",
+        "IV hal. 459",
+        "IV hal. 486",
+        "IV hal. 493",
+        "IV hal. 494",
+        "IV hal. 555",
+        "IV hal. 563",
+        "IV hal. 564",
+        "IV hal. 628",
+        "IV hal. 638",
+        "IV hal. 639"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat penyambung kaso 8/12",
+      "after": "Alat penyambung Kaso 8/12",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 438"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 100 cm",
+      "after": "Alat penyambung pancang 1 beton 100 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 523"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 120 cm",
+      "after": "Alat penyambung pancang 1 beton 120 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 524"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 40 cm",
+      "after": "Alat penyambung pancang 1 beton 40 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 525"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 45 cm",
+      "after": "Alat penyambung pancang 1 beton 45 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 519",
+        "IV hal. 526"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat penyambung pancang 1 beton 50 cm",
+      "after": "Alat Penyambung pancang 1 beton 50 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 591"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 60 cm",
+      "after": "Alat penyambung pancang 1 beton 60 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 521"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 1 beton 80 cm",
+      "after": "Alat penyambung pancang 1 beton 80 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 522"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 2 beton 30 cm",
+      "after": "Alat penyambung pancang 2 beton 30 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 516"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Alat Penyambung pancang 2 beton 40 cm",
+      "after": "Alat penyambung pancang 2 beton 40 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 518"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Anchor L dia. 12 mm",
+      "after": "Anchor L Dia. 12 mm",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2785"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Anorganik*)",
+      "after": "Anorganik",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 747",
+        "VI hal. 748",
+        "VI hal. 749",
+        "VI hal. 753",
+        "VI hal. 754",
+        "VI hal. 755"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi (CQS-1h atau QS-1h)",
+      "after": "Aspal Emulsi CQS-1h",
+      "unit": "ltr",
+      "refs": [
+        "V hal. 464",
+        "V hal. 476",
+        "V hal. 488",
+        "V hal. 491",
+        "V hal. 497"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi (CQS-1h atau QS-1h)",
+      "after": "Aspal Emulsi QS-1h",
+      "unit": "ltr",
+      "refs": [
+        "V hal. 464",
+        "V hal. 476",
+        "V hal. 488",
+        "V hal. 491",
+        "V hal. 497"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi (CQS-1h atau QS-1h)",
+      "after": "Aspal Emulsi CQS-1h",
+      "unit": "Ltr",
+      "refs": [
+        "V hal. 482"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi (CQS-1h atau QS-1h)",
+      "after": "Aspal Emulsi QS-1h",
+      "unit": "Ltr",
+      "refs": [
+        "V hal. 482"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1 atau SS-1",
+      "after": "Aspal Emulsi CSS-1",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 883",
+        "V hal. 887"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1 atau SS-1",
+      "after": "Aspal Emulsi SS-1",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 883",
+        "V hal. 887"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1h atau SS-1h",
+      "after": "Aspal Emulsi CSS-1h",
+      "unit": "ltr",
+      "refs": [
+        "V hal. 461",
+        "V hal. 473",
+        "V hal. 479"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1h atau SS-1h",
+      "after": "Aspal Emulsi SS-1h",
+      "unit": "ltr",
+      "refs": [
+        "V hal. 461",
+        "V hal. 473",
+        "V hal. 479"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1h atau SS-1h",
+      "after": "Aspal Emulsi CSS-1h",
+      "unit": "Ltr",
+      "refs": [
+        "V hal. 485"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Aspal Emulsi CSS-1h atau SS-1h",
+      "after": "Aspal Emulsi SS-1h",
+      "unit": "Ltr",
+      "refs": [
+        "V hal. 485"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "ASPHALT DISTRIBUTOR",
+      "after": "Asphalt Distributor",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 785",
+        "V hal. 3027"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "ASPHALT FINISHER",
+      "after": "Asphalt Finisher",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 797",
+        "V hal. 841",
+        "V hal. 883",
+        "V hal. 887"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Asphalt Mixing Plant (AMP)",
+      "after": "ASPHALT MIXING PLANT (AMP)",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 504",
+        "V hal. 508",
+        "V hal. 512",
+        "V hal. 516",
+        "V hal. 520",
+        "V hal. 524",
+        "V hal. 528",
+        "V hal. 532",
+        "V hal. 536",
+        "V hal. 540"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "atau Tipe T 3** Pasir Pasang",
+      "after": "atau Tipe T Pasir Pasang",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 373"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "b) Alat Pengangkut 4 Kapal Kayu, Angkutan Material, Daya 25 Ton c) Alat Penempatan/",
+      "after": "b Alat Pengangkut 4 Kapal Kayu, Angkutan Material, Daya 25 Ton c Alat Penempatan/",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 823"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan Aditif *",
+      "after": "Bahan Aditif",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 335"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan Aditif/Admixture",
+      "after": "Bahan Aditif",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 379"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan Aditif/Admixture",
+      "after": "Bahan Admixture",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 379"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan Admixture/ 1* Additif sesuai kebutuhan",
+      "after": "Bahan Admixture",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 405"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan Admixture/ 1* Additif sesuai kebutuhan",
+      "after": "Bahan Additif sesuai kebutuhan",
+      "unit": "Liter",
+      "refs": [
+        "IV hal. 405"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bahan gombong Ø 8 -< 10 1 cm, pjg 4-6 m*)",
+      "after": "Bahan gombong Ø 8 -< 10 1 cm, pjg 4-6 m",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 731"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Baja Diameter 30 cm *)",
+      "after": "Baja Diameter 30 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 294"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Baja Diameter 40 cm *)",
+      "after": "Baja Diameter 40 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 295"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Baja Diameter 50 cm *)",
+      "after": "Baja Diameter 50 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 296"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja profil L.50.50.5 *",
+      "after": "Baja profil L.50.50.",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 719"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja Ringan C75, t=0,75 mm (Batang",
+      "after": "Baja Ringan C75, t=0,75 mm Batang",
+      "unit": "batang",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja tulangan pondasi tiang bor 1 100kg/m3 beton*)",
+      "after": "Baja tulangan pondasi tiang bor 1 100kg/m3 beton",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 700",
+        "IV hal. 701"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja tulangan Pondasi Tiang Bor 100 kg/m3 beton*)",
+      "after": "Baja tulangan Pondasi Tiang Bor 100 kg/m3 beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 702"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja tulangan pondasi tiang bor B.06.a.1) 100kg/m3 beton*)",
+      "after": "Baja tulangan pondasi tiang bor B.06.a.1 100kg/m3 beton",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 699"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja tulangan Pondasi Tiang Bor kg/m3 beton*)",
+      "after": "Baja tulangan Pondasi Tiang Bor kg/m3 beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 703",
+        "IV hal. 704",
+        "IV hal. 705",
+        "IV hal. 706",
+        "IV hal. 707",
+        "IV hal. 708"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Baja tulangan Pondasi Tiang Bor kg/m3 beton*)",
+      "after": "Baja tulangan Pondasi Tiang Bor kg/m3 beton",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 703"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja Tulangan Sirip BjTS 280",
+      "after": "Baja tulangan sirip BjTS 280",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 1121"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Baja Tulangan Sirip BjTS 420",
+      "after": "Baja tulangan sirip BjTS 420",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 1125"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok 8//12 cm *",
+      "after": "Balok 8//12 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 343",
+        "IV hal. 344",
+        "IV hal. 345",
+        "IV hal. 346"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu 6/12 Kelas II atau III",
+      "after": "Balok Kayu 6/12 Kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 481"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu 6/12 Kelas II atau III",
+      "after": "Balok Kayu 6/12 Kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 481"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu 6/15 Kelas II atau III",
+      "after": "Balok Kayu 6/15 Kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 481"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu 6/15 Kelas II atau III",
+      "after": "Balok Kayu 6/15 Kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 481"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu Kelas II",
+      "after": "Balok kayu kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 240"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu Kelas II atau III",
+      "after": "Balok kayu kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 466"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Balok Kayu Kelas II atau III",
+      "after": "Balok Kayu Kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 466"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bambu ø 8 cm – 10 cm, 1 Panjang 4 m *",
+      "after": "Bambu ø 8 cm – 10 cm, 1 Panjang 4 m",
+      "unit": "batang",
+      "refs": [
+        "IV hal. 342",
+        "IV hal. 352",
+        "IV hal. 358"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bata merah",
+      "after": "Bata Merah",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 1526",
+        "IV hal. 1527",
+        "IV hal. 1528",
+        "IV hal. 1529",
+        "IV hal. 1530",
+        "IV hal. 1531"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bata merah",
+      "after": "Bata Merah",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 163"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batang skoor L.40.40.4 *)",
+      "after": "Batang skoor L.40.40.",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 327"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu alam/Batu Kali 12-25cm 1m3 Bronjong Tambang Nylon/Rami, untuk lubang kotak **2 100 x 100 mm; beda tinggi > 0 s.d. 1 m'",
+      "after": "Batu alam/Batu Kali 12-25cm 1m3 Bronjong Tambang Nilon/Rami, untuk lubang kotak 100 x 100 mm; beda tinggi > 0 s.d. 1 m'",
+      "unit": "m3 unit",
+      "refs": [
+        "IV hal. 318"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu Belah",
+      "after": "Batu belah",
+      "unit": "M3",
+      "refs": [
+        "V hal. 82",
+        "V hal. 88",
+        "V hal. 1024",
+        "V hal. 1304",
+        "V hal. 1306"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu Belah",
+      "after": "Batu belah",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 289",
+        "VI hal. 290",
+        "VI hal. 291"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 200 kg – 500 kg",
+      "after": "Batu kali 200 kg – 500 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 803"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 200 kg – 500 kg",
+      "after": "Batu bulat 200 kg – 500 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 803"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 200 kg – 500 kg",
+      "after": "Batu oval 200 kg – 500 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 803"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 200 kg – 500 kg",
+      "after": "Batu gunung 200 kg – 500 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 803"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 300 kg – 400 kg",
+      "after": "Batu kali 300 kg – 400 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 805"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 300 kg – 400 kg",
+      "after": "Batu bulat 300 kg – 400 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 805"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 300 kg – 400 kg",
+      "after": "Batu oval 300 kg – 400 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 805"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu kali/ bulat/ oval/gunung 300 kg – 400 kg",
+      "after": "Batu gunung 300 kg – 400 kg",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 805"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu pecah / kerikil",
+      "after": "Batu pecah",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 1142"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Batu pecah / kerikil",
+      "after": "Batu kerikil",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 1142"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bekisting",
+      "after": "bekisting",
+      "unit": "M3",
+      "refs": [
+        "V hal. 2350"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bekisting",
+      "after": "bekisting",
+      "unit": "m2",
+      "refs": [
+        "VI hal. 1142",
+        "VI hal. 1380"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bekisting/Fix Form Rigid Pavement",
+      "after": "Bekisting",
+      "unit": "bh/M'",
+      "refs": [
+        "V hal. 665",
+        "V hal. 669",
+        "V hal. 672",
+        "V hal. 675",
+        "V hal. 678",
+        "V hal. 681",
+        "V hal. 684",
+        "V hal. 687",
+        "V hal. 690",
+        "V hal. 693",
+        "V hal. 697"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bekisting/Fix Form Rigid Pavement",
+      "after": "Fix Form Rigid Pavement",
+      "unit": "bh/M'",
+      "refs": [
+        "V hal. 665",
+        "V hal. 669",
+        "V hal. 672",
+        "V hal. 675",
+        "V hal. 678",
+        "V hal. 681",
+        "V hal. 684",
+        "V hal. 687",
+        "V hal. 690",
+        "V hal. 693",
+        "V hal. 697"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton f`c 15 MPa",
+      "after": "Beton f`c 15 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 73",
+        "V hal. 76"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton f`c 30 MPa",
+      "after": "Beton f`c 30 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 85"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton Fast Track ≤ 24 Jam",
+      "after": "Beton Fast Track ≤ 24 jam",
+      "unit": "M3",
+      "refs": [
+        "V hal. 552"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton fc 20 MPa",
+      "after": "Beton Fc 20 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 2770",
+        "V hal. 2902",
+        "V hal. 2908",
+        "V hal. 2911"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton Fc' 15 MPa",
+      "after": "Beton fc' 15 MPa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 2032",
+        "V hal. 2034",
+        "V hal. 2036"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Beton Kepala Tukang",
+      "after": "beton Kepala Tukang",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 227"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Beton Shotcrete 30 MPa",
+      "after": "Beton Shotcrete 30 Mpa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 1446"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bibit Vegetasi (Biji Legume Crop",
+      "after": "Bibit Vegetasi Biji Legume Crop",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 756"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Block) - Pasir beton kasar",
+      "after": "Block - Pasir beton kasar",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 272"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Bracket) Dynabolt dia. 12 x 120 mm",
+      "after": "Bracket Dynabolt dia. 12 x 120 mm",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran beton 2 fc’=25 MPa **)",
+      "after": "Campuran beton 2 fc’=25 MPa",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 477",
+        "IV hal. 480"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran beton fc' =25 2 MPa **)",
+      "after": "Campuran beton fc' =25 2 MPa",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 472",
+        "IV hal. 475"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, A.3.04.1b.2 agregat maks 19 mm*)",
+      "after": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, A.3.04.1b.2 agregat maks 19 mm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 406"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, agregat A.3.04.1b.2 maks 19 mm*)",
+      "after": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, agregat A.3.04.1b.2 maks 19 mm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 403"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, agregat maks 19 mm*)",
+      "after": "Campuran Beton fc' 25 Mpa, Slump (10 ± 2,5) cm, agregat maks 19 mm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 407"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Campuran Beton fc' 25 Mpa, Slump (10 ± A.3.04.1b.2 2,5) cm, agregat maks 19 mm*)",
+      "after": "Campuran Beton fc' 25 Mpa, Slump (10 ± A.3.04.1b.2 2,5) cm, agregat maks 19 mm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 405"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Cat dasar beton (penguard universal 200 mikron) M199a Cat akhir protektif beton (MC",
+      "after": "Cat dasar beton (penguard universal 200 mikron) M199a Cat akhir protektif beton MC",
+      "unit": "liter",
+      "refs": [
+        "V hal. 1469"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Cat dinding/plafon",
+      "after": "Cat dinding",
+      "unit": "m2",
+      "refs": [
+        "VI hal. 164"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Cat dinding/plafon",
+      "after": "Cat plafon",
+      "unit": "m2",
+      "refs": [
+        "VI hal. 164"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Cell) Komplit",
+      "after": "Cell Komplit",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2689",
+        "V hal. 2692",
+        "V hal. 2695",
+        "V hal. 2698",
+        "V hal. 2701",
+        "V hal. 2703",
+        "V hal. 2706",
+        "V hal. 2709",
+        "V hal. 2712",
+        "V hal. 2715",
+        "V hal. 2718"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "COMPRESSOR AHX-10, 10 HP",
+      "after": "Compressor AHX-10, 10 HP",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 610"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "COMPRESSOR AHX-10, 10 HP",
+      "after": "Compressor AHX-10, 10 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1640"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "CONCRETE CUTTER (0,5-0,7 m/menit)",
+      "after": "Concrete Cutter (0,5-0,7 m/menit)",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 342",
+        "V hal. 347",
+        "V hal. 3033"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "CONCRETE MIXER",
+      "after": "Concrete Mixer",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1024",
+        "V hal. 1301",
+        "V hal. 1304",
+        "V hal. 3036"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "CONCRETE VIBRATOR",
+      "after": "Concrete Vibrator",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1953",
+        "V hal. 1957",
+        "V hal. 1960",
+        "V hal. 1963",
+        "V hal. 1966",
+        "V hal. 1970",
+        "V hal. 1973",
+        "V hal. 1976",
+        "V hal. 1979",
+        "V hal. 1982"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Cover/LCC) Mulsa",
+      "after": "Cover/LCC Mulsa",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 756"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane on Track (75-100) T; 190 HP",
+      "after": "CRANE ON TRACK (75-100) T; 190 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1152"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane On Track (75-100) T; 190 HP",
+      "after": "CRANE ON TRACK (75-100) T; 190 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1100",
+        "V hal. 1265"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane on Track 10-15 Ton",
+      "after": "CRANE ON TRACK 10-15 TON",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1165",
+        "V hal. 1168",
+        "V hal. 1171",
+        "V hal. 1174",
+        "V hal. 1177",
+        "V hal. 1180",
+        "V hal. 1183",
+        "V hal. 1186"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane On Track 10-15 Ton",
+      "after": "CRANE ON TRACK 10-15 TON",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1097"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "CRANE ON TRUCK (10-15) TON; 260 HP",
+      "after": "Crane On Truck (10-15) Ton; 260 HP",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1417",
+        "V hal. 1423"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane truck 10 Ton, Winch 12 Ton *)",
+      "after": "Crane truck 10 Ton, Winch 12 Ton",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1439",
+        "VI hal. 1443"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane truck 3 Ton, Winch 5 Ton *)",
+      "after": "Crane truck 3 Ton, Winch 5 Ton",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1398",
+        "VI hal. 1399",
+        "VI hal. 1400",
+        "VI hal. 1401",
+        "VI hal. 1402",
+        "VI hal. 1403",
+        "VI hal. 1404",
+        "VI hal. 1405",
+        "VI hal. 1406",
+        "VI hal. 1407",
+        "VI hal. 1408",
+        "VI hal. 1409",
+        "VI hal. 1410",
+        "VI hal. 1412",
+        "VI hal. 1413",
+        "VI hal. 1414",
+        "VI hal. 1415",
+        "VI hal. 1416",
+        "VI hal. 1417",
+        "VI hal. 1418",
+        "VI hal. 1419",
+        "VI hal. 1420",
+        "VI hal. 1421",
+        "VI hal. 1422",
+        "VI hal. 1423",
+        "VI hal. 1436",
+        "VI hal. 1437",
+        "VI hal. 1438",
+        "VI hal. 1440",
+        "VI hal. 1441",
+        "VI hal. 1442"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane truck 5 Ton, Winch 8 Ton *)",
+      "after": "Crane truck 5 Ton, Winch 8 Ton",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1410",
+        "VI hal. 1411",
+        "VI hal. 1424",
+        "VI hal. 1425",
+        "VI hal. 1438",
+        "VI hal. 1442"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crane truck 8 Ton, Winch 10 Ton *)",
+      "after": "Crane truck 8 Ton, Winch 10 Ton",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1439",
+        "VI hal. 1443"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crawler Crane (10 Ton) + Diesel Hammer (2",
+      "after": "Crawler Crane (10 Ton) + Diesel Hammer 2",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 538"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Crawler Crane 10 Ton + *1 Leader 14 m'",
+      "after": "Crawler Crane 10 Ton + Leader 14 m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 508"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Curing compound",
+      "after": "Curing Compound",
+      "unit": "Ltr",
+      "refs": [
+        "V hal. 543",
+        "V hal. 546",
+        "V hal. 549",
+        "V hal. 552"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Deep Cement Mixing Rig (diameter 0.7 m, mata",
+      "after": "Deep Cement Mixing Rig diameter 0.7 m, mata",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 212"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "DUMP TRUCK 10 Ton",
+      "after": "Dump Truck 10 Ton",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 775",
+        "V hal. 778"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Dump Truck 4 Ton; Bak 3 - 4 m3",
+      "after": "Dump truck 4 ton; Bak 3 - 4 m3",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 2162"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Dump Truck 7 ton; Bak 6 m3; 130 HP",
+      "after": "Dump truck 7 ton; Bak 6 m3; 130 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 196"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Dump Truck 7 Ton; Bak 6 m3; 130 HP",
+      "after": "Dump truck 7 ton; Bak 6 m3; 130 HP",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 248"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Dump Truck Tronton 10 Ton",
+      "after": "DUMP TRUCK TRONTON 10 TON",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 470",
+        "V hal. 473",
+        "V hal. 476",
+        "V hal. 479",
+        "V hal. 482",
+        "V hal. 485",
+        "V hal. 488",
+        "V hal. 491",
+        "V hal. 494",
+        "V hal. 497",
+        "V hal. 500",
+        "V hal. 504",
+        "V hal. 508",
+        "V hal. 512",
+        "V hal. 516",
+        "V hal. 520",
+        "V hal. 524",
+        "V hal. 528",
+        "V hal. 532",
+        "V hal. 536",
+        "V hal. 540"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Dynabol/raamset ø 8 mm, panjang 1 4 - 5 cm *) Baja profil L.40.40.4 *) Kawat las listrik",
+      "after": "Dynabol/raamset ø 8 mm, panjang 1 4 - 5 cm Baja profil L.40.40. Kawat las listrik",
+      "unit": "Buah m' kg",
+      "refs": [
+        "IV hal. 326"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Dynabolt/Baut Angkur",
+      "after": "Dynabolt",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Dynabolt/Baut Angkur",
+      "after": "Baut Angkur",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Exavator (Standar) – 155 HP",
+      "after": "Excavator (Standar) – 155 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 186",
+        "IV hal. 187",
+        "IV hal. 188",
+        "IV hal. 190",
+        "IV hal. 231",
+        "IV hal. 233"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "EXCAVATOR",
+      "after": "Excavator",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 380",
+        "V hal. 386",
+        "V hal. 1301"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Excavator (Std.); Bucket 0,55 m3; 95 HP *)",
+      "after": "Excavator (Std.); Bucket 0,55 m3; 95 HP",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 1427",
+        "VI hal. 1428",
+        "VI hal. 1429",
+        "VI hal. 1431",
+        "VI hal. 1432",
+        "VI hal. 1433",
+        "VI hal. 1434",
+        "VI hal. 1435"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6 m’",
+      "after": "Excavator (Std.); Bucket 0,90 m3; 155 HP; Dm 6,6m’",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 584"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Excavator 80-140 HP",
+      "after": "EXCAVATOR 80-140 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1758"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Flat Bed Truck 10 Ton",
+      "after": "FLAT BED TRUCK 10 TON",
+      "unit": "jam",
+      "refs": [
+        "V hal. 747"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Flat Bed Truck 4 Ton",
+      "after": "FLAT BED TRUCK 4 TON",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 2662",
+        "V hal. 2665",
+        "V hal. 2668",
+        "V hal. 2671",
+        "V hal. 2674",
+        "V hal. 2677",
+        "V hal. 2680",
+        "V hal. 2683",
+        "V hal. 2723",
+        "V hal. 2726",
+        "V hal. 2729",
+        "V hal. 2732",
+        "V hal. 2735",
+        "V hal. 2738",
+        "V hal. 2741",
+        "V hal. 2744",
+        "V hal. 2747"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Fly ash",
+      "after": "Fly Ash",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 929",
+        "V hal. 950",
+        "V hal. 977",
+        "V hal. 980",
+        "V hal. 983",
+        "V hal. 986",
+        "V hal. 989",
+        "V hal. 992",
+        "V hal. 995",
+        "V hal. 998",
+        "V hal. 1001",
+        "V hal. 1010"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Fly ash",
+      "after": "Fly Ash",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 271"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Fly Ash (Kemasan 20 kg)",
+      "after": "Fly ash ( kemasan 20 kg )",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 333"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Frame aluminium L.10.1 **)",
+      "after": "Frame aluminium L.10.",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 162"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Fungisida/insektisida",
+      "after": "Fungisida",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 784"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Fungisida/insektisida",
+      "after": "insektisida",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 784"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Galian tanah biasa",
+      "after": "Galian Tanah Biasa",
+      "unit": "M3",
+      "refs": [
+        "V hal. 2397",
+        "V hal. 2400",
+        "V hal. 2406",
+        "V hal. 2412",
+        "V hal. 2463"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Galian tanah biasa EI311",
+      "after": "Galian Tanah Biasa EI311",
+      "unit": "M3",
+      "refs": [
+        "V hal. 2394",
+        "V hal. 2409",
+        "V hal. 2415",
+        "V hal. 2418",
+        "V hal. 2421",
+        "V hal. 2424",
+        "V hal. 2427",
+        "V hal. 2430",
+        "V hal. 2433",
+        "V hal. 2436",
+        "V hal. 2439",
+        "V hal. 2445",
+        "V hal. 2448",
+        "V hal. 2451",
+        "V hal. 2454",
+        "V hal. 2466",
+        "V hal. 2469",
+        "V hal. 2478",
+        "V hal. 2481",
+        "V hal. 2484",
+        "V hal. 2487"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Galvanish Stell Pipe 3\" (0.996*1*40)",
+      "after": "Galvanish Stell Pipe 3\" 0.996",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2015"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "ganda) Genset 350 KVA",
+      "after": "ganda Genset 350 KVA",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 212"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "gedung) Pembuatan 1 buah Cetakan Panel P1 RISHA (Asumsi 400 kali pakai)",
+      "after": "gedung Pembuatan 1 buah Cetakan Panel P1 RISHA (Asumsi 400 kali pakai)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 1557"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "gedung) Pembuatan 1 buah Cetakan Panel P2 RISHA (Asumsi 400 kali pakai)",
+      "after": "gedung Pembuatan 1 buah Cetakan Panel P2 RISHA (Asumsi 400 kali pakai)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 1558"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "GENERATOR SET",
+      "after": "Generator Set",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1464"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Generator Set; 134 KVA; 180 HP",
+      "after": "GENERATOR SET; 134 KVA; 180 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1479",
+        "V hal. 1482",
+        "V hal. 1485",
+        "V hal. 1488",
+        "V hal. 1494"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Geo listrik **) G.17",
+      "after": "Geo listrik G.17",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 899"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Geotekstil Tebal sedang (> 400- M.132.g - 1* <800 gr/m2) o",
+      "after": "Geotekstil Tebal sedang (> 400- M.132.g - <800 gr/m2) o",
+      "unit": "m2",
+      "refs": [
+        "IV hal. 321"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Geotekstil Tipis (> 100 - < 400 1* M.132.a - f gr/m2)",
+      "after": "Geotekstil Tipis (> 100 - < 400 M.132.a - f gr/m2)",
+      "unit": "m2",
+      "refs": [
+        "IV hal. 320"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Gerinda tangan GWS 750-100 4\"; 1 HP",
+      "after": "Gerinda Tangan GWS 750-100 4\"; 1 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1479",
+        "V hal. 1482",
+        "V hal. 1485",
+        "V hal. 1488",
+        "V hal. 1491"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Gerinda tangan GWS 750-100 4\"; 1E69 HP",
+      "after": "Gerinda Tangan GWS 750-100 4\"; 1E69 HP",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1476"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Harga - 12) Ton Sheep",
+      "after": "Harga - 12 Ton Sheep",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 1628"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Jack hammer (5 KW) + Genset (12 HP)",
+      "after": "Jack hammer (5 kW) + Genset (12 HP)",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 218"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Jack Hammer Drill 2,5 1* KW + Genset 5 KW",
+      "after": "Jack Hammer Drill 2,5 KW + Genset 5 KW",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 370"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "JACK HAMMER; TEX-21 S; permukaan 1 m2/5mnt",
+      "after": "Jack Hammer; TEX-21 S; permukaan 1 m2/5mnt",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 560"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "JH Rock Drill+Kompressor 1* Q=5000 L/menit; 75 HP",
+      "after": "JH Rock Drill+Kompressor Q=5000 L/menit; 75 HP",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 370"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel NYY/NYM 2x2.5 mm2",
+      "after": "Kabel NYY 2x2.5 mm2",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2720"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel NYY/NYM 2x2.5 mm2",
+      "after": "Kabel NYM 2x2.5 mm2",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2720"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel TR NYM /NYY 2x2.5 mm²",
+      "after": "Kabel TR NYM 2x2.5 mm²",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2773",
+        "V hal. 2776",
+        "V hal. 2779",
+        "V hal. 2782",
+        "V hal. 2814"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel TR NYM /NYY 2x2.5 mm²",
+      "after": "Kabel TR NYY 2x2.5 mm²",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2773",
+        "V hal. 2776",
+        "V hal. 2779",
+        "V hal. 2782",
+        "V hal. 2814"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel TR NYM 3x2.5 mm2",
+      "after": "Kabel TR NYM 3x2.5 mm²",
+      "unit": "M'",
+      "refs": [
+        "V hal. 2785"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kabel UTP CAT 6",
+      "after": "Kabel UTP cat 6",
+      "unit": "m",
+      "refs": [
+        "VI hal. 1026"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Karung plastik/ bagor/ goni",
+      "after": "Karung plastik",
+      "unit": "bh",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Karung plastik/ bagor/ goni",
+      "after": "Karung bagor",
+      "unit": "bh",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Karung plastik/ bagor/ goni",
+      "after": "Karung goni",
+      "unit": "bh",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 cm *",
+      "after": "Kaso 5/7 cm",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 337",
+        "IV hal. 338",
+        "IV hal. 340",
+        "IV hal. 343",
+        "IV hal. 344",
+        "IV hal. 345",
+        "IV hal. 346",
+        "IV hal. 347",
+        "IV hal. 348",
+        "IV hal. 349",
+        "IV hal. 350",
+        "IV hal. 353",
+        "IV hal. 354",
+        "IV hal. 356",
+        "IV hal. 359",
+        "IV hal. 360",
+        "IV hal. 362",
+        "IV hal. 363",
+        "IV hal. 364",
+        "IV hal. 366",
+        "IV hal. 367",
+        "IV hal. 368",
+        "IV hal. 380"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 cm * Paku 5 cm dan 7 cm",
+      "after": "Kaso 5/7 cm Paku 5 cm dan 7 cm",
+      "unit": "m3 kg",
+      "refs": [
+        "IV hal. 367",
+        "IV hal. 368"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 cm * Paku 5 cm dan 7 cm Minyak bekisting",
+      "after": "Kaso 5/7 cm Paku 5 cm dan 7 cm Minyak bekisting",
+      "unit": "m3 kg Liter",
+      "refs": [
+        "IV hal. 339",
+        "IV hal. 355",
+        "IV hal. 361",
+        "IV hal. 365"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 Kayu Kelas II",
+      "after": "Kaso 5/7 kayu kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 241"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 kayu kelas II atau III",
+      "after": "Kaso 5/7 kayu kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 373",
+        "VI hal. 374"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso 5/7 kayu kelas II atau III",
+      "after": "Kaso 5/7 kayu kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 373",
+        "VI hal. 374"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso-kaso 5cm x 7cm kelas III atau IV",
+      "after": "Kaso-Kaso 5cm x 7cm kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kaso-kaso 5cm x 7cm kelas III atau IV",
+      "after": "Kaso-Kaso 5cm x 7cm kelas IV",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat bendrat",
+      "after": "Kawat Bendrat",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 327"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat beton",
+      "after": "Kawat Beton",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 1394",
+        "V hal. 1957",
+        "V hal. 1970",
+        "V hal. 1976",
+        "V hal. 1982"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat beton",
+      "after": "Kawat Beton",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 253",
+        "VI hal. 282",
+        "VI hal. 325"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat las",
+      "after": "Kawat Las",
+      "unit": "Kg",
+      "refs": [
+        "V hal. 2015"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat las",
+      "after": "Kawat Las",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 311",
+        "VI hal. 312",
+        "VI hal. 313",
+        "VI hal. 787"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat Las Listrik",
+      "after": "Kawat las listrik",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 1514",
+        "IV hal. 1515",
+        "IV hal. 1516",
+        "VI hal. 306",
+        "VI hal. 307",
+        "VI hal. 500"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat tali beton/Bendrat",
+      "after": "Kawat tali beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 381"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kawat tali beton/Bendrat",
+      "after": "Kawat Bendrat",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 381"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/10",
+      "after": "Kayu Kaso 5/10",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 316"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/7",
+      "after": "Kayu Kaso 5/7",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 314"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/7 cm kelas II",
+      "after": "Kayu Kaso 5/7 cm kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 176"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/7 kelas II",
+      "after": "Kayu Kaso 5/7 kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 1393",
+        "VI hal. 1395",
+        "VI hal. 1396",
+        "VI hal. 1397"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/7*",
+      "after": "Kayu Kaso 5/",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 718"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/8",
+      "after": "Kayu Kaso 5/8",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 315"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kayu kaso 5/9",
+      "after": "Kayu Kaso 5/9",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 315"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Kepala tukang",
+      "after": "Kepala Tukang",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 330",
+        "IV hal. 331",
+        "IV hal. 332",
+        "IV hal. 333",
+        "IV hal. 334",
+        "IV hal. 337",
+        "IV hal. 338",
+        "IV hal. 339",
+        "IV hal. 340",
+        "IV hal. 341",
+        "IV hal. 342",
+        "IV hal. 343",
+        "IV hal. 344",
+        "IV hal. 345",
+        "IV hal. 346",
+        "IV hal. 347",
+        "IV hal. 348",
+        "IV hal. 349",
+        "IV hal. 350",
+        "IV hal. 351",
+        "IV hal. 352",
+        "IV hal. 353",
+        "IV hal. 354",
+        "IV hal. 355",
+        "IV hal. 356",
+        "IV hal. 357",
+        "IV hal. 358",
+        "IV hal. 359",
+        "IV hal. 360",
+        "IV hal. 361",
+        "IV hal. 362",
+        "IV hal. 363",
+        "IV hal. 364",
+        "IV hal. 365",
+        "IV hal. 366",
+        "IV hal. 367",
+        "IV hal. 368",
+        "IV hal. 373",
+        "IV hal. 374",
+        "IV hal. 375",
+        "IV hal. 376",
+        "IV hal. 377",
+        "IV hal. 378",
+        "IV hal. 379",
+        "IV hal. 380",
+        "IV hal. 381",
+        "VI hal. 273",
+        "VI hal. 274",
+        "VI hal. 275",
+        "VI hal. 276",
+        "VI hal. 1393",
+        "VI hal. 1395",
+        "VI hal. 1396",
+        "VI hal. 1397",
+        "VI hal. 1522",
+        "VI hal. 1523",
+        "VI hal. 1524",
+        "VI hal. 1525"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Kepala tukang",
+      "after": "Kepala Tukang",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 385",
+        "IV hal. 386",
+        "IV hal. 388",
+        "IV hal. 398",
+        "IV hal. 399",
+        "IV hal. 400",
+        "IV hal. 697",
+        "IV hal. 698",
+        "IV hal. 700"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Kerekan beban 1 Ton + 2 20 m’ T Nylon 10 mm",
+      "after": "Kerekan beban 1 Ton + 2 20 m’ T Nilon 10 mm",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 427",
+        "IV hal. 428",
+        "IV hal. 429",
+        "IV hal. 430",
+        "IV hal. 431",
+        "IV hal. 432",
+        "IV hal. 433",
+        "IV hal. 434",
+        "IV hal. 435",
+        "IV hal. 436",
+        "IV hal. 437",
+        "IV hal. 438",
+        "IV hal. 439",
+        "IV hal. 440",
+        "IV hal. 448",
+        "IV hal. 449",
+        "IV hal. 450",
+        "IV hal. 451",
+        "IV hal. 456",
+        "IV hal. 457",
+        "IV hal. 458"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Kerekan beban 1 Ton + 20 m’ T. Nylon 10 mm",
+      "after": "Kerekan beban 1 Ton + 20 m’ T. Nilon 10 mm",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 186"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Kerekan beban 2 Ton + 2 30 m’ T Nylon 12 mm",
+      "after": "Kerekan beban 2 Ton + 2 30 m’ T Nilon 12 mm",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 441",
+        "IV hal. 442",
+        "IV hal. 443",
+        "IV hal. 444",
+        "IV hal. 445",
+        "IV hal. 446",
+        "IV hal. 447",
+        "IV hal. 452",
+        "IV hal. 453",
+        "IV hal. 454",
+        "IV hal. 455",
+        "IV hal. 459",
+        "IV hal. 460",
+        "IV hal. 461",
+        "IV hal. 462",
+        "IV hal. 463",
+        "IV hal. 464",
+        "IV hal. 465",
+        "IV hal. 466",
+        "IV hal. 467"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr : krikil / agregat kasar",
+      "after": "Kerikil",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 391",
+        "IV hal. 392"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr : krikil / agregat kasar",
+      "after": "Agregat Kasar",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 391",
+        "IV hal. 392"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Kerikil / Agregat beton",
+      "after": "Kerikil",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 702",
+        "IV hal. 704",
+        "IV hal. 706",
+        "IV hal. 708"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Kerikil / Agregat beton",
+      "after": "Agregat beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 702",
+        "IV hal. 704",
+        "IV hal. 706",
+        "IV hal. 708"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil / Agregat 3",
+      "after": "Kerikil / Agregat 3",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 386"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil / Agregat 3 Kasar",
+      "after": "Kerikil / Agregat 3 Kasar",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 385"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: krikil / agregat 5 kasar",
+      "after": "Kerikil / agregat 5 kasar",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 400"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: krikil / agregat kasar",
+      "after": "Kerikil",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 398"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: krikil / agregat kasar",
+      "after": "Agregat Kasar",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 398"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil / Agregat Kasar",
+      "after": "Kerikil",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 330",
+        "IV hal. 331",
+        "IV hal. 332",
+        "IV hal. 333",
+        "IV hal. 388",
+        "IV hal. 410"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil / Agregat Kasar",
+      "after": "Agregat Kasar",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 330",
+        "IV hal. 331",
+        "IV hal. 332",
+        "IV hal. 333",
+        "IV hal. 388",
+        "IV hal. 410"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil/Agregat",
+      "after": "Kerikil",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 750"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Kr: Krikil/Agregat",
+      "after": "Agregat",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 750"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Kunci Momen",
+      "after": "Kunci momen",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 313"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "KUNCI TORSI",
+      "after": "Kunci Torsi",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1414"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "KUNCI TORSI (TORQUE WRENCH)",
+      "after": "Kunci Torsi (Torque Wrench)",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1144",
+        "V hal. 1149",
+        "V hal. 1157",
+        "V hal. 1162"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "KUNCI TORSI (TORQUE WRENCH)",
+      "after": "Kunci Torsi (Torque Wrench)",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1417",
+        "V hal. 2226"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Lantai kerja beton fc' 10 MPa",
+      "after": "Lantai Kerja beton fc' 10 MPa",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1386",
+        "IV hal. 1416",
+        "IV hal. 1443",
+        "IV hal. 1447",
+        "IV hal. 1454",
+        "IV hal. 1456",
+        "IV hal. 1458"
+      ]
+    },
+    {
+      "group": "Lain-lain",
+      "before": "Lapis Fondasi Aggregat Kelas C (CBR > 30%, ukuran butiran maksimum",
+      "after": "Lapis Fondasi Agregat Kelas C CBR > 30%, ukuran butiran maksimum",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 166"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Legume Crop Cover/LCC)",
+      "after": "Legume Crop Cover/LCC",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 753",
+        "VI hal. 754",
+        "VI hal. 755"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "List Kayu 2cm x 4cm kelas III atau IV",
+      "after": "List Kayu 2cm x 4cm kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "List Kayu 2cm x 4cm kelas III atau IV",
+      "after": "List Kayu 2cm x 4cm kelas IV",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 464"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Listrik/Elektronik",
+      "after": "Listrik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1047",
+        "VI hal. 1048",
+        "VI hal. 1049",
+        "VI hal. 1050",
+        "VI hal. 1051",
+        "VI hal. 1068",
+        "VI hal. 1069",
+        "VI hal. 1070",
+        "VI hal. 1071",
+        "VI hal. 1072",
+        "VI hal. 1080",
+        "VI hal. 1081"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Listrik/Elektronik",
+      "after": "Elektronik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1047",
+        "VI hal. 1048",
+        "VI hal. 1049",
+        "VI hal. 1050",
+        "VI hal. 1051",
+        "VI hal. 1068",
+        "VI hal. 1069",
+        "VI hal. 1070",
+        "VI hal. 1071",
+        "VI hal. 1072",
+        "VI hal. 1080",
+        "VI hal. 1081"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Loader, wheel 1,62 m3; 170 HP",
+      "after": "Loader, Wheel 1,62 m3; 170 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 387",
+        "IV hal. 388",
+        "IV hal. 389",
+        "IV hal. 393",
+        "IV hal. 398",
+        "IV hal. 399",
+        "IV hal. 400"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Lontar/Siwalan (Borassus Flabellifer)",
+      "after": "Lontar (Borassus Flabellifer)",
+      "unit": "Btg",
+      "refs": [
+        "V hal. 2535"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Lontar/Siwalan (Borassus Flabellifer)",
+      "after": "Siwalan (Borassus Flabellifer)",
+      "unit": "Btg",
+      "refs": [
+        "V hal. 2535"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "m3; 130 HP Pompa beton (D) 90 KW, 130 bar, 4*",
+      "after": "m3; 130 HP Pompa beton (D) 90 KW, 130 bar,",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 706"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Mandor B Bahan *)",
+      "after": "Mandor B Bahan",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 1640"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Mandor Bahan (Media Drain B",
+      "after": "Mandor Bahan Media Drain B",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 272"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Mesin bor",
+      "after": "Mesin Bor",
+      "unit": "jam",
+      "refs": [
+        "VI hal. 283"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Mesin jahit geotekstil **) To.22.c",
+      "after": "Mesin jahit geotekstil To.22.c",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Minyak Bekisting",
+      "after": "Minyak bekisting",
+      "unit": "liter",
+      "refs": [
+        "VI hal. 1555",
+        "VI hal. 1556"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Mobile Crane 1 ton",
+      "after": "Mobile Crane 1 Ton",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1957",
+        "V hal. 1970"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Molen (Concrete Mixer 2 0,35 m3 ***)",
+      "after": "Molen Concrete Mixer 2 0,35 m3",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 477",
+        "IV hal. 480"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Molen (Concrete Mixer 2 0,35 m3***)",
+      "after": "Molen Concrete Mixer 2 0,35 m3",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 472",
+        "IV hal. 475"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Molen/Beton mixer 0,35 1** m3+feeder",
+      "after": "Molen/Beton mixer 0,35 m3+feeder",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 333"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "MOTOR GRADER",
+      "after": "Motor Grader",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 380",
+        "V hal. 386"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Multiplek tebal 9 mm *)",
+      "after": "Multiplek tebal 9 mm",
+      "unit": "lembar",
+      "refs": [
+        "VI hal. 162"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Multiplex 12 mm 1 atau 18 mm *",
+      "after": "Multiplex 12 mm 1 atau 18 mm",
+      "unit": "Lembar",
+      "refs": [
+        "IV hal. 380"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Multiplex 12 mm atau 1 18 mm *",
+      "after": "Multiplex 12 mm atau 1 18 mm",
+      "unit": "Lembar",
+      "refs": [
+        "IV hal. 337"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Multiplex 18 mm *",
+      "after": "Multiplex 18 mm",
+      "unit": "Lembar",
+      "refs": [
+        "IV hal. 338",
+        "IV hal. 347",
+        "IV hal. 348",
+        "IV hal. 349",
+        "IV hal. 353",
+        "IV hal. 354",
+        "IV hal. 359",
+        "IV hal. 360",
+        "IV hal. 364"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Mur baut",
+      "after": "Mur Baut",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 850"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pagar Pengaman Semi Kaku Thrie Beam Tiang Penyangga (Profil U Uk. 1800 x 175 x",
+      "after": "Pagar Pengaman Semi Kaku Thrie Beam Tiang Penyangga Profil U Uk. 1800 x 175 x",
+      "unit": "M",
+      "refs": [
+        "V hal. 3047"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pagar Pengaman Semi Kaku Tidak Menerus Tiang Penyangga (Profil U Uk. 1800 x 175 x",
+      "after": "Pagar Pengaman Semi Kaku Tidak Menerus Tiang Penyangga Profil U Uk. 1800 x 175 x",
+      "unit": "M",
+      "refs": [
+        "V hal. 3050"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pagar Pengaman Semi Kaku W Beam Lengkung Tiang Penyangga (Profil U Uk. 1800 x 175 x",
+      "after": "Pagar Pengaman Semi Kaku W Beam Lengkung Tiang Penyangga Profil U Uk. 1800 x 175 x",
+      "unit": "M",
+      "refs": [
+        "V hal. 3044"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pagar Pengaman Semi Kaku W Beam Lurus Tiang Penyangga (Profil U Uk. 1800 x 175 x",
+      "after": "Pagar Pengaman Semi Kaku W Beam Lurus Tiang Penyangga Profil U Uk. 1800 x 175 x",
+      "unit": "M",
+      "refs": [
+        "V hal. 3041"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Paku campuran 2cm dan 5cm",
+      "after": "Paku campuran 2 cm dan 5 cm",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 1641"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam",
+      "after": "Palu",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 218",
+        "VI hal. 219"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam",
+      "after": "godam",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 218",
+        "VI hal. 219"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam (baja 1 keras)",
+      "after": "Palu (baja 1 keras)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 217"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam (baja 1 keras)",
+      "after": "godam (baja 1 keras)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 217"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam (baja keras)",
+      "after": "Palu (baja keras)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 220"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Palu/godam (baja keras)",
+      "after": "godam (baja keras)",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 220"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Palu/Godam (Baja keras)",
+      "after": "Palu (Baja keras)",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 297"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Palu/Godam (Baja keras)",
+      "after": "Godam (Baja keras)",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 297"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Palu/Godam (Baja keras)",
+      "after": "Palu (Baja keras)",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 298"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Palu/Godam (Baja keras)",
+      "after": "Godam (Baja keras)",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 298"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan 3/20 cm kayu 1 Kelas II *",
+      "after": "Papan 3/20 cm kayu 1 Kelas II",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 339",
+        "IV hal. 355",
+        "IV hal. 361",
+        "IV hal. 365",
+        "IV hal. 367",
+        "IV hal. 368"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas I atau II",
+      "after": "Papan Kayu Kelas I",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 472",
+        "VI hal. 473",
+        "VI hal. 474",
+        "VI hal. 482"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas I atau II",
+      "after": "Papan Kayu Kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 472",
+        "VI hal. 473",
+        "VI hal. 474",
+        "VI hal. 482"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas I atau Kelas II",
+      "after": "Papan Kayu Kelas I",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 361",
+        "VI hal. 362"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas I atau Kelas II",
+      "after": "Papan Kayu Kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 361",
+        "VI hal. 362"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas II atau III",
+      "after": "Papan Kayu Kelas II",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 360"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas II atau III",
+      "after": "Papan Kayu kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 360"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Papan Kayu Kelas III",
+      "after": "Papan Kayu kelas III",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 471"
+      ]
+    },
+    {
+      "group": "Lain-lain",
+      "before": "Papan Nama **)",
+      "after": "Papan Nama",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 1339"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasangan bata merah mortar Tipe A.3.11.1a. 2 S *) 2",
+      "after": "Pasangan bata merah mortar Tipe A.3.11.1a. 2 S 2",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 327"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir beton",
+      "after": "Pasir Beton",
+      "unit": "m³",
+      "refs": [
+        "VI hal. 161"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir beton",
+      "after": "Pasir Beton",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 163",
+        "VI hal. 292",
+        "VI hal. 1385",
+        "VI hal. 1386",
+        "VI hal. 1387",
+        "VI hal. 1388"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir Beton",
+      "after": "Pasir beton",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 1393",
+        "VI hal. 1395",
+        "VI hal. 1396"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir Beton/Pasir Pasang",
+      "after": "Pasir beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir Beton/Pasir Pasang",
+      "after": "Pasir Pasang",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir pasang",
+      "after": "Pasir Pasang",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 741",
+        "IV hal. 742",
+        "IV hal. 743",
+        "IV hal. 744",
+        "IV hal. 745",
+        "IV hal. 746",
+        "IV hal. 747",
+        "VI hal. 163",
+        "VI hal. 280"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir pasang *",
+      "after": "Pasir Pasang",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 310",
+        "IV hal. 311",
+        "IV hal. 312",
+        "IV hal. 313",
+        "IV hal. 314",
+        "IV hal. 315",
+        "IV hal. 316"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir pasang **",
+      "after": "Pasir Pasang",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 317"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pasir urug",
+      "after": "Pasir Urug",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 284"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB : pasir beton / agregat halus",
+      "after": "Pasir beton",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 391",
+        "IV hal. 392"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB : pasir beton / agregat halus",
+      "after": "pasir agregat halus",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 391",
+        "IV hal. 392"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB: Pasir Beton",
+      "after": "Pasir beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 330",
+        "IV hal. 331",
+        "IV hal. 332",
+        "IV hal. 333",
+        "IV hal. 379",
+        "IV hal. 385",
+        "IV hal. 386",
+        "IV hal. 388",
+        "IV hal. 702",
+        "IV hal. 704",
+        "IV hal. 706",
+        "IV hal. 708",
+        "IV hal. 750"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB: pasir beton / 4 agregat halus",
+      "after": "pasir beton / 4 agregat halus",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 400"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB: Pasir Beton / Agregat 2 Halus",
+      "after": "Pasir Beton / Agregat 2 Halus",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 410"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB: pasir beton / agregat halus",
+      "after": "Pasir beton",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 398"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PB: pasir beton / agregat halus",
+      "after": "pasir agregat halus",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 398"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC : Portland cement",
+      "after": "Semen Portland",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 391",
+        "IV hal. 392"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland cement",
+      "after": "Semen Portland",
+      "unit": "Kg",
+      "refs": [
+        "IV hal. 398",
+        "IV hal. 400"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland Cement",
+      "after": "Semen Portland",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 330",
+        "IV hal. 331",
+        "IV hal. 332",
+        "IV hal. 333",
+        "IV hal. 379",
+        "IV hal. 385",
+        "IV hal. 386",
+        "IV hal. 388",
+        "IV hal. 410",
+        "IV hal. 702",
+        "IV hal. 704",
+        "IV hal. 706",
+        "IV hal. 708",
+        "IV hal. 750"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland Cement",
+      "after": "Semen Portland",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 418"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland cement PB: pasir beton / agregat halus Kr: krikil / agregat kasar Air",
+      "after": "PC: Portland cement PB: pasir beton / agregat halus Kr: Kerikil / agregat kasar Air",
+      "unit": "Kg Liter",
+      "refs": [
+        "IV hal. 399"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland Cement PB: Pasir Beton Kr: Krikil / Agregat 3 Kasar Air",
+      "after": "PC: Portland Cement PB: Pasir Beton Kr: Kerikil / Agregat 3 Kasar Air",
+      "unit": "kg Liter",
+      "refs": [
+        "IV hal. 387"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC: Portland Cement PB: Pasir Beton Kr: Krikil / Agregat Kasar Air",
+      "after": "PC: Portland Cement PB: Pasir Beton Kr: Kerikil / Agregat Kasar Air",
+      "unit": "kg Liter",
+      "refs": [
+        "IV hal. 389"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC/ Portland Cement",
+      "after": "Semen Portland",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 375",
+        "IV hal. 376",
+        "IV hal. 377"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "PC/ Portland Cement",
+      "after": "Semen Portland",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 377",
+        "IV hal. 378"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Pekerja Tukang Mandor B. MATERIAL Ironcast Manhole Kotak 80 x 80 Semen Pasir Beton Aggregat Kasar",
+      "after": "Pekerja Tukang Mandor B. MATERIAL Ironcast Manhole Kotak 80 x 80 Semen Pasir Beton Agregat Kasar",
+      "unit": "Jam S Buah Kg M3",
+      "refs": [
+        "V hal. 2348"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Pekerja Tukang Mandor B. MATERIAL Semen Pasir Beton Aggregat Kasar",
+      "after": "Pekerja Tukang Mandor B. MATERIAL Semen Pasir Beton Agregat Kasar",
+      "unit": "Jam Kg M3",
+      "refs": [
+        "V hal. 2371"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pelat Rambu Peringatan/Larangan/Perintah dengan Kata-kata",
+      "after": "Pelat Rambu Peringatan",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 1929",
+        "V hal. 1931"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pelat Rambu Peringatan/Larangan/Perintah dengan Kata-kata",
+      "after": "Larangan",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 1929",
+        "V hal. 1931"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pelat Rambu Peringatan/Larangan/Perintah dengan Kata-kata",
+      "after": "Perintah dengan Kata-kata",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 1929",
+        "V hal. 1931"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pelindung Lampu",
+      "after": "Pelindung lampu",
+      "unit": "Unit",
+      "refs": [
+        "VI hal. 955"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pengaku) Baja Ringan C.75, t=1,00 mm (L",
+      "after": "Pengaku Baja Ringan C.75, t=1,00 mm L",
+      "unit": "batang",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Penjaga jarak bekisting/spacer",
+      "after": "Penjaga jarak bekisting",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 255"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Penjaga jarak bekisting/spacer",
+      "after": "spacer",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 255"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Perekat Campuran Hydroseeding Bibit Vegetasi (Biji",
+      "after": "Perekat Campuran Hydroseeding Bibit Vegetasi Biji",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 747",
+        "VI hal. 749",
+        "VI hal. 753",
+        "VI hal. 755"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Perekat Matras Perkuatan (Lem) Bibit Vegetasi (Biji",
+      "after": "Perekat Matras Perkuatan (Lem) Bibit Vegetasi Biji",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 748",
+        "VI hal. 754"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Phenol film 12 mm",
+      "after": "Phenol film 12mm",
+      "unit": "lembar",
+      "refs": [
+        "VI hal. 315"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pintu air **)",
+      "after": "Pintu air",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 1514",
+        "IV hal. 1515",
+        "IV hal. 1516"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pintu air **) Tackle/Tripod tinggi 4-5m Mesin las listrik 250A (D)",
+      "after": "Pintu air Tackle/Tripod tinggi 4-5m Mesin las listrik 250A (D)",
+      "unit": "Buah Hari",
+      "refs": [
+        "IV hal. 1513"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "PNEUMATIC TIRE ROLLER",
+      "after": "Pneumatic Tire Roller",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 821",
+        "V hal. 829",
+        "V hal. 837",
+        "V hal. 841",
+        "V hal. 883",
+        "V hal. 887"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "PNEUMATIC TIRE ROLLER WITH IC",
+      "after": "Pneumatic Tire Roller With IC",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 833",
+        "V hal. 861"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa Aliva/Shotcrete Machine",
+      "after": "Pompa Aliva",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1446",
+        "V hal. 1449",
+        "V hal. 1452",
+        "V hal. 1455"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa Aliva/Shotcrete Machine",
+      "after": "Shotcrete Machine",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1446",
+        "V hal. 1449",
+        "V hal. 1452",
+        "V hal. 1455"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa beton (D) 90 KW, 130 bar, 4* T=50 m'/H=100 m'",
+      "after": "Pompa beton (D) 90 KW, 130 bar, T=50 m'/H=100 m'",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 708"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa lumpur diesel 2,5 KW; ** 2 ∅ 3\"",
+      "after": "Pompa lumpur diesel 2,5 KW; ∅ 3\"",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 1508"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa lumpur submersible 10 ** 2 KW; 5\"",
+      "after": "Pompa lumpur submersible 2 KW; 5\"",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 1504"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa lumpur submersible 5,0 ** 2 KW; ∅ 4\"",
+      "after": "Pompa lumpur submersible 5, 2 KW; ∅ 4\"",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 1506",
+        "IV hal. 1507"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Pompa lumpur submersible 7,5 ** 2 KW; 4\"",
+      "after": "Pompa lumpur submersible 7, 2 KW; 4\"",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 1505"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Portland Cement",
+      "after": "Semen Portland",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 299",
+        "IV hal. 300",
+        "IV hal. 301",
+        "IV hal. 302",
+        "IV hal. 303",
+        "IV hal. 304",
+        "IV hal. 305",
+        "IV hal. 306",
+        "IV hal. 319",
+        "IV hal. 1519",
+        "IV hal. 1520",
+        "IV hal. 1521",
+        "IV hal. 1522",
+        "IV hal. 1523",
+        "IV hal. 1524",
+        "IV hal. 1526",
+        "IV hal. 1527",
+        "IV hal. 1528",
+        "IV hal. 1529",
+        "IV hal. 1530",
+        "IV hal. 1531"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Pupuk Anorganik*)",
+      "after": "Pupuk Anorganik",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 750",
+        "VI hal. 751",
+        "VI hal. 752",
+        "VI hal. 756",
+        "VI hal. 757",
+        "VI hal. 758"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Residu atau Ter",
+      "after": "Residu",
+      "unit": "liter",
+      "refs": [
+        "VI hal. 399"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Residu atau Ter",
+      "after": "Ter",
+      "unit": "liter",
+      "refs": [
+        "VI hal. 399"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Rumput Gajah Mini (Axonopus Compressus Dwarf",
+      "after": "Rumput Gajah Mini Axonopus Compressus Dwarf",
+      "unit": ") Btg",
+      "refs": [
+        "V hal. 2607"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Rumput)",
+      "after": "Rumput",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 747",
+        "VI hal. 748",
+        "VI hal. 749"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Self Drilling Screw dia-6 x 20 mm (Main",
+      "after": "Self Drilling Screw dia-6 x 20 mm Main",
+      "unit": "buah",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Semen Pc",
+      "after": "Semen PC",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Semen Portland (PC)",
+      "after": "Semen Portland",
+      "unit": "kg",
+      "refs": [
+        "VI hal. 158",
+        "VI hal. 159",
+        "VI hal. 161",
+        "VI hal. 163"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Sepatu pancang ∅ 30 cm 1 atau 30 x 30 cm",
+      "after": "Sepatu pancang ø 30 cm 1 atau 30 x 30 cm",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 587"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Sepatu pancang kaso 5/7",
+      "after": "Sepatu pancang Kaso 5/7",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 437",
+        "IV hal. 458",
+        "IV hal. 459",
+        "IV hal. 486",
+        "IV hal. 493",
+        "IV hal. 494",
+        "IV hal. 555",
+        "IV hal. 563",
+        "IV hal. 564",
+        "IV hal. 628",
+        "IV hal. 638",
+        "IV hal. 639"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Sepatu pancang kaso 8/12",
+      "after": "Sepatu pancang Kaso 8/12",
+      "unit": "Buah",
+      "refs": [
+        "IV hal. 438"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Casing PVC Diameter 20 cm *)",
+      "after": "Sewa Casing PVC Diameter 20 cm",
+      "unit": "m'",
+      "refs": [
+        "VI hal. 292"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa excavator type 225 kapasitas 0,5 -1,0 m3*)",
+      "after": "Sewa excavator type 225 kapasitas 0,5 -1,0 m3",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1513",
+        "VI hal. 1514",
+        "VI hal. 1515",
+        "VI hal. 1516"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripod/tackel",
+      "after": "Sewa tripod",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 918",
+        "VI hal. 919",
+        "VI hal. 1333",
+        "VI hal. 1334",
+        "VI hal. 1335"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripod/tackel",
+      "after": "Sewa Tackel",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 918",
+        "VI hal. 919",
+        "VI hal. 1333",
+        "VI hal. 1334",
+        "VI hal. 1335"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripod/tackel",
+      "after": "Sewa tripod",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 921",
+        "VI hal. 923"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripod/tackel",
+      "after": "Sewa Tackel",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 921",
+        "VI hal. 923"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripod/Tackel",
+      "after": "Sewa Tripod",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 937",
+        "IV hal. 938",
+        "IV hal. 939",
+        "IV hal. 940",
+        "IV hal. 943",
+        "IV hal. 944",
+        "IV hal. 945",
+        "IV hal. 946",
+        "IV hal. 949",
+        "IV hal. 950",
+        "IV hal. 951",
+        "IV hal. 952",
+        "IV hal. 955",
+        "IV hal. 956",
+        "IV hal. 957",
+        "IV hal. 960",
+        "IV hal. 961",
+        "IV hal. 962",
+        "IV hal. 965",
+        "IV hal. 966",
+        "IV hal. 967"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripod/Tackel",
+      "after": "Sewa Tackel",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 937",
+        "IV hal. 938",
+        "IV hal. 939",
+        "IV hal. 940",
+        "IV hal. 943",
+        "IV hal. 944",
+        "IV hal. 945",
+        "IV hal. 946",
+        "IV hal. 949",
+        "IV hal. 950",
+        "IV hal. 951",
+        "IV hal. 952",
+        "IV hal. 955",
+        "IV hal. 956",
+        "IV hal. 957",
+        "IV hal. 960",
+        "IV hal. 961",
+        "IV hal. 962",
+        "IV hal. 965",
+        "IV hal. 966",
+        "IV hal. 967"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/ Tackel",
+      "after": "Sewa Tripot",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 1329",
+        "VI hal. 1330"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/ Tackel",
+      "after": "Sewa Tackel",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 1329",
+        "VI hal. 1330"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripot/tackel",
+      "after": "Sewa Tripot",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1338"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa tripot/tackel",
+      "after": "Sewa Tackel",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1338"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tripot",
+      "unit": "hari",
+      "refs": [
+        "IV hal. 934",
+        "VI hal. 1324",
+        "VI hal. 1325",
+        "VI hal. 1326",
+        "VI hal. 1327",
+        "VI hal. 1328",
+        "VI hal. 1332",
+        "VI hal. 1337",
+        "VI hal. 1339",
+        "VI hal. 1340",
+        "VI hal. 1341",
+        "VI hal. 1343",
+        "VI hal. 1345",
+        "VI hal. 1346",
+        "VI hal. 1347",
+        "VI hal. 1348",
+        "VI hal. 1349",
+        "VI hal. 1350",
+        "VI hal. 1351",
+        "VI hal. 1354",
+        "VI hal. 1356",
+        "VI hal. 1359",
+        "VI hal. 1360",
+        "VI hal. 1361",
+        "VI hal. 1362",
+        "VI hal. 1365",
+        "VI hal. 1366",
+        "VI hal. 1367",
+        "VI hal. 1369",
+        "VI hal. 1370",
+        "VI hal. 1371",
+        "VI hal. 1373",
+        "VI hal. 1374",
+        "VI hal. 1375",
+        "VI hal. 1458",
+        "VI hal. 1472",
+        "VI hal. 1473",
+        "VI hal. 1511",
+        "VI hal. 1512",
+        "VI hal. 1513",
+        "VI hal. 1515",
+        "VI hal. 1516",
+        "VI hal. 1526",
+        "VI hal. 1527",
+        "VI hal. 1528",
+        "VI hal. 1529",
+        "VI hal. 1530",
+        "VI hal. 1531",
+        "VI hal. 1534",
+        "VI hal. 1535",
+        "VI hal. 1536",
+        "VI hal. 1537",
+        "VI hal. 1538",
+        "VI hal. 1542",
+        "VI hal. 1543",
+        "VI hal. 1544",
+        "VI hal. 1545",
+        "VI hal. 1546",
+        "VI hal. 1549",
+        "VI hal. 1550",
+        "VI hal. 1551",
+        "VI hal. 1552",
+        "VI hal. 1553"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tackel",
+      "unit": "hari",
+      "refs": [
+        "IV hal. 934",
+        "VI hal. 1324",
+        "VI hal. 1325",
+        "VI hal. 1326",
+        "VI hal. 1327",
+        "VI hal. 1328",
+        "VI hal. 1332",
+        "VI hal. 1337",
+        "VI hal. 1339",
+        "VI hal. 1340",
+        "VI hal. 1341",
+        "VI hal. 1343",
+        "VI hal. 1345",
+        "VI hal. 1346",
+        "VI hal. 1347",
+        "VI hal. 1348",
+        "VI hal. 1349",
+        "VI hal. 1350",
+        "VI hal. 1351",
+        "VI hal. 1354",
+        "VI hal. 1356",
+        "VI hal. 1359",
+        "VI hal. 1360",
+        "VI hal. 1361",
+        "VI hal. 1362",
+        "VI hal. 1365",
+        "VI hal. 1366",
+        "VI hal. 1367",
+        "VI hal. 1369",
+        "VI hal. 1370",
+        "VI hal. 1371",
+        "VI hal. 1373",
+        "VI hal. 1374",
+        "VI hal. 1375",
+        "VI hal. 1458",
+        "VI hal. 1472",
+        "VI hal. 1473",
+        "VI hal. 1511",
+        "VI hal. 1512",
+        "VI hal. 1513",
+        "VI hal. 1515",
+        "VI hal. 1516",
+        "VI hal. 1526",
+        "VI hal. 1527",
+        "VI hal. 1528",
+        "VI hal. 1529",
+        "VI hal. 1530",
+        "VI hal. 1531",
+        "VI hal. 1534",
+        "VI hal. 1535",
+        "VI hal. 1536",
+        "VI hal. 1537",
+        "VI hal. 1538",
+        "VI hal. 1542",
+        "VI hal. 1543",
+        "VI hal. 1544",
+        "VI hal. 1545",
+        "VI hal. 1546",
+        "VI hal. 1549",
+        "VI hal. 1550",
+        "VI hal. 1551",
+        "VI hal. 1552",
+        "VI hal. 1553"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tripot",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 1446",
+        "VI hal. 1447",
+        "VI hal. 1448",
+        "VI hal. 1449",
+        "VI hal. 1450",
+        "VI hal. 1459",
+        "VI hal. 1460",
+        "VI hal. 1461",
+        "VI hal. 1462",
+        "VI hal. 1463",
+        "VI hal. 1465",
+        "VI hal. 1466",
+        "VI hal. 1467",
+        "VI hal. 1473",
+        "VI hal. 1474",
+        "VI hal. 1475",
+        "VI hal. 1476",
+        "VI hal. 1477",
+        "VI hal. 1480",
+        "VI hal. 1481",
+        "VI hal. 1482",
+        "VI hal. 1500",
+        "VI hal. 1501"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tackel",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 1446",
+        "VI hal. 1447",
+        "VI hal. 1448",
+        "VI hal. 1449",
+        "VI hal. 1450",
+        "VI hal. 1459",
+        "VI hal. 1460",
+        "VI hal. 1461",
+        "VI hal. 1462",
+        "VI hal. 1463",
+        "VI hal. 1465",
+        "VI hal. 1466",
+        "VI hal. 1467",
+        "VI hal. 1473",
+        "VI hal. 1474",
+        "VI hal. 1475",
+        "VI hal. 1476",
+        "VI hal. 1477",
+        "VI hal. 1480",
+        "VI hal. 1481",
+        "VI hal. 1482",
+        "VI hal. 1500",
+        "VI hal. 1501"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tripot",
+      "unit": "hari 0,0",
+      "refs": [
+        "VI hal. 1514"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tackel",
+      "unit": "hari 0,0",
+      "refs": [
+        "VI hal. 1514"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tripot",
+      "unit": "hari 0,",
+      "refs": [
+        "VI hal. 1514"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Sewa Tripot/Tackel",
+      "after": "Sewa Tackel",
+      "unit": "hari 0,",
+      "refs": [
+        "VI hal. 1514"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper D-Drum 550 kg *)",
+      "after": "Stamper D-Drum 550 kg",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 204"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper Double Drum-550 kg; 1* W=0,6; D=0,425 m; 15 HP; 2 Kph (VRR)",
+      "after": "Stamper Double Drum-550 kg; W=0,6; D=0,425 m; 15 HP; 2 Kph (VRR)",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 58"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper Kodok 150 kg *)",
+      "after": "Stamper Kodok 150 kg",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 204",
+        "VI hal. 205"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper Kodok 150 kg*)",
+      "after": "Stamper Kodok 150 kg",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1386",
+        "VI hal. 1388"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper Kuda 70 kg *)",
+      "after": "Stamper Kuda 70 kg",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 203"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stamper Smooth Drum 1,5 Ton *)",
+      "after": "Stamper Smooth Drum 1,5 Ton",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 204"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stang bor batang bor 1* G.04a+b Diameter 11/4”",
+      "after": "Stang bor batang bor G.04a+b Diameter 11/4”",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 475",
+        "IV hal. 476"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stang bor batang bor 1** E.04a+b Diameter 11/4”",
+      "after": "Stang bor batang bor E.04a+b Diameter 11/4”",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 479"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stang bor batang bor 1** G.04a+b Diameter 11/4”",
+      "after": "Stang bor batang bor G.04a+b Diameter 11/4”",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 476",
+        "IV hal. 477",
+        "IV hal. 479"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stang bor, batang bor 1* G.04a+b Diameter 11/4”",
+      "after": "Stang bor, batang bor G.04a+b Diameter 11/4”",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 470",
+        "IV hal. 473"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Stang bor, batang bor 1** G.04a+b Diameter 11/4”",
+      "after": "Stang bor, batang bor G.04a+b Diameter 11/4”",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 471",
+        "IV hal. 474"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Superplastizer *",
+      "after": "Superplastizer",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 333"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Superplastizer **",
+      "after": "Superplastizer",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 400"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "T1/manual (gergaji) /saw",
+      "after": "T1/manual (gergaji) / saw",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1452",
+        "VI hal. 1453"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "T2/Mekanik / Cilinder Saw",
+      "after": "T2/mekanik / cilinder saw",
+      "unit": "Hari",
+      "refs": [
+        "VI hal. 1506",
+        "VI hal. 1507",
+        "VI hal. 1508",
+        "VI hal. 1509",
+        "VI hal. 1510",
+        "VI hal. 1511"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "T2/mekanik/ cilinder saw",
+      "after": "T2/mekanik / cilinder saw",
+      "unit": "hari",
+      "refs": [
+        "VI hal. 1521"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali Rapia/ plastik/ rami",
+      "after": "Tali Rafia",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali Rapia/ plastik/ rami",
+      "after": "Tali plastik",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali Rapia/ plastik/ rami",
+      "after": "Tali rami",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 753"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali rapia/goni/rami",
+      "after": "Tali Rafia",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 716"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali rapia/goni/rami",
+      "after": "Tali goni",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 716"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali rapia/goni/rami",
+      "after": "Tali rami",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 716"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali/benang pengikat",
+      "after": "Tali pengikat",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tali/benang pengikat",
+      "after": "Benang pengikat",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 717"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Nylon/plastik ø 10 mm",
+      "after": "Tambang Nilon ø 10 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 315"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Nylon/plastik ø 10 mm",
+      "after": "Tambang plastik ø 10 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 315"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Nylon/plastik ø 6 mm",
+      "after": "Tambang Nilon ø 6 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 314"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Nylon/plastik ø 6 mm",
+      "after": "Tambang plastik ø 6 mm",
+      "unit": "m'",
+      "refs": [
+        "IV hal. 314"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Rami/Benang",
+      "after": "Tambang Rami",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 732"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tambang Rami/Benang",
+      "after": "Tambang Benang",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 732"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TAMPER",
+      "after": "Tamper",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 2238",
+        "V hal. 2241",
+        "V hal. 2244",
+        "V hal. 2247",
+        "V hal. 2250",
+        "V hal. 2253",
+        "V hal. 2256",
+        "V hal. 2259"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tanah biasa/ liat berpasir *)",
+      "after": "Tanah biasa",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 201"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tanah biasa/ liat berpasir *)",
+      "after": "Tanah liat berpasir",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 201"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tanah liat (lempung) *)",
+      "after": "Tanah liat (lempung)",
+      "unit": "m3",
+      "refs": [
+        "VI hal. 201"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tanah liat/lempung",
+      "after": "Tanah liat",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1627"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tanah liat/lempung",
+      "after": "Tanah lempung",
+      "unit": "m3",
+      "refs": [
+        "IV hal. 1627"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Tandem roller",
+      "after": "Tandem Roller",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 473",
+        "V hal. 476"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TANDEM ROLLER",
+      "after": "Tandem Roller",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 377",
+        "V hal. 380",
+        "V hal. 389",
+        "V hal. 392"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Tandem Roller (8-10 Ton)",
+      "after": "TANDEM ROLLER (8-10 TON)",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 536",
+        "V hal. 540"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TANDEM ROLLER (8-10 Ton)",
+      "after": "TANDEM ROLLER (8-10 TON)",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 789",
+        "V hal. 797",
+        "V hal. 805"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TANDEM ROLLER (8-10 TON) WITH IC",
+      "after": "TANDEM ROLLER (8-10 Ton) WITH IC",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 817",
+        "V hal. 845"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TANDEM ROLLER WITH IC",
+      "after": "Tandem Roller With IC",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 386"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tenaga akhli atau petugas Tenaga spesialis B. Fasilitas *) Base Camp",
+      "after": "Tenaga Ahli atau petugas Tenaga spesialis B. Fasilitas Base Camp",
+      "unit": "OB m2",
+      "refs": [
+        "IV hal. 1338"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tenaga Terampil Operator*)",
+      "after": "Tenaga Terampil Operator",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 318",
+        "VI hal. 319"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Theodolith **) To.35.a",
+      "after": "Theodolith To.35.a",
+      "unit": "Hari",
+      "refs": [
+        "IV hal. 1640"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2712"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 80 W (Solar",
+      "after": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 80 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2715"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 13 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 13 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2718"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 7 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 7 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2706"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Ganda dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2709"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 100 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 100 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2701"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 11 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2698"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 13 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 13 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2703"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 100 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 100 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2695"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 150 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2689"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 80 W (Solar",
+      "after": "Tiang PJU Lengan Tunggal dia. 172mm, Tinggi 9 m, Panjang Lengan 2.8 m Lampu Jalan LED 80 W Solar",
+      "unit": "Buah",
+      "refs": [
+        "V hal. 2692"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Ton) Ponton",
+      "after": "Ton Ponton",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 538"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "TRUCK CRANE 5 TON",
+      "after": "Truck Crane 5 Ton",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 1110"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Truck Mixer Beton - 10 Ton, kap. 3* m3; 130 HP",
+      "after": "Truck Mixer Beton - 10 Ton, kap. m3; 130 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 708"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Truss Screw) Reng/ Roof Bottom RT-35 t=0,45 mm",
+      "after": "Truss Screw Reng/ Roof Bottom RT-35 t=0,45 mm",
+      "unit": "batang",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu",
+      "after": "Tukang batu",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 57",
+        "IV hal. 58"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu",
+      "after": "Tukang batu",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 202",
+        "IV hal. 398",
+        "IV hal. 399",
+        "IV hal. 400",
+        "IV hal. 403",
+        "IV hal. 404",
+        "IV hal. 405",
+        "IV hal. 406",
+        "IV hal. 407",
+        "IV hal. 410",
+        "IV hal. 411",
+        "IV hal. 610",
+        "IV hal. 611",
+        "IV hal. 612",
+        "IV hal. 613",
+        "IV hal. 614",
+        "IV hal. 803",
+        "IV hal. 805",
+        "IV hal. 808",
+        "IV hal. 809",
+        "IV hal. 1401"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu/ Tembok",
+      "after": "Tukang batu",
+      "unit": "OJ",
+      "refs": [
+        "VI hal. 306",
+        "VI hal. 307"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu/ Tembok",
+      "after": "Tukang tembok",
+      "unit": "OJ",
+      "refs": [
+        "VI hal. 306",
+        "VI hal. 307"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/kayu/pipa",
+      "after": "Tukang batu",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 1355"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/kayu/pipa",
+      "after": "Tukang Kayu",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 1355"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/kayu/pipa",
+      "after": "Tukang Pipa",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 1355"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/tembok",
+      "after": "Tukang batu",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 164",
+        "VI hal. 216",
+        "VI hal. 224",
+        "VI hal. 225",
+        "VI hal. 226",
+        "VI hal. 252",
+        "VI hal. 253",
+        "VI hal. 263",
+        "VI hal. 264",
+        "VI hal. 265",
+        "VI hal. 266",
+        "VI hal. 267",
+        "VI hal. 268",
+        "VI hal. 269",
+        "VI hal. 270",
+        "VI hal. 271",
+        "VI hal. 272",
+        "VI hal. 273",
+        "VI hal. 274",
+        "VI hal. 275",
+        "VI hal. 276",
+        "VI hal. 282",
+        "VI hal. 283",
+        "VI hal. 284",
+        "VI hal. 285",
+        "VI hal. 286",
+        "VI hal. 287",
+        "VI hal. 288",
+        "VI hal. 289",
+        "VI hal. 290",
+        "VI hal. 291",
+        "VI hal. 292",
+        "VI hal. 318",
+        "VI hal. 319",
+        "VI hal. 320",
+        "VI hal. 321",
+        "VI hal. 322",
+        "VI hal. 323",
+        "VI hal. 324",
+        "VI hal. 328",
+        "VI hal. 333",
+        "VI hal. 334",
+        "VI hal. 1143",
+        "VI hal. 1144",
+        "VI hal. 1202",
+        "VI hal. 1385",
+        "VI hal. 1386",
+        "VI hal. 1387",
+        "VI hal. 1388",
+        "VI hal. 1389",
+        "VI hal. 1390",
+        "VI hal. 1393",
+        "VI hal. 1395",
+        "VI hal. 1396",
+        "VI hal. 1397",
+        "VI hal. 1425",
+        "VI hal. 1426",
+        "VI hal. 1427",
+        "VI hal. 1429",
+        "VI hal. 1430",
+        "VI hal. 1431",
+        "VI hal. 1433",
+        "VI hal. 1522",
+        "VI hal. 1523",
+        "VI hal. 1524",
+        "VI hal. 1525",
+        "VI hal. 1561",
+        "VI hal. 1562"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/tembok",
+      "after": "Tukang tembok",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 164",
+        "VI hal. 216",
+        "VI hal. 224",
+        "VI hal. 225",
+        "VI hal. 226",
+        "VI hal. 252",
+        "VI hal. 253",
+        "VI hal. 263",
+        "VI hal. 264",
+        "VI hal. 265",
+        "VI hal. 266",
+        "VI hal. 267",
+        "VI hal. 268",
+        "VI hal. 269",
+        "VI hal. 270",
+        "VI hal. 271",
+        "VI hal. 272",
+        "VI hal. 273",
+        "VI hal. 274",
+        "VI hal. 275",
+        "VI hal. 276",
+        "VI hal. 282",
+        "VI hal. 283",
+        "VI hal. 284",
+        "VI hal. 285",
+        "VI hal. 286",
+        "VI hal. 287",
+        "VI hal. 288",
+        "VI hal. 289",
+        "VI hal. 290",
+        "VI hal. 291",
+        "VI hal. 292",
+        "VI hal. 318",
+        "VI hal. 319",
+        "VI hal. 320",
+        "VI hal. 321",
+        "VI hal. 322",
+        "VI hal. 323",
+        "VI hal. 324",
+        "VI hal. 328",
+        "VI hal. 333",
+        "VI hal. 334",
+        "VI hal. 1143",
+        "VI hal. 1144",
+        "VI hal. 1202",
+        "VI hal. 1385",
+        "VI hal. 1386",
+        "VI hal. 1387",
+        "VI hal. 1388",
+        "VI hal. 1389",
+        "VI hal. 1390",
+        "VI hal. 1393",
+        "VI hal. 1395",
+        "VI hal. 1396",
+        "VI hal. 1397",
+        "VI hal. 1425",
+        "VI hal. 1426",
+        "VI hal. 1427",
+        "VI hal. 1429",
+        "VI hal. 1430",
+        "VI hal. 1431",
+        "VI hal. 1433",
+        "VI hal. 1522",
+        "VI hal. 1523",
+        "VI hal. 1524",
+        "VI hal. 1525",
+        "VI hal. 1561",
+        "VI hal. 1562"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/tembok",
+      "after": "Tukang batu",
+      "unit": "OJ",
+      "refs": [
+        "VI hal. 298",
+        "VI hal. 299",
+        "VI hal. 300",
+        "VI hal. 301",
+        "VI hal. 302",
+        "VI hal. 303",
+        "VI hal. 304",
+        "VI hal. 305",
+        "VI hal. 306",
+        "VI hal. 308",
+        "VI hal. 309",
+        "VI hal. 310",
+        "VI hal. 1398",
+        "VI hal. 1399",
+        "VI hal. 1400",
+        "VI hal. 1401",
+        "VI hal. 1402",
+        "VI hal. 1403",
+        "VI hal. 1404",
+        "VI hal. 1405",
+        "VI hal. 1406",
+        "VI hal. 1407",
+        "VI hal. 1408",
+        "VI hal. 1409",
+        "VI hal. 1410",
+        "VI hal. 1411",
+        "VI hal. 1412",
+        "VI hal. 1413",
+        "VI hal. 1414",
+        "VI hal. 1415",
+        "VI hal. 1416",
+        "VI hal. 1417",
+        "VI hal. 1418",
+        "VI hal. 1419",
+        "VI hal. 1420",
+        "VI hal. 1421",
+        "VI hal. 1422",
+        "VI hal. 1423",
+        "VI hal. 1424",
+        "VI hal. 1425",
+        "VI hal. 1427",
+        "VI hal. 1428",
+        "VI hal. 1429",
+        "VI hal. 1431",
+        "VI hal. 1432",
+        "VI hal. 1433",
+        "VI hal. 1434",
+        "VI hal. 1435",
+        "VI hal. 1436",
+        "VI hal. 1437",
+        "VI hal. 1438",
+        "VI hal. 1439",
+        "VI hal. 1440",
+        "VI hal. 1441",
+        "VI hal. 1442",
+        "VI hal. 1443"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang batu/tembok",
+      "after": "Tukang tembok",
+      "unit": "OJ",
+      "refs": [
+        "VI hal. 298",
+        "VI hal. 299",
+        "VI hal. 300",
+        "VI hal. 301",
+        "VI hal. 302",
+        "VI hal. 303",
+        "VI hal. 304",
+        "VI hal. 305",
+        "VI hal. 306",
+        "VI hal. 308",
+        "VI hal. 309",
+        "VI hal. 310",
+        "VI hal. 1398",
+        "VI hal. 1399",
+        "VI hal. 1400",
+        "VI hal. 1401",
+        "VI hal. 1402",
+        "VI hal. 1403",
+        "VI hal. 1404",
+        "VI hal. 1405",
+        "VI hal. 1406",
+        "VI hal. 1407",
+        "VI hal. 1408",
+        "VI hal. 1409",
+        "VI hal. 1410",
+        "VI hal. 1411",
+        "VI hal. 1412",
+        "VI hal. 1413",
+        "VI hal. 1414",
+        "VI hal. 1415",
+        "VI hal. 1416",
+        "VI hal. 1417",
+        "VI hal. 1418",
+        "VI hal. 1419",
+        "VI hal. 1420",
+        "VI hal. 1421",
+        "VI hal. 1422",
+        "VI hal. 1423",
+        "VI hal. 1424",
+        "VI hal. 1425",
+        "VI hal. 1427",
+        "VI hal. 1428",
+        "VI hal. 1429",
+        "VI hal. 1431",
+        "VI hal. 1432",
+        "VI hal. 1433",
+        "VI hal. 1434",
+        "VI hal. 1435",
+        "VI hal. 1436",
+        "VI hal. 1437",
+        "VI hal. 1438",
+        "VI hal. 1439",
+        "VI hal. 1440",
+        "VI hal. 1441",
+        "VI hal. 1442",
+        "VI hal. 1443"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu/Tembok",
+      "after": "Tukang batu",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 470",
+        "IV hal. 471",
+        "IV hal. 472",
+        "IV hal. 473",
+        "IV hal. 474",
+        "IV hal. 475",
+        "IV hal. 476",
+        "IV hal. 477",
+        "IV hal. 478",
+        "IV hal. 479",
+        "IV hal. 480"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Batu/Tembok",
+      "after": "Tukang tembok",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 470",
+        "IV hal. 471",
+        "IV hal. 472",
+        "IV hal. 473",
+        "IV hal. 474",
+        "IV hal. 475",
+        "IV hal. 476",
+        "IV hal. 477",
+        "IV hal. 478",
+        "IV hal. 479",
+        "IV hal. 480"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 719"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi/ Besi",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 227"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang besi/ besi beton",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 500"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang besi/ besi beton",
+      "after": "Tukang besi beton",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 500"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi/ Besi Beton",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 466",
+        "VI hal. 468",
+        "VI hal. 501",
+        "VI hal. 507",
+        "VI hal. 508"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi/ Besi Beton",
+      "after": "Tukang besi beton",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 466",
+        "VI hal. 468",
+        "VI hal. 501",
+        "VI hal. 507",
+        "VI hal. 508"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang besi/besi",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 238"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang besi/besi beton",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 238",
+        "VI hal. 239",
+        "VI hal. 243",
+        "VI hal. 244",
+        "VI hal. 245",
+        "VI hal. 246",
+        "VI hal. 247",
+        "VI hal. 248",
+        "VI hal. 249",
+        "VI hal. 250",
+        "VI hal. 251",
+        "VI hal. 282",
+        "VI hal. 311",
+        "VI hal. 312",
+        "VI hal. 313",
+        "VI hal. 322",
+        "VI hal. 325"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang besi/besi beton",
+      "after": "Tukang besi beton",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 238",
+        "VI hal. 239",
+        "VI hal. 243",
+        "VI hal. 244",
+        "VI hal. 245",
+        "VI hal. 246",
+        "VI hal. 247",
+        "VI hal. 248",
+        "VI hal. 249",
+        "VI hal. 250",
+        "VI hal. 251",
+        "VI hal. 282",
+        "VI hal. 311",
+        "VI hal. 312",
+        "VI hal. 313",
+        "VI hal. 322",
+        "VI hal. 325"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi/Besi Beton",
+      "after": "Tukang besi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 367",
+        "VI hal. 373",
+        "VI hal. 465",
+        "VI hal. 475",
+        "VI hal. 501",
+        "VI hal. 504",
+        "VI hal. 1554",
+        "VI hal. 1555",
+        "VI hal. 1556"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Besi/Besi Beton",
+      "after": "Tukang besi beton",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 367",
+        "VI hal. 373",
+        "VI hal. 465",
+        "VI hal. 475",
+        "VI hal. 501",
+        "VI hal. 504",
+        "VI hal. 1554",
+        "VI hal. 1555",
+        "VI hal. 1556"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang cat/ pelitur",
+      "after": "Tukang Cat",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 787"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang cat/ pelitur",
+      "after": "Tukang Pelitur",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 787"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang cat/pelitur",
+      "after": "Tukang Cat",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 161"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang cat/pelitur",
+      "after": "Tukang Pelitur",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 161"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Cat/Pelitur",
+      "after": "Tukang Cat",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 364",
+        "VI hal. 365",
+        "VI hal. 398",
+        "VI hal. 399",
+        "VI hal. 400",
+        "VI hal. 401",
+        "VI hal. 402",
+        "VI hal. 403",
+        "VI hal. 404",
+        "VI hal. 405",
+        "VI hal. 406",
+        "VI hal. 407",
+        "VI hal. 408",
+        "VI hal. 507"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Cat/Pelitur",
+      "after": "Tukang Pelitur",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 364",
+        "VI hal. 365",
+        "VI hal. 398",
+        "VI hal. 399",
+        "VI hal. 400",
+        "VI hal. 401",
+        "VI hal. 402",
+        "VI hal. 403",
+        "VI hal. 404",
+        "VI hal. 405",
+        "VI hal. 406",
+        "VI hal. 407",
+        "VI hal. 408",
+        "VI hal. 507"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Ereksi",
+      "after": "Tukang ereksi",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1561",
+        "VI hal. 1562"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Jahit Geotekstil",
+      "after": "Tukang jahit geotekstil",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 831"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang kayu",
+      "after": "Tukang Kayu",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 337",
+        "IV hal. 338",
+        "IV hal. 339",
+        "IV hal. 340",
+        "IV hal. 341",
+        "IV hal. 342",
+        "IV hal. 343",
+        "IV hal. 344",
+        "IV hal. 345",
+        "IV hal. 346",
+        "IV hal. 347",
+        "IV hal. 348",
+        "IV hal. 349",
+        "IV hal. 350",
+        "IV hal. 351",
+        "IV hal. 352",
+        "IV hal. 353",
+        "IV hal. 354",
+        "IV hal. 355",
+        "IV hal. 356",
+        "IV hal. 357",
+        "IV hal. 358",
+        "IV hal. 359",
+        "IV hal. 360",
+        "IV hal. 361",
+        "IV hal. 362",
+        "IV hal. 363",
+        "IV hal. 364",
+        "IV hal. 365",
+        "IV hal. 366",
+        "IV hal. 367",
+        "IV hal. 368",
+        "IV hal. 380",
+        "IV hal. 1338",
+        "IV hal. 1640",
+        "IV hal. 1641"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Kayu/Tembok",
+      "after": "Tukang Kayu",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 833",
+        "IV hal. 834",
+        "IV hal. 840",
+        "IV hal. 841"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Kayu/Tembok",
+      "after": "Tukang tembok",
+      "unit": "OJ",
+      "refs": [
+        "IV hal. 833",
+        "IV hal. 834",
+        "IV hal. 840",
+        "IV hal. 841"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang las",
+      "after": "Tukang Las",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 326"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Listrik / Elektronik",
+      "after": "Tukang Listrik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 789",
+        "VI hal. 790",
+        "VI hal. 791",
+        "VI hal. 792",
+        "VI hal. 793",
+        "VI hal. 794",
+        "VI hal. 795",
+        "VI hal. 796",
+        "VI hal. 797",
+        "VI hal. 798",
+        "VI hal. 799",
+        "VI hal. 800",
+        "VI hal. 801",
+        "VI hal. 802",
+        "VI hal. 803",
+        "VI hal. 804",
+        "VI hal. 805",
+        "VI hal. 806",
+        "VI hal. 807",
+        "VI hal. 808",
+        "VI hal. 809",
+        "VI hal. 810",
+        "VI hal. 811",
+        "VI hal. 812",
+        "VI hal. 813",
+        "VI hal. 814",
+        "VI hal. 815",
+        "VI hal. 816",
+        "VI hal. 817",
+        "VI hal. 818",
+        "VI hal. 819",
+        "VI hal. 820",
+        "VI hal. 821",
+        "VI hal. 823",
+        "VI hal. 824",
+        "VI hal. 825",
+        "VI hal. 826",
+        "VI hal. 827",
+        "VI hal. 828",
+        "VI hal. 829",
+        "VI hal. 830",
+        "VI hal. 831",
+        "VI hal. 832",
+        "VI hal. 833",
+        "VI hal. 834",
+        "VI hal. 835",
+        "VI hal. 837",
+        "VI hal. 838",
+        "VI hal. 839",
+        "VI hal. 840",
+        "VI hal. 841",
+        "VI hal. 842",
+        "VI hal. 843",
+        "VI hal. 844",
+        "VI hal. 845",
+        "VI hal. 846",
+        "VI hal. 847",
+        "VI hal. 848",
+        "VI hal. 849",
+        "VI hal. 850",
+        "VI hal. 851",
+        "VI hal. 852",
+        "VI hal. 853",
+        "VI hal. 854",
+        "VI hal. 855",
+        "VI hal. 856",
+        "VI hal. 857",
+        "VI hal. 858",
+        "VI hal. 859",
+        "VI hal. 860",
+        "VI hal. 861",
+        "VI hal. 862",
+        "VI hal. 863",
+        "VI hal. 864",
+        "VI hal. 865",
+        "VI hal. 866",
+        "VI hal. 867",
+        "VI hal. 868",
+        "VI hal. 869",
+        "VI hal. 870",
+        "VI hal. 871",
+        "VI hal. 872",
+        "VI hal. 873",
+        "VI hal. 874",
+        "VI hal. 875",
+        "VI hal. 876",
+        "VI hal. 877",
+        "VI hal. 878",
+        "VI hal. 879",
+        "VI hal. 880",
+        "VI hal. 881",
+        "VI hal. 882",
+        "VI hal. 883",
+        "VI hal. 884",
+        "VI hal. 885",
+        "VI hal. 886",
+        "VI hal. 887",
+        "VI hal. 888",
+        "VI hal. 889",
+        "VI hal. 890",
+        "VI hal. 891",
+        "VI hal. 892",
+        "VI hal. 893",
+        "VI hal. 894",
+        "VI hal. 895",
+        "VI hal. 896",
+        "VI hal. 897",
+        "VI hal. 898",
+        "VI hal. 899",
+        "VI hal. 900",
+        "VI hal. 901",
+        "VI hal. 902",
+        "VI hal. 903",
+        "VI hal. 904",
+        "VI hal. 905",
+        "VI hal. 906",
+        "VI hal. 907",
+        "VI hal. 908",
+        "VI hal. 909",
+        "VI hal. 910",
+        "VI hal. 911",
+        "VI hal. 912",
+        "VI hal. 913",
+        "VI hal. 914",
+        "VI hal. 915",
+        "VI hal. 916",
+        "VI hal. 917",
+        "VI hal. 918",
+        "VI hal. 919",
+        "VI hal. 920",
+        "VI hal. 921",
+        "VI hal. 924",
+        "VI hal. 925",
+        "VI hal. 926",
+        "VI hal. 927",
+        "VI hal. 928",
+        "VI hal. 929",
+        "VI hal. 930",
+        "VI hal. 931",
+        "VI hal. 932",
+        "VI hal. 933",
+        "VI hal. 934",
+        "VI hal. 935",
+        "VI hal. 941",
+        "VI hal. 942",
+        "VI hal. 943",
+        "VI hal. 944",
+        "VI hal. 945",
+        "VI hal. 946",
+        "VI hal. 951",
+        "VI hal. 952",
+        "VI hal. 953",
+        "VI hal. 954",
+        "VI hal. 955",
+        "VI hal. 956",
+        "VI hal. 957",
+        "VI hal. 958",
+        "VI hal. 959",
+        "VI hal. 960",
+        "VI hal. 961",
+        "VI hal. 962",
+        "VI hal. 963",
+        "VI hal. 965",
+        "VI hal. 966",
+        "VI hal. 967",
+        "VI hal. 968",
+        "VI hal. 983",
+        "VI hal. 984",
+        "VI hal. 985",
+        "VI hal. 986",
+        "VI hal. 987",
+        "VI hal. 988",
+        "VI hal. 989",
+        "VI hal. 990",
+        "VI hal. 991",
+        "VI hal. 992",
+        "VI hal. 993",
+        "VI hal. 994",
+        "VI hal. 1002",
+        "VI hal. 1003",
+        "VI hal. 1004",
+        "VI hal. 1005",
+        "VI hal. 1006",
+        "VI hal. 1008",
+        "VI hal. 1009",
+        "VI hal. 1010",
+        "VI hal. 1011",
+        "VI hal. 1012",
+        "VI hal. 1013",
+        "VI hal. 1014",
+        "VI hal. 1015",
+        "VI hal. 1016",
+        "VI hal. 1017",
+        "VI hal. 1018",
+        "VI hal. 1019",
+        "VI hal. 1020",
+        "VI hal. 1021",
+        "VI hal. 1022",
+        "VI hal. 1023",
+        "VI hal. 1024",
+        "VI hal. 1025",
+        "VI hal. 1026",
+        "VI hal. 1027",
+        "VI hal. 1031",
+        "VI hal. 1032",
+        "VI hal. 1033",
+        "VI hal. 1034",
+        "VI hal. 1035",
+        "VI hal. 1036",
+        "VI hal. 1037",
+        "VI hal. 1038",
+        "VI hal. 1039",
+        "VI hal. 1042",
+        "VI hal. 1066",
+        "VI hal. 1067"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Listrik / Elektronik",
+      "after": "Tukang Elektronik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 789",
+        "VI hal. 790",
+        "VI hal. 791",
+        "VI hal. 792",
+        "VI hal. 793",
+        "VI hal. 794",
+        "VI hal. 795",
+        "VI hal. 796",
+        "VI hal. 797",
+        "VI hal. 798",
+        "VI hal. 799",
+        "VI hal. 800",
+        "VI hal. 801",
+        "VI hal. 802",
+        "VI hal. 803",
+        "VI hal. 804",
+        "VI hal. 805",
+        "VI hal. 806",
+        "VI hal. 807",
+        "VI hal. 808",
+        "VI hal. 809",
+        "VI hal. 810",
+        "VI hal. 811",
+        "VI hal. 812",
+        "VI hal. 813",
+        "VI hal. 814",
+        "VI hal. 815",
+        "VI hal. 816",
+        "VI hal. 817",
+        "VI hal. 818",
+        "VI hal. 819",
+        "VI hal. 820",
+        "VI hal. 821",
+        "VI hal. 823",
+        "VI hal. 824",
+        "VI hal. 825",
+        "VI hal. 826",
+        "VI hal. 827",
+        "VI hal. 828",
+        "VI hal. 829",
+        "VI hal. 830",
+        "VI hal. 831",
+        "VI hal. 832",
+        "VI hal. 833",
+        "VI hal. 834",
+        "VI hal. 835",
+        "VI hal. 837",
+        "VI hal. 838",
+        "VI hal. 839",
+        "VI hal. 840",
+        "VI hal. 841",
+        "VI hal. 842",
+        "VI hal. 843",
+        "VI hal. 844",
+        "VI hal. 845",
+        "VI hal. 846",
+        "VI hal. 847",
+        "VI hal. 848",
+        "VI hal. 849",
+        "VI hal. 850",
+        "VI hal. 851",
+        "VI hal. 852",
+        "VI hal. 853",
+        "VI hal. 854",
+        "VI hal. 855",
+        "VI hal. 856",
+        "VI hal. 857",
+        "VI hal. 858",
+        "VI hal. 859",
+        "VI hal. 860",
+        "VI hal. 861",
+        "VI hal. 862",
+        "VI hal. 863",
+        "VI hal. 864",
+        "VI hal. 865",
+        "VI hal. 866",
+        "VI hal. 867",
+        "VI hal. 868",
+        "VI hal. 869",
+        "VI hal. 870",
+        "VI hal. 871",
+        "VI hal. 872",
+        "VI hal. 873",
+        "VI hal. 874",
+        "VI hal. 875",
+        "VI hal. 876",
+        "VI hal. 877",
+        "VI hal. 878",
+        "VI hal. 879",
+        "VI hal. 880",
+        "VI hal. 881",
+        "VI hal. 882",
+        "VI hal. 883",
+        "VI hal. 884",
+        "VI hal. 885",
+        "VI hal. 886",
+        "VI hal. 887",
+        "VI hal. 888",
+        "VI hal. 889",
+        "VI hal. 890",
+        "VI hal. 891",
+        "VI hal. 892",
+        "VI hal. 893",
+        "VI hal. 894",
+        "VI hal. 895",
+        "VI hal. 896",
+        "VI hal. 897",
+        "VI hal. 898",
+        "VI hal. 899",
+        "VI hal. 900",
+        "VI hal. 901",
+        "VI hal. 902",
+        "VI hal. 903",
+        "VI hal. 904",
+        "VI hal. 905",
+        "VI hal. 906",
+        "VI hal. 907",
+        "VI hal. 908",
+        "VI hal. 909",
+        "VI hal. 910",
+        "VI hal. 911",
+        "VI hal. 912",
+        "VI hal. 913",
+        "VI hal. 914",
+        "VI hal. 915",
+        "VI hal. 916",
+        "VI hal. 917",
+        "VI hal. 918",
+        "VI hal. 919",
+        "VI hal. 920",
+        "VI hal. 921",
+        "VI hal. 924",
+        "VI hal. 925",
+        "VI hal. 926",
+        "VI hal. 927",
+        "VI hal. 928",
+        "VI hal. 929",
+        "VI hal. 930",
+        "VI hal. 931",
+        "VI hal. 932",
+        "VI hal. 933",
+        "VI hal. 934",
+        "VI hal. 935",
+        "VI hal. 941",
+        "VI hal. 942",
+        "VI hal. 943",
+        "VI hal. 944",
+        "VI hal. 945",
+        "VI hal. 946",
+        "VI hal. 951",
+        "VI hal. 952",
+        "VI hal. 953",
+        "VI hal. 954",
+        "VI hal. 955",
+        "VI hal. 956",
+        "VI hal. 957",
+        "VI hal. 958",
+        "VI hal. 959",
+        "VI hal. 960",
+        "VI hal. 961",
+        "VI hal. 962",
+        "VI hal. 963",
+        "VI hal. 965",
+        "VI hal. 966",
+        "VI hal. 967",
+        "VI hal. 968",
+        "VI hal. 983",
+        "VI hal. 984",
+        "VI hal. 985",
+        "VI hal. 986",
+        "VI hal. 987",
+        "VI hal. 988",
+        "VI hal. 989",
+        "VI hal. 990",
+        "VI hal. 991",
+        "VI hal. 992",
+        "VI hal. 993",
+        "VI hal. 994",
+        "VI hal. 1002",
+        "VI hal. 1003",
+        "VI hal. 1004",
+        "VI hal. 1005",
+        "VI hal. 1006",
+        "VI hal. 1008",
+        "VI hal. 1009",
+        "VI hal. 1010",
+        "VI hal. 1011",
+        "VI hal. 1012",
+        "VI hal. 1013",
+        "VI hal. 1014",
+        "VI hal. 1015",
+        "VI hal. 1016",
+        "VI hal. 1017",
+        "VI hal. 1018",
+        "VI hal. 1019",
+        "VI hal. 1020",
+        "VI hal. 1021",
+        "VI hal. 1022",
+        "VI hal. 1023",
+        "VI hal. 1024",
+        "VI hal. 1025",
+        "VI hal. 1026",
+        "VI hal. 1027",
+        "VI hal. 1031",
+        "VI hal. 1032",
+        "VI hal. 1033",
+        "VI hal. 1034",
+        "VI hal. 1035",
+        "VI hal. 1036",
+        "VI hal. 1037",
+        "VI hal. 1038",
+        "VI hal. 1039",
+        "VI hal. 1042",
+        "VI hal. 1066",
+        "VI hal. 1067"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Listrik/Elektronik",
+      "after": "Tukang Listrik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1039",
+        "VI hal. 1040",
+        "VI hal. 1041",
+        "VI hal. 1042",
+        "VI hal. 1043",
+        "VI hal. 1044",
+        "VI hal. 1045",
+        "VI hal. 1046",
+        "VI hal. 1052",
+        "VI hal. 1053",
+        "VI hal. 1054",
+        "VI hal. 1055",
+        "VI hal. 1056",
+        "VI hal. 1057",
+        "VI hal. 1058",
+        "VI hal. 1059",
+        "VI hal. 1060",
+        "VI hal. 1061",
+        "VI hal. 1062",
+        "VI hal. 1063",
+        "VI hal. 1064",
+        "VI hal. 1065",
+        "VI hal. 1066",
+        "VI hal. 1067",
+        "VI hal. 1068",
+        "VI hal. 1073",
+        "VI hal. 1074",
+        "VI hal. 1075",
+        "VI hal. 1076",
+        "VI hal. 1077",
+        "VI hal. 1078",
+        "VI hal. 1079",
+        "VI hal. 1080",
+        "VI hal. 1104",
+        "VI hal. 1105"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang Listrik/Elektronik",
+      "after": "Tukang Elektronik",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1039",
+        "VI hal. 1040",
+        "VI hal. 1041",
+        "VI hal. 1042",
+        "VI hal. 1043",
+        "VI hal. 1044",
+        "VI hal. 1045",
+        "VI hal. 1046",
+        "VI hal. 1052",
+        "VI hal. 1053",
+        "VI hal. 1054",
+        "VI hal. 1055",
+        "VI hal. 1056",
+        "VI hal. 1057",
+        "VI hal. 1058",
+        "VI hal. 1059",
+        "VI hal. 1060",
+        "VI hal. 1061",
+        "VI hal. 1062",
+        "VI hal. 1063",
+        "VI hal. 1064",
+        "VI hal. 1065",
+        "VI hal. 1066",
+        "VI hal. 1067",
+        "VI hal. 1068",
+        "VI hal. 1073",
+        "VI hal. 1074",
+        "VI hal. 1075",
+        "VI hal. 1076",
+        "VI hal. 1077",
+        "VI hal. 1078",
+        "VI hal. 1079",
+        "VI hal. 1080",
+        "VI hal. 1104",
+        "VI hal. 1105"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang pipa",
+      "after": "Tukang Pipa",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 1445",
+        "VI hal. 1452",
+        "VI hal. 1453",
+        "VI hal. 1458",
+        "VI hal. 1467",
+        "VI hal. 1472",
+        "VI hal. 1473",
+        "VI hal. 1482",
+        "VI hal. 1487",
+        "VI hal. 1488",
+        "VI hal. 1489",
+        "VI hal. 1490",
+        "VI hal. 1491",
+        "VI hal. 1492",
+        "VI hal. 1511",
+        "VI hal. 1512",
+        "VI hal. 1513",
+        "VI hal. 1514",
+        "VI hal. 1515",
+        "VI hal. 1516",
+        "VI hal. 1521",
+        "VI hal. 1522",
+        "VI hal. 1526",
+        "VI hal. 1527",
+        "VI hal. 1528",
+        "VI hal. 1529",
+        "VI hal. 1530",
+        "VI hal. 1531",
+        "VI hal. 1532",
+        "VI hal. 1533",
+        "VI hal. 1534",
+        "VI hal. 1535",
+        "VI hal. 1536",
+        "VI hal. 1537",
+        "VI hal. 1538",
+        "VI hal. 1539",
+        "VI hal. 1540",
+        "VI hal. 1541",
+        "VI hal. 1542",
+        "VI hal. 1543",
+        "VI hal. 1544",
+        "VI hal. 1545",
+        "VI hal. 1546",
+        "VI hal. 1547",
+        "VI hal. 1548",
+        "VI hal. 1549",
+        "VI hal. 1550",
+        "VI hal. 1551",
+        "VI hal. 1552",
+        "VI hal. 1553"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang tanam",
+      "after": "Tukang Tanam",
+      "unit": "OH",
+      "refs": [
+        "VI hal. 748",
+        "VI hal. 749",
+        "VI hal. 750",
+        "VI hal. 751",
+        "VI hal. 752",
+        "VI hal. 754",
+        "VI hal. 755",
+        "VI hal. 756",
+        "VI hal. 757",
+        "VI hal. 758"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang/tembok",
+      "after": "Tukang",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 741",
+        "IV hal. 742",
+        "IV hal. 743",
+        "IV hal. 744",
+        "IV hal. 745",
+        "IV hal. 746",
+        "IV hal. 747"
+      ]
+    },
+    {
+      "group": "Tenaga kerja",
+      "before": "Tukang/tembok",
+      "after": "tembok",
+      "unit": "OH",
+      "refs": [
+        "IV hal. 741",
+        "IV hal. 742",
+        "IV hal. 743",
+        "IV hal. 744",
+        "IV hal. 745",
+        "IV hal. 746",
+        "IV hal. 747"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tulangan Bagi BjTS 280 2* ∅ 4 mm",
+      "after": "Tulangan Bagi BjTS 280 ∅ 4 mm",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 381"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tulangan Bored Pile 1 100 kg/m3 beton *)",
+      "after": "Tulangan Bored Pile 1 100 kg/m3 beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 477",
+        "IV hal. 480"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tulangan Bored Pile 100 1 kg/m3 beton *)",
+      "after": "Tulangan Bored Pile 100 1 kg/m3 beton",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 472",
+        "IV hal. 475"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Tulangan Utama 1* ∅ 6 mm, Wiremesh M6",
+      "after": "Tulangan Utama ∅ 6 mm, Wiremesh M6",
+      "unit": "kg",
+      "refs": [
+        "IV hal. 381"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Urethane) M200",
+      "after": "Urethane M200",
+      "unit": "liter",
+      "refs": [
+        "V hal. 1469"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Vibator beton 52mm,3.5m3/jam 1 HP",
+      "after": "Vibrator beton 52mm,3.5m3/jam 1 HP",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 1449"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Vibator beton52mm,3.5m3/jam 1 HP",
+      "after": "Vibrator beton52mm,3.5m3/jam 1 HP",
+      "unit": "jam",
+      "refs": [
+        "IV hal. 1378",
+        "IV hal. 1382",
+        "IV hal. 1386",
+        "IV hal. 1390",
+        "IV hal. 1394",
+        "IV hal. 1398",
+        "IV hal. 1407",
+        "IV hal. 1409",
+        "IV hal. 1411",
+        "IV hal. 1413",
+        "IV hal. 1415",
+        "IV hal. 1417",
+        "IV hal. 1418",
+        "IV hal. 1434",
+        "IV hal. 1436",
+        "IV hal. 1438",
+        "IV hal. 1440",
+        "IV hal. 1442",
+        "IV hal. 1444",
+        "IV hal. 1445",
+        "IV hal. 1446",
+        "IV hal. 1448",
+        "IV hal. 1453",
+        "IV hal. 1455",
+        "IV hal. 1457"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Vibrator beton; 52mm; 3,5 m3/ jam; 1 HP",
+      "after": "Vibrator beton; 52 mm; 3,5 m3/jam; 1 HP",
+      "unit": "Jam",
+      "refs": [
+        "IV hal. 385",
+        "IV hal. 387",
+        "IV hal. 388",
+        "IV hal. 389",
+        "IV hal. 390",
+        "IV hal. 391",
+        "IV hal. 392",
+        "IV hal. 393"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Vibratory Roller with IC",
+      "after": "Vibratory Roller With IC",
+      "unit": "jam",
+      "refs": [
+        "V hal. 624"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Water Pump 70-100 mm",
+      "after": "WATER PUMP 70-100 mm",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1778"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Water tank truck",
+      "after": "Water Tank Truck",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 350",
+        "V hal. 353",
+        "V hal. 359",
+        "V hal. 362"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Water Tank truck",
+      "after": "Water Tank Truck",
+      "unit": "jam",
+      "refs": [
+        "V hal. 52",
+        "V hal. 55"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "WATER TANK TRUCK",
+      "after": "Water Tank Truck",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 244",
+        "V hal. 377",
+        "V hal. 380",
+        "V hal. 383",
+        "V hal. 386",
+        "V hal. 389",
+        "V hal. 392",
+        "V hal. 395",
+        "V hal. 398",
+        "V hal. 404",
+        "V hal. 1953",
+        "V hal. 1957",
+        "V hal. 1960",
+        "V hal. 1963",
+        "V hal. 1966",
+        "V hal. 1970",
+        "V hal. 1973",
+        "V hal. 1976",
+        "V hal. 1979",
+        "V hal. 1982",
+        "V hal. 2008",
+        "V hal. 2011",
+        "V hal. 2018",
+        "V hal. 2021",
+        "V hal. 2024",
+        "V hal. 2027",
+        "V hal. 2342",
+        "V hal. 2345"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "WATER TANK TRUCK",
+      "after": "Water Tank Truck",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1024",
+        "V hal. 1301",
+        "V hal. 1304",
+        "V hal. 3033"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Watertank truck",
+      "after": "Watertank Truck",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 716",
+        "V hal. 720",
+        "V hal. 724",
+        "V hal. 728"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "WATERTANK TRUCK",
+      "after": "Watertank Truck",
+      "unit": "Jam",
+      "refs": [
+        "V hal. 653",
+        "V hal. 657"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Welding Machine, 300 A",
+      "after": "WELDING MACHINE, 300 A",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1792"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Welding Machine, Semi",
+      "after": "WELDING MACHINE, SEMI",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1794"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "Welding set",
+      "after": "Welding Set",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1352",
+        "V hal. 1432"
+      ]
+    },
+    {
+      "group": "Peralatan",
+      "before": "WELDING SET",
+      "after": "Welding Set",
+      "unit": "jam",
+      "refs": [
+        "V hal. 1521"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "Wiremesh M6 untuk slab atau dinding atau Ferrocement secara manual (untuk bangunan",
+      "after": "Wiremesh M6 untuk slab atau dinding atau Ferrocement secara manual untuk bangunan",
+      "unit": "m2",
+      "refs": [
+        "VI hal. 1557",
+        "VI hal. 1558"
+      ]
+    },
+    {
+      "group": "Bahan",
+      "before": "x 175 x 72 x 6 mm)",
+      "after": "x 175 x 72 x 6 mm",
+      "unit": "M",
+      "refs": [
+        "V hal. 3041",
+        "V hal. 3044",
+        "V hal. 3047",
+        "V hal. 3050"
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ const iconSources=(await Promise.all(['edit','delete','close'].map(name=>readFil
 const loaderSource=await readFile(new URL('asset-loader.js',root),'utf8');
 const sources=new Map(await Promise.all(assets.map(async file=>[file,await readFile(new URL(file,root),'utf8')])));
 // All module URLs change together, including transitive dependencies and workers.
-const unitsMetadata=(await Promise.all(['work-units.json','ahs-catalog.json','ahs-coverage.json','ahs-source.json','ahs-inventory.json','smkk-templates.json'].map(file=>readFile(new URL('public/data/'+file,root),'utf8')))).join('\0');
+const unitsMetadata=(await Promise.all(['work-units.json','ahs-catalog.json','ahs-corrections.json','ahs-coverage.json','ahs-source.json','ahs-inventory.json','smkk-templates.json'].map(file=>readFile(new URL('public/data/'+file,root),'utf8')))).join('\0');
 const buildId=createHash('sha256').update([...sources].map(([file,body])=>file+'\0'+body).join('\0')).update('\0'+unitsMetadata).update('\0'+loaderSource).update('\0'+iconSources).digest('hex').slice(0,12);
 const manifest=Object.fromEntries(assets.map(file=>[file,file.replace(/\.(js|css)$/,`.${buildId}.$1`)]));
 const rewrite=body=>{

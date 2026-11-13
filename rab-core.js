@@ -1,4 +1,4 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,normalizeItemResources} from './resource-cleanup.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.js';
 import { validateQuantityRows, quantitySummary } from './quantity-core.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
@@ -7,9 +7,13 @@ export function nonnegative(value) {
   if (value === '' || value == null || !Number.isFinite(n) || n < 0 || n > 1e15) throw new Error('Angka harus bernilai 0 atau lebih dan tidak melebihi 10^15.');
   return n;
 }
-let resourceCodeIndex=new Map();
-export function configureResourceCatalog(catalog){resourceCodeIndex=buildResourceCodeIndex(catalog);return catalog.map(item=>normalizeItemResources(item,resourceCodeIndex));}
-export function prepareItemResources(item){return normalizeItemResources(item,resourceCodeIndex);}
+let resourceCodeIndex=new Map(),resourceNameIndex=new Map();
+export function configureResourceCatalog(catalog,corrections={}){const corrected=catalog.map(item=>corrections[item.id]?{...item,components:corrections[item.id].components,correctionNote:corrections[item.id].reason}:item);resourceCodeIndex=buildResourceCodeIndex(corrected);resourceNameIndex=buildResourceNameIndex(corrected);return corrected.map(item=>normalizeItemResources(item,resourceCodeIndex,resourceNameIndex));}
+export function prepareItemResources(item){return normalizeItemResources(item,resourceCodeIndex,resourceNameIndex);}
+export function applyCatalogCorrections(project,rawCatalog,correctedCatalog){
+ const signature=item=>JSON.stringify(prepareItemResources(item).components.map(c=>[resourceIdentity(c),c.coefficient]));let count=0;
+ for(const item of project.items){if(item.adjusted||item.empirical)continue;const before=signature(item),candidates=rawCatalog.filter(a=>a.docId===item.docId&&a.code===item.code&&a.page===item.page&&signature(a)===before),replacements=candidates.map(a=>correctedCatalog.find(b=>b.id===a.id&&b.correctionNote)).filter(Boolean);if(replacements.length!==1)continue;if(signature(item)===signature(replacements[0])&&item.components.every((c,i)=>(c.code||'')===(replacements[0].components[i]?.code||'')))continue;item.components=structuredClone(replacements[0].components);count++;}return count;
+}
 function identityFromKey(key){try{const a=JSON.parse(key);if(!Array.isArray(a)||a.length!==4||a.some(x=>typeof x!=='string'))return null;return resourceIdentity({group:a[1],name:a[2],unit:a[3]});}catch{return null;}}
 function indexedRates(rates){const map=new Map();for(const [key,value]of Object.entries(rates)){const id=identityFromKey(key);if(!id)continue;if(!map.has(id))map.set(id,[]);map.get(id).push({key,value,doc:JSON.parse(key)[0]});}return map;}
 export function rateKey(item,component){return JSON.stringify([item.empirical?'empiris':item.docId||'manual',component.group,cleanResourceName(component.name).toLocaleLowerCase('id').replace(/\s+/g,' ').trim(),normalizedResourceUnit(component.unit)]);}
@@ -28,7 +32,7 @@ export function calculateItem(item, rates, overhead) {
   const index=indexedRates(rates);
   const breakdown = item.components.map(c => {
     const key=rateKey(item,c),price=resourcePrice(item,c,rates,index);
-    return { ...c,name:cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(resourceIdentity(c))||'',key,price, cost: price == null ? null : moneyRound(c.coefficient * price) };
+    return { ...c,name:resourceNameIndex.get(resourceIdentity(c))||cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(resourceIdentity(c))||'',key,price, cost: price == null ? null : moneyRound(c.coefficient * price) };
   });
   const missing = breakdown.filter(c => c.price == null).length;
   const alternatives=new Map();for(const c of item.components)if(c.alternativeSet)alternatives.set(c.alternativeSet,(alternatives.get(c.alternativeSet)||0)+1);const unresolvedAlternatives=[...alternatives.values()].filter(n=>n>1).length;
@@ -113,7 +117,7 @@ export function resourceCategory(resource){
 export function resources(project){
  const map=new Map(),index=indexedRates(project.rates),structure=wbsStructure(project.items);
  for(const [i,item]of project.items.entries())if(!item.heading&&!structure[i].rollup)for(const c of item.components){
-  const id=resourceIdentity(c),key=rateKey(item,c);if(!map.has(id))map.set(id,{...c,name:cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(id)||'',key,docId:item.empirical?'empiris':item.docId,quantity:0,aliases:new Set(),prices:new Set()});
+  const id=resourceIdentity(c),key=rateKey(item,c);if(!map.has(id))map.set(id,{...c,name:resourceNameIndex.get(resourceIdentity(c))||cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(id)||'',key,docId:item.empirical?'empiris':item.docId,quantity:0,aliases:new Set(),prices:new Set()});
   const row=map.get(id);row.aliases.add(key);for(const entry of index.get(id)||[]){row.aliases.add(entry.key);row.prices.add(entry.value);}if(!row.code&&c.code)row.code=c.code;row.quantity+=c.coefficient*item.volume;
  }
  return [...map.values()].map(({prices,aliases,...row})=>({...row,aliases:[...aliases],price:prices.size===1?[...prices][0]:null,priceConflict:prices.size>1,priceVariants:[...prices]})).sort((a,b)=>groups.indexOf(a.group)-groups.indexOf(b.group)||a.name.localeCompare(b.name,'id'));
