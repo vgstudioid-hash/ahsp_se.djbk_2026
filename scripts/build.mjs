@@ -30,6 +30,7 @@ for(const file of ['index.html','references.html']){
   html=html.replace(`<script type="module" src="${manifest[entry]}"></script>`,`<script type="module">${loader}</script>`);
   html=html.replace('</head>',`  <meta name="rab-build" content="${buildId}">\n</head>`);
   await writeFile(new URL(`dist/${file}`,root),html);
+  if(file==='index.html')await writeFile(new URL(`dist/release-${buildId}.html`,root),html);
 }
 await cp(new URL('favicon.svg',root),new URL('dist/favicon.svg',root));
 await cp(new URL('public/', root), new URL('dist/', root), { recursive: true });

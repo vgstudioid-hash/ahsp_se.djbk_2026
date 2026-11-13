@@ -24,7 +24,7 @@ try {
   }
   // A browser/CDN can retain an older index.html after Pages switches builds.
   // Keep immutable assets so those cached HTML/module URLs continue to work.
-  const fingerprinted = name => /^[a-z][a-z0-9-]*\.[a-f0-9]{12}\.(?:js|css)$/.test(name);
+  const fingerprinted = name => /^(?:[a-z][a-z0-9-]*\.[a-f0-9]{12}\.(?:js|css)|release-[a-f0-9]{12}\.html)$/.test(name);
   if (existing) {
     const retained = new Set(await readdir(staging));
     for (const commit of git(['log', '-30', '--format=%H'], staging).split('\n')) {

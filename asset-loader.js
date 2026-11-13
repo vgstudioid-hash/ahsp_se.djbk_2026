@@ -2,7 +2,7 @@
 (async()=>{
  const fallback=__ASSET_MANIFEST__,entry=__ASSET_ENTRY__;
  let manifest=fallback,build=__BUILD_ID__;
- try{
+ if(!location.pathname.endsWith('/release-'+build+'.html'))try{
   const response=await fetch('./build-info.json?check='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('Manifest unavailable');
   const latest=await response.json();
