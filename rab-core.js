@@ -1,4 +1,5 @@
-import { validateQuantityRows, quantitySummary } from './quantity-core.e55a69794eff.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,normalizeItemResources} from './resource-cleanup.6d0681814c2d.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.6d0681814c2d.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -6,20 +7,35 @@ export function nonnegative(value) {
   if (value === '' || value == null || !Number.isFinite(n) || n < 0 || n > 1e15) throw new Error('Angka harus bernilai 0 atau lebih dan tidak melebihi 10^15.');
   return n;
 }
-export function rateKey(item, component) {
-  // Codes such as L.02 cover multiple trades; units OH and jam must stay distinct.
-  return JSON.stringify([item.empirical ? 'empiris' : item.docId || 'manual', component.group, component.name.toLocaleLowerCase('id').replace(/\s+/g, ' ').trim(), component.unit.toLocaleLowerCase('id').trim()]);
+let resourceCodeIndex=new Map();
+export function configureResourceCatalog(catalog){resourceCodeIndex=buildResourceCodeIndex(catalog);return catalog.map(item=>normalizeItemResources(item,resourceCodeIndex));}
+export function prepareItemResources(item){return normalizeItemResources(item,resourceCodeIndex);}
+function identityFromKey(key){try{const a=JSON.parse(key);if(!Array.isArray(a)||a.length!==4||a.some(x=>typeof x!=='string'))return null;return resourceIdentity({group:a[1],name:a[2],unit:a[3]});}catch{return null;}}
+function indexedRates(rates){const map=new Map();for(const [key,value]of Object.entries(rates)){const id=identityFromKey(key);if(!id)continue;if(!map.has(id))map.set(id,[]);map.get(id).push({key,value,doc:JSON.parse(key)[0]});}return map;}
+export function rateKey(item,component){return JSON.stringify([item.empirical?'empiris':item.docId||'manual',component.group,cleanResourceName(component.name).toLocaleLowerCase('id').replace(/\s+/g,' ').trim(),normalizedResourceUnit(component.unit)]);}
+function resourcePrice(item,c,rates,index){
+ const key=rateKey(item,c);if(Object.hasOwn(rates,key))return rates[key];
+ const sourceName=c.sourceName||c.name;if(resourceIdentity({...c,name:sourceName})===resourceIdentity(c)){const legacyKey=JSON.stringify([item.empirical?'empiris':item.docId||'manual',c.group,sourceName.toLocaleLowerCase('id').replace(/\s+/g,' ').trim(),c.unit.toLocaleLowerCase('id').trim()]);if(Object.hasOwn(rates,legacyKey))return rates[legacyKey];}
+ const entries=index.get(resourceIdentity(c))||[],doc=item.empirical?'empiris':item.docId||'manual',local=entries.filter(r=>r.doc===doc),values=[...new Set((local.length?local:entries).map(r=>r.value))];return values.length===1?values[0]:null;
+}
+function resourceAliasKeys(project,key){const id=identityFromKey(key),keys=new Set([key]);for(const item of project.items)for(const c of item.components)if(resourceIdentity(c)===id)keys.add(rateKey(item,c));for(const alias of [...Object.keys(project.rates),...Object.keys(project.resourceMeta||{})])if(identityFromKey(alias)===id)keys.add(alias);return [...keys];}
+export function setResourcePrice(project,key,value){for(const alias of resourceAliasKeys(project,key)){if(value==null)delete project.rates[alias];else project.rates[alias]=nonnegative(value);}}
+export function setResourceMetadata(project,key,field,value){project.resourceMeta??={};for(const alias of resourceAliasKeys(project,key)){project.resourceMeta[alias]??={};if(value==null)delete project.resourceMeta[alias][field];else project.resourceMeta[alias][field]=value;}}
+export function resourceMetadata(project,c){
+ const id=resourceIdentity(c),aliases=Object.entries(project.resourceMeta||{}).filter(([key])=>identityFromKey(key)===id);let meta={};for(const [,m]of aliases)meta={...meta,...m};meta={...meta,...(project.resourceMeta?.[c.key]||{})};if(!meta.code&&c.code)meta.code=c.code;return meta;
 }
 export function calculateItem(item, rates, overhead) {
+  const index=indexedRates(rates);
   const breakdown = item.components.map(c => {
-    const key = rateKey(item, c), price = Object.hasOwn(rates, key) ? rates[key] : null;
-    return { ...c, key, price, cost: price == null ? null : moneyRound(c.coefficient * price) };
+    const key=rateKey(item,c),price=resourcePrice(item,c,rates,index);
+    return { ...c,name:cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(resourceIdentity(c))||'',key,price, cost: price == null ? null : moneyRound(c.coefficient * price) };
   });
   const missing = breakdown.filter(c => c.price == null).length;
+  const alternatives=new Map();for(const c of item.components)if(c.alternativeSet)alternatives.set(c.alternativeSet,(alternatives.get(c.alternativeSet)||0)+1);const unresolvedAlternatives=[...alternatives.values()].filter(n=>n>1).length;
   const direct = moneyRound(breakdown.reduce((sum, c) => sum + (c.cost ?? 0), 0));
   const margin = moneyRound(direct * overhead / 100);
   const unitPrice = moneyRound(direct + margin);
-  return { breakdown, missing, unlinked: !item.heading && !item.components.length, direct, margin, unitPrice, amount: item.heading ? 0 : moneyRound(unitPrice * item.volume) };
+  return { breakdown, missing, unresolvedAlternatives, unlinked: !item.heading && !item.components.length, direct, margin, unitPrice, amount: item.heading ? 0 : moneyRound(unitPrice * item.volume) };
 }
 export function smkkRowResult(row){
  const enabled=row.enabled!==false,missing=enabled&&(row.volume==null||row.price==null||!row.unit.trim());
@@ -44,7 +60,7 @@ export function calculateProject(project) {
   const tax = moneyRound(taxBase * project.tax / 100);
   const missingKeys = new Set(items.filter(i=>i.billable).flatMap(i => i.breakdown.filter(c => c.price == null).map(c => c.key)));
   const work = items.filter(i => i.billable);
-  const incomplete = smkkMissing>0 || !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.item.volume <= 0 || !i.item.title.trim());
+  const incomplete = smkkMissing>0 || !work.length || missingKeys.size > 0 || work.some(i => i.unlinked || i.unresolvedAlternatives>0 || i.item.volume <= 0 || !i.item.title.trim());
   const total=moneyRound(beforeTax+tax);
   const roundedTotal=Math.round(total/100)*100;
   return { items, subtotal, smkk, beforeTax, taxFactor, taxBase, tax, total, roundedTotal, smkkMissing, missing: missingKeys.size, incomplete };
@@ -69,7 +85,7 @@ export function summarizeScopes(project) {
     if(!current){current={id:null,number:'—',title:'BELUM DIKELOMPOKKAN KE LINGKUP',count:0,amount:0,incomplete:false,missingKeys:new Set()};scopes.push(current);}
     current.count++;
     current.amount=moneyRound(current.amount+row.amount);
-    current.incomplete ||= row.missing>0||row.unlinked||item.volume<=0||!item.title.trim();
+    current.incomplete ||= row.missing>0||row.unlinked||row.unresolvedAlternatives>0||item.volume<=0||!item.title.trim();
     row.breakdown.filter(c=>c.price==null).forEach(c=>current.missingKeys.add(c.key));
   });
   return {...result,scopeSubtotal:result.beforeTax,scopes:[...scopes.map(({missingKeys,...scope})=>({...scope,missing:missingKeys.size})),smkkScope(project,result)]};
@@ -94,15 +110,13 @@ export function resourceCategory(resource){
  if(resource.group==='Peralatan')return 'ALAT';
  return 'LAINNYA';
 }
-export function resources(project) {
-  const map = new Map();
-  const structure=wbsStructure(project.items);
-  for (const [index,item] of project.items.entries()) if(!item.heading&&!structure[index].rollup) for (const c of item.components) {
-    const key = rateKey(item, c);
-    if (!map.has(key)) map.set(key, { ...c, key, docId: item.empirical ? 'empiris' : item.docId, quantity: 0, price: Object.hasOwn(project.rates, key) ? project.rates[key] : null });
-    map.get(key).quantity += c.coefficient * item.volume;
-  }
-  return [...map.values()].sort((a, b) => groups.indexOf(a.group) - groups.indexOf(b.group) || a.name.localeCompare(b.name, 'id'));
+export function resources(project){
+ const map=new Map(),index=indexedRates(project.rates),structure=wbsStructure(project.items);
+ for(const [i,item]of project.items.entries())if(!item.heading&&!structure[i].rollup)for(const c of item.components){
+  const id=resourceIdentity(c),key=rateKey(item,c);if(!map.has(id))map.set(id,{...c,name:cleanResourceName(c.name),code:c.code||resourceCodeIndex.get(id)||'',key,docId:item.empirical?'empiris':item.docId,quantity:0,aliases:new Set(),prices:new Set()});
+  const row=map.get(id);row.aliases.add(key);for(const entry of index.get(id)||[]){row.aliases.add(entry.key);row.prices.add(entry.value);}if(!row.code&&c.code)row.code=c.code;row.quantity+=c.coefficient*item.volume;
+ }
+ return [...map.values()].map(({prices,aliases,...row})=>({...row,aliases:[...aliases],price:prices.size===1?[...prices][0]:null,priceConflict:prices.size>1,priceVariants:[...prices]})).sort((a,b)=>groups.indexOf(a.group)-groups.indexOf(b.group)||a.name.localeCompare(b.name,'id'));
 }
 export function csvCell(value) {
   let text = String(value ?? '');
@@ -133,24 +147,24 @@ function importSingleRates(text, project) {
   const header = rows.shift().map(c => c.trim().toLowerCase());
   const keyIndex = header.indexOf('kunci'), priceIndex = header.indexOf('harga');
   if (keyIndex < 0 || priceIndex < 0) throw Error('Gunakan template CSV dengan kolom kunci dan harga.');
-  const allowed = new Set(resources(project).map(c => c.key)), rates = { ...project.rates }, resourceMeta = structuredClone(project.resourceMeta || {});
+  const resourceRows=resources(project),allowed=new Map(resourceRows.flatMap(c=>c.aliases.map(key=>[key,c.key]))),rates={...project.rates},resourceMeta=structuredClone(project.resourceMeta||{}),draft={...project,rates,resourceMeta};
   let count = 0;
   for (const row of rows) {
-    const key = row[keyIndex], raw = row[priceIndex]?.trim();
-    if (!allowed.has(key)) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
+    const sourceKey=row[keyIndex],key=allowed.get(sourceKey)||resourceRows.find(c=>resourceIdentity(c)===identityFromKey(sourceKey))?.key,raw=row[priceIndex]?.trim();
+    if (!key) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
     for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000],['sumber harga','priceSource',2000],['nilai kdn','kdn',100]]) {
       const index=header.indexOf(column);
-      if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');resourceMeta[key]??={};resourceMeta[key][field]=value;}
+      if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');setResourceMetadata(draft,key,field,value);}
     }
     const shbIndex=header.indexOf('harga shb');
     if(shbIndex>=0 && row[shbIndex]?.trim()){
       const value=row[shbIndex].trim();if(!/^\d+(?:[.,]\d+)?$/.test(value))throw Error('Harga SHB harus angka tanpa pemisah ribuan.');
-      resourceMeta[key]??={};resourceMeta[key].shb=nonnegative(value.replace(',','.'));
+      setResourceMetadata(draft,key,'shb',nonnegative(value.replace(',','.')));
     }
     if (raw === '' || raw == null) continue;
     // CSV template uses decimal dot; Indonesian decimal comma is accepted without thousands separators.
     if (!/^\d+(?:[.,]\d+)?$/.test(raw)) throw Error('Harga harus angka tanpa pemisah ribuan. Contoh: 150000 atau 150000,50.');
-    rates[key] = nonnegative(raw.replace(',', '.')); count++;
+    setResourcePrice(draft,key,nonnegative(raw.replace(',','.')));count++;
   }
   return { rates, resourceMeta, count };
 }
@@ -238,10 +252,11 @@ export function validateProject(p) {
     const quantityRows=validateQuantityRows(item.quantityRows||[]),quantityLinked=Boolean(item.quantityLinked);
     if(item.heading&&quantityRows.length)throw Error('Judul WBS tidak memiliki rincian Quantity.');
     const volume=quantityLinked?quantitySummary(quantityRows,item.unit).total:nonnegative(item.volume);
-    return { id: crypto.randomUUID(), recapVolume:item.recapVolume==null?1:nonnegative(item.recapVolume), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
+    return prepareItemResources({ id: crypto.randomUUID(), recapVolume:item.recapVolume==null?1:nonnegative(item.recapVolume), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
-      return { group: c.group, name: c.name, unit: c.unit, coefficient: nonnegative(c.coefficient), code: String(c.code||'').slice(0,100) };
-    }) };
+      for(const field of ['sourceName','alternativeSet'])if(c[field]!=null&&(typeof c[field]!=='string'||c[field].length>3000))throw Error('Rujukan sumber daya tidak valid.');
+      return {group:c.group,name:c.name,unit:c.unit,coefficient:nonnegative(c.coefficient),code:String(c.code||'').slice(0,100),...(c.sourceName?{sourceName:c.sourceName}:{}),...(c.alternativeSet?{alternativeSet:c.alternativeSet}:{})};
+    }) });
   });
   const validateSmkk=rows=>{
    if(!Array.isArray(rows)||rows.length>1000)throw Error('Maksimal 1000 komponen SMKK.');
