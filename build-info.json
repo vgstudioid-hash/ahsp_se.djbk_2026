@@ -1,21 +1,21 @@
 {
-  "buildId": "44baf8863384",
+  "buildId": "4cec43c9cc74",
   "assets": {
-    "button-navigation.js": "button-navigation.44baf8863384.js",
-    "theme.css": "theme.44baf8863384.css",
-    "smkk-core.js": "smkk-core.44baf8863384.js",
-    "quantity-illustration.js": "quantity-illustration.44baf8863384.js",
-    "quantity-calculator.js": "quantity-calculator.44baf8863384.js",
-    "ai-ui.js": "ai-ui.44baf8863384.js",
-    "styles.css": "styles.44baf8863384.css",
-    "rab.css": "rab.44baf8863384.css",
-    "app.js": "app.44baf8863384.js",
-    "rab-app.js": "rab-app.44baf8863384.js",
-    "rab-core.js": "rab-core.44baf8863384.js",
-    "workbook-forms.js": "workbook-forms.44baf8863384.js",
-    "quantity-core.js": "quantity-core.44baf8863384.js",
-    "quantity-ui.js": "quantity-ui.44baf8863384.js",
-    "search-worker.js": "search-worker.44baf8863384.js",
-    "search-core.js": "search-core.44baf8863384.js"
+    "button-navigation.js": "button-navigation.4cec43c9cc74.js",
+    "theme.css": "theme.4cec43c9cc74.css",
+    "smkk-core.js": "smkk-core.4cec43c9cc74.js",
+    "quantity-illustration.js": "quantity-illustration.4cec43c9cc74.js",
+    "quantity-calculator.js": "quantity-calculator.4cec43c9cc74.js",
+    "ai-ui.js": "ai-ui.4cec43c9cc74.js",
+    "styles.css": "styles.4cec43c9cc74.css",
+    "rab.css": "rab.4cec43c9cc74.css",
+    "app.js": "app.4cec43c9cc74.js",
+    "rab-app.js": "rab-app.4cec43c9cc74.js",
+    "rab-core.js": "rab-core.4cec43c9cc74.js",
+    "workbook-forms.js": "workbook-forms.4cec43c9cc74.js",
+    "quantity-core.js": "quantity-core.4cec43c9cc74.js",
+    "quantity-ui.js": "quantity-ui.4cec43c9cc74.js",
+    "search-worker.js": "search-worker.4cec43c9cc74.js",
+    "search-core.js": "search-core.4cec43c9cc74.js"
   }
 }
