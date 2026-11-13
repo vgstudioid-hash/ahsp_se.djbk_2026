@@ -9,3 +9,5 @@ import './catalog.test.mjs';
 import './smkk.test.mjs';
 
 import './regional-prices.test.mjs';
+
+import './resource-cleanup.test.mjs';
