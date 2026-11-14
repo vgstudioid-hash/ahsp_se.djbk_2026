@@ -1,6 +1,6 @@
 # RAB Studio — AHSP SE DJBK 2026
 
-**Acuan tampilan disetujui pengguna (13 November 2026): pertahankan tampilan saat ini. Jangan mengubah desain, komposisi, ukuran, warna atau posisi di luar instruksi eksplisit pengguna. Batasi perubahan pada elemen yang diminta.**
+**UX/UI DIKUNCI — ditegaskan pengguna pada 14 November 2026. Acuan: build d26ee01e41a9 (commit 1f7098e). Jangan mengubah UX/UI kecuali pengguna secara eksplisit meminta penyesuaian atau koreksi. Batasi perubahan hanya pada bagian yang diminta; bagian lainnya tetap dipertahankan. Aturan lintas tugas tercatat di [AGENTS.md](AGENTS.md).**
 
 Aplikasi penyusunan Rencana Anggaran Biaya (RAB) berbahasa Indonesia berdasarkan analisis dalam PDF SE DJBK No. 47 Tahun 2026 yang diunggah pengguna. Halaman utama adalah lembar perhitungan proyek. Pustaka PDF dipertahankan sebagai fitur pendukung pada `references.html`.
 
