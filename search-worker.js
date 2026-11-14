@@ -1,4 +1,4 @@
-import { findMatches } from './search-core.a4fdbbb47dcd.js';
+import { findMatches } from './search-core.05c0ce6186a3.js';
 const cache = new Map();
 async function load(doc) {
   if (!cache.has(doc.id)) cache.set(doc.id, fetch(doc.index).then(r => {
