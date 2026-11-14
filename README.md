@@ -351,3 +351,5 @@ Hasil: lapisan `public/data/ahs-corrections.json` mengoreksi 537 AHS / 700 kelom
 Perubahan tampilan pada tugas ini dibatasi pada enam ikon sidebar Informasi Umum–HSD mengikuti referensi pengguna dengan palet hijau/biru, serta pemusatan ikon delete dan latar sorotnya (padding/gap nol, flex center). Bagian lain mengikuti acuan tampilan yang dikunci pengguna.
 
 Penyesuaian sidebar berikutnya: seluruh delapan simbol menu berukuran 28 px dengan kotak penempatan sejajar. Palet hijau/biru terang dan garis tepi cerah memberi kontras pada latar sidebar gelap; menu aktif memakai warna lebih gelap agar tetap kontras pada latar pasir. Asisten AI memakai dua balon percakapan bertumpuk dan Pustaka memakai siluet buku sesuai referensi pengguna. Perubahan terbatas pada ikon, ukuran tempat ikon dan paletnya; tata letak halaman serta alur menu tetap dipertahankan.
+
+Ikon menu AHS berikutnya mengikuti referensi simbol nilai/harga dengan grafik garis biru; HSD mengikuti label harga diagonal dengan cincin dan simbol mata uang. Keduanya tetap berukuran 28 px dan memakai palet kontras sidebar yang sudah disetujui. Ikon menu lain dipertahankan.
