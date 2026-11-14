@@ -355,3 +355,11 @@ Penyesuaian sidebar berikutnya: seluruh delapan simbol menu berukuran 28 px deng
 Ikon menu AHS berikutnya mengikuti referensi simbol nilai/harga dengan grafik garis biru; HSD mengikuti label harga diagonal dengan cincin dan simbol mata uang. Keduanya tetap berukuran 28 px dan memakai palet kontras sidebar yang sudah disetujui. Ikon menu lain dipertahankan.
 
 Ikon Quantity sementara diganti menjadi kalkulator biru dengan layar dan tombol hijau, tetap 28 px dan sejajar dengan menu lain. Bentuk referensi Quantity yang dikirim belum terbaca (gambar tampak polos); perubahan ini merupakan pengganti sementara yang dinyatakan kepada pengguna, bukan klaim reproduksi referensi tersebut.
+
+### Acuan final UX/UI — 14 November 2026
+
+Finalisasi mempertahankan palet, ikon, komposisi desktop dan alur kerja yang sudah disetujui. Skala konsisten: judul halaman 34 px (28 px di ponsel), judul bagian 22/20 px, judul dialog 20 px, input desktop 13 px, label 12 px dan catatan 11 px. Kontrol formulir/tabel/filter setinggi 44 px; input ponsel 16 px untuk keterbacaan dan menghindari zoom otomatis saat fokus. Tombol aksi mempertahankan ukuran konteksnya (40 px desktop, 44 px ponsel; kontrol ikon/aksi tabel tetap ringkas sesuai persetujuan pengguna).
+
+Jarak memakai ritme 8/12/16/20 px. Judul dan subjudul Asisten AI mengikuti urutan halaman lain tanpa menghapus penjelasannya. Header antarhalaman memakai jarak yang sama; dialog memiliki padding, jarak tombol dan tinggi pencarian yang seragam. Filter ponsel memakai dua kolom, dengan pencarian selebar baris dan Sub Region selebar baris berikutnya. Flex basis toolbar desktop dinetralkan pada layar sempit agar tidak menghasilkan ruang kosong vertikal berlebihan. Freeze tetap menghitung tinggi kontrol aktual. Fokus Region/Sub Region dipulihkan setelah render sehingga navigasi keyboard tetap berurutan.
+
+Validasi final: delapan rute utama pada viewport 1440, 1024, 390 dan 320 px; tidak ada overflow horizontal halaman (tabel teknis tetap dapat digeser dalam pembungkus). Enam tabel dengan freeze, dialog/rincian/picker AHS, pencarian dengan satu batas fokus, alur harga regional/CSV, Pustaka ponsel, serta seluruh 59 pengujian berhasil. Data harga, koefisien dan rumus keuangan tidak diubah dalam finalisasi ini.

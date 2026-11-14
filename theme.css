@@ -401,3 +401,61 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 #navigation .nav-symbol:has(.sidebar-menu-icon){width:28px;min-width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
 #navigation .sidebar-menu-icon{width:28px;height:28px;display:block;flex:none;stroke-width:1.2}
 }
+
+/* Final UI rhythm: retain the approved composition, colours and icon artwork. */
+@media screen {
+:root{--ui-page-title:34px;--ui-section-title:22px;--ui-control-text:13px;--ui-label-text:12px;--ui-note-text:11px;--ui-control-height:44px;--ui-gap:16px;--ui-gap-small:8px;--ui-section-space:20px}
+#main .rab-heading{margin:0 0 var(--ui-section-space);gap:var(--ui-gap)}
+#main .rab-heading h1{font-size:var(--ui-page-title);line-height:1.2;letter-spacing:-1px;margin:0 0 12px;font-weight:650}
+#main .rab-heading .eyebrow{font-size:10px;line-height:1.6;letter-spacing:1.5px}
+#main .rab-heading p{font-size:var(--ui-control-text);line-height:1.6;margin-top:12px}
+#main .action-row{gap:var(--ui-gap-small);align-items:center}
+#main .section-heading h2{font-size:var(--ui-section-title);line-height:1.3;margin:0}
+#main .settings-grid label{font-size:var(--ui-label-text);line-height:1.5;gap:var(--ui-gap-small)}
+#main .settings-grid :is(input,select),#main .rab-table input:not([type="checkbox"]):not([type="radio"]),#main .catalog-tools>select{min-height:var(--ui-control-height);font-size:var(--ui-control-text);line-height:1.5;padding:10px 11px;box-sizing:border-box}
+#main .rab-table textarea{font-size:var(--ui-control-text);line-height:1.5}
+#main .catalog-tools{gap:12px;align-items:center}
+#main .catalog-tools .title-filter{height:var(--ui-control-height);min-height:var(--ui-control-height);box-sizing:border-box}
+#main .title-filter input[type="search"]{font-size:var(--ui-control-text);line-height:1.5;min-height:40px;min-width:0}
+#main .quantity-summary-actions,.smkk-panel-actions,.dialog-actions{gap:var(--ui-gap-small)}
+#analysis-dialog .analysis-head{gap:var(--ui-gap);margin-bottom:var(--ui-section-space)}
+#analysis-dialog .analysis-head h2{font-size:20px;line-height:1.3;margin:0}
+#analysis-dialog .dialog-actions{display:flex;gap:var(--ui-gap-small);flex-wrap:wrap;margin-top:var(--ui-section-space)}
+#analysis-dialog :is(.manual-note,.component-fields)>label{font-size:var(--ui-label-text);line-height:1.5}
+#analysis-dialog .title-filter input[type="search"]{font-size:var(--ui-control-text);line-height:1.5}
+@media(max-width:600px){
+:root{--ui-page-title:28px;--ui-section-title:20px}
+#main .rab-heading h1{letter-spacing:-.7px}
+#main .rab-heading{gap:12px}
+#main .balloon-control.button:not(.icon-only-control),#analysis-dialog .balloon-control.button:not(.icon-only-control){min-height:44px;font-size:13px;padding:10px 12px}
+#main .settings-grid :is(input,select),#main .rab-table :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea),#main .title-filter input[type="search"],#main .catalog-tools>select,#analysis-dialog input:not([type="checkbox"]):not([type="radio"]),#analysis-dialog select,#analysis-dialog textarea{font-size:16px}
+#analysis-content{padding:20px 16px}
+#analysis-dialog .analysis-head h2{font-size:20px}
+}
+}
+@media screen {
+#main .settings-grid :is(input,select),#main .rab-table :is(input:not([type="checkbox"]):not([type="radio"]),select),#main .catalog-tools>select,#main #ai-panel input{height:var(--ui-control-height);min-height:var(--ui-control-height);font-size:var(--ui-control-text);line-height:1.5;padding:9px 11px;box-sizing:border-box}
+#analysis-dialog input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]),#analysis-dialog select{min-height:44px;font-size:13px;line-height:1.5}
+#analysis-dialog .title-filter{min-height:44px;display:flex;align-items:center}
+@media(max-width:600px){
+#main .settings-grid :is(input,select),#main .rab-table :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea),#main .catalog-tools>select,#main #ai-panel input,#analysis-dialog input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]),#analysis-dialog select{font-size:16px}
+#main .title-filter input[type="search"],#analysis-dialog .title-filter input[type="search"]{min-height:40px;height:40px;padding:8px 10px;box-sizing:border-box}
+}
+}
+@media screen {
+#analysis-dialog input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not([type="file"]),#analysis-dialog select{height:44px;padding:9px 11px;box-sizing:border-box}
+#analysis-dialog .title-filter{height:44px;box-sizing:border-box}
+#analysis-dialog #picker-query{height:40px;min-height:40px;padding:8px 10px;font-size:13px;line-height:1.5}
+@media(max-width:600px){#analysis-dialog #picker-query{font-size:16px}}
+}
+@media screen and (max-width:600px){
+#main .catalog-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#main .catalog-tools>.title-filter{grid-column:1/-1;width:100%;min-width:0}
+#main .catalog-tools>select{width:100%;min-width:0;max-width:none}
+#main .hsd-controls #price-sub-region{grid-column:1/-1;min-width:0;width:100%;max-width:none}
+}
+/* Flex bases used by desktop toolbars must not become tall rows on narrow screens. */
+@media screen and (max-width:1250px){
+#main .rab-heading>div:first-child,#main .rab-heading>.action-row{flex:0 1 auto;width:100%;min-width:0}
+#main .rab-heading>.action-row{align-content:flex-start;justify-content:flex-end}
+}
