@@ -25,6 +25,11 @@ function resourcePrice(item,c,rates,index){
 function resourceAliasKeys(project,key){const id=identityFromKey(key),keys=new Set([key]);for(const item of project.items)for(const c of item.components)if(resourceIdentity(c)===id)keys.add(rateKey(item,c));for(const alias of [...Object.keys(project.rates),...Object.keys(project.resourceMeta||{})])if(identityFromKey(alias)===id)keys.add(alias);return [...keys];}
 export function setResourcePrice(project,key,value){for(const alias of resourceAliasKeys(project,key)){if(value==null)delete project.rates[alias];else project.rates[alias]=nonnegative(value);}}
 export function setResourceMetadata(project,key,field,value){project.resourceMeta??={};for(const alias of resourceAliasKeys(project,key)){project.resourceMeta[alias]??={};if(value==null)delete project.resourceMeta[alias][field];else project.resourceMeta[alias][field]=value;}}
+export function markResourceFieldManual(project,key,field){
+ if(!['price','priceSource','remarks','kdn'].includes(field))return;
+ const fields=new Set([field]);for(const alias of resourceAliasKeys(project,key))for(const f of project.resourceMeta?.[alias]?.catalogManual||[])fields.add(f);
+ setResourceMetadata(project,key,'catalogManual',[...fields]);
+}
 export function resourceMetadata(project,c){
  const id=resourceIdentity(c),aliases=Object.entries(project.resourceMeta||{}).filter(([key])=>identityFromKey(key)===id);let meta={};for(const [,m]of aliases)meta={...meta,...m};meta={...meta,...(project.resourceMeta?.[c.key]||{})};if(!meta.code&&c.code)meta.code=c.code;return meta;
 }
@@ -158,7 +163,7 @@ function importSingleRates(text, project) {
     if (!key) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
     for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000],['sumber harga','priceSource',2000],['nilai kdn','kdn',100]]) {
       const index=header.indexOf(column);
-      if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');setResourceMetadata(draft,key,field,value);}
+      if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');setResourceMetadata(draft,key,field,value);if(['priceSource','kdn','remarks'].includes(field))markResourceFieldManual(draft,key,field);}
     }
     const shbIndex=header.indexOf('harga shb');
     if(shbIndex>=0 && row[shbIndex]?.trim()){
@@ -168,7 +173,7 @@ function importSingleRates(text, project) {
     if (raw === '' || raw == null) continue;
     // CSV template uses decimal dot; Indonesian decimal comma is accepted without thousands separators.
     if (!/^\d+(?:[.,]\d+)?$/.test(raw)) throw Error('Harga harus angka tanpa pemisah ribuan. Contoh: 150000 atau 150000,50.');
-    setResourcePrice(draft,key,nonnegative(raw.replace(',','.')));count++;
+    setResourcePrice(draft,key,nonnegative(raw.replace(',','.')));markResourceFieldManual(draft,key,'price');count++;
   }
   return { rates, resourceMeta, count };
 }
@@ -208,6 +213,10 @@ function validatePriceProfile(p){
     if (typeof (m.code||'') !== 'string' || (m.code||'').length>100 || typeof (m.remarks||'') !== 'string' || (m.remarks||'').length>4000) throw Error('Kode/keterangan HSD tidak valid.');
     resourceMeta[key]={code:m.code||'',remarks:m.remarks||''};
     for(const [field,max] of [['priceSource',2000],['kdn',100]])if(m[field]!=null){if(typeof m[field]!=='string'||m[field].length>max)throw Error('Sumber harga/Nilai KDN tidak valid.');resourceMeta[key][field]=m[field];}
+    if(m.catalogManual!=null){if(!Array.isArray(m.catalogManual)||m.catalogManual.length>4||m.catalogManual.some(f=>!['price','priceSource','remarks','kdn'].includes(f)))throw Error('Penanda harga manual tidak valid.');resourceMeta[key].catalogManual=[...new Set(m.catalogManual)];}
+    if(m.catalogPriceId!=null){if(typeof m.catalogPriceId!=='string'||m.catalogPriceId.length>250)throw Error('Rujukan katalog harga tidak valid.');resourceMeta[key].catalogPriceId=m.catalogPriceId;}
+    if(m.catalogTkdnId!=null){if(typeof m.catalogTkdnId!=='string'||m.catalogTkdnId.length>250)throw Error('Rujukan sertifikat TKDN tidak valid.');resourceMeta[key].catalogTkdnId=m.catalogTkdnId;}
+    if(m.catalogPriceYear!=null){if(!Number.isInteger(m.catalogPriceYear)||m.catalogPriceYear<2000||m.catalogPriceYear>2200)throw Error('Tahun katalog harga tidak valid.');resourceMeta[key].catalogPriceYear=m.catalogPriceYear;}
     if(m.shb!=null && m.shb!=='')resourceMeta[key].shb=nonnegative(m.shb);
   }
  return {rates,resourceMeta};

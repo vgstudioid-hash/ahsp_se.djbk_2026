@@ -13,3 +13,5 @@ import './regional-prices.test.mjs';
 import './resource-cleanup.test.mjs';
 
 import './ahs-recheck.test.mjs';
+
+import "./price-catalog.test.mjs";

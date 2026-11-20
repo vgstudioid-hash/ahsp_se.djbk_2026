@@ -1,25 +1,41 @@
-# Pencocokan harga wilayah dan TKDN
+# Harga wilayah AHSP: status implementasi
 
-Status 21 November 2026: **belum selesai; akses sumber eksternal diblokir jaringan lingkungan Cloud**. Tidak ada perubahan UI/UX, harga proyek, koefisien, bank wilayah, atau nilai TKDN pengguna.
+21 November 2026. UI/UX tetap mengikuti acuan terkunci; tidak ada CSS, ikon, teks kontrol, tata letak, ukuran atau navigasi yang diubah.
 
-## Hasil yang tersedia
+## Hasil dan batas cakupan
 
-Jalankan `node scripts/inventory-price-resources.mjs` untuk menghasilkan inventaris di `public/reports/inventaris-sumber-daya-harga.{json,csv,html}`. PDF dibuat dengan renderer laporan yang sudah ada. Sumbernya katalog mentah + lapisan koreksi + normalisasi sumber daya yang digunakan aplikasi. JSON menyimpan seluruh rujukan AHS dan nama asal; CSV menyediakan kolom kerja untuk harga wilayah dan sertifikat. Kolom yang belum terverifikasi sengaja kosong.
+- Semua 53 berkas dari folder HARGA PEMERINTAH dan JURNAL HARGA telah diunduh ke `/workspace/price-sources`, di luar aset website. Register nama, URL, SHA256, ukuran dan status ekstraksi tersedia di `public/data/price-source-register.json`. Tujuh PDF tidak mempunyai lapisan teks. Dokumen lain pun belum semuanya dikonversi menjadi tabel harga terverifikasi.
+- Inventaris katalog: 4.996 identitas sumber daya dari 5.637 entri AHS; 455 entri tanpa rincian komponen belum dapat menyumbangkan inventaris lengkap. Kategori bahan 3.983, tenaga kerja 178, alat 794, sewa 35, lainnya 6.
+- Katalog otomatis: **808 pasangan sumber daya–wilayah / 778 identitas unik**, bukan semua sumber daya. Karawang 768, Kota Bekasi 27, Kota Bandung 2, Jakarta 4, Banten 7. Purwakarta, Kab. Bekasi, Kab. Bogor, Indramayu, Subang dan Lampung belum memiliki harga yang lolos pencocokan ini. 4.218 identitas belum memiliki harga terverifikasi pada wilayah mana pun.
+- Sebagian terbesar berasal dari SHS Karawang 2026 dan SSH Kota Bekasi 2026. Nama/spesifikasi, satuan dan wilayah dibandingkan secara ketat. Harga yang bertentangan tidak dipilih otomatis. Normalisasi mempertahankan pecahan, desimal, diameter dan dimensi agar tidak salah disamakan.
+- 13 pasangan harga dari baris jurnal 2025 yang diperiksa visual dieskalasi menggunakan indeks komoditas BPS rata-rata tahunan 2025 → Oktober 2026, tahun dasar 2023=100. BPS konstruksi y-on-y 9,59% bukan faktor yang digunakan secara seragam. Angka lengkap, periode, sumber dan perhitungan tersimpan pada setiap rekaman dan laporan.
+- Pemakaian rata-rata tahunan sebagai periode dasar merupakan konvensi untuk sumber yang hanya menyebut tahun. Tidak ada proyeksi 2027 atau penyambungan seri BPS beda tahun dasar. Upah dan sewa alat lama belum dieskalasi dengan indeks bahan.
+- SSH sumber menyatakan harga termasuk pajak. Harga barang nonmewah dibagi 1,11 sebelum masuk RAB agar tidak dikenai PPN dua kali; asumsi ini mengikuti model aplikasi 12% × DPP 11/12, dicatat pada setiap rekaman. Ini bukan angka pajak yang dicetak per barang. Upah langsung tidak dikurangi PPN. SSH merupakan standar/batas tertinggi, bukan bukti harga pasar terkini. Perlakuan pajak dan kondisi pengadaan harus tetap ditinjau.
 
-5.637 entri AHS, 35.031 kemunculan komponen setelah koreksi dan pemisahan alternatif, 4.996 identitas unik. Kategori: bahan 3.983, tenaga kerja 178, alat 794, sewa 35, lainnya 6. Ada 455 entri tanpa komponen; daftar ini bukan sertifikasi kelengkapan seluruh PDF sumber.
+## Pengisian otomatis dan pelestarian edit
 
-## Sumber yang diizinkan pengguna
+`price-catalog.js` mengindeks identitas yang telah dicocokkan dalam data. Tidak ada pencarian nama mendekati atau harga terendah/tertinggi di browser. Harga hanya diisi setelah Region dan Sub Region lengkap. Semua sumber daya yang sama memakai alias harga AHS/HSD yang sudah ada, tanpa mengubah koefisien.
 
-Folder harga: https://drive.google.com/drive/folders/1yXPx38FtRKkNQJ72HCBZOsfdILmWT-8B
+Harga pengguna, termasuk 0, konflik harga lama, dan pengosongan manual tidak ditimpa. Harga otomatis dapat diedit melalui kolom yang sudah ada. Penanda asal katalog, tahun dan kolom manual ikut validasi, bank harga, impor CSV serta cadangan. Sumber harga dan catatan mengikuti kolom metadata yang sudah ada. Katalog dimuat bersama data awal, diterapkan saat menyimpan/merender dan setelah pergantian wilayah. Build menyertakan versi modul dan JSON harga dalam hash.
 
-Pengguna mengizinkan pembacaan dan bila diperlukan penyimpanan ke folder. Respons CONNECT 403 berasal dari pembatasan jaringan Cloud; ini tidak membuktikan folder privat atau izin berbagi salah. Domain yang diperlukan: drive.google.com, drive.usercontent.google.com, docs.google.com, *.bps.go.id, *.kemenperin.go.id. Tidak ada berkas Drive yang telah dibaca atau diunggah pada tahap ini.
+## TKDN — belum selesai
 
-## Tahap setelah akses tersedia
+Workbook snapshot P3DN per 6 Januari 2025 berisi 39.424 baris produk; 20.661 belum melewati tanggal kedaluwarsa yang tertulis saat diperiksa pada 21 November 2026. 1.086 sumber daya memiliki kandidat pencarian, **0 penetapan TKDN numerik terkonfirmasi**. Kandidat tidak menjamin spesifikasi sama dan tidak membuktikan status sertifikat terkini.
 
-1. Inventaris setiap dokumen harga: judul, penerbit, URL/file, tahun/periode, wilayah, halaman/sheet, status pajak dan pengiriman, jenis harga (upah/bahan/sewa/pembelian). Pertahankan dokumen asli.
-2. Cocokkan kelompok, nama/spesifikasi, satuan dan wilayah. Jangan memakai kecocokan nama mendekati atau kode saja sebagai bukti. Ukuran/mutu/kapasitas berbeda tetap terpisah. Konversi satuan harus memiliki dasar; OH tidak otomatis disamakan dengan OJ. Tarif sewa tidak disamakan harga pembelian alat.
-3. Harga 2026 boleh menjadi basis sementara penggunaan 2027; tidak membuat prediksi 2027 tanpa data. Catat tanggal/periode ketersediaan jika data 2026 belum setahun penuh. Harga lebih lama: pilih seri BPS sesuai komoditas/jenis biaya dan cakupan yang tersedia. Jangan memakai inflasi bahan konstruksi untuk upah secara otomatis.
-4. Eskalasi hanya ketika seri dan basis indeks sebanding: harga target = harga dasar × indeks target / indeks dasar. Jika memakai perubahan tahunan yang terverifikasi, kalikan faktor (1 + r/100) tiap periode, bukan menjumlahkan persen. Jangan menyambung seri berbeda tahun dasar tanpa penghubung resmi. Simpan nama seri, periode awal/akhir, nilai indeks atau setiap persen, tautan publikasi, halaman dan hasil perhitungan. Contoh pengguna menuju 2024 bukan faktor menuju 2026.
-5. TKDN: cari P3DN berdasarkan produsen, produk/model dan spesifikasi yang sama. Simpan nomor sertifikat, nilai persen, masa berlaku dan URL. Satu nama generik dapat mencakup banyak produk dengan TKDN berbeda; jangan memaksakan satu nilai. Tidak ditemukan ≠ 0%. Upah tidak diperlakukan sebagai produk dengan sertifikat TKDN.
-6. Masukkan data terverifikasi ke bank Region/Sub Region yang tepat melalui pola impor harga yang tersedia. Pemilihan wilayah dan propagasi harga bersama AHS/HSD sudah tersedia di core, tetapi pemasukan data sumber dan pemilihan otomatis katalog harga baru **belum dikerjakan**. Jangan menyalin harga lokal ke semua wilayah atau menimpa harga manual pengguna. Pertahankan sumber harga dan nilai KDN di metadata yang tersedia.
-7. Uji satu sumber daya yang dipakai beberapa AHS, pergantian wilayah, harga manual, impor/ekspor dan backup. Laporkan cocok/tidak cocok/ambigu/tidak tersedia per item beserta alasan. UI/UX tetap memakai acuan terkunci.
+Workbook tidak mencantumkan nomor sertifikat. Nama AHSP umumnya generik; produsen, merek/model dan sertifikat belum dipilih. Halaman utama https://tkdn.kemenperin.go.id/ dapat dibaca, tetapi `/cari` dan `/sertifikat` mengembalikan HTTP 403 dari layanan. Pembacaan kandidat ini bukan verifikasi ulang sertifikat P3DN terkini. BMP tidak dianggap TKDN produk. Tenaga kerja bukan produk dengan persentase sertifikat.
+
+Logika pengisian mendukung TKDN hanya jika rekaman memuat produk/produsen, nomor sertifikat, URL Kemenperin, tanggal verifikasi dan masa berlaku yang mencakup tahun proyek. Nilai kosong atau manual tidak dipaksa menjadi 0. Tidak ada kandidat generik yang dimasukkan sebagai TKDN terpilih ke website.
+
+## Reproduksi
+
+1. `node scripts/inventory-price-resources.mjs`
+2. `python3 scripts/extract-price-sources.py /workspace/price-sources`
+3. `python3 scripts/extract-journal-price-candidates.py /workspace/price-sources`
+4. `node scripts/build-regional-price-catalog.mjs /workspace/price-sources`
+5. `python3 scripts/match-tkdn-candidates.py /workspace/price-sources`
+6. `node scripts/report-regional-prices.mjs /workspace/price-sources`
+7. Gunakan `scripts/render-resource-audits.mjs` untuk PDF `klasifikasi-harga-ahsp-2026`, `kandidat-tkdn-ahsp` dan inventaris dasar.
+
+`public/data/reviewed-price-rows.json` menyimpan baris jurnal yang diperiksa visual. Kandidat OCR lain tidak disetujui otomatis. `public/data/bps-price-indices.json` menyimpan 65 komoditas dari Tabel 3 BRS No.103/11/Th.XXIX (2 November 2026), hal.5–6, dan indeks tahunan 2025 dari tabel statistik BPS resmi. Dokumen BPS asli disimpan di workspace sumber; fakta indeks dirujuk dengan URL, bukan mendistribusikan PDF aslinya.
+
+Laporan PDF/CSV menunjukkan seluruh identitas, wilayah tanpa harga, kandidat TKDN, periode BPS dan batas penggunaan. Pekerjaan berikutnya adalah melengkapi OCR, rincian sumber yang belum terstruktur, perlakuan pajak Excel, sumber lokal wilayah kosong dan konfirmasi produk/sertifikat TKDN. Tidak boleh mengklaim seluruh harga/TKDN telah selesai.
