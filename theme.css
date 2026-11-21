@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=55be90c18ac3")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=55be90c18ac3")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=55be90c18ac3")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=2e47210389bd")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=2e47210389bd")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=2e47210389bd")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -122,59 +122,6 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=55be90c18
 .rab-frozen-header[hidden]{display:none}.rab-frozen-header table{margin:0;table-layout:fixed}
 }
 @media print{.rab-frozen-header{display:none!important}}
-
-/* Unified action-symbol treatment: the delete control is the reference style. */
-@media screen {
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) {
-    --action-red:#eb4545;
-    display:inline-flex!important;
-    align-items:center;
-    justify-content:center;
-    box-sizing:border-box;
-    width:28px!important;
-    height:28px!important;
-    min-width:28px!important;
-    min-height:28px!important;
-    flex:0 0 28px!important;
-    padding:4px!important;
-    border:0!important;
-    border-radius:6px!important;
-    background:var(--action-red)!important;
-    color:#fff!important;
-    line-height:1;
-    box-shadow:none!important;
-    vertical-align:middle;
-  }
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move])::before { content:none!important; display:none!important; }
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) svg {
-    display:block!important;
-    width:20px!important;
-    height:20px!important;
-    margin:0!important;
-    color:#fff!important;
-    stroke:#fff!important;
-    fill:none!important;
-    stroke-width:2.4!important;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    pointer-events:none;
-  }
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):hover:not(:disabled) {
-    background:#c9363d!important;
-    color:#fff!important;
-    box-shadow:0 0 0 3px #c7b58b88!important;
-  }
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):focus-visible {
-    outline:3px solid var(--sand)!important;
-    outline-offset:2px;
-  }
-  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):disabled { opacity:.48; }
-  /* Keep text actions readable while giving their leading symbol the same badge. */
-  .component-controls button:not(.trash-button), .manual-component-group header button:not(.trash-button), .rab-add-work .button:not(.rab-add-symbol) { font-size:12px; }
-  .component-controls button:not(.trash-button) .add-icon, .manual-component-group header button:not(.trash-button) .add-icon, .rab-add-work .button:not(.rab-add-symbol) .add-icon {
-    width:20px;height:20px;flex:0 0 20px;margin-right:6px;color:var(--forest);
-  }
-}
 @media screen {
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]){background:transparent!important;filter:none}
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]):hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;filter:none}
@@ -455,7 +402,6 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 #navigation .sidebar-menu-icon{width:28px;height:28px;display:block;flex:none;stroke-width:1.2}
 }
 
-
 /* Final UI rhythm: retain the approved composition, colours and icon artwork. */
 @media screen {
 :root{--ui-page-title:34px;--ui-section-title:22px;--ui-control-text:13px;--ui-label-text:12px;--ui-note-text:11px;--ui-control-height:44px;--ui-gap:16px;--ui-gap-small:8px;--ui-section-space:20px}
@@ -520,49 +466,3 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 .project-location-card .settings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .project-location-card .setting-note{margin:16px 0 0}
 @media(max-width:600px){.project-location-card .settings-grid{grid-template-columns:1fr}}
-
-/* Action controls match the approved d26ee01e41a9 treatment. Keep the
-   control itself visible, centered, and let the inline SVG remain the icon. */
-@media screen {
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:4px!important;border:0!important;border-radius:6px!important;line-height:0!important;font-size:0!important;box-shadow:none!important}
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:none!important;display:none!important}
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:block!important;visibility:visible!important;opacity:1!important;width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;margin:0!important;flex:none!important;stroke:currentColor!important;fill:none!important;color:inherit!important;pointer-events:none}
-  button.trash-button{background:#eb4545!important;color:#fff!important}
-  button.trash-button:hover:not(:disabled){background:#c9363d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
-  button.edit-icon-button{background:#27835f!important;color:#fff!important}
-  button.edit-icon-button:hover:not(:disabled){background:#19694d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
-  :is(button[data-component-remove],button[data-component-last]){background:#eb4545!important;color:#fff!important}
-  :is(button[data-component-remove],button[data-component-last]):hover:not(:disabled){background:#c9363d!important;color:#fff!important}
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):focus-visible{outline:3px solid var(--sand)!important;outline-offset:2px}
-  /* Explicitly restore visible SVGs in every table action slot. */
-  #main .row-tools button[data-move] svg,#main .row-tools button.trash-button svg,
-  .quantity-segment-actions button svg,.smkk-row-actions button.trash-button svg,
-  .component-controls button.trash-button svg{display:block!important;visibility:visible!important;opacity:1!important}
-}
-
-/* Final shared symbol skin (kept last so page-specific rules cannot diverge). */
-@media screen {
-:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:4px!important;border:0!important;border-radius:6px!important;background:#eb4545!important;color:#fff!important;line-height:1;box-shadow:none!important;vertical-align:middle}
-:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move])::before{content:none!important;display:none!important}
-:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) svg{display:block!important;width:20px!important;height:20px!important;margin:0!important;color:#fff!important;stroke:#fff!important;fill:none!important;stroke-width:2.4!important;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
-:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):hover:not(:disabled){background:#c9363d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
-:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):focus-visible{outline:3px solid var(--sand)!important;outline-offset:2px}
-}
-
-/* Restore the original action controls: SVGs remain visible and row movement
-   keeps its neutral control treatment. The AHS action size remains 28px. */
-@media screen {
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last],.row-tools button[data-move])::before{content:none!important;display:none!important}
-  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last],.row-tools button[data-move]) svg{display:block!important;width:20px!important;height:20px!important;visibility:visible!important;opacity:1!important}
-  button.trash-button,.row-tools button.trash-button{background:transparent!important;color:#df354c!important;box-shadow:none!important}
-  button.trash-button:hover:not(:disabled),.row-tools button.trash-button:hover:not(:disabled){background:#df354c12!important;color:#bd2339!important;box-shadow:none!important}
-  button.edit-icon-button{background:transparent!important;color:#2675c4!important;box-shadow:none!important}
-  button.edit-icon-button:hover:not(:disabled){background:#2675c412!important;color:#185a9b!important;box-shadow:none!important}
-  .row-tools button[data-move]{background:transparent!important;color:var(--forest)!important;box-shadow:none!important}
-  .row-tools button[data-move]:hover:not(:disabled){background:#c7b58b55!important;color:var(--forest)!important;box-shadow:0 0 0 3px #c7b58b55!important}
-  button[data-component-remove],button[data-component-last]{background:transparent!important;color:#784c2e!important;box-shadow:none!important;font-size:18px!important;padding:0!important}
-  button[data-component-remove]:hover:not(:disabled),button[data-component-last]:hover:not(:disabled){background:#c7b58b55!important;color:#784c2e!important;box-shadow:none!important}
-  button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button{background:transparent!important;color:var(--forest)!important;box-shadow:none!important}
-  button.rab-add-symbol:hover:not(:disabled),button.wbs-insert-button:hover:not(:disabled),button.wbs-level-button:hover:not(:disabled){background:#c7b58b55!important;color:var(--forest)!important;box-shadow:0 0 0 3px #c7b58b55!important}
-  button.trash-button svg,button.edit-icon-button svg,.row-tools button[data-move] svg,button.rab-add-symbol svg,button.wbs-insert-button svg,button.wbs-level-button svg{stroke:currentColor!important;color:inherit!important}
-}
