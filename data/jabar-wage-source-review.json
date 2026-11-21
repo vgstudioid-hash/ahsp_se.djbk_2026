@@ -1,0 +1,5046 @@
+{
+  "schemaVersion": 1,
+  "sourceYear": 2025,
+  "rows": [
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:515",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 515",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00298",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:516",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 516",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00299",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:517",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 517",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00300",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:518",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 518",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00301",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:519",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 519",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00302",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:520",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 520",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00303",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:521",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 521",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00304",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:522",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 522",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00305",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:523",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 523",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00306",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:524",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 524",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00307",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:525",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 525",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00308",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:526",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 526",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00309",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:527",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 527",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00310",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:528",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 528",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00311",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:529",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 529",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00312",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:530",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 530",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00313",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:531",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 531",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00314",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:532",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 532",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00315",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:533",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 533",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00316",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:534",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 534",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00317",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:625",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 625",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00408",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:626",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 626",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00409",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:627",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 627",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00410",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:628",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 628",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 285800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00411",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:629",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 629",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00412",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:630",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 630",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00413",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:631",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 631",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00414",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:632",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 632",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00415",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:633",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 633",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00416",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:634",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 634",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00417",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:635",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 635",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00418",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:636",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 636",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00419",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:637",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 637",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00420",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:638",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 638",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 293100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00421",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:639",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 639",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00422",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:640",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 640",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00423",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:641",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 641",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00424",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:642",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 642",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00425",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:643",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 643",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00426",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:644",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 644",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00427",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:645",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 645",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00428",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:646",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 646",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00429",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:647",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 647",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00430",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:648",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 648",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 246000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00431",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:649",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 649",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00432",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:650",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 650",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00433",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:651",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 651",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00434",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:652",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 652",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00435",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:653",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 653",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00436",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:654",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 654",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00437",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:655",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 655",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00438",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:656",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 656",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00439",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:657",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 657",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00440",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:658",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 658",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00441",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:659",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 659",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00442",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:660",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 660",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00443",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:661",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 661",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00444",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:662",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 662",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00445",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:663",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 663",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00446",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:664",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 664",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00447",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:665",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 665",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00448",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:666",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 666",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00449",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:667",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 667",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00450",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:668",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 668",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 166300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00451",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:669",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 669",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00452",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:670",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 670",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00453",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:671",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 671",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00454",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:672",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 672",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00455",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:673",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 673",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00456",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:674",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 674",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00457",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:705",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 705",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00488",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:706",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 706",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00489",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:707",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 707",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00490",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:708",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 708",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 184300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00491",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:709",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 709",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00492",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:710",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 710",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00493",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:711",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 711",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00494",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:712",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 712",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00495",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:713",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 713",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00496",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:714",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 714",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00497",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:515:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 515",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00298",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:516:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 516",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00299",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:517:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 517",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00300",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:518:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 518",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00301",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:519:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 519",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00302",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:520:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 520",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00303",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:521:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 521",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00304",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:522:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 522",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 291300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00305",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:523:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 523",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00306",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:524:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 524",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00307",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:525:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 525",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00308",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:526:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 526",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00309",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:527:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 527",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00310",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:528:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 528",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00311",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:529:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 529",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00312",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:530:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 530",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00313",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:531:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 531",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00314",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:532:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 532",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 230000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00315",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:533:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 533",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 180000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00316",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:534:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 534",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00317",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:625:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 625",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00408",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:626:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 626",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00409",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:627:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 627",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00410",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:628:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 628",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 285800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00411",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:629:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 629",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00412",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:630:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 630",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00413",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:631:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 631",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00414",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:632:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 632",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 284900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00415",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:633:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 633",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 223000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00416",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:634:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 634",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00417",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:635:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 635",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00418",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:636:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 636",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00419",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:637:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 637",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00420",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:638:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 638",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 293100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00421",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:639:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 639",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00422",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:640:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 640",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00423",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:641:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 641",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00424",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:642:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 642",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 292200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00425",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:643:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 643",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 228700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00426",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:644:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 644",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00427",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:645:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 645",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00428",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:646:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 646",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00429",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:647:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 647",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00430",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:648:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 648",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 246000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00431",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:649:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 649",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00432",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:650:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 650",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00433",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:651:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 651",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00434",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:652:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 652",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 245300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00435",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:653:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 653",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 192000,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00436",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:654:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 654",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00437",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:655:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 655",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00438",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:656:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 656",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00439",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:657:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 657",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00440",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:658:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 658",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00441",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:659:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 659",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00442",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:660:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 660",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00443",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:661:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 661",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00444",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:662:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 662",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 252100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00445",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:663:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 663",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 197300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00446",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:664:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 664",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00447",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:665:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 665",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00448",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:666:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 666",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00449",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:667:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 667",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00450",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:668:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 668",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 166300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00451",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:669:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 669",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00452",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:670:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 670",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00453",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:671:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 671",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00454",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:672:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 672",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 165900,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00455",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:673:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 673",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 129800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00456",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:674:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 674",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00457",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:705:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 705",
+      "name": "Honorarium Non ASN Lainnya - Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00488",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:706:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 706",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00489",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:707:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 707",
+      "name": "Honorarium Non ASN Lainnya - Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00490",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:708:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 708",
+      "name": "Honorarium Non ASN Lainnya - Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 184300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00491",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:709:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 709",
+      "name": "Honorarium Non ASN Lainnya - Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00492",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:710:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 710",
+      "name": "Honorarium Non ASN Lainnya - Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00493",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:711:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 711",
+      "name": "Honorarium Non ASN Lainnya - Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00494",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:712:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 712",
+      "name": "Honorarium Non ASN Lainnya - Supir Truk",
+      "matchNames": [
+        "Supir Truk"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 183700,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00495",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:713:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 713",
+      "name": "Honorarium Non ASN Lainnya - Kenek Truk",
+      "matchNames": [
+        "Kenek Truk"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 143800,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00496",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:714:OJ",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 714",
+      "name": "Honorarium Non ASN Lainnya - Penjaga Malam",
+      "matchNames": [
+        "Penjaga Malam"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00497",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      }
+    }
+  ]
+}

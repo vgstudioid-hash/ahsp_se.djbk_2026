@@ -1,16 +1,16 @@
 {
   "summary": {
     "resources": 4996,
-    "structuredPriceRows": 27590,
-    "verifiedPrices": 808,
-    "resourcesWithPrice": 778,
+    "structuredPriceRows": 27750,
+    "verifiedPrices": 822,
+    "resourcesWithPrice": 788,
     "conflictingCandidates": 8,
-    "olderOrTaxUnresolved": 102,
+    "olderOrTaxUnresolved": 200,
     "byRegion": {
       "Jawa Barat/Purwakarta": 0,
       "Jawa Barat/Karawang": 768,
       "Jawa Barat/Kab. Bekasi": 0,
-      "Jawa Barat/Kota Bekasi": 27,
+      "Jawa Barat/Kota Bekasi": 41,
       "Jawa Barat/Kota Bandung": 2,
       "Jawa Barat/Kab. Bogor": 0,
       "Jawa Barat/Indramayu": 0,
@@ -29,8 +29,9 @@
     "ahsWithoutComponents": 455,
     "sourceDocuments": 53,
     "scannedDocuments": 7,
-    "resourcesWithoutVerifiedPrice": 4218,
+    "resourcesWithoutVerifiedPrice": 4208,
     "escalatedPrices": 13,
+    "wageEstimatePrices": 14,
     "tkdn": {
       "spreadsheetProductRows": 39424,
       "validBySnapshotExpiry": 20661,
@@ -102336,13 +102337,20 @@
       "name": "Kepala Tukang",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 37217.22,
+          "source": "Sheet 1 baris 517",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102360,7 +102368,7 @@
       "name": "Kepala Tukang",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102368,12 +102376,18 @@
           "price": 165000,
           "source": "PDF 230 baris 19",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 297737.73,
+          "source": "Sheet 1 baris 517",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
         }
       ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102391,13 +102405,20 @@
       "name": "Kepala Tukang",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 37217.22,
+          "source": "Sheet 1 baris 517",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102542,13 +102563,20 @@
       "name": "Mandor",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 37332.2,
+          "source": "Sheet 1 baris 518",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102614,7 +102642,7 @@
       "name": "Mandor",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102622,12 +102650,18 @@
           "price": 165000,
           "source": "PDF 230 baris 28",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 298657.62,
+          "source": "Sheet 1 baris 518",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
         }
       ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102645,13 +102679,20 @@
       "name": "Mandor",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 37332.2,
+          "source": "Sheet 1 baris 518",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102813,13 +102854,20 @@
       "name": "Mekanik",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 37217.22,
+          "source": "Sheet 1 baris 519",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -102837,13 +102885,20 @@
       "name": "Operator",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 297737.73,
+          "source": "Sheet 1 baris 520",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103029,13 +103084,20 @@
       "name": "Pekerja",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 29129.85,
+          "source": "Sheet 1 baris 515",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103053,7 +103115,7 @@
       "name": "Pekerja",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -103061,12 +103123,18 @@
           "price": 138000,
           "source": "PDF 231 baris 1",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 233038.8,
+          "source": "Sheet 1 baris 515",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
         }
       ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103084,13 +103152,20 @@
       "name": "Pekerja",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 29129.85,
+          "source": "Sheet 1 baris 515",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103931,13 +104006,20 @@
       "name": "Tukang",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103955,7 +104037,7 @@
       "name": "Tukang",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -103963,12 +104045,18 @@
           "price": 150000,
           "source": "PDF 231 baris 7",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
         }
       ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
@@ -103986,13 +104074,20 @@
       "name": "Tukang",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 1 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        }
+      ],
       "missingRegions": [
         "Jawa Barat/Purwakarta",
         "Jawa Barat/Karawang",
         "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
         "Jawa Barat/Kota Bandung",
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
