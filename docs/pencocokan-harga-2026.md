@@ -1,26 +1,40 @@
-# Harga wilayah AHSP: status implementasi
+# Database harga AHSP — status implementasi
 
-21 November 2026. UI/UX tetap mengikuti acuan terkunci; CSS, teks kontrol, tata letak, ukuran dan navigasi dipertahankan. Ikon AHS saja diganti sesuai referensi diagram lingkaran pengguna pada koreksi ini.
+21 November 2026. UI/UX terkunci dipertahankan. Perubahan saat ini berupa data, pemilihan sumber, pembaruan harga otomatis yang terlacak, dan laporan.
 
 ## Hasil dan batas cakupan
 
-- Semua 53 berkas dari folder HARGA PEMERINTAH dan JURNAL HARGA telah diunduh ke `/workspace/price-sources`, di luar aset website. Register nama, URL, SHA256, ukuran dan status ekstraksi tersedia di `public/data/price-source-register.json`. Tujuh PDF tidak mempunyai lapisan teks. Dokumen lain pun belum semuanya dikonversi menjadi tabel harga terverifikasi.
-- Inventaris katalog: 4.996 identitas sumber daya dari 5.637 entri AHS; 455 entri tanpa rincian komponen belum dapat menyumbangkan inventaris lengkap. Kategori bahan 3.983, tenaga kerja 178, alat 794, sewa 35, lainnya 6.
-- Katalog otomatis: **1.074 pasangan sumber daya–wilayah / 795 identitas unik**, bukan semua sumber daya. Purwakarta 28, Karawang 785, Kab. Bekasi 28, Kota Bekasi 55, Kota Bandung 30, Kab. Bogor 28, Indramayu 28, Subang 28, Jakarta 12, Banten 24, Lampung 28. Sebanyak 4.201 identitas belum mempunyai harga pada wilayah mana pun. Semua 11 pasangan wilayah diperiksa dalam `public/reports/audit-pengisian-harga-wilayah.pdf` dan CSV/JSON pendamping.
-- Koreksi contoh UPVC VI PDF478: seluruh empat upah kini tersedia di delapan Sub Region Jawa Barat, Banten dan Lampung; Jakarta hanya Pekerja dan Mandor. Sumber Jakarta tidak merinci Tukang Aluminium dan Kepala Tukang generik, sehingga tidak diganti tarif spesialis lain secara sembarang. Harga material jendela spesifik belum tersedia pada seluruh wilayah.
-- Proksi IHK BPS Oktober 2026 tahun kalender: Jawa Barat 2,31% (kabupaten tanpa seri kota), Kota Bekasi 2,21%, Kota Bandung 2,18%, Jakarta 1,91%, Banten 1,81%, Lampung 2,86%. Dasar upah tetap lokal; bukan menyalin tarif Karawang/Bekasi ke daerah lain. Tarif kelompok Tukang untuk spesialis yang tidak dirinci diberi keterangan estimasi klasifikasi. Sumber primer tepat tetap lebih diutamakan daripada fallback.
-- Lampung memakai sumber Kota Bandar Lampung 2025, Jurnal Edisi44 PDF240, sebagai estimasi acuan yang disetujui pengguna pada 21 November 2026. Pengguna menetapkan **8 jam/OH** (bukan 7), dan sumber bulanan dibagi **30 hari**. Sumber Lampung per jam dikalikan8 lalu disesuaikan IHK2,86%; Pekerja Rp152.232,80/OH, Tukang Aluminium estimasi Rp213.948,80/OH, Kepala Tukang Rp246.864/OH, Mandor Rp271.550,40/OH. Keterangan menyebut asal kota, asumsi jam, dan harga bruto termasuk inflasi/pajak/keuntungan yang tidak dirinci sumber. Tidak diklaim sebagai tarif survei seluruh provinsi atau upah bersih. Belum ada tarif bulanan baru yang dimasukkan dalam pembaruan ini.
-- Sebagian terbesar berasal dari SHS Karawang 2026 dan SSH Kota Bekasi 2026. Nama/spesifikasi, satuan dan wilayah dibandingkan secara ketat. Harga yang bertentangan tidak dipilih otomatis. Normalisasi mempertahankan pecahan, desimal, diameter dan dimensi agar tidak salah disamakan.
-- 13 pasangan harga dari baris jurnal 2025 yang diperiksa visual dieskalasi menggunakan indeks komoditas BPS rata-rata tahunan 2025 → Oktober 2026, tahun dasar 2023=100. BPS konstruksi y-on-y 9,59% bukan faktor yang digunakan secara seragam. Angka lengkap, periode, sumber dan perhitungan tersimpan pada setiap rekaman dan laporan.
-- Koreksi 21 November: sumber Excel SBU Jawa Barat yang sebelumnya tidak masuk ekstraksi kini dibaca. Pengguna mengonfirmasi tahun 2025. Sebanyak 14 pasangan upah Kota Bekasi diisi sebagai estimasi dengan proksi IHK BPS tahun kalender 2,21% (Desember 2025 → Oktober 2026), bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Mandor Rp292.200/OH menjadi Rp298.657,62/OH, atau Rp37.332,20/OJ berdasarkan 8 jam/hari yang tercetak pada sumber. Tarif tahunan 2025 diperlakukan berlaku sampai akhir 2025 sebagai konvensi periode dasar. Upah lokal yang sudah memiliki harga primer, serta semua harga manual, dipertahankan. Data/URL/halaman BPS ada di `public/data/bps-wage-proxies.json`.
-- Pemakaian rata-rata tahunan sebagai periode dasar merupakan konvensi untuk sumber yang hanya menyebut tahun. Tidak ada proyeksi 2027 atau penyambungan seri BPS beda tahun dasar. Upah dan sewa alat lama belum dieskalasi dengan indeks bahan.
-- SSH sumber menyatakan harga termasuk pajak. Harga barang nonmewah dibagi 1,11 sebelum masuk RAB agar tidak dikenai PPN dua kali; asumsi ini mengikuti model aplikasi 12% × DPP 11/12, dicatat pada setiap rekaman. Ini bukan angka pajak yang dicetak per barang. Upah langsung tidak dikurangi PPN. SSH merupakan standar/batas tertinggi, bukan bukti harga pasar terkini. Perlakuan pajak dan kondisi pengadaan harus tetap ditinjau.
+- Register53 dokumen Drive tersimpan bersama URL dan SHA256. Basis data mempunyai **43,154 baris kutipan/calon harga**, **4,996 identitas AHSP**, dan **7,585 pasangan harga–wilayah untuk 968 identitas**. Baris sumber mencakup calon/duplikat pembacaan; bukan seluruhnya harga siap pakai. Angka ini tidak berarti semua harga telah lengkap.
+- Seluruh5637 entri AHS diperiksa pada11 pasangan wilayah: 62,007 pemeriksaan AHS–wilayah. Sebanyak455 entri tidak mempunyai rincian komponen. Nama terpotong/gabung dan bahan yang salah terbaca sebagai upah memerlukan pemeriksaan sumber; tidak diberi harga upah secara sembarang.
+- Pasangan harga perkelompok: {"Bahan": 6661, "Tenaga kerja": 320, "Peralatan": 604}. Perwilayah: {"Jawa Barat/Purwakarta": 930, "Jawa Barat/Karawang": 938, "Jawa Barat/Kab. Bekasi": 930, "Jawa Barat/Kota Bekasi": 930, "Jawa Barat/Kota Bandung": 925, "Jawa Barat/Kab. Bogor": 930, "Jawa Barat/Indramayu": 930, "Jawa Barat/Subang": 930, "Jakarta/Jakarta": 24, "Banten/Banten": 40, "Lampung/Lampung": 78}.
+- Bahan dan sewa mengutamakan Jurnal2025 yang kompatibel; Jurnal2023 menjadi pelengkap dengan basis indeks sebanding. Tabel jurnal relevan dibaca perkolom, angka calon yang cocok diperiksa kembali pada raster kolom harga. OCR yang tidak sepakat ditahan. Ini pemeriksaan otomatis silang, bukan klaim pemeriksaan visual manual setiap baris.
+- Upah Jawa Barat mengutamakan Kepgub No.900/Kep.239-BPKAD/2024, SHS2025, Tabel1.10 PDF24–26. Dokumen mengatur honorarium NonASN fisik/konstruksi swakelola, sehingga batas penerapannya dicatat. Tarif pemerintah2026 lokal yang tersedia didahulukan dari2025. Workbook tidak dinyatakan sebagai peraturan. Keahlian yang menggunakan kelompok Tukang tetap diberi label estimasi klasifikasi.
+- Lampung memakai Kota Bandar Lampung sesuai instruksi pengguna, bukan survei seluruhprovinsi. Upah perjam×8→OH, bulanan÷30→OH; OJ dari bulanan÷240. Koefisien AHS tidak berubah. Aturan bulanan upah tidak diterapkan ke sewa alat/lahan.
+- Sumber upah resmi yang lengkap belum dapat dipastikan untuk seluruhprovinsi/subregion. Banten dan Lampung yang memakai jurnal tetap merupakan acuan jurnal/estimasi, bukan tarif peraturan2026. Dua peraturan Banten dibaca OCR93 dan322halaman tetapi kualitas tabel belum mendukung kutipan yang dapat dipastikan. Jakarta2024 mempunyai tarif konstruksi, namun sambungan indeks yang sebanding belum tersedia pada pembaruan ini; tidak dipaksakan menjadi2026.
 
-## Pengisian otomatis dan pelestarian edit
+## Acuan wilayah terdekat yang disetujui
 
-`price-catalog.js` mengindeks identitas yang telah dicocokkan dalam data. Tidak ada pencarian nama mendekati atau harga terendah/tertinggi di browser. Harga hanya diisi setelah Region dan Sub Region lengkap. Semua sumber daya yang sama memakai alias harga AHS/HSD yang sudah ada, tanpa mengubah koefisien.
+Pengguna menyetujui pada21 November2026: "Boleh, beri keterangan estimasi" untuk bahan/alat tanpa harga lokal. Sebanyak6.206 pasangan memakai acuan dalam provinsi sama. `public/data/regional-reference-policy.json` menyimpan urutan wilayah sumber yang tersedia; ini urutan kedekatan administratif, bukan klaim jarak GIS. Harga langsung setempat diutamakan, konflik lokal tidak dilewati dengan harga kota lain, dan donor harus rekaman langsung (tidak berantai). Upah tidak memperoleh fallback. ID dan angka donor, lokasi target/sumber serta label bukan survei setempat tetap tersimpan.
 
-Harga pengguna, termasuk 0, konflik harga lama, dan pengosongan manual tidak ditimpa. Harga otomatis dapat diedit melalui kolom yang sudah ada. Penanda asal katalog, tahun dan kolom manual ikut validasi, bank harga, impor CSV serta cadangan. Sumber harga dan catatan mengikuti kolom metadata yang sudah ada. Katalog dimuat bersama data awal, diterapkan saat menyimpan/merender dan setelah pergantian wilayah. Region/Sub Region kini dipilih lebih awal pada kotak Lokasi Pekerjaan di Informasi Umum, bukan toolbar HSD. Pratinjau AHS menggunakan salinan proyek untuk menampilkan harga wilayah sebelum komponen ditambahkan. Pemilihan dari katalog maupun baris RAB langsung menyimpan harga yang tersedia dan memperbarui daftar AHS terpakai. Build menyertakan versi modul dan JSON harga dalam hash.
+## Eskalasi dan pajak
+
+Bahan2025 memakai indeks komoditas Oktober2026 / rata-rata2025 pada seri2023=100. Bahan2023 memakai indeks Oktober2026 /100 (rata-rata tahun dasar2023). Sumber tahunan tanpa bulan menggunakan konvensi periode dasar yang dicatat. IHPB konstruksi y-on-y9,59% tidak diterapkan seragam pada semua harga2025. Upah dan sewa menggunakan proksi IHK umum setempat jika sesuai periode sumber; bukan indeks upah/sewa resmi. Bahan2025 tanpa pasangan komoditas terverifikasi dapat memakai proksi IHK umum yang diberi label, bukan diklaim IHPB spesifik bahan. Tidak ada proyeksi fiktif ke2027.
+
+PPN sumber yang dinyatakan dipisahkan sesuai catatan dan asumsi pada rekaman. Barang nonmewah yang dinyatakan termasuk pajak menggunakan asumsi efektif11%; jurnal2023 tertentu menyebut10%. Sumber dengan PPN tidak dinyatakan dipertahankan sebagai kutipan estimasi dengan peringatan agar tidak dikenai PPN ganda, bukan diklaim harga bersih. Keuntungan/overhead yang tidak dirinci tidak dikurangi secara fiktif. Harga beli alat tidak digunakan sebagai tarif sewanya. Lokasi, mutu, diameter, kapasitas dan satuan berbeda tidak disamakan.
+
+## Pengisian dan kelestarian edit
+
+`price-catalog.js` berlaku untuk seluruh komponen AHS terpilih, bukan kasus contoh. Harga disimpan memakai identitas sumber daya yang sama untuk AHS/HSD dan profil wilayah. Pratinjau memakai salinan proyek; pemilihan AHS langsung menyimpan harga yang tersedia. Pencarian browser menggunakan indeks identitas eksak yang dikompilasi, tanpa tebakan nama mendekati.
+
+Harga otomatis lama dapat diperbarui hanya jika ID asal dan angka lama cocok dengan riwayat `replaces`, tanpa penanda edit manual. Harga manual, nol, konflik dan pengosongan manual dipertahankan. Metadata sumber otomatis ikut diperbarui kecuali diedit manual. Harga/metadata/bank wilayah ikut cadangan.
+
+## Artefak
+
+- `public/data/price-database.zip`: SQLite, README dan ringkasan. Semua identitas, sumber, kutipan dan harga terpilih terpisah dalam tabel berindeks; integrity/FK diperiksa.
+- `public/reports/database-harga-ahsp.pdf`: ringkasan metode, kategori, cakupan seluruhAHS/wilayah, batas sumber, register dan cara memeriksa.
+- `public/reports/audit-harga-semua-ahs.csv`: seluruhAHS × seluruhwilayah, termasuk nama komponen yang belum berharga.
+- `public/reports/cakupan-harga-ahsp-2026.csv`: matriks identitas × wilayah.
+- `public/reports/harga-terverifikasi-2026.csv`: harga terpilih dan asal/konversi/catatan. Penanda terverifikasi adalah kecocokan sumber, bukan semua merupakan survei resmi2026.
 
 ## TKDN — belum selesai
 
@@ -30,16 +44,20 @@ Workbook tidak mencantumkan nomor sertifikat. Nama AHSP umumnya generik; produse
 
 Logika pengisian mendukung TKDN hanya jika rekaman memuat produk/produsen, nomor sertifikat, URL Kemenperin, tanggal verifikasi dan masa berlaku yang mencakup tahun proyek. Nilai kosong atau manual tidak dipaksa menjadi 0. Tidak ada kandidat generik yang dimasukkan sebagai TKDN terpilih ke website.
 
+
 ## Reproduksi
 
-1. `node scripts/inventory-price-resources.mjs`
-2. `python3 scripts/extract-price-sources.py /workspace/price-sources`
-3. `python3 scripts/extract-journal-price-candidates.py /workspace/price-sources`, lalu `python3 scripts/extract-jabar-wages.py /workspace/price-sources --year 2025` (tahun dikonfirmasi pengguna)
-4. `python3 scripts/review-regional-wages.py`, lalu `node scripts/build-regional-price-catalog.mjs /workspace/price-sources` dan `node scripts/audit-regional-autofill.mjs`
-5. `python3 scripts/match-tkdn-candidates.py /workspace/price-sources`
-6. `node scripts/report-regional-prices.mjs /workspace/price-sources`
-7. Gunakan `scripts/render-resource-audits.mjs` untuk PDF `klasifikasi-harga-ahsp-2026`, `kandidat-tkdn-ahsp` dan inventaris dasar.
+1. Inventaris: `node scripts/inventory-price-resources.mjs`.
+2. Baca sumber dasar dengan `scripts/extract-price-sources.py`, sumber jurnal/calon lama jika diperlukan, `scripts/extract-jabar-wages.py --year 2025`.
+3. `python scripts/review-regional-wages.py`, `python scripts/extract-official-wages.py`, `node scripts/prepare-provincial-materials.mjs`.
+4. `python scripts/extract-journal-database.py`; `node scripts/journal-price-candidates.mjs`; `python scripts/verify-journal-prices.py`.
+5. Pelengkap2023: `python scripts/ocr-journal-2023.py`; `python scripts/ocr-journal-columns.py`; ulangi ekstraksi, calon dan verifikasi dengan `--year=2023` (CLI Node menerima folder sumber sebagai argumen pertama).
+6. `node scripts/build-regional-price-catalog.mjs`; `node scripts/audit-all-ahs-prices.mjs`; `node scripts/audit-regional-autofill.mjs`.
+7. `python scripts/build-price-database.py`; `node scripts/report-regional-prices.mjs`; `node scripts/report-price-database.mjs`.
+8. Render PDF melalui `scripts/render-resource-audits.mjs`, jalankan `npm test`, `npm run build`.
 
-`public/data/reviewed-price-rows.json` menyimpan baris jurnal yang diperiksa visual. Kandidat OCR lain tidak disetujui otomatis. `public/data/bps-price-indices.json` menyimpan 65 komoditas dari Tabel 3 BRS No.103/11/Th.XXIX (2 November 2026), hal.5–6, dan indeks tahunan 2025 dari tabel statistik BPS resmi. Dokumen BPS asli disimpan di workspace sumber; fakta indeks dirujuk dengan URL, bukan mendistribusikan PDF aslinya.
+Build mengirim format runtime ringkas schema2 berukuran sekitar3,7MB dari data bukti penuh sekitar23,5MB. `compactPriceCatalog` mempertahankan semua harga, scope, metadata dan riwayat penggantian; `createPriceCatalog` menolak referensi berantai, lintasprovinsi dan acuan upah. Bukti penuh disimpan dalam database unduhan.
 
-Laporan PDF/CSV menunjukkan seluruh identitas, wilayah tanpa harga, kandidat TKDN, periode BPS dan batas penggunaan. Pekerjaan berikutnya adalah melengkapi OCR, rincian sumber yang belum terstruktur, perlakuan pajak Excel, harga lokal identitas yang masih kosong dan konfirmasi produk/sertifikat TKDN. Tidak boleh mengklaim seluruh harga/TKDN telah selesai.
+Endpoint lama `public/data/regional-price-catalog.json` (schema1) tetap dipertahankan untuk kompatibilitas; aplikasi terbaru menggunakan `public/data/regional-price-runtime.json` (schema2).
+
+Berkas asli Drive tetap di workspace sumber, bukan disalin sebagai PDF lampiran website. Database harga adalah hasil ekstraksi/pencocokan dan catatan sumber. Seluruh harga belum lengkap; daftar kekosongan harus tetap terlihat.

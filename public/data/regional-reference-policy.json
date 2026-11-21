@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "authorizedBy": "Pengguna, percakapan 21 November 2026: Boleh, beri keterangan estimasi",
+  "groups": ["Bahan", "Peralatan"],
+  "method": "Urutan kedekatan wilayah dalam provinsi yang sama di antara lokasi sumber yang tersedia; bukan klaim jarak GIS atau survei harga target.",
+  "donors": {
+    "Jawa Barat": {
+      "Purwakarta": ["Karawang", "Kota Bandung", "Kab. Bekasi", "Kota Bekasi", "Subang", "Kab. Bogor", "Indramayu"],
+      "Karawang": ["Kab. Bekasi", "Purwakarta", "Kota Bekasi", "Subang", "Kota Bandung", "Kab. Bogor", "Indramayu"],
+      "Kab. Bekasi": ["Kota Bekasi", "Karawang", "Kab. Bogor", "Purwakarta", "Subang", "Kota Bandung", "Indramayu"],
+      "Kota Bekasi": ["Kab. Bekasi", "Kab. Bogor", "Karawang", "Purwakarta", "Kota Bandung", "Subang", "Indramayu"],
+      "Kota Bandung": ["Purwakarta", "Subang", "Karawang", "Kab. Bogor", "Kota Bekasi", "Kab. Bekasi", "Indramayu"],
+      "Kab. Bogor": ["Kota Bekasi", "Kab. Bekasi", "Purwakarta", "Karawang", "Kota Bandung", "Subang", "Indramayu"],
+      "Indramayu": ["Subang", "Purwakarta", "Karawang", "Kota Bandung", "Kab. Bekasi", "Kota Bekasi", "Kab. Bogor"],
+      "Subang": ["Purwakarta", "Kota Bandung", "Karawang", "Indramayu", "Kab. Bekasi", "Kota Bekasi", "Kab. Bogor"]
+    }
+  }
+}

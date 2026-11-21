@@ -15,3 +15,5 @@ import './resource-cleanup.test.mjs';
 import './ahs-recheck.test.mjs';
 
 import "./price-catalog.test.mjs";
+
+import "./price-database.test.mjs";

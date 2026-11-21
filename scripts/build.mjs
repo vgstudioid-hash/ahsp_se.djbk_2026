@@ -1,3 +1,4 @@
+import {compactPriceCatalog} from '../price-catalog.js';
 import { cp, mkdir, rm, writeFile, readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 const root = new URL('../', import.meta.url);
@@ -34,6 +35,11 @@ for(const file of ['index.html','references.html']){
 }
 await cp(new URL('favicon.svg',root),new URL('dist/favicon.svg',root));
 await cp(new URL('public/', root), new URL('dist/', root), { recursive: true });
+// Ship source evidence in the downloadable database, not thousands of repeated
+// copies in the runtime lookup. Regional references resolve only to direct rows.
+const fullPrices=JSON.parse(await readFile(new URL('public/data/regional-price-catalog.json',root),'utf8'));
+const runtimePrices=compactPriceCatalog(fullPrices);
+await writeFile(new URL('dist/data/regional-price-runtime.json',root),JSON.stringify(runtimePrices));
 await writeFile(new URL('dist/.nojekyll', root), '');
 await writeFile(new URL('dist/build-info.json',root),JSON.stringify({buildId,assets:manifest},null,2));
 console.log(`Build selesai: dist/ (versi ${buildId}, aset dengan penanda versi).`);
