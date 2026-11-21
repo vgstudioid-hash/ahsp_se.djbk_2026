@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=75cf948189d0")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=75cf948189d0")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=75cf948189d0")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=f982dfc93bad")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=f982dfc93bad")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=f982dfc93bad")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -122,6 +122,59 @@ button.edit-icon-button::before{background-image:url("icons/edit.svg?v=75cf94818
 .rab-frozen-header[hidden]{display:none}.rab-frozen-header table{margin:0;table-layout:fixed}
 }
 @media print{.rab-frozen-header{display:none!important}}
+
+/* Unified action-symbol treatment: the delete control is the reference style. */
+@media screen {
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) {
+    --action-red:#eb4545;
+    display:inline-flex!important;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+    width:28px!important;
+    height:28px!important;
+    min-width:28px!important;
+    min-height:28px!important;
+    flex:0 0 28px!important;
+    padding:4px!important;
+    border:0!important;
+    border-radius:6px!important;
+    background:var(--action-red)!important;
+    color:#fff!important;
+    line-height:1;
+    box-shadow:none!important;
+    vertical-align:middle;
+  }
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move])::before { content:none!important; display:none!important; }
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) svg {
+    display:block!important;
+    width:20px!important;
+    height:20px!important;
+    margin:0!important;
+    color:#fff!important;
+    stroke:#fff!important;
+    fill:none!important;
+    stroke-width:2.4!important;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    pointer-events:none;
+  }
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):hover:not(:disabled) {
+    background:#c9363d!important;
+    color:#fff!important;
+    box-shadow:0 0 0 3px #c7b58b88!important;
+  }
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):focus-visible {
+    outline:3px solid var(--sand)!important;
+    outline-offset:2px;
+  }
+  :is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):disabled { opacity:.48; }
+  /* Keep text actions readable while giving their leading symbol the same badge. */
+  .component-controls button:not(.trash-button), .manual-component-group header button:not(.trash-button), .rab-add-work .button:not(.rab-add-symbol) { font-size:12px; }
+  .component-controls button:not(.trash-button) .add-icon, .manual-component-group header button:not(.trash-button) .add-icon, .rab-add-work .button:not(.rab-add-symbol) .add-icon {
+    width:20px;height:20px;flex:0 0 20px;margin-right:6px;color:var(--forest);
+  }
+}
 @media screen {
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]){background:transparent!important;filter:none}
 #main #rab-table button:is(.wbs-insert-button,.wbs-level-button,.trash-button,[data-move]):hover:not(:disabled){background:#c7b58b55!important;box-shadow:0 0 0 3px #c7b58b55;filter:none}
@@ -466,3 +519,12 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 .project-location-card .settings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .project-location-card .setting-note{margin:16px 0 0}
 @media(max-width:600px){.project-location-card .settings-grid{grid-template-columns:1fr}}
+
+/* Final shared symbol skin (kept last so page-specific rules cannot diverge). */
+@media screen {
+:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:4px!important;border:0!important;border-radius:6px!important;background:#eb4545!important;color:#fff!important;line-height:1;box-shadow:none!important;vertical-align:middle}
+:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move])::before{content:none!important;display:none!important}
+:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]) svg{display:block!important;width:20px!important;height:20px!important;margin:0!important;color:#fff!important;stroke:#fff!important;fill:none!important;stroke-width:2.4!important;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):hover:not(:disabled){background:#c9363d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
+:is(button.edit-icon-button,button.trash-button,button[data-component-remove],button[data-component-last],button.rab-add-symbol,button.wbs-insert-button,button.wbs-level-button,.row-tools button[data-move]):focus-visible{outline:3px solid var(--sand)!important;outline-offset:2px}
+}
