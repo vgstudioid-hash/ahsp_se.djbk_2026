@@ -1,0 +1,2413 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-21",
+  "rows": [
+    {
+      "id": "jurnal44-2025-wage-284-1",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 1",
+      "page": 284,
+      "name": "Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Pekerja",
+      "unit": "OH",
+      "sourcePrice": 150000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-2",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 2",
+      "page": 284,
+      "name": "Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Tukang",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-3",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 3",
+      "page": 284,
+      "name": "Tukang Aluminium",
+      "matchNames": [
+        "Tukang Aluminium"
+      ],
+      "specification": "Tukang Aluminium",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-4",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 4",
+      "page": 284,
+      "name": "Tukang Batu",
+      "matchNames": [
+        "Tukang Batu"
+      ],
+      "specification": "Tukang Batu",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-5",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 5",
+      "page": 284,
+      "name": "Tukang Kayu",
+      "matchNames": [
+        "Tukang Kayu"
+      ],
+      "specification": "Tukang Kayu",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-6",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 6",
+      "page": 284,
+      "name": "Tukang Besi",
+      "matchNames": [
+        "Tukang Besi"
+      ],
+      "specification": "Tukang Besi",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-7",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 7",
+      "page": 284,
+      "name": "Tukang Besi Profil",
+      "matchNames": [
+        "Tukang Besi Profil"
+      ],
+      "specification": "Tukang Besi Profil",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-8",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 8",
+      "page": 284,
+      "name": "Tukang Cat",
+      "matchNames": [
+        "Tukang Cat"
+      ],
+      "specification": "Tukang Cat",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-9",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 9",
+      "page": 284,
+      "name": "Tukang Las Konstruksi",
+      "matchNames": [
+        "Tukang Las Konstruksi"
+      ],
+      "specification": "Tukang Las Konstruksi",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-10",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 10",
+      "page": 284,
+      "name": "Tukang Listrik",
+      "matchNames": [
+        "Tukang Listrik"
+      ],
+      "specification": "Tukang Listrik",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-11",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 11",
+      "page": 284,
+      "name": "Tukang Pipa",
+      "matchNames": [
+        "Tukang Pipa"
+      ],
+      "specification": "Tukang Pipa",
+      "unit": "OH",
+      "sourcePrice": 160000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-12",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 12",
+      "page": 284,
+      "name": "Tukang Instalasi Unit AC",
+      "matchNames": [
+        "Tukang Instalasi Unit AC"
+      ],
+      "specification": "Tukang Instalasi Unit AC",
+      "unit": "OH",
+      "sourcePrice": 125000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-13",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 13",
+      "page": 284,
+      "name": "Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kepala Tukang",
+      "unit": "OH",
+      "sourcePrice": 168000,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-14",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 14",
+      "page": 284,
+      "name": "Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Mandor",
+      "unit": "OH",
+      "sourcePrice": 179200,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-15",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 15",
+      "page": 284,
+      "name": "Operator Alat Berat",
+      "matchNames": [
+        "Operator Alat Berat"
+      ],
+      "specification": "Operator Alat Berat",
+      "unit": "OH",
+      "sourcePrice": 191800,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-16",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 16",
+      "page": 284,
+      "name": "Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Pembantu Operator",
+      "unit": "OH",
+      "sourcePrice": 173600,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-17",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 17",
+      "page": 284,
+      "name": "Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Pekerja",
+      "unit": "jam",
+      "sourcePrice": 21420,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-18",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 18",
+      "page": 284,
+      "name": "Tukang Batu",
+      "matchNames": [
+        "Tukang Batu"
+      ],
+      "specification": "Tukang Batu",
+      "unit": "jam",
+      "sourcePrice": 22850,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-19",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 19",
+      "page": 284,
+      "name": "Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Mandor",
+      "unit": "jam",
+      "sourcePrice": 25600,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-20",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 20",
+      "page": 284,
+      "name": "Operator Alat Berat",
+      "matchNames": [
+        "Operator Alat Berat"
+      ],
+      "specification": "Operator Alat Berat",
+      "unit": "jam",
+      "sourcePrice": 27400,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-284-21",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 284 / cetak 283 / baris 21",
+      "page": 284,
+      "name": "Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Pembantu Operator",
+      "unit": "jam",
+      "sourcePrice": 24800,
+      "sourceYear": 2025,
+      "region": "Banten",
+      "subRegion": "Banten",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-1",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 1",
+      "page": 302,
+      "name": "Pekerja/ Kenek",
+      "matchNames": [
+        "Pekerja",
+        "Kenek"
+      ],
+      "specification": "Pekerja/ Kenek",
+      "unit": "OH",
+      "sourcePrice": 195000,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-2",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 2",
+      "page": 302,
+      "name": "Tukang Gali",
+      "matchNames": [
+        "Tukang Gali"
+      ],
+      "specification": "Tukang Gali",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-3",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 3",
+      "page": 302,
+      "name": "Kepala Tukang Batu",
+      "matchNames": [
+        "Kepala Tukang Batu"
+      ],
+      "specification": "Kepala Tukang Batu",
+      "unit": "OH",
+      "sourcePrice": 223300,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-4",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 4",
+      "page": 302,
+      "name": "Tukang Batu",
+      "matchNames": [
+        "Tukang Batu"
+      ],
+      "specification": "Tukang Batu",
+      "unit": "OH",
+      "sourcePrice": 205147,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-5",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 5",
+      "page": 302,
+      "name": "Kepala Tukang Kayu",
+      "matchNames": [
+        "Kepala Tukang Kayu"
+      ],
+      "specification": "Kepala Tukang Kayu",
+      "unit": "OH",
+      "sourcePrice": 222950,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-6",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 6",
+      "page": 302,
+      "name": "Tukang Kayu",
+      "matchNames": [
+        "Tukang Kayu"
+      ],
+      "specification": "Tukang Kayu",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-7",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 7",
+      "page": 302,
+      "name": "Kepala Tukang Besi",
+      "matchNames": [
+        "Kepala Tukang Besi"
+      ],
+      "specification": "Kepala Tukang Besi",
+      "unit": "OH",
+      "sourcePrice": 223300,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-8",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 8",
+      "page": 302,
+      "name": "Tukang Besi",
+      "matchNames": [
+        "Tukang Besi"
+      ],
+      "specification": "Tukang Besi",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-9",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 9",
+      "page": 302,
+      "name": "Kepala Tukang Cat",
+      "matchNames": [
+        "Kepala Tukang Cat"
+      ],
+      "specification": "Kepala Tukang Cat",
+      "unit": "OH",
+      "sourcePrice": 223300,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-10",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 10",
+      "page": 302,
+      "name": "Tukang Cat",
+      "matchNames": [
+        "Tukang Cat"
+      ],
+      "specification": "Tukang Cat",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-11",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 11",
+      "page": 302,
+      "name": "Tukang Aspal",
+      "matchNames": [
+        "Tukang Aspal"
+      ],
+      "specification": "Tukang Aspal",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-12",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 12",
+      "page": 302,
+      "name": "Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Mandor",
+      "unit": "OH",
+      "sourcePrice": 235885,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-13",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 13",
+      "page": 302,
+      "name": "Instalator",
+      "matchNames": [
+        "Instalator"
+      ],
+      "specification": "Instalator",
+      "unit": "OH",
+      "sourcePrice": 223300,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-14",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 14",
+      "page": 302,
+      "name": "Pembantu Instalator",
+      "matchNames": [
+        "Pembantu Instalator"
+      ],
+      "specification": "Pembantu Instalator",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-15",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 15",
+      "page": 302,
+      "name": "Tukang Babat Rumput",
+      "matchNames": [
+        "Tukang Babat Rumput"
+      ],
+      "specification": "Tukang Babat Rumput",
+      "unit": "OH",
+      "sourcePrice": 195000,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-16",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 16",
+      "page": 302,
+      "name": "Kepala Tukang Pasang Pipa/Ledeng",
+      "matchNames": [
+        "Kepala Tukang Pasang Pipa/Ledeng"
+      ],
+      "specification": "Kepala Tukang Pasang Pipa/Ledeng",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-17",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 17",
+      "page": 302,
+      "name": "Tukang Pasang Pipa",
+      "matchNames": [
+        "Tukang Pasang Pipa"
+      ],
+      "specification": "Tukang Pasang Pipa",
+      "unit": "OH",
+      "sourcePrice": 195000,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-18",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 18",
+      "page": 302,
+      "name": "Operator Alat Berat",
+      "matchNames": [
+        "Operator Alat Berat"
+      ],
+      "specification": "Operator Alat Berat",
+      "unit": "OH",
+      "sourcePrice": 235885,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-19",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 19",
+      "page": 302,
+      "name": "Pembantu Operator Alat Berat",
+      "matchNames": [
+        "Pembantu Operator Alat Berat"
+      ],
+      "specification": "Pembantu Operator Alat Berat",
+      "unit": "OH",
+      "sourcePrice": 205150,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "jurnal44-2025-wage-302-20",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 302 / cetak 301 / baris 20",
+      "page": 302,
+      "name": "Tukang Las",
+      "matchNames": [
+        "Tukang Las"
+      ],
+      "specification": "Tukang Las",
+      "unit": "OH",
+      "sourcePrice": 205250,
+      "sourceYear": 2025,
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": false,
+        "basis": "Catatan sumber: belum termasuk PPN."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:516:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 516",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00299",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:526:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 526",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00309",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:626:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 626",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00409",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:636:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 636",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00419",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:646:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 646",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00429",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:656:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 656",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00439",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:666:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 666",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00449",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:706:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 706",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00489",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:516:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 516",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kota Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 276300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00299",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:526:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 526",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kota Bandung (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 218100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00309",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:626:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 626",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Bekasi (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 270200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00409",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:636:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 636",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Karawang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 277100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00419",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:646:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 646",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Purwakarta (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 232600,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00429",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:656:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 656",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Bogor (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 239100,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00439",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:666:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 666",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Indramayu (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 157300,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00449",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552:Sheet 1:706:OJ:trade-estimate",
+      "sourceId": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
+      "sourceTitle": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view",
+      "locator": "Sheet 1 baris 706",
+      "name": "Honorarium Non ASN Lainnya - Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Kabupaten Subang (jam kerja 8 jam/hari)",
+      "unit": "Orang / Hari",
+      "sourcePrice": 174200,
+      "sourceYear": 2025,
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "group": "Tenaga kerja",
+      "hoursPerDay": 8,
+      "sourceCode": "8.1.02.02.01.0016.00489",
+      "tax": {
+        "included": false,
+        "basis": "Upah tenaga kerja langsung per orang/hari, bukan harga pembelian barang."
+      },
+      "reviewed": true,
+      "yearConfirmedBy": "Pengguna, percakapan 21 November 2026",
+      "yearStatus": "Dikonfirmasi pengguna/sumber",
+      "fallbackOnly": true,
+      "matchUnit": "OJ",
+      "unitConversion": {
+        "factor": 0.125,
+        "from": "Orang / Hari",
+        "to": "OJ",
+        "reason": "Sumber menyatakan 8 jam kerja per orang/hari"
+      },
+      "mappingBasis": "Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-1",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 1",
+      "page": 240,
+      "name": "Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Pekerja",
+      "unit": "OJ",
+      "sourcePrice": 18500,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-1:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 1",
+      "page": 240,
+      "name": "Pekerja",
+      "matchNames": [
+        "Pekerja"
+      ],
+      "specification": "Pekerja",
+      "unit": "OJ",
+      "sourcePrice": 18500,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-2",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 2",
+      "page": 240,
+      "name": "Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Tukang",
+      "unit": "OJ",
+      "sourcePrice": 26000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-2:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 2",
+      "page": 240,
+      "name": "Tukang",
+      "matchNames": [
+        "Tukang"
+      ],
+      "specification": "Tukang",
+      "unit": "OJ",
+      "sourcePrice": 26000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-2:trade-estimate",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 2",
+      "page": 240,
+      "name": "Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Tukang",
+      "unit": "OJ",
+      "sourcePrice": 26000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi klasifikasi ke tarif kelompok Tukang; sumber tidak merinci keahlian aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "fallbackOnly": true
+    },
+    {
+      "id": "jurnal44-2025-wage-240-2:OH:trade-estimate",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 2",
+      "page": 240,
+      "name": "Tukang",
+      "matchNames": [
+        "Tukang Aluminium",
+        "Tukang Batu",
+        "Tukang Kayu",
+        "Tukang Besi",
+        "Tukang besi beton",
+        "Tukang Cat",
+        "Tukang Kaca",
+        "Tukang tembok",
+        "Tukang Pelitur"
+      ],
+      "specification": "Tukang",
+      "unit": "OJ",
+      "sourcePrice": 26000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi klasifikasi ke tarif kelompok Tukang; sumber tidak merinci keahlian aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber",
+      "fallbackOnly": true
+    },
+    {
+      "id": "jurnal44-2025-wage-240-3",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 3",
+      "page": 240,
+      "name": "Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Mandor",
+      "unit": "OJ",
+      "sourcePrice": 33000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-3:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 3",
+      "page": 240,
+      "name": "Mandor",
+      "matchNames": [
+        "Mandor"
+      ],
+      "specification": "Mandor",
+      "unit": "OJ",
+      "sourcePrice": 33000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-4",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 4",
+      "page": 240,
+      "name": "Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Operator",
+      "unit": "OJ",
+      "sourcePrice": 37000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-4:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 4",
+      "page": 240,
+      "name": "Operator",
+      "matchNames": [
+        "Operator"
+      ],
+      "specification": "Operator",
+      "unit": "OJ",
+      "sourcePrice": 37000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-5",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 5",
+      "page": 240,
+      "name": "Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Pembantu Operator",
+      "unit": "OJ",
+      "sourcePrice": 23000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-5:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 5",
+      "page": 240,
+      "name": "Pembantu Operator",
+      "matchNames": [
+        "Pembantu Operator"
+      ],
+      "specification": "Pembantu Operator",
+      "unit": "OJ",
+      "sourcePrice": 23000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-6",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 6",
+      "page": 240,
+      "name": "Sopir",
+      "matchNames": [
+        "Sopir"
+      ],
+      "specification": "Sopir",
+      "unit": "OJ",
+      "sourcePrice": 29000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-6:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 6",
+      "page": 240,
+      "name": "Sopir",
+      "matchNames": [
+        "Sopir"
+      ],
+      "specification": "Sopir",
+      "unit": "OJ",
+      "sourcePrice": 29000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-7",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 7",
+      "page": 240,
+      "name": "Pembantu Sopir",
+      "matchNames": [
+        "Pembantu Sopir"
+      ],
+      "specification": "Pembantu Sopir",
+      "unit": "OJ",
+      "sourcePrice": 22000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-7:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 7",
+      "page": 240,
+      "name": "Pembantu Sopir",
+      "matchNames": [
+        "Pembantu Sopir"
+      ],
+      "specification": "Pembantu Sopir",
+      "unit": "OJ",
+      "sourcePrice": 22000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-8",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 8",
+      "page": 240,
+      "name": "Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Mekanik",
+      "unit": "OJ",
+      "sourcePrice": 37000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-8:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 8",
+      "page": 240,
+      "name": "Mekanik",
+      "matchNames": [
+        "Mekanik"
+      ],
+      "specification": "Mekanik",
+      "unit": "OJ",
+      "sourcePrice": 37000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-9",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 9",
+      "page": 240,
+      "name": "Pembantu Mekanik",
+      "matchNames": [
+        "Pembantu Mekanik"
+      ],
+      "specification": "Pembantu Mekanik",
+      "unit": "OJ",
+      "sourcePrice": 23000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-9:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 9",
+      "page": 240,
+      "name": "Pembantu Mekanik",
+      "matchNames": [
+        "Pembantu Mekanik"
+      ],
+      "specification": "Pembantu Mekanik",
+      "unit": "OJ",
+      "sourcePrice": 23000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    },
+    {
+      "id": "jurnal44-2025-wage-240-10",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 10",
+      "page": 240,
+      "name": "Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kepala Tukang",
+      "unit": "OJ",
+      "sourcePrice": 30000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari."
+    },
+    {
+      "id": "jurnal44-2025-wage-240-10:OH",
+      "sourceId": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
+      "sourceTitle": "Jurnal Harga Bangunan Edisi-44-2025.pdf",
+      "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view",
+      "locator": "PDF 240 / cetak 239 / baris 10",
+      "page": 240,
+      "name": "Kepala Tukang",
+      "matchNames": [
+        "Kepala Tukang"
+      ],
+      "specification": "Kepala Tukang",
+      "unit": "OJ",
+      "sourcePrice": 30000,
+      "sourceYear": 2025,
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "group": "Tenaga kerja",
+      "tax": {
+        "included": true,
+        "basis": "Catatan sumber: termasuk inflasi, pajak dan keuntungan; tidak ada rincian yang dapat dipisahkan. Upah acuan bruto dipertahankan, bukan dianggap upah bersih."
+      },
+      "reviewed": true,
+      "extraction": "Nama, satuan, harga dan catatan diperiksa visual pada PDF sumber.",
+      "mappingBasis": "Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci.",
+      "sourceLocality": "Kota Bandar Lampung",
+      "conversionAuthorizedBy": "Pengguna, 21 November 2026: 1 OH = 8 jam; upah bulanan /30 hari.",
+      "matchUnit": "OH",
+      "unitConversion": {
+        "factor": 8,
+        "from": "OJ",
+        "to": "OH",
+        "reason": "Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber)"
+      },
+      "hoursPerDay": 8,
+      "hoursBasis": "Asumsi pengguna, bukan pernyataan sumber"
+    }
+  ]
+}

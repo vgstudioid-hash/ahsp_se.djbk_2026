@@ -21,6 +21,186 @@
       ],
       "quote": "Tingkat inflasi year to date (y-to-d) sebesar 2,21 persen.",
       "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Jawa Barat (2022=100), inflasi tahun kalender",
+      "percent": 2.31,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Jawa Barat, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,31 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing."
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Kota Bandung (2022=100), inflasi tahun kalender",
+      "percent": 2.18,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://bandungkota.bps.go.id/id/pressrelease/2026/11/02/173660/oktober-2026-inflasi-year-on-year-y-on-y-kota-bandung-sebesar-2-95-persen.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Kota Bandung, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,18 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
+    },
+    {
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum DKI Jakarta (2022=100), inflasi tahun kalender",
+      "percent": 1.91,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://jakarta.bps.go.id/id/pressrelease/2026/11/02/170358/perkembangan-indeks-harga-konsumen-provinsi-dki-jakarta-oktober-2026.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen DKI Jakarta, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 1,91 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
+    },
+    {
+      "region": "Banten",
+      "subRegion": "Banten",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Banten (2022=100), inflasi tahun kalender",
+      "percent": 1.81,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://banten.bps.go.id/id/pressrelease/2026/11/02/170363/inflasi-year-on-year-y-on-y-provinsi-banten-pada-oktober-2026-tercatat-sebesar-2-76-persen.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Banten, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 1,81 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
+    },
+    {
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Lampung (2022=100), inflasi tahun kalender",
+      "percent": 2.86,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://lampung.bps.go.id/id/pressrelease/2026/11/02/170377/oktober-2026-inflasi-year-on-year-y-on-y-provinsi-lampung-mengalami-inflasi-sebesar-3-83-persen.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Lampung, Oktober 2026; 2 November 2026",
+      "pages": [
+        2
+      ],
+      "quote": "Tingkat inflasi year to date sebesar 2,86 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
     }
   ]
 }

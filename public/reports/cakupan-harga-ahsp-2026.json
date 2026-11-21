@@ -1,23 +1,23 @@
 {
   "summary": {
     "resources": 4996,
-    "structuredPriceRows": 27750,
-    "verifiedPrices": 822,
-    "resourcesWithPrice": 788,
+    "structuredPriceRows": 27829,
+    "verifiedPrices": 1074,
+    "resourcesWithPrice": 795,
     "conflictingCandidates": 8,
-    "olderOrTaxUnresolved": 200,
+    "olderOrTaxUnresolved": 102,
     "byRegion": {
-      "Jawa Barat/Purwakarta": 0,
-      "Jawa Barat/Karawang": 768,
-      "Jawa Barat/Kab. Bekasi": 0,
-      "Jawa Barat/Kota Bekasi": 41,
-      "Jawa Barat/Kota Bandung": 2,
-      "Jawa Barat/Kab. Bogor": 0,
-      "Jawa Barat/Indramayu": 0,
-      "Jawa Barat/Subang": 0,
-      "Jakarta/Jakarta": 4,
-      "Banten/Banten": 7,
-      "Lampung/Lampung": 0
+      "Jawa Barat/Purwakarta": 28,
+      "Jawa Barat/Karawang": 785,
+      "Jawa Barat/Kab. Bekasi": 28,
+      "Jawa Barat/Kota Bekasi": 55,
+      "Jawa Barat/Kota Bandung": 30,
+      "Jawa Barat/Kab. Bogor": 28,
+      "Jawa Barat/Indramayu": 28,
+      "Jawa Barat/Subang": 28,
+      "Jakarta/Jakarta": 12,
+      "Banten/Banten": 24,
+      "Lampung/Lampung": 28
     },
     "classifiedResources": {
       "BAHAN/ MATERIAL": 3983,
@@ -29,9 +29,9 @@
     "ahsWithoutComponents": 455,
     "sourceDocuments": 53,
     "scannedDocuments": 7,
-    "resourcesWithoutVerifiedPrice": 4208,
+    "resourcesWithoutVerifiedPrice": 4201,
     "escalatedPrices": 13,
-    "wageEstimatePrices": 14,
+    "wageEstimatePrices": 266,
     "tkdn": {
       "spreadsheetProductRows": 39424,
       "validBySnapshotExpiry": 20661,
@@ -102337,7 +102337,7 @@
       "name": "Kepala Tukang",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102345,19 +102345,67 @@
           "price": 37217.22,
           "source": "Sheet 1 baris 517",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 29376.75,
+          "source": "Sheet 1 baris 527",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 36435.15,
+          "source": "Sheet 1 baris 627",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 37368.73,
+          "source": "Sheet 1 baris 637",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 31370.8,
+          "source": "Sheet 1 baris 647",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 32240.44,
+          "source": "Sheet 1 baris 657",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 21216.54,
+          "source": "Sheet 1 baris 667",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 23492.93,
+          "source": "Sheet 1 baris 707",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 30858,
+          "source": "PDF 240 / cetak 239 / baris 10",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102368,7 +102416,7 @@
       "name": "Kepala Tukang",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 2 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102383,18 +102431,66 @@
           "price": 297737.73,
           "source": "Sheet 1 baris 517",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 235014,
+          "source": "Sheet 1 baris 527",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 291481.19,
+          "source": "Sheet 1 baris 627",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 250966.43,
+          "source": "Sheet 1 baris 647",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 257923.51,
+          "source": "Sheet 1 baris 657",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 169732.29,
+          "source": "Sheet 1 baris 667",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 187943.47,
+          "source": "Sheet 1 baris 707",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 171040.8,
+          "source": "PDF 284 / cetak 283 / baris 13",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 246864,
+          "source": "PDF 240 / cetak 239 / baris 10",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102405,7 +102501,7 @@
       "name": "Kepala Tukang",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102413,19 +102509,67 @@
           "price": 37217.22,
           "source": "Sheet 1 baris 517",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 29376.75,
+          "source": "Sheet 1 baris 527",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 36435.15,
+          "source": "Sheet 1 baris 627",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 37368.73,
+          "source": "Sheet 1 baris 637",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 31370.8,
+          "source": "Sheet 1 baris 647",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 32240.44,
+          "source": "Sheet 1 baris 657",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 21216.54,
+          "source": "Sheet 1 baris 667",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 23492.93,
+          "source": "Sheet 1 baris 707",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 30858,
+          "source": "PDF 240 / cetak 239 / baris 10",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102436,7 +102580,7 @@
       "name": "Kepala Tukang batu",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102444,6 +102588,13 @@
           "price": 165000,
           "source": "PDF 230 baris 22",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 227565.03,
+          "source": "PDF 302 / cetak 301 / baris 3",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
@@ -102454,7 +102605,6 @@
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
         "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
         "Banten/Banten",
         "Lampung/Lampung"
       ],
@@ -102563,7 +102713,7 @@
       "name": "Mandor",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102571,19 +102721,73 @@
           "price": 37332.2,
           "source": "Sheet 1 baris 518",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 29466.16,
+          "source": "Sheet 1 baris 528",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 36550.25,
+          "source": "Sheet 1 baris 628",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 37483.83,
+          "source": "Sheet 1 baris 638",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 31460.32,
+          "source": "Sheet 1 baris 648",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 32329.96,
+          "source": "Sheet 1 baris 658",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 21267.69,
+          "source": "Sheet 1 baris 668",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 23569.67,
+          "source": "Sheet 1 baris 708",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 26063.36,
+          "source": "PDF 284 / cetak 283 / baris 19",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 33943.8,
+          "source": "PDF 240 / cetak 239 / baris 3",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102642,7 +102846,7 @@
       "name": "Mandor",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 2 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102657,19 +102861,72 @@
           "price": 298657.62,
           "source": "Sheet 1 baris 518",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 235729.26,
+          "source": "Sheet 1 baris 528",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 292401.98,
+          "source": "Sheet 1 baris 628",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 251682.6,
+          "source": "Sheet 1 baris 648",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 258639.68,
+          "source": "Sheet 1 baris 658",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 170141.53,
+          "source": "Sheet 1 baris 668",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 188557.33,
+          "source": "Sheet 1 baris 708",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 182443.52,
+          "source": "PDF 284 / cetak 283 / baris 14",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 240390.4,
+          "source": "PDF 302 / cetak 301 / baris 12",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 271550.4,
+          "source": "PDF 240 / cetak 239 / baris 3",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -102679,7 +102936,7 @@
       "name": "Mandor",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102687,19 +102944,73 @@
           "price": 37332.2,
           "source": "Sheet 1 baris 518",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 29466.16,
+          "source": "Sheet 1 baris 528",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 36550.25,
+          "source": "Sheet 1 baris 628",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 37483.83,
+          "source": "Sheet 1 baris 638",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 31460.32,
+          "source": "Sheet 1 baris 648",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 32329.96,
+          "source": "Sheet 1 baris 658",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 21267.69,
+          "source": "Sheet 1 baris 668",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 23569.67,
+          "source": "Sheet 1 baris 708",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 26063.36,
+          "source": "PDF 284 / cetak 283 / baris 19",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 33943.8,
+          "source": "PDF 240 / cetak 239 / baris 3",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102854,7 +103165,7 @@
       "name": "Mekanik",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102862,19 +103173,67 @@
           "price": 37217.22,
           "source": "Sheet 1 baris 519",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 29376.75,
+          "source": "Sheet 1 baris 529",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 36435.15,
+          "source": "Sheet 1 baris 629",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 37368.73,
+          "source": "Sheet 1 baris 639",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 31370.8,
+          "source": "Sheet 1 baris 649",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 32240.44,
+          "source": "Sheet 1 baris 659",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 21216.54,
+          "source": "Sheet 1 baris 669",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 23492.93,
+          "source": "Sheet 1 baris 709",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 38058.2,
+          "source": "PDF 240 / cetak 239 / baris 8",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -102885,7 +103244,7 @@
       "name": "Operator",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -102893,19 +103252,67 @@
           "price": 297737.73,
           "source": "Sheet 1 baris 520",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 235014,
+          "source": "Sheet 1 baris 530",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 291481.19,
+          "source": "Sheet 1 baris 630",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 298949.82,
+          "source": "Sheet 1 baris 640",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 250966.43,
+          "source": "Sheet 1 baris 650",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 257923.51,
+          "source": "Sheet 1 baris 660",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 169732.29,
+          "source": "Sheet 1 baris 670",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 187943.47,
+          "source": "Sheet 1 baris 710",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 304465.6,
+          "source": "PDF 240 / cetak 239 / baris 4",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -103084,7 +103491,7 @@
       "name": "Pekerja",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -103092,19 +103499,73 @@
           "price": 29129.85,
           "source": "Sheet 1 baris 515",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 22990.5,
+          "source": "Sheet 1 baris 525",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 28518.91,
+          "source": "Sheet 1 baris 625",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 29247.87,
+          "source": "Sheet 1 baris 635",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 24554.4,
+          "source": "Sheet 1 baris 645",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 25232.2,
+          "source": "Sheet 1 baris 655",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 16599.8,
+          "source": "Sheet 1 baris 665",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 18390.22,
+          "source": "Sheet 1 baris 705",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 21807.7,
+          "source": "PDF 284 / cetak 283 / baris 17",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 19029.1,
+          "source": "PDF 240 / cetak 239 / baris 1",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -103115,7 +103576,7 @@
       "name": "Pekerja",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 2 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -103130,19 +103591,72 @@
           "price": 233038.8,
           "source": "Sheet 1 baris 515",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 183924,
+          "source": "Sheet 1 baris 525",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 228151.3,
+          "source": "Sheet 1 baris 625",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 196435.2,
+          "source": "Sheet 1 baris 645",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 201857.63,
+          "source": "Sheet 1 baris 655",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 132798.38,
+          "source": "Sheet 1 baris 665",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 147121.78,
+          "source": "Sheet 1 baris 705",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 152715,
+          "source": "PDF 284 / cetak 283 / baris 1",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 198724.5,
+          "source": "PDF 302 / cetak 301 / baris 1",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 152232.8,
+          "source": "PDF 240 / cetak 239 / baris 1",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -103152,7 +103666,7 @@
       "name": "Pekerja",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -103160,19 +103674,73 @@
           "price": 29129.85,
           "source": "Sheet 1 baris 515",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 22990.5,
+          "source": "Sheet 1 baris 525",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 28518.91,
+          "source": "Sheet 1 baris 625",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 29247.87,
+          "source": "Sheet 1 baris 635",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 24554.4,
+          "source": "Sheet 1 baris 645",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 25232.2,
+          "source": "Sheet 1 baris 655",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 16599.8,
+          "source": "Sheet 1 baris 665",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 18390.22,
+          "source": "Sheet 1 baris 705",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 21807.7,
+          "source": "PDF 284 / cetak 283 / baris 17",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 19029.1,
+          "source": "PDF 240 / cetak 239 / baris 1",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104006,7 +104574,7 @@
       "name": "Tukang",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104014,19 +104582,67 @@
           "price": 35300.78,
           "source": "Sheet 1 baris 516",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104037,7 +104653,7 @@
       "name": "Tukang",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 2 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104052,18 +104668,66 @@
           "price": 282406.23,
           "source": "Sheet 1 baris 516",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104074,7 +104738,7 @@
       "name": "Tukang",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104082,19 +104746,67 @@
           "price": 35300.78,
           "source": "Sheet 1 baris 516",
           "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104153,7 +104865,7 @@
       "name": "Tukang Aluminium",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 10 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104161,19 +104873,73 @@
           "price": 150000,
           "source": "PDF 231 baris 8",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 3",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104184,7 +104950,7 @@
       "name": "Tukang batu",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104192,20 +104958,79 @@
           "price": 150000,
           "source": "PDF 231 baris 9",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 4",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 209065.31,
+          "source": "PDF 302 / cetak 301 / baris 4",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -104215,20 +105040,81 @@
       "name": "Tukang batu",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 10 wilayah",
+      "available": [
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 23263.59,
+          "source": "PDF 284 / cetak 283 / baris 18",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104239,20 +105125,81 @@
       "name": "Tukang Batu",
       "unit": "jam",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 10 wilayah",
+      "available": [
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 23263.59,
+          "source": "PDF 284 / cetak 283 / baris 18",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Jakarta/Jakarta"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104311,7 +105258,7 @@
       "name": "Tukang besi",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104319,20 +105266,79 @@
           "price": 150000,
           "source": "PDF 231 baris 10",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 6",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 209068.37,
+          "source": "PDF 302 / cetak 301 / baris 8",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -104342,20 +105348,75 @@
       "name": "Tukang Besi",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 9 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104366,7 +105427,7 @@
       "name": "Tukang besi beton",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104374,19 +105435,67 @@
           "price": 150000,
           "source": "PDF 231 baris 11",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104428,7 +105537,7 @@
       "name": "Tukang Cat",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104436,20 +105545,79 @@
           "price": 150000,
           "source": "PDF 231 baris 14",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 8",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 209068.37,
+          "source": "PDF 302 / cetak 301 / baris 10",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -104569,20 +105737,75 @@
       "name": "Tukang Kaca",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 9 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 283501.01,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104593,7 +105816,7 @@
       "name": "Tukang Kayu",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 11 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104601,20 +105824,79 @@
           "price": 150000,
           "source": "PDF 231 baris 19",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 5",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 209068.37,
+          "source": "PDF 302 / cetak 301 / baris 6",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
-      "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
-      ],
+      "missingRegions": [],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
     },
@@ -104624,20 +105906,75 @@
       "name": "Tukang Kayu",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 9 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104696,7 +106033,7 @@
       "name": "Tukang Las",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104704,6 +106041,13 @@
           "price": 150000,
           "source": "PDF 231 baris 20",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jakarta",
+          "subRegion": "Jakarta",
+          "price": 209170.27,
+          "source": "PDF 302 / cetak 301 / baris 20",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
@@ -104714,7 +106058,6 @@
         "Jawa Barat/Kab. Bogor",
         "Jawa Barat/Indramayu",
         "Jawa Barat/Subang",
-        "Jakarta/Jakarta",
         "Banten/Banten",
         "Lampung/Lampung"
       ],
@@ -104775,7 +106118,7 @@
       "name": "Tukang Listrik",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104783,6 +106126,13 @@
           "price": 150000,
           "source": "PDF 231 baris 22",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 10",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
@@ -104794,7 +106144,6 @@
         "Jawa Barat/Indramayu",
         "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
         "Lampung/Lampung"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
@@ -104830,20 +106179,75 @@
       "name": "Tukang Pelitur",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 9 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 283501.01,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -104933,7 +106337,7 @@
       "name": "Tukang Pipa",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 2 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -104941,6 +106345,13 @@
           "price": 150000,
           "source": "PDF 231 baris 24",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Banten",
+          "subRegion": "Banten",
+          "price": 162896,
+          "source": "PDF 284 / cetak 283 / baris 11",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
@@ -104952,7 +106363,6 @@
         "Jawa Barat/Indramayu",
         "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
         "Lampung/Lampung"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
@@ -105012,7 +106422,7 @@
       "name": "Tukang tembok",
       "unit": "oh",
       "category": "TENAGA KERJA",
-      "status": "Ada harga pada 1 wilayah",
+      "status": "Ada harga pada 9 wilayah",
       "available": [
         {
           "region": "Jawa Barat",
@@ -105020,19 +106430,67 @@
           "price": 150000,
           "source": "PDF 232 baris 1",
           "sourceUrl": "https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 282406.23,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 222854.58,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 276441.62,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 237973.06,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 244623.21,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 160933.63,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 178224.02,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 213948.8,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
         }
       ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0
@@ -105043,20 +106501,75 @@
       "name": "Tukang tembok",
       "unit": "oj",
       "category": "TENAGA KERJA",
-      "status": "Belum ada harga yang dapat diisikan otomatis",
-      "available": [],
+      "status": "Ada harga pada 9 wilayah",
+      "available": [
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bekasi",
+          "price": 35300.78,
+          "source": "Sheet 1 baris 516",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kota Bandung",
+          "price": 27856.82,
+          "source": "Sheet 1 baris 526",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bekasi",
+          "price": 34555.2,
+          "source": "Sheet 1 baris 626",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Karawang",
+          "price": 35437.63,
+          "source": "Sheet 1 baris 636",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Purwakarta",
+          "price": 29746.63,
+          "source": "Sheet 1 baris 646",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Kab. Bogor",
+          "price": 30577.9,
+          "source": "Sheet 1 baris 656",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Indramayu",
+          "price": 20116.7,
+          "source": "Sheet 1 baris 666",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Jawa Barat",
+          "subRegion": "Subang",
+          "price": 22278,
+          "source": "Sheet 1 baris 706",
+          "sourceUrl": "https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "region": "Lampung",
+          "subRegion": "Lampung",
+          "price": 26743.6,
+          "source": "PDF 240 / cetak 239 / baris 2",
+          "sourceUrl": "https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        }
+      ],
       "missingRegions": [
-        "Jawa Barat/Purwakarta",
-        "Jawa Barat/Karawang",
-        "Jawa Barat/Kab. Bekasi",
-        "Jawa Barat/Kota Bekasi",
-        "Jawa Barat/Kota Bandung",
-        "Jawa Barat/Kab. Bogor",
-        "Jawa Barat/Indramayu",
-        "Jawa Barat/Subang",
         "Jakarta/Jakarta",
-        "Banten/Banten",
-        "Lampung/Lampung"
+        "Banten/Banten"
       ],
       "tkdnStatus": "Tidak berlaku sebagai persentase sertifikat produk: tenaga kerja/jasa",
       "tkdnCandidates": 0

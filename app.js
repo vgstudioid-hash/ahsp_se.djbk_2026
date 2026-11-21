@@ -1,3 +1,4 @@
+import {ahsMenuIcon} from './menu-icons.js';
 import { initButtonNavigation } from './button-navigation.js';
 import { normalize } from './search-core.js';
 
@@ -50,7 +51,7 @@ function toggleSaved(id, page=1) {
 function route() { return (location.hash.slice(1).split('?')[0] || 'home'); }
 const names = { home: 'Ikhtisar', library: 'Pustaka Dokumen', fields: 'Bidang Pekerjaan', saved: 'Tersimpan', search: 'Pencarian' };
 function updateNav() {
-  $('#navigation').innerHTML = [['project','home','Informasi Umum'],['quantity','chart','Quantity Pekerjaan'],['recap','chart','Rekapitulasi RAB'],['rab','list','Rencana Anggaran Biaya (RAB)'],['catalog','grid','Analisa Harga Satuan (AHS)'],['prices','layers','Harga Satuan Dasar (HSD)']].map(([r,i,label])=>`<a href="index.html#${r}">${icon(i)}<span>${label}</span></a>`).join('')+`<a href="#library" class="active" aria-current="page">${icon('book')}<span>Dasar-dasar Perhitungan (Pustaka)</span></a>`;
+  $('#navigation').innerHTML = [['project','home','Informasi Umum'],['quantity','chart','Quantity Pekerjaan'],['recap','chart','Rekapitulasi RAB'],['rab','list','Rencana Anggaran Biaya (RAB)'],['catalog','grid','Analisa Harga Satuan (AHS)'],['prices','layers','Harga Satuan Dasar (HSD)']].map(([r,i,label])=>`<a href="index.html#${r}">${r==='catalog'?ahsMenuIcon:icon(i)}<span>${label}</span></a>`).join('')+`<a href="#library" class="active" aria-current="page">${icon('book')}<span>Dasar-dasar Perhitungan (Pustaka)</span></a>`;
   $('#breadcrumb-current').textContent = names[route()] || names.home;
 }
 function blueprint() {

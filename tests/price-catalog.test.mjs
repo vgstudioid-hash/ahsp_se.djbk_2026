@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createPriceCatalog,applyPriceCatalog,markPriceFieldManual,escalateByIndex,priceCatalogPreview} from '../price-catalog.js';
-import {rateKey,validateProject,selectPriceRegion,resourceMetadata,resources,calculateProject,importRates,toCsv,projectInformationErrors} from '../rab-core.js';
+import {rateKey,validateProject,selectPriceRegion,resourceMetadata,resources,calculateProject,importRates,toCsv,projectInformationErrors,priceRegions} from '../rab-core.js';
 import {resourceIdentity} from '../resource-cleanup.js';
 const c={name:'Pekerja',unit:'OH',group:'Tenaga kerja',coefficient:2};
 const item={id:'w',docId:'iv',code:'A',title:'Pekerjaan',unit:'m3',group:'Pekerjaan',volume:3,components:[c]};
@@ -30,7 +30,7 @@ test('BPS escalation uses comparable official index ratios, accepts deflation an
 });
 test('published prices have exact inventoried identities, complete permitted regions and traceable source evidence',async()=>{
  const load=async file=>JSON.parse(await readFile(new URL('../public/'+file,import.meta.url),'utf8'));const data=await load('data/regional-price-catalog.json'),inventory=await load('reports/inventaris-sumber-daya-harga.json'),indices=await load('data/bps-price-indices.json');const ids=new Set(inventory.resources.map(r=>r.identity));const scopes=new Set();assert(data.records.length>800);createPriceCatalog(data);
- for(const r of data.records){assert(ids.has(r.identity));const k=r.region+'|'+r.subRegion+'|'+r.identity;assert(!scopes.has(k));scopes.add(k);assert(r.evidence.sourceUrl.startsWith('https://drive.google.com/file/d/'));assert(r.evidence.locator);assert.equal(r.basisYear,2026);if(r.sourceYear<2026){assert(r.evidence.reviewed);assert(r.escalation);if(r.escalation.kind==='regional-cpi-wage-proxy'){assert.equal(r.group,'Tenaga kerja');assert.equal(r.subRegion,'Kota Bekasi');assert.equal(r.evidence.hoursPerDay,8);assert.equal(r.price,Math.round(r.evidence.sourcePrice*(r.evidence.unitConversion?.factor??1)*1.0221*100)/100);assert(r.remarks.includes('bukan indeks upah konstruksi'));}else{const b=indices.commodities.find(x=>x.id===r.evidence.bpsCommodity);assert.equal(r.price,Math.round(r.evidence.sourcePrice*b.oct2026/b.annual2025*100)/100);assert.notEqual(r.group,'Tenaga kerja');}}else if(r.group==='Tenaga kerja')assert.equal(r.price,r.evidence.sourcePrice);assert.equal(r.tkdn,undefined);}
+ for(const r of data.records){assert(ids.has(r.identity));const k=r.region+'|'+r.subRegion+'|'+r.identity;assert(!scopes.has(k));scopes.add(k);assert(r.evidence.sourceUrl.startsWith('https://drive.google.com/file/d/'));assert(r.evidence.locator);assert.equal(r.basisYear,2026);if(r.sourceYear<2026){assert(r.evidence.reviewed);assert(r.escalation);if(r.escalation.kind==='regional-cpi-wage-proxy'){assert.equal(r.group,'Tenaga kerja');assert(r.escalation.baseUrl.includes('.bps.go.id/'));assert.equal(r.price,Math.round(r.evidence.sourcePrice*(r.evidence.unitConversion?.factor??1)*r.escalation.factor*100)/100);assert(r.remarks.includes('bukan indeks upah konstruksi'));}else{const b=indices.commodities.find(x=>x.id===r.evidence.bpsCommodity);assert.equal(r.price,Math.round(r.evidence.sourcePrice*b.oct2026/b.annual2025*100)/100);assert.notEqual(r.group,'Tenaga kerja');}}else if(r.group==='Tenaga kerja')assert.equal(r.price,r.evidence.sourcePrice);assert.equal(r.tkdn,undefined);}
 });
 test('TKDN requires product/certificate evidence, remains independent of manual price, and never fills expired or manually cleared values',()=>{
  const material={...c,group:'Bahan',name:'Produk spesifik uji',unit:'kg'},materialRecord={...record,identity:resourceIdentity(material)};
@@ -42,7 +42,7 @@ test('TKDN requires product/certificate evidence, remains independent of manual 
 });
 test('Mandor Kota Bekasi uses the confirmed 2025 source and transparent 2026 CPI planning estimate for OH and OJ',async()=>{
  const data=JSON.parse(await readFile(new URL('../public/data/regional-price-catalog.json',import.meta.url),'utf8')),idx=createPriceCatalog(data),p=fixture();p.items=[{...structuredClone(item),components:[{...c,name:'Mandor',coefficient:1},{...c,name:'Mandor',unit:'OJ',coefficient:1}]}];selectPriceRegion(p,'Jawa Barat','Kota Bekasi');assert.equal(applyPriceCatalog(p,idx),2);const res=resources(p);assert.equal(res.find(c=>c.unit==='OH').price,298657.62);assert.equal(res.find(c=>c.unit==='OJ').price,37332.2);for(const r of res){const m=resourceMetadata(p,r);assert.match(m.priceSource,/2025/);assert.match(m.priceSource,/2\.2100/);assert.match(m.remarks,/proksi IHK/);}
- selectPriceRegion(p,'Jawa Barat','Kab. Bekasi');assert.equal(applyPriceCatalog(p,idx),0);assert.equal(resources(p)[0].price,null);selectPriceRegion(p,'Jawa Barat','Kota Bekasi');assert.equal(resources(p)[0].price,298657.62);
+ selectPriceRegion(p,'Jawa Barat','Kab. Bekasi');assert.equal(applyPriceCatalog(p,idx),2);assert.notEqual(resources(p)[0].price,298657.62);selectPriceRegion(p,'Jawa Barat','Kota Bekasi');assert.equal(resources(p)[0].price,298657.62);
 });
 
 test('project entry requires a valid location before using AHS while legacy backups remain readable',()=>{
@@ -55,4 +55,22 @@ test('prospective AHS preview fills every available regional price without chang
 });
 test('AHS previews retain manual prices and manual clearing before selection',()=>{
  const p=fixture(),key=rateKey(item,c);p.rates[key]=177000;assert.equal(priceCatalogPreview(p,item,catalog()).rates[key],177000);delete p.rates[key];markPriceFieldManual(p,key,'price');const preview=priceCatalogPreview(p,item,catalog());assert.equal(preview.rates[key],undefined);assert.equal(resources(preview)[0].price,null);
+});
+
+test('UPVC wages use each Jabar local tariff and explicit trade estimates in both preview and saved manual AHS',async()=>{
+ const data=JSON.parse(await readFile(new URL('../public/data/regional-price-catalog.json',import.meta.url),'utf8')),idx=createPriceCatalog(data);
+ for(const sub of priceRegions['Jawa Barat']){
+  const p=fixture();p.items=[];selectPriceRegion(p,'Jawa Barat',sub);
+  const a={...structuredClone(item),id:'manual-upvc',docId:'vi',manual:true,code:'3.11.2.3',title:'Pasang Jendela UPVC',unit:'buah',volume:1,components:['Pekerja','Tukang Aluminium','Kepala Tukang','Mandor'].map((name,i)=>({...c,name,coefficient:[.167,.167,.017,.006][i]}))};
+  const before=structuredClone(p),preview=priceCatalogPreview(p,a,idx);assert.deepEqual(p,before);assert.equal(resources(preview).filter(r=>r.price>0).length,4,sub);
+  p.items.push(a);assert.equal(applyPriceCatalog(p,idx),4,sub);assert.deepEqual(p.rates,preview.rates);assert(resources(p).every(r=>r.price>0));
+  const aluminum=data.records.find(r=>r.region==='Jawa Barat'&&r.subRegion===sub&&r.name==='Tukang Aluminium');assert(aluminum);if(sub!=='Karawang')assert.match(aluminum.remarks,/Estimasi klasifikasi/);
+ }
+});
+
+test('Lampung manual UPVC uses the authorized 8-hour assumption and disclosed Bandar Lampung source, without inventing a material price',async()=>{
+ const data=JSON.parse(await readFile(new URL('../public/data/regional-price-catalog.json',import.meta.url),'utf8')),idx=createPriceCatalog(data),p=fixture();selectPriceRegion(p,'Lampung','Lampung');
+ const a={...structuredClone(item),id:'lampung-upvc',docId:'vi',manual:true,unit:'buah',volume:1,components:['Pekerja','Tukang Aluminium','Kepala Tukang','Mandor'].map(name=>({...c,name,coefficient:1})).concat([{name:'Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m',unit:'buah',group:'Bahan',coefficient:1}])};p.items=[a];assert.equal(applyPriceCatalog(p,idx),4);const r=resources(p);
+ for(const [name,price]of [['Pekerja',152232.8],['Tukang Aluminium',213948.8],['Kepala Tukang',246864],['Mandor',271550.4]]){const c=r.find(c=>c.name===name);assert.equal(c.price,price);const m=resourceMetadata(p,c);assert.match(m.remarks,/Kota Bandar Lampung/);assert.match(m.remarks,/8 jam/);assert.match(m.remarks,/2.86%/);assert.match(m.remarks,/bruto/);}
+ assert.equal(r.find(c=>c.group==='Bahan').price,null);const before=structuredClone(a);const q=validateProject(p);assert.equal(applyPriceCatalog(q,idx),0);assert.deepEqual(q.items[0].components.map(({name,unit,group,coefficient})=>({name,unit,group,coefficient})),before.components);
 });
