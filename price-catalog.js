@@ -1,5 +1,5 @@
-import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.282341abf63f.js';
-import {resourceIdentity} from './resource-cleanup.282341abf63f.js';
+import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.460048bf46f2.js';
+import {resourceIdentity} from './resource-cleanup.460048bf46f2.js';
 
 // Published records contain reviewed identities; runtime never guesses by name or code.
 export function createPriceCatalog(data){
@@ -18,7 +18,7 @@ export function createPriceCatalog(data){
  }
  return index;
 }
-export {markResourceFieldManual as markPriceFieldManual} from './rab-core.282341abf63f.js';
+export {markResourceFieldManual as markPriceFieldManual} from './rab-core.460048bf46f2.js';
 export function applyPriceCatalog(project,index){
  // Local prices require an explicit complete region; no silent provincial/city fallback.
  if(!project.priceRegion||!project.priceSubRegion||!index?.size)return 0;
@@ -45,6 +45,13 @@ export function applyPriceCatalog(project,index){
   filled++;
  }
  return filled;
+}
+// A catalogue preview prices a prospective AHS without adding it to the project or
+// modifying any stored price bank. Existing manual prices/clears still take priority.
+export function priceCatalogPreview(project,item,index){
+ const draft={...project,rates:{...project.rates},resourceMeta:structuredClone(project.resourceMeta||{}),items:[{...item,volume:item.volume??1,heading:false,wbsLevel:2}]};
+ applyPriceCatalog(draft,index);
+ return draft;
 }
 // The indices must belong to the same official series and base year.
 export function escalateByIndex(price,base,target){

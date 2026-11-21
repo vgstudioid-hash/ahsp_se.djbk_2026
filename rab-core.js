@@ -1,5 +1,5 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.282341abf63f.js';
-import { validateQuantityRows, quantitySummary } from './quantity-core.282341abf63f.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.460048bf46f2.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.460048bf46f2.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -301,7 +301,7 @@ export function validateProject(p) {
   return { id: crypto.randomUUID(), empiricalSequence, name: p.name, ma:p.ma||'',subMa:p.subMa||'',workUnit:p.workUnit||'',programCategory:p.programCategory||'',budget,location: p.location, owner: p.owner, date: p.date, year:p.year??p.date.slice(0,4),coordinates:p.coordinates||'',documentType:p.documentType||'RAB',taxScheme:p.taxScheme||'full',resourceMeta,...regional,smkkRecapVolume:p.smkkRecapVolume==null?1:nonnegative(p.smkkRecapVolume),recapUnassignedVolume:p.recapUnassignedVolume==null?1:nonnegative(p.recapUnassignedVolume),overhead: Number(p.overhead), tax: Number(p.tax), rates, items, smkk, smkkRisk, smkkSettings, smkkDrafts };
 }
 
-export function projectInformationErrors(p,allowedUnits=null) {
+export function projectInformationErrors(p,allowedUnits=null,requirePriceLocation=false) {
   const errors={};
   for(const [field,label] of [['name','Nama Pekerjaan'],['ma','MA'],['subMa','Sub MA'],['workUnit','Unit Kerja']])if(typeof p[field]!=='string'||!p[field].trim())errors[field]=label+' wajib diisi.';
   for(const field of ['ma','subMa'])if(typeof p[field]!=='string'||!/^\d{4}$/.test(p[field]))errors[field]=(field==='ma'?'MA':'Sub MA')+' harus tepat 4 angka.';
@@ -309,6 +309,10 @@ export function projectInformationErrors(p,allowedUnits=null) {
   if(!['Beban','Investasi'].includes(p.programCategory))errors.programCategory='Pilih Kategori Program: Beban atau Investasi.';
   if(typeof p.year!=='string'||!/^\d{4}$/.test(p.year.trim())||Number(p.year)<1900)errors.year='Tahun harus 4 digit dan minimal 1900.';
   if(typeof p.budget!=='number'||!Number.isFinite(p.budget)||p.budget<=0||p.budget>1e15)errors.budget='Pagu Anggaran harus lebih dari 0 dan maksimal 10^15.';
+  if(requirePriceLocation){
+   if(!Object.hasOwn(priceRegions,p.priceRegion||''))errors.priceRegion='Pilih Region lokasi pekerjaan.';
+   if(!priceRegions[p.priceRegion]?.includes(p.priceSubRegion))errors.priceSubRegion='Pilih Sub Region sesuai Region lokasi pekerjaan.';
+  }
   return errors;
 }
 
