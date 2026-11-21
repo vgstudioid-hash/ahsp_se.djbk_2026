@@ -1,11 +1,17 @@
-import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.9057dd027f80.js';
-import {resourceIdentity} from './resource-cleanup.9057dd027f80.js';
+import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.75cf948189d0.js';
+import {resourceIdentity} from './resource-cleanup.75cf948189d0.js';
 
 // Published records contain reviewed identities; runtime never guesses by name or code.
 export function createPriceCatalog(data){
- if(data?.schemaVersion!==1||!Array.isArray(data.records))throw Error('Katalog harga tidak valid.');
- const index=new Map();
- for(const record of data.records){
+ if(![1,2].includes(data?.schemaVersion)||!Array.isArray(data.records))throw Error('Katalog harga tidak valid.');
+ const index=new Map(),direct=new Map(data.records.filter(r=>!r.sourceRecordId).map(r=>[r.id,r]));
+ for(const stored of data.records){
+  let record=stored;
+  if(stored.sourceRecordId){
+   const source=direct.get(stored.sourceRecordId);
+   if(data.schemaVersion!==2||!source||source.sourceRecordId||!['Bahan','Peralatan'].includes(source.group)||source.region!==stored.region||source.subRegion===stored.subRegion||typeof stored.referenceNotice!=='string'||!stored.referenceNotice)throw Error('Acuan regional tidak valid.');
+   record={...source,id:stored.id,region:stored.region,subRegion:stored.subRegion,replaces:stored.replaces||[],priceKind:'estimate',sourceText:(stored.referenceNotice+' '+source.sourceText).slice(0,2000),remarks:stored.referenceNotice+' '+(source.remarks||''),regionalReference:{sourceRegion:source.region,sourceSubRegion:source.subRegion,sourceRecordId:source.id,targetRegion:stored.region,targetSubRegion:stored.subRegion}};
+  }
   if(record.status!=='verified')continue;
   if(typeof record.identity!=='string'||!record.id||!Number.isFinite(record.price)||record.price<0||record.price>1e15||record.basisYear!==2026||typeof record.sourceText!=='string'||!record.sourceText||record.sourceText.length>2000)throw Error('Rekaman harga terverifikasi tidak valid.');
   if(record.tkdn!=null){
@@ -18,7 +24,7 @@ export function createPriceCatalog(data){
  }
  return index;
 }
-export {markResourceFieldManual as markPriceFieldManual} from './rab-core.9057dd027f80.js';
+export {markResourceFieldManual as markPriceFieldManual} from './rab-core.75cf948189d0.js';
 export function applyPriceCatalog(project,index){
  // Local prices require an explicit complete region; no silent provincial/city fallback.
  if(!project.priceRegion||!project.priceSubRegion||!index?.size)return 0;
@@ -35,12 +41,13 @@ export function applyPriceCatalog(project,index){
    filled++;
   }
   // Preserve explicit zero, conflicting legacy prices and manual clearing.
-  if(c.price!=null||c.priceConflict||manual.includes('price'))continue;
+  const replacesAuto=c.price!=null&&c.price!==0&&m.catalogPriceId&&!manual.includes('price')&&r.replaces?.some(old=>old.id===m.catalogPriceId&&old.price===c.price);
+  if((c.price!=null&&!replacesAuto)||c.priceConflict||manual.includes('price'))continue;
   setResourcePrice(project,c.key,moneyRound(r.price));
   setResourceMetadata(project,c.key,'catalogPriceId',r.id);
   setResourceMetadata(project,c.key,'catalogPriceYear',r.basisYear);
   for(const [field,value]of [['priceSource',r.sourceText],['remarks',r.remarks],['kdn','']]){
-   if(value&&!resourceMetadata(project,c)[field]&&!manual.includes(field))setResourceMetadata(project,c.key,field,value);
+   if(value&&(!resourceMetadata(project,c)[field]||replacesAuto)&&!manual.includes(field))setResourceMetadata(project,c.key,field,value);
   }
   filled++;
  }
@@ -59,4 +66,15 @@ export function escalateByIndex(price,base,target){
  const factor=target.value/base.value,result=price*factor;
  if(!Number.isFinite(result)||result>1e15)throw Error('Hasil eskalasi melebihi batas.');
  return {price:moneyRound(result),factor,percent:(factor-1)*100,base,target};
+}
+
+// Compact only the wire format; the downloadable database retains full evidence.
+export function compactPriceCatalog(data){
+ if(data?.schemaVersion!==1||!Array.isArray(data.records))throw Error('Katalog sumber tidak valid.');
+ const sources=new Map(data.records.map(r=>[r.id,r])),fields=['id','identity','name','group','unit','region','subRegion','basisYear','price','status','sourceText','remarks','replaces','priceKind','sourceYear','intendedUseYear','tkdn','tkdnCertificate'];
+ return {schemaVersion:2,preparedOn:data.preparedOn,summary:data.summary,records:data.records.map(r=>{
+  if(!r.regionalReference)return Object.fromEntries(fields.filter(k=>r[k]!==undefined).map(k=>[k,r[k]]));
+  const source=sources.get(r.regionalReference.sourceRecordId);if(!source||source.regionalReference||!source.remarks||!r.remarks.endsWith(source.remarks))throw Error('Sumber harga acuan harus langsung dan terlacak.');
+  return {id:r.id,sourceRecordId:source.id,region:r.region,subRegion:r.subRegion,replaces:r.replaces||[],referenceNotice:r.remarks.slice(0,-source.remarks.length).trim()};
+ })};
 }

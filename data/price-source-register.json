@@ -12,7 +12,9 @@
       "extractedPriceRows": 0,
       "pages": 215,
       "textCharacters": 570987,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 176,
+      "automaticPrices": 243
     },
     {
       "id": "1HDCoNS_DUHymKmP3FdKpgZ7vORrtaO6j",
@@ -25,7 +27,9 @@
       "extractedPriceRows": 0,
       "pages": 113,
       "textCharacters": 292221,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1H6tW8bvuPliFjbstcjI68BW0hANvzD4r",
@@ -36,7 +40,9 @@
       "sha256": "95bd252c5c5cf100d2c4731d4287e19a8135854ac1ea1e32c1f0f4933e7b1117",
       "bytes": 37009,
       "extractedPriceRows": 0,
-      "status": "Workbook dibaca"
+      "status": "Workbook dibaca",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1_qjDaA6-J2_djYMIECnYMJfPgNMSmPrv",
@@ -47,7 +53,9 @@
       "sha256": "50c69c1a0fc2c2259a14f09ea3e55986f4a836ccf6f85e27fae4a4f056253654",
       "bytes": 4352543,
       "extractedPriceRows": 0,
-      "status": "Workbook dibaca"
+      "status": "Workbook dibaca",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "146vrCHoOF_3axqj17Ea8oW8eZyfqd552",
@@ -58,7 +66,9 @@
       "sha256": "c23a6d563447fe02c8f94c744b57488587cdda87ac63941ea1ce9d09544d3bf0",
       "bytes": 216447,
       "extractedPriceRows": 0,
-      "status": "Workbook dibaca"
+      "status": "Workbook dibaca",
+      "databaseRows": 176,
+      "automaticPrices": 0
     },
     {
       "id": "19NHiEOqEDngXHmVOxvU1vjowKTAr5VNS",
@@ -69,7 +79,9 @@
       "sha256": "76f6ae426ba6e15f1bbc71c70bbb167abd74c57ddb04a724062044083feb044a",
       "bytes": 94073,
       "extractedPriceRows": 0,
-      "status": "Workbook dibaca"
+      "status": "Workbook dibaca",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1wR0gGXAz1GfFkpeFD8a-e-34wlnM2Nsh",
@@ -80,7 +92,9 @@
       "sha256": "a36bf53424a3105f171b458ed736a5e342cfbdc65847742924b3531fe32350f0",
       "bytes": 220795,
       "extractedPriceRows": 3784,
-      "status": "Workbook dibaca"
+      "status": "Workbook dibaca",
+      "databaseRows": 5856,
+      "automaticPrices": 49
     },
     {
       "id": "1xy81pXlfBancwCGy2tdb7IIEr7-ThGWU",
@@ -93,7 +107,9 @@
       "extractedPriceRows": 0,
       "pages": 4,
       "textCharacters": 2587,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1o-fT0T5P1jZKjTVdYwcw8osjTuuwg7sk",
@@ -106,7 +122,9 @@
       "extractedPriceRows": 0,
       "pages": 3,
       "textCharacters": 1096,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "19C6DNnVRLoLqRu8vozOvrCmg6cReSOQe",
@@ -119,7 +137,9 @@
       "extractedPriceRows": 0,
       "pages": 1,
       "textCharacters": 169,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1ScZ5a2XMKX7rcKa1qjQSVWB3m_FVicuI",
@@ -132,7 +152,9 @@
       "extractedPriceRows": 0,
       "pages": 173,
       "textCharacters": 2190118,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "19BsO0tq1x-Enf6ZPA-nFlCG-tTsSx58M",
@@ -145,7 +167,9 @@
       "extractedPriceRows": 0,
       "pages": 575,
       "textCharacters": 1936614,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1EtZpmqJ_mvWiCPvvw-w-WL8uFDQBB1gc",
@@ -158,7 +182,9 @@
       "extractedPriceRows": 0,
       "pages": 10,
       "textCharacters": 19961,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1Mj6VV8UVmAVNH_FQPHZwLLu2BqhAQZyQ",
@@ -171,7 +197,9 @@
       "extractedPriceRows": 12184,
       "pages": 165,
       "textCharacters": 1450933,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 12238,
+      "automaticPrices": 328
     },
     {
       "id": "1nzzcht7b5M7LCaGYCZuMLGRxlKVaOLfB",
@@ -184,7 +212,9 @@
       "extractedPriceRows": 0,
       "pages": 187,
       "textCharacters": 467132,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1trI2hk7IcTKe6VDCt6C6QDuwh29MGkAv",
@@ -197,7 +227,9 @@
       "extractedPriceRows": 0,
       "pages": 76,
       "textCharacters": 313706,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1qbSORmaGFiiX2wa6AQotEj4SbU1UFs4g",
@@ -210,7 +242,10 @@
       "extractedPriceRows": 0,
       "pages": 93,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai dibaca OCR; kualitas tabel belum mendukung kutipan harga yang dapat dipastikan. Tidak diklaim sebagai tarif upah siap pakai.",
+      "databaseRows": 0,
+      "automaticPrices": 0,
+      "ocrPagesRead": 93
     },
     {
       "id": "1Jbmu2apv6mlQct09PNR40dgUjmrqn6Kj",
@@ -223,7 +258,10 @@
       "extractedPriceRows": 0,
       "pages": 322,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai dibaca OCR; kualitas tabel belum mendukung kutipan harga yang dapat dipastikan. Tidak diklaim sebagai tarif upah siap pakai.",
+      "databaseRows": 0,
+      "automaticPrices": 0,
+      "ocrPagesRead": 322
     },
     {
       "id": "1owUxyrRIpJHDi_zIKkqo3e5b--pBWsIy",
@@ -236,7 +274,9 @@
       "extractedPriceRows": 0,
       "pages": 5,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1syt6Bcmv-xLJWKFfuu-npKkwGx_tJw7x",
@@ -249,7 +289,9 @@
       "extractedPriceRows": 0,
       "pages": 74,
       "textCharacters": 156078,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "13MP75XUuZY0rAHxiHhNn6qNwqcqj5dsS",
@@ -262,7 +304,9 @@
       "extractedPriceRows": 0,
       "pages": 5,
       "textCharacters": 7877,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1m0M3C893dzI-vlTsd6jKIWjT5VDUhuE7",
@@ -275,7 +319,9 @@
       "extractedPriceRows": 0,
       "pages": 5,
       "textCharacters": 8453,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1Gf_hOtzL5snetwl7F1u_iwnSuVkVZeJe",
@@ -288,7 +334,9 @@
       "extractedPriceRows": 0,
       "pages": 13,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1dkRT89OcHEi4FNnk4kn3fE8ZMrrI-TFt",
@@ -301,7 +349,9 @@
       "extractedPriceRows": 0,
       "pages": 11,
       "textCharacters": 16803,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1G2hEDNPc1QJx3FUHe1qThF4IPl9N067L",
@@ -314,7 +364,9 @@
       "extractedPriceRows": 0,
       "pages": 38,
       "textCharacters": 73396,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1HLcNKiTo2r-nLd33-hIhgIaaAGxxCYQB",
@@ -327,7 +379,9 @@
       "extractedPriceRows": 0,
       "pages": 42,
       "textCharacters": 81738,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "18TrfUcLYuKZh7Q44Z_1_Qg-SPPmI5rWL",
@@ -340,7 +394,9 @@
       "extractedPriceRows": 0,
       "pages": 395,
       "textCharacters": 662915,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1duWG66uImrid-2ksGeDWo_yhFEtcL-Cz",
@@ -353,7 +409,9 @@
       "extractedPriceRows": 0,
       "pages": 413,
       "textCharacters": 752453,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1KhYZJ09dbUNePPa8SPZ9TWa5w6m2zJac",
@@ -366,7 +424,9 @@
       "extractedPriceRows": 0,
       "pages": 272,
       "textCharacters": 457234,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1v-sD1wn0JM2GkrLJZ7Zb6VZ0KCRre0P5",
@@ -379,7 +439,9 @@
       "extractedPriceRows": 0,
       "pages": 11,
       "textCharacters": 16803,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1MvNuazpjQiL0RpXNruzq0XCm98OhbYpq",
@@ -392,7 +454,9 @@
       "extractedPriceRows": 0,
       "pages": 37,
       "textCharacters": 80919,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1mDh2vbSdX_nv5Jp2E62Ptx1gAkkKu3SM",
@@ -405,7 +469,9 @@
       "extractedPriceRows": 0,
       "pages": 212,
       "textCharacters": 379230,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1YHcbA2SuqMNanqGfkXhmFlI494F_Fcqr",
@@ -418,7 +484,9 @@
       "extractedPriceRows": 0,
       "pages": 376,
       "textCharacters": 584432,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1EAw6O6dRW2FPEbU3ZBElhw0GWlKlOCzQ",
@@ -431,7 +499,9 @@
       "extractedPriceRows": 0,
       "pages": 126,
       "textCharacters": 305726,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1zFNHjIWlJUYOk_avR5vx1FpxzPkW3-3J",
@@ -444,7 +514,9 @@
       "extractedPriceRows": 0,
       "pages": 328,
       "textCharacters": 1478314,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "10n61i6qFbhlHnV32Ss8kt5rXaAcsmA8R",
@@ -457,7 +529,9 @@
       "extractedPriceRows": 0,
       "pages": 322,
       "textCharacters": 1306034,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti",
@@ -470,7 +544,9 @@
       "extractedPriceRows": 9026,
       "pages": 294,
       "textCharacters": 961593,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 9818,
+      "automaticPrices": 6268
     },
     {
       "id": "1B0CoNBFnFCCIDttHO8lLmgzVbubfbdya",
@@ -483,7 +559,9 @@
       "extractedPriceRows": 0,
       "pages": 1109,
       "textCharacters": 2687508,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1q427HwSOHJldRFG59PdaNG5V02jpKpf5",
@@ -496,7 +574,9 @@
       "extractedPriceRows": 0,
       "pages": 228,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1ydLsF2NW9QypP5z3nXwxsnqUKkidlYpR",
@@ -509,7 +589,9 @@
       "extractedPriceRows": 0,
       "pages": 3,
       "textCharacters": 4771,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "19iDW76JIKuHDWP8cLnQYHxsbdxfGTk3x",
@@ -522,7 +604,9 @@
       "extractedPriceRows": 0,
       "pages": 708,
       "textCharacters": 1870791,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1xemPSdOMnR2XUS11GPrjP0hD38huyiNw",
@@ -535,7 +619,9 @@
       "extractedPriceRows": 0,
       "pages": 5,
       "textCharacters": 7576,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "18oBK1jMj9gva5BfMF9SZf71G-PT4tWLN",
@@ -548,7 +634,9 @@
       "extractedPriceRows": 0,
       "pages": 826,
       "textCharacters": 4974988,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1VFeRRSSTex-gx6bZ35IoTwhKAgt3byh2",
@@ -561,7 +649,9 @@
       "extractedPriceRows": 0,
       "pages": 5,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1oZ6V6DIpVU9nB0Su1lU24WyPzoLwQzFS",
@@ -574,7 +664,9 @@
       "extractedPriceRows": 0,
       "pages": 96,
       "textCharacters": 140555,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1QaEmXdZA9xKLlzCOvczgpZvHn-rBKvDw",
@@ -587,7 +679,9 @@
       "extractedPriceRows": 0,
       "pages": 52,
       "textCharacters": 178907,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1t3K2sBUvuOzOF1rvFmGMQunMS7Gsm8sb",
@@ -600,7 +694,9 @@
       "extractedPriceRows": 0,
       "pages": 52,
       "textCharacters": 178907,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1SVXJObRmjr2q36AyK766HtMf9Yecu4oR",
@@ -613,7 +709,9 @@
       "extractedPriceRows": 0,
       "pages": 1244,
       "textCharacters": 5382407,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1RSr3E9f1yFKEnbSN8FmU45vcf_j3ziLP",
@@ -626,7 +724,9 @@
       "extractedPriceRows": 0,
       "pages": 120,
       "textCharacters": 835928,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1jJM3IOo7eeDvLedzQ36UETcnOu4uHi-N",
@@ -639,7 +739,9 @@
       "extractedPriceRows": 0,
       "pages": 215,
       "textCharacters": 570987,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     },
     {
       "id": "1rvmzzOu7jzS_Gs-8pSvKFHBCIEURi-bR",
@@ -652,7 +754,10 @@
       "extractedPriceRows": 0,
       "pages": 907,
       "textCharacters": 0,
-      "status": "Pindai gambar; memerlukan OCR dan pemeriksaan visual"
+      "status": "Pindai gambar: 125 halaman bahan wilayah relevan dibaca OCR perkolom; angka calon terpilih diperiksa OCR harga terpisah. Belum seluruh907 halaman.",
+      "databaseRows": 4959,
+      "automaticPrices": 52,
+      "ocrPagesRead": 125
     },
     {
       "id": "13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu",
@@ -665,7 +770,9 @@
       "extractedPriceRows": 0,
       "pages": 901,
       "textCharacters": 2428770,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 9931,
+      "automaticPrices": 645
     },
     {
       "id": "16pX0y7cDcBQophAjIEIzTfvrS8OxtRtV",
@@ -678,7 +785,9 @@
       "extractedPriceRows": 0,
       "pages": 867,
       "textCharacters": 1647479,
-      "status": "Teks diekstrak; pencocokan belum lengkap"
+      "status": "Teks diekstrak; pencocokan belum lengkap",
+      "databaseRows": 0,
+      "automaticPrices": 0
     }
   ]
 }

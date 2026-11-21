@@ -1,0 +1,305 @@
+{
+  "preparedOn": "2026-11-21",
+  "allAhs": 5637,
+  "scopeCount": 11,
+  "ahsScopeChecks": 62007,
+  "summary": [
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "ahs": 5637,
+      "complete": 775,
+      "partial": 4311,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 16488
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3232
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "ahs": 5637,
+      "complete": 714,
+      "partial": 4372,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3094
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "ahs": 5637,
+      "complete": 727,
+      "partial": 4359,
+      "withoutPrice": 96,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 15578
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 3233
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 676
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "ahs": 5637,
+      "complete": 75,
+      "partial": 3268,
+      "withoutPrice": 1839,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 6366
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 513
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 0
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Banten",
+      "subRegion": "Banten",
+      "ahs": 5637,
+      "complete": 130,
+      "partial": 4944,
+      "withoutPrice": 108,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 14124
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 540
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 20
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    },
+    {
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "ahs": 5637,
+      "complete": 157,
+      "partial": 4925,
+      "withoutPrice": 100,
+      "withoutComponents": 455,
+      "byGroup": {
+        "Tenaga kerja": {
+          "components": 17593,
+          "priced": 14225
+        },
+        "Bahan": {
+          "components": 10330,
+          "priced": 458
+        },
+        "Peralatan": {
+          "components": 7098,
+          "priced": 505
+        },
+        "Lain-lain": {
+          "components": 10,
+          "priced": 0
+        }
+      }
+    }
+  ]
+}

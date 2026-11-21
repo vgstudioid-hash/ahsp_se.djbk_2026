@@ -1,0 +1,36 @@
+{
+  "preparedOn": "2026-11-21",
+  "sourceDocuments": 53,
+  "sourcePriceRows": 43154,
+  "journal2025Rows": 7111,
+  "resourceIdentities": 4996,
+  "automaticPrices": 7585,
+  "regionalReferences": 6206,
+  "pricedIdentities": 968,
+  "byRegion": {
+    "Jawa Barat/Purwakarta": 930,
+    "Jawa Barat/Karawang": 938,
+    "Jawa Barat/Kab. Bekasi": 930,
+    "Jawa Barat/Kota Bekasi": 930,
+    "Jawa Barat/Kota Bandung": 925,
+    "Jawa Barat/Kab. Bogor": 930,
+    "Jawa Barat/Indramayu": 930,
+    "Jawa Barat/Subang": 930,
+    "Jakarta/Jakarta": 24,
+    "Banten/Banten": 40,
+    "Lampung/Lampung": 78
+  },
+  "byGroup": {
+    "Bahan": 6661,
+    "Tenaga kerja": 320,
+    "Peralatan": 604
+  },
+  "limitations": [
+    "Source rows are retained observations/candidates, not all approved automatic prices.",
+    "All AHSP identities are registered, including identities with no compatible price.",
+    "Unknown specifications, scope, tax, OCR disagreements, incompatible units and missing indices remain pending.",
+    "Journal material/rental prices are preferred when compatible; local regulations are preferred for wages.",
+    "Lampung city reference and 8-hour conversion follow the user instruction; not represented as a province-wide survey.",
+    "Legacy material-in-labor or incomplete AHSP extraction identities require source review, not a fabricated wage."
+  ]
+}
