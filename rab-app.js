@@ -1,4 +1,4 @@
-import {ahsMenuIcon} from './menu-icons.js';
+import {pageMenuIcons} from './menu-icons.js';
 import {createPriceCatalog,applyPriceCatalog,markPriceFieldManual,priceCatalogPreview} from './price-catalog.js';
 import { initButtonNavigation } from './button-navigation.js';
 import { smkkRisks, createSmkkRows, updateSmkkDefaults, riskQuantityText } from './smkk-core.js';
@@ -16,18 +16,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;',
 const fmt = n => new Intl.NumberFormat('id-ID',{maximumFractionDigits:2}).format(n);
 const rp = n => 'Rp ' + fmt(n);
 const svg = path => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
-const sidebarMenuIcon=body=>'<svg class="sidebar-menu-icon" viewBox="0 0 32 32" fill="none" stroke="var(--menu-outline)" stroke-width="1.2" aria-hidden="true">'+body+'</svg>';
-const symbols = {
-  assistant:sidebarMenuIcon('<path d="M7 9h16a5 5 0 0 1 5 5v7a5 5 0 0 1-5 5H10l-8 5V14a5 5 0 0 1 5-5Z" fill="var(--menu-green)"/><path d="M13 2h12a5 5 0 0 1 5 5v20l-7-6H13a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" fill="var(--menu-blue)"/>'),
-  rab:sidebarMenuIcon('<rect x="2" y="2" width="12" height="10" rx="4" fill="var(--menu-blue)"/><rect x="18" y="2" width="12" height="18" rx="4" fill="var(--menu-green)"/><rect x="2" y="16" width="12" height="14" rx="4" fill="var(--menu-green-light)"/><rect x="18" y="24" width="12" height="6" rx="3" fill="var(--menu-blue-dark)"/>'),
-  catalog:ahsMenuIcon,
-  prices:sidebarMenuIcon('<path d="m7 6 11-2a3 3 0 0 1 3 1l9 10a4 4 0 0 1 0 5L20 30a4 4 0 0 1-5 0L4 20a3 3 0 0 1-1-3L5 8a3 3 0 0 1 2-2Z" fill="var(--menu-blue-dark)"/><path d="M10 9a5 5 0 1 1 0-7" stroke="var(--menu-blue)" stroke-width="2.8" stroke-linecap="round"/><g transform="rotate(-43 17 18)"><path d="M21 14c-1-2-8-2-8 1 0 3 8 2 8 5 0 3-7 4-8 1M17 11v14" stroke="var(--menu-outline)" stroke-width="2.4" stroke-linecap="round"/></g>'),
-  project:sidebarMenuIcon('<rect x="2" y="2" width="28" height="28" rx="9" fill="var(--menu-green)"/><path d="M8 14.5 14 9a3 3 0 0 1 4 0l6 5.5V24a2 2 0 0 1-2 2h-4v-7h-4v7h-4a2 2 0 0 1-2-2Z" fill="var(--menu-paper)"/>'),
-  quantity:sidebarMenuIcon('<rect x="5" y="2" width="22" height="28" rx="5" fill="var(--menu-blue-dark)"/><rect x="8" y="5" width="16" height="7" rx="2" fill="var(--menu-green-light)"/><g fill="var(--menu-paper)" stroke="none"><rect x="8" y="16" width="4" height="4" rx="1"/><rect x="14" y="16" width="4" height="4" rx="1"/><rect x="20" y="16" width="4" height="4" rx="1"/><rect x="8" y="23" width="4" height="4" rx="1"/><rect x="14" y="23" width="4" height="4" rx="1"/></g><rect x="20" y="23" width="4" height="4" rx="1" fill="var(--menu-green-light)" stroke="none"/>'),
-  recap:sidebarMenuIcon('<rect x="4" y="2" width="26" height="26" rx="7" fill="var(--menu-blue-dark)"/><rect x="2" y="16" width="14" height="14" rx="5" fill="var(--menu-green-light)" stroke="var(--menu-outline)" stroke-width="2"/><path d="M16 8h7v7M22 9l-7 7" stroke="var(--menu-outline)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'),
-  pustaka:sidebarMenuIcon('<path d="M9 2H8a5 5 0 0 0-5 5v18a6 6 0 0 1 6-3Z" fill="var(--menu-blue-dark)"/><path d="M13 2h10a6 6 0 0 1 6 6v15H13Z" fill="var(--menu-blue)"/><rect x="3" y="24" width="26" height="6" rx="3" fill="var(--menu-green)"/>'),
-  resources:svg('<path d="M8 5h13M8 12h13M8 19h13M3 5h1M3 12h1M3 19h1"/>')
-};
+const symbols = {...pageMenuIcons, resources:svg('<path d="M8 5h13M8 12h13M8 19h13M3 5h1M3 12h1M3 19h1"/>')};
 const today = () => new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Jakarta',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 function newProject(name='') { return {id:crypto.randomUUID(),name,ma:'',subMa:'',workUnit:'',programCategory:'',budget:null,owner:'',location:'',date:today(),year:'',coordinates:'',documentType:'RAB',resourceMeta:{},overhead:10,tax:12,taxScheme:'dpp11of12',items:[],rates:{},smkk:[],smkkRisk:'',smkkSettings:{workers:null,months:null,insuredValue:null,highway:false},smkkDrafts:{}}; }
 let projects = [newProject()], active = 0, catalog = [], documents = [], query = '', field = 'Semua', priceGroup = 'Semua', priceQuery = '', manualRows = [], quantitySelectedId='', compactProjectOpen=false, informationStage='choice', projectChosen=false, allowInformationFormEntry=false, workUnitOptions=[], catalogLimit=48,pickerLimit=48,catalogStatus='Semua',coverage=null,smkkTemplates=null,smkkOpenGroups=new Set(['1']),smkkExpanded=false,openUsedAhs=new Set(),pendingSmkkFocus=false,rabReturnPosition=null,pendingRabReturn=false,rabFrozenHeader=null,frozenTableHeaders=new Map(),ahsFrozenHeader=null,toastTimer;
