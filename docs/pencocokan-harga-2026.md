@@ -6,9 +6,10 @@
 
 - Semua 53 berkas dari folder HARGA PEMERINTAH dan JURNAL HARGA telah diunduh ke `/workspace/price-sources`, di luar aset website. Register nama, URL, SHA256, ukuran dan status ekstraksi tersedia di `public/data/price-source-register.json`. Tujuh PDF tidak mempunyai lapisan teks. Dokumen lain pun belum semuanya dikonversi menjadi tabel harga terverifikasi.
 - Inventaris katalog: 4.996 identitas sumber daya dari 5.637 entri AHS; 455 entri tanpa rincian komponen belum dapat menyumbangkan inventaris lengkap. Kategori bahan 3.983, tenaga kerja 178, alat 794, sewa 35, lainnya 6.
-- Katalog otomatis: **808 pasangan sumber daya–wilayah / 778 identitas unik**, bukan semua sumber daya. Karawang 768, Kota Bekasi 27, Kota Bandung 2, Jakarta 4, Banten 7. Purwakarta, Kab. Bekasi, Kab. Bogor, Indramayu, Subang dan Lampung belum memiliki harga yang lolos pencocokan ini. 4.218 identitas belum memiliki harga terverifikasi pada wilayah mana pun.
+- Katalog otomatis: **822 pasangan sumber daya–wilayah / 788 identitas unik**, bukan semua sumber daya. Karawang 768, Kota Bekasi 41, Kota Bandung 2, Jakarta 4, Banten 7. Purwakarta, Kab. Bekasi, Kab. Bogor, Indramayu, Subang dan Lampung belum memiliki harga yang lolos pencocokan ini. 4.208 identitas belum memiliki harga terverifikasi pada wilayah mana pun.
 - Sebagian terbesar berasal dari SHS Karawang 2026 dan SSH Kota Bekasi 2026. Nama/spesifikasi, satuan dan wilayah dibandingkan secara ketat. Harga yang bertentangan tidak dipilih otomatis. Normalisasi mempertahankan pecahan, desimal, diameter dan dimensi agar tidak salah disamakan.
 - 13 pasangan harga dari baris jurnal 2025 yang diperiksa visual dieskalasi menggunakan indeks komoditas BPS rata-rata tahunan 2025 → Oktober 2026, tahun dasar 2023=100. BPS konstruksi y-on-y 9,59% bukan faktor yang digunakan secara seragam. Angka lengkap, periode, sumber dan perhitungan tersimpan pada setiap rekaman dan laporan.
+- Koreksi 21 November: sumber Excel SBU Jawa Barat yang sebelumnya tidak masuk ekstraksi kini dibaca. Pengguna mengonfirmasi tahun 2025. Sebanyak 14 pasangan upah Kota Bekasi diisi sebagai estimasi dengan proksi IHK BPS tahun kalender 2,21% (Desember 2025 → Oktober 2026), bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Mandor Rp292.200/OH menjadi Rp298.657,62/OH, atau Rp37.332,20/OJ berdasarkan 8 jam/hari yang tercetak pada sumber. Tarif tahunan 2025 diperlakukan berlaku sampai akhir 2025 sebagai konvensi periode dasar. Upah lokal yang sudah memiliki harga primer, serta semua harga manual, dipertahankan. Data/URL/halaman BPS ada di `public/data/bps-wage-proxies.json`.
 - Pemakaian rata-rata tahunan sebagai periode dasar merupakan konvensi untuk sumber yang hanya menyebut tahun. Tidak ada proyeksi 2027 atau penyambungan seri BPS beda tahun dasar. Upah dan sewa alat lama belum dieskalasi dengan indeks bahan.
 - SSH sumber menyatakan harga termasuk pajak. Harga barang nonmewah dibagi 1,11 sebelum masuk RAB agar tidak dikenai PPN dua kali; asumsi ini mengikuti model aplikasi 12% × DPP 11/12, dicatat pada setiap rekaman. Ini bukan angka pajak yang dicetak per barang. Upah langsung tidak dikurangi PPN. SSH merupakan standar/batas tertinggi, bukan bukti harga pasar terkini. Perlakuan pajak dan kondisi pengadaan harus tetap ditinjau.
 
@@ -30,7 +31,7 @@ Logika pengisian mendukung TKDN hanya jika rekaman memuat produk/produsen, nomor
 
 1. `node scripts/inventory-price-resources.mjs`
 2. `python3 scripts/extract-price-sources.py /workspace/price-sources`
-3. `python3 scripts/extract-journal-price-candidates.py /workspace/price-sources`
+3. `python3 scripts/extract-journal-price-candidates.py /workspace/price-sources`, lalu `python3 scripts/extract-jabar-wages.py /workspace/price-sources --year 2025` (tahun dikonfirmasi pengguna)
 4. `node scripts/build-regional-price-catalog.mjs /workspace/price-sources`
 5. `python3 scripts/match-tkdn-candidates.py /workspace/price-sources`
 6. `node scripts/report-regional-prices.mjs /workspace/price-sources`

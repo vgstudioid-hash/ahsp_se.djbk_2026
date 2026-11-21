@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-21",
+  "proxies": [
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "sourceYear": 2025,
+      "basisYear": 2026,
+      "method": "regional-cpi-wage-proxy",
+      "series": "IHK umum Kota Bekasi (2022=100), inflasi tahun kalender",
+      "percent": 2.21,
+      "basePeriod": "Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun)",
+      "targetPeriod": "Oktober 2026",
+      "url": "https://bekasikota.bps.go.id/id/pressrelease/2026/11/02/173668/oktober-2026-inflasi-year-on-year-y-on-y-kota-bekasi-sebesar-2-91-persen.html",
+      "sourceTitle": "BRS Perkembangan Indeks Harga Konsumen Kota Bekasi, Oktober 2026; 2 November 2026",
+      "pages": [
+        2,
+        3,
+        9
+      ],
+      "quote": "Tingkat inflasi year to date (y-to-d) sebesar 2,21 persen.",
+      "limitation": "Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain."
+    }
+  ]
+}
