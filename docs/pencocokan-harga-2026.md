@@ -17,7 +17,7 @@
 
 `price-catalog.js` mengindeks identitas yang telah dicocokkan dalam data. Tidak ada pencarian nama mendekati atau harga terendah/tertinggi di browser. Harga hanya diisi setelah Region dan Sub Region lengkap. Semua sumber daya yang sama memakai alias harga AHS/HSD yang sudah ada, tanpa mengubah koefisien.
 
-Harga pengguna, termasuk 0, konflik harga lama, dan pengosongan manual tidak ditimpa. Harga otomatis dapat diedit melalui kolom yang sudah ada. Penanda asal katalog, tahun dan kolom manual ikut validasi, bank harga, impor CSV serta cadangan. Sumber harga dan catatan mengikuti kolom metadata yang sudah ada. Katalog dimuat bersama data awal, diterapkan saat menyimpan/merender dan setelah pergantian wilayah. Build menyertakan versi modul dan JSON harga dalam hash.
+Harga pengguna, termasuk 0, konflik harga lama, dan pengosongan manual tidak ditimpa. Harga otomatis dapat diedit melalui kolom yang sudah ada. Penanda asal katalog, tahun dan kolom manual ikut validasi, bank harga, impor CSV serta cadangan. Sumber harga dan catatan mengikuti kolom metadata yang sudah ada. Katalog dimuat bersama data awal, diterapkan saat menyimpan/merender dan setelah pergantian wilayah. Region/Sub Region kini dipilih lebih awal pada kotak Lokasi Pekerjaan di Informasi Umum, bukan toolbar HSD. Pratinjau AHS menggunakan salinan proyek untuk menampilkan harga wilayah sebelum komponen ditambahkan. Pemilihan dari katalog maupun baris RAB langsung menyimpan harga yang tersedia dan memperbarui daftar AHS terpakai. Build menyertakan versi modul dan JSON harga dalam hash.
 
 ## TKDN — belum selesai
 

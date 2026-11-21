@@ -46,6 +46,13 @@ export function applyPriceCatalog(project,index){
  }
  return filled;
 }
+// A catalogue preview prices a prospective AHS without adding it to the project or
+// modifying any stored price bank. Existing manual prices/clears still take priority.
+export function priceCatalogPreview(project,item,index){
+ const draft={...project,rates:{...project.rates},resourceMeta:structuredClone(project.resourceMeta||{}),items:[{...item,volume:item.volume??1,heading:false,wbsLevel:2}]};
+ applyPriceCatalog(draft,index);
+ return draft;
+}
 // The indices must belong to the same official series and base year.
 export function escalateByIndex(price,base,target){
  if(!Number.isFinite(price)||price<0||price>1e15||!base?.series||base.series!==target?.series||base.baseYear!==target.baseYear||!Number.isFinite(base.value)||base.value<=0||!Number.isFinite(target.value)||target.value<=0||!base.period||!target.period||!base.url||!target.url)throw Error('Indeks eskalasi harus sebanding dan memiliki rujukan.');

@@ -209,6 +209,8 @@ Project Baru membuka blangko kosong tanpa mengisi nama atau tahun otomatis. Form
 6. Tahun (4 digit, minimal 1900)
 7. Pagu Anggaran (rupiah, lebih dari 0, maksimal 10^15)
 
+Di bawah form utama ada kotak terpisah **Lokasi Pekerjaan** berisi dropdown **Region** dan **Sub Region** yang saling bergantung. Keduanya harus dipilih sebelum melanjutkan ke RAB/AHS. Pilihan wilayah menggunakan bank harga proyek yang sudah ada, ikut cadangan, dan tetap tersimpan saat proyek dibuka kembali. Dropdown wilayah tidak lagi berada pada toolbar HSD.
+
 Tombol **Lanjut → Rencana Anggaran Biaya (RAB)** berada di kanan bawah dan benar-benar `disabled` selama ada isian kosong, hanya spasi, tahun tidak valid, atau pagu tidak positif. Status tombol diperbarui saat pengguna mengetik. Handler Lanjut memeriksa kembali isian sebelum berpindah halaman. Enter pada form tidak melewati validasi atau memuat ulang aplikasi.
 
 Impor cadangan JSON membuka form dengan data impor. Data baru ini disimpan pada kolom `ma`, `subMa`, `workUnit`, dan `budget` bersama nama/tahun, serta ikut pada backup dan keluaran RAB/rekap. Cadangan lama tetap dapat diimpor; isian tambahan yang belum ada dibiarkan kosong sehingga Lanjut terkunci sampai pengguna melengkapinya. Data lama seperti AHS, Quantity, harga, lokasi, dan pajak tetap dipertahankan. Pagu adalah informasi anggaran dan tidak otomatis mengubah nilai pekerjaan.
@@ -363,3 +365,7 @@ Finalisasi mempertahankan palet, ikon, komposisi desktop dan alur kerja yang sud
 Jarak memakai ritme 8/12/16/20 px. Judul dan subjudul Asisten AI mengikuti urutan halaman lain tanpa menghapus penjelasannya. Header antarhalaman memakai jarak yang sama; dialog memiliki padding, jarak tombol dan tinggi pencarian yang seragam. Filter ponsel memakai dua kolom, dengan pencarian selebar baris dan Sub Region selebar baris berikutnya. Flex basis toolbar desktop dinetralkan pada layar sempit agar tidak menghasilkan ruang kosong vertikal berlebihan. Freeze tetap menghitung tinggi kontrol aktual. Fokus Region/Sub Region dipulihkan setelah render sehingga navigasi keyboard tetap berurutan.
 
 Validasi final: delapan rute utama pada viewport 1440, 1024, 390 dan 320 px; tidak ada overflow horizontal halaman (tabel teknis tetap dapat digeser dalam pembungkus). Enam tabel dengan freeze, dialog/rincian/picker AHS, pencarian dengan satu batas fokus, alur harga regional/CSV, Pustaka ponsel, serta seluruh 59 pengujian berhasil. Data harga, koefisien dan rumus keuangan tidak diubah dalam finalisasi ini.
+
+## Pemilihan lokasi sebelum AHS
+
+Lokasi harga dipilih pada Informasi Umum, dalam kotak di bawah tujuh isian utama. Wilayah/subwilayah wajib valid untuk membuka halaman kerja, sementara cadangan lama tetap dapat dibaca tanpa mengarang lokasi. Pratinjau AHS memakai salinan data proyek untuk mengambil seluruh harga yang tersedia pada katalog wilayah, tanpa menambah pekerjaan atau mengubah harga tersimpan. Setelah AHS dipilih lewat katalog atau pemilih baris RAB, harga langsung disimpan dan daftar AHS terpakai diperbarui. Harga manual, nol eksplisit, dan pengosongan manual dipertahankan. Harga yang belum ada pada sumber wilayah tetap kosong dan jumlah yang terisi disebutkan pada pemberitahuan pemilihan; tidak memakai harga wilayah lain sebagai pengganti.

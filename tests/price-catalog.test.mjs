@@ -1,8 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {createPriceCatalog,applyPriceCatalog,markPriceFieldManual,escalateByIndex} from '../price-catalog.js';
-import {rateKey,validateProject,selectPriceRegion,resourceMetadata,resources,calculateProject,importRates,toCsv} from '../rab-core.js';
+import {createPriceCatalog,applyPriceCatalog,markPriceFieldManual,escalateByIndex,priceCatalogPreview} from '../price-catalog.js';
+import {rateKey,validateProject,selectPriceRegion,resourceMetadata,resources,calculateProject,importRates,toCsv,projectInformationErrors} from '../rab-core.js';
 import {resourceIdentity} from '../resource-cleanup.js';
 const c={name:'Pekerja',unit:'OH',group:'Tenaga kerja',coefficient:2};
 const item={id:'w',docId:'iv',code:'A',title:'Pekerjaan',unit:'m3',group:'Pekerjaan',volume:3,components:[c]};
@@ -43,4 +43,16 @@ test('TKDN requires product/certificate evidence, remains independent of manual 
 test('Mandor Kota Bekasi uses the confirmed 2025 source and transparent 2026 CPI planning estimate for OH and OJ',async()=>{
  const data=JSON.parse(await readFile(new URL('../public/data/regional-price-catalog.json',import.meta.url),'utf8')),idx=createPriceCatalog(data),p=fixture();p.items=[{...structuredClone(item),components:[{...c,name:'Mandor',coefficient:1},{...c,name:'Mandor',unit:'OJ',coefficient:1}]}];selectPriceRegion(p,'Jawa Barat','Kota Bekasi');assert.equal(applyPriceCatalog(p,idx),2);const res=resources(p);assert.equal(res.find(c=>c.unit==='OH').price,298657.62);assert.equal(res.find(c=>c.unit==='OJ').price,37332.2);for(const r of res){const m=resourceMetadata(p,r);assert.match(m.priceSource,/2025/);assert.match(m.priceSource,/2\.2100/);assert.match(m.remarks,/proksi IHK/);}
  selectPriceRegion(p,'Jawa Barat','Kab. Bekasi');assert.equal(applyPriceCatalog(p,idx),0);assert.equal(resources(p)[0].price,null);selectPriceRegion(p,'Jawa Barat','Kota Bekasi');assert.equal(resources(p)[0].price,298657.62);
+});
+
+test('project entry requires a valid location before using AHS while legacy backups remain readable',()=>{
+ const p={name:'Proyek',ma:'0001',subMa:'0002',workUnit:'Unit Wilayah I',programCategory:'Beban',year:'2027',budget:1000000};
+ assert.deepEqual(projectInformationErrors(p),{});assert.deepEqual(Object.keys(projectInformationErrors(p,null,true)).sort(),['priceRegion','priceSubRegion']);p.priceRegion='Jawa Barat';assert.deepEqual(Object.keys(projectInformationErrors(p,null,true)),['priceSubRegion']);p.priceSubRegion='Jakarta';assert(projectInformationErrors(p,null,true).priceSubRegion);p.priceSubRegion='Kota Bekasi';assert.deepEqual(projectInformationErrors(p,null,true),{});
+});
+test('prospective AHS preview fills every available regional price without changing project items, rates or banks',()=>{
+ const p=fixture();p.items=[];p.priceProfiles={general:{rates:{},resourceMeta:{}}};const before=structuredClone(p),a=structuredClone(item),preview=priceCatalogPreview(p,a,catalog());assert.equal(preview.rates[rateKey(a,c)],138000);assert.equal(calculateProject(preview).subtotal,828000);assert.deepEqual(p,before);assert.deepEqual(a,item);const source={...a};delete source.volume;const unitPreview=priceCatalogPreview(p,source,catalog());assert.equal(calculateProject(unitPreview).subtotal,276000);assert.equal(source.volume,undefined);
+ p.items.push(a);assert.equal(applyPriceCatalog(p,catalog()),1);assert.equal(p.rates[rateKey(a,c)],138000);
+});
+test('AHS previews retain manual prices and manual clearing before selection',()=>{
+ const p=fixture(),key=rateKey(item,c);p.rates[key]=177000;assert.equal(priceCatalogPreview(p,item,catalog()).rates[key],177000);delete p.rates[key];markPriceFieldManual(p,key,'price');const preview=priceCatalogPreview(p,item,catalog());assert.equal(preview.rates[key],undefined);assert.equal(resources(preview)[0].price,null);
 });
