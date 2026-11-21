@@ -1,0 +1,551 @@
+{
+  "reviewedOn": "2026-11-21",
+  "ahs": 5637,
+  "scopeCount": 11,
+  "example": {
+    "id": "vi:table:478:655",
+    "code": "3.11.2.3",
+    "title": "Pemasangan 1 buah Jendela Kaca uPVC 2 daun ukuran 1,150 m x"
+  },
+  "regions": [
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Purwakarta",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 196435.2,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Purwakarta (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 645 · Jawa Barat/Purwakarta · harga sumber Rp 192000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 237973.06,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Purwakarta (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 646 · Jawa Barat/Purwakarta · harga sumber Rp 232600 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 250966.43,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Purwakarta (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 647 · Jawa Barat/Purwakarta · harga sumber Rp 245300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 251682.6,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Purwakarta (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 648 · Jawa Barat/Purwakarta · harga sumber Rp 246000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Karawang",
+      "identities": 4996,
+      "available": 785,
+      "missing": 4211,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 138000,
+          "remarks": "Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Perbup Kab. Karawang Nomor 28 Tahun 2025 tentang SHS 2026.pdf · PDF 231 baris 1 · Jawa Barat/Karawang · harga sumber Rp 138000 per Orang / Hari; tahun sumber 2026, basis 2026. https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 150000,
+          "remarks": "Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Perbup Kab. Karawang Nomor 28 Tahun 2025 tentang SHS 2026.pdf · PDF 231 baris 8 · Jawa Barat/Karawang · harga sumber Rp 150000 per Orang / Hari; tahun sumber 2026, basis 2026. https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 165000,
+          "remarks": "Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Perbup Kab. Karawang Nomor 28 Tahun 2025 tentang SHS 2026.pdf · PDF 230 baris 19 · Jawa Barat/Karawang · harga sumber Rp 165000 per Orang / Hari; tahun sumber 2026, basis 2026. https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 165000,
+          "remarks": "Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Perbup Kab. Karawang Nomor 28 Tahun 2025 tentang SHS 2026.pdf · PDF 230 baris 28 · Jawa Barat/Karawang · harga sumber Rp 165000 per Orang / Hari; tahun sumber 2026, basis 2026. https://drive.google.com/file/d/1Aoyp4xmG2LTwSArkigUKrTf0WnO69Eti/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bekasi",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 228151.3,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 625 · Jawa Barat/Kab. Bekasi · harga sumber Rp 223000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 276441.62,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bekasi (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 626 · Jawa Barat/Kab. Bekasi · harga sumber Rp 270200 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 291481.19,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 627 · Jawa Barat/Kab. Bekasi · harga sumber Rp 284900 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 292401.98,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 628 · Jawa Barat/Kab. Bekasi · harga sumber Rp 285800 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bekasi",
+      "identities": 4996,
+      "available": 55,
+      "missing": 4941,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 233038.8,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.21% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bekasikota.bps.go.id/id/pressrelease/2026/11/02/173668/oktober-2026-inflasi-year-on-year-y-on-y-kota-bekasi-sebesar-2-91-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 515 · Jawa Barat/Kota Bekasi · harga sumber Rp 228000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.2100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 282406.23,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bekasi (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.21% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bekasikota.bps.go.id/id/pressrelease/2026/11/02/173668/oktober-2026-inflasi-year-on-year-y-on-y-kota-bekasi-sebesar-2-91-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 516 · Jawa Barat/Kota Bekasi · harga sumber Rp 276300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.2100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 297737.73,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.21% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bekasikota.bps.go.id/id/pressrelease/2026/11/02/173668/oktober-2026-inflasi-year-on-year-y-on-y-kota-bekasi-sebesar-2-91-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 517 · Jawa Barat/Kota Bekasi · harga sumber Rp 291300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.2100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 298657.62,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bekasi (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.21% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi Mandor 2026. Harga sumber dikonfirmasi pengguna berlaku tahun 2025; diperlakukan sebagai tarif tahunan sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bekasikota.bps.go.id/id/pressrelease/2026/11/02/173668/oktober-2026-inflasi-year-on-year-y-on-y-kota-bekasi-sebesar-2-91-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 518 · Jawa Barat/Kota Bekasi · harga sumber Rp 292200 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.2100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kota Bandung",
+      "identities": 4996,
+      "available": 30,
+      "missing": 4966,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 183924,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bandung (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.18% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bandungkota.bps.go.id/id/pressrelease/2026/11/02/173660/oktober-2026-inflasi-year-on-year-y-on-y-kota-bandung-sebesar-2-95-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 525 · Jawa Barat/Kota Bandung · harga sumber Rp 180000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.1800% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 222854.58,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bandung (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.18% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bandungkota.bps.go.id/id/pressrelease/2026/11/02/173660/oktober-2026-inflasi-year-on-year-y-on-y-kota-bandung-sebesar-2-95-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 526 · Jawa Barat/Kota Bandung · harga sumber Rp 218100 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.1800% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 235014,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bandung (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.18% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bandungkota.bps.go.id/id/pressrelease/2026/11/02/173660/oktober-2026-inflasi-year-on-year-y-on-y-kota-bandung-sebesar-2-95-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 527 · Jawa Barat/Kota Bandung · harga sumber Rp 230000 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.1800% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 235729.26,
+          "remarks": "Upah sumber 8 jam/hari; Kota Bandung (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.18% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://bandungkota.bps.go.id/id/pressrelease/2026/11/02/173660/oktober-2026-inflasi-year-on-year-y-on-y-kota-bandung-sebesar-2-95-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 528 · Jawa Barat/Kota Bandung · harga sumber Rp 230700 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.1800% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Kab. Bogor",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 201857.63,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bogor (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 655 · Jawa Barat/Kab. Bogor · harga sumber Rp 197300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 244623.21,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bogor (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 656 · Jawa Barat/Kab. Bogor · harga sumber Rp 239100 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 257923.51,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bogor (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 657 · Jawa Barat/Kab. Bogor · harga sumber Rp 252100 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 258639.68,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Bogor (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 658 · Jawa Barat/Kab. Bogor · harga sumber Rp 252800 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Indramayu",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 132798.38,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Indramayu (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 665 · Jawa Barat/Indramayu · harga sumber Rp 129800 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 160933.63,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Indramayu (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 666 · Jawa Barat/Indramayu · harga sumber Rp 157300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 169732.29,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Indramayu (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 667 · Jawa Barat/Indramayu · harga sumber Rp 165900 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 170141.53,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Indramayu (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 668 · Jawa Barat/Indramayu · harga sumber Rp 166300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jawa Barat",
+      "subRegion": "Subang",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 147121.78,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Subang (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 705 · Jawa Barat/Subang · harga sumber Rp 143800 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 178224.02,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Subang (jam kerja 8 jam/hari). Estimasi klasifikasi ke tarif kelompok Tukang setempat. Sumber tidak merinci keahlian; bukan survei tarif khusus aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 706 · Jawa Barat/Subang · harga sumber Rp 174200 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 187943.47,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Subang (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 707 · Jawa Barat/Subang · harga sumber Rp 183700 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 188557.33,
+          "remarks": "Upah sumber 8 jam/hari; Kabupaten Subang (jam kerja 8 jam/hari). Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.31% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. IHK provinsi dipakai sebagai proksi untuk kabupaten; harga dasar tetap tarif kabupaten masing-masing. https://jabar.bps.go.id/id/pressrelease/2026/11/02/170359/oktober-2026-jawa-barat-mengalami-inflasi-tahunan-year-on-year-sebesar-2-90-persen-dengan-indeks-harga-konsumen-ihk-sebesar-112-69.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "export_excel_sbu_Provinsi Jawa Barat (2).xlsx · Sheet 1 baris 708 · Jawa Barat/Subang · harga sumber Rp 184300 per Orang / Hari; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.3100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/146vrCHoOF_3axqj17Ea8oW8eZyfqd552/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Jakarta",
+      "subRegion": "Jakarta",
+      "identities": 4996,
+      "available": 12,
+      "missing": 4984,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 198724.5,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.91% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://jakarta.bps.go.id/id/pressrelease/2026/11/02/170358/perkembangan-indeks-harga-konsumen-provinsi-dki-jakarta-oktober-2026.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 302 / cetak 301 / baris 1 · Jakarta/Jakarta · harga sumber Rp 195000 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.9100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 240390.4,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.91% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://jakarta.bps.go.id/id/pressrelease/2026/11/02/170358/perkembangan-indeks-harga-konsumen-provinsi-dki-jakarta-oktober-2026.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 302 / cetak 301 / baris 12 · Jakarta/Jakarta · harga sumber Rp 235885 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.9100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Banten",
+      "subRegion": "Banten",
+      "identities": 4996,
+      "available": 24,
+      "missing": 4972,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 152715,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.81% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://banten.bps.go.id/id/pressrelease/2026/11/02/170363/inflasi-year-on-year-y-on-y-provinsi-banten-pada-oktober-2026-tercatat-sebesar-2-76-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 284 / cetak 283 / baris 1 · Banten/Banten · harga sumber Rp 150000 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.8100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 162896,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.81% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://banten.bps.go.id/id/pressrelease/2026/11/02/170363/inflasi-year-on-year-y-on-y-provinsi-banten-pada-oktober-2026-tercatat-sebesar-2-76-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 284 / cetak 283 / baris 3 · Banten/Banten · harga sumber Rp 160000 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.8100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 171040.8,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.81% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://banten.bps.go.id/id/pressrelease/2026/11/02/170363/inflasi-year-on-year-y-on-y-provinsi-banten-pada-oktober-2026-tercatat-sebesar-2-76-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 284 / cetak 283 / baris 13 · Banten/Banten · harga sumber Rp 168000 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.8100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 182443.52,
+          "remarks": "Estimasi penyesuaian upah menggunakan proksi IHK BPS 1.81% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://banten.bps.go.id/id/pressrelease/2026/11/02/170363/inflasi-year-on-year-y-on-y-provinsi-banten-pada-oktober-2026-tercatat-sebesar-2-76-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 284 / cetak 283 / baris 14 · Banten/Banten · harga sumber Rp 179200 per OH; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 1.8100% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "region": "Lampung",
+      "subRegion": "Lampung",
+      "identities": 4996,
+      "available": 28,
+      "missing": 4968,
+      "upvc": [
+        {
+          "name": "Pekerja",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 152232.8,
+          "remarks": "Upah asumsi pengguna 8 jam/hari; Pekerja. Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber). Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.86% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://lampung.bps.go.id/id/pressrelease/2026/11/02/170377/oktober-2026-inflasi-year-on-year-y-on-y-provinsi-lampung-mengalami-inflasi-sebesar-3-83-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 240 / cetak 239 / baris 1 · Lampung/Lampung · harga sumber Rp 18500 per OJ; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.8600% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Tukang Aluminium",
+          "unit": "OH",
+          "coefficient": 0.167,
+          "price": 213948.8,
+          "remarks": "Upah asumsi pengguna 8 jam/hari; Tukang. Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber). Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi klasifikasi ke tarif kelompok Tukang; sumber tidak merinci keahlian aluminium/batu/kayu/besi/cat/kaca/tembok/pelitur. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.86% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://lampung.bps.go.id/id/pressrelease/2026/11/02/170377/oktober-2026-inflasi-year-on-year-y-on-y-provinsi-lampung-mengalami-inflasi-sebesar-3-83-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 240 / cetak 239 / baris 2 · Lampung/Lampung · harga sumber Rp 26000 per OJ; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.8600% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Kepala Tukang",
+          "unit": "OH",
+          "coefficient": 0.017,
+          "price": 246864,
+          "remarks": "Upah asumsi pengguna 8 jam/hari; Kepala Tukang. Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber). Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.86% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://lampung.bps.go.id/id/pressrelease/2026/11/02/170377/oktober-2026-inflasi-year-on-year-y-on-y-provinsi-lampung-mengalami-inflasi-sebesar-3-83-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 240 / cetak 239 / baris 10 · Lampung/Lampung · harga sumber Rp 30000 per OJ; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.8600% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Mandor",
+          "unit": "OH",
+          "coefficient": 0.006,
+          "price": 271550.4,
+          "remarks": "Upah asumsi pengguna 8 jam/hari; Mandor. Konversi asumsi pengguna: harga per orang/jam × 8 jam kerja per OH (bukan jam kerja yang tercetak pada sumber). Estimasi acuan Lampung menggunakan Kota Bandar Lampung, sesuai instruksi pengguna 21 November 2026. Bukan survei atau tarif resmi seluruh kabupaten Lampung. Harga bruto sumber termasuk inflasi, pajak dan keuntungan; komponen tersebut tidak dirinci. Estimasi penyesuaian upah menggunakan proksi IHK BPS 2.86% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). Proksi biaya hidup untuk estimasi anggaran upah, bukan indeks upah konstruksi atau tarif resmi 2026. Tarif tahunan sumber 2025 diperlakukan berlaku sampai akhir 2025. Tidak digunakan untuk bahan atau wilayah lain. https://lampung.bps.go.id/id/pressrelease/2026/11/02/170377/oktober-2026-inflasi-year-on-year-y-on-y-provinsi-lampung-mengalami-inflasi-sebesar-3-83-persen.html Harga upah sumber/estimasi tetap dapat diedit. TKDN produk tidak berlaku untuk upah tenaga kerja.",
+          "source": "Jurnal Harga Bangunan Edisi-44-2025.pdf · PDF 240 / cetak 239 / baris 3 · Lampung/Lampung · harga sumber Rp 33000 per OJ; tahun sumber 2025, basis 2026, estimasi upah/proksi IHK 2.8600% (Desember 2025 (konvensi tarif tahunan 2025 berlaku sampai akhir tahun) → Oktober 2026). https://drive.google.com/file/d/13otiSlyWtwwPdRkdaxIrAKQiWRQU4Fdu/view"
+        },
+        {
+          "name": "Jendela Kaca uPVC 2 daun ukuran 1,150 m x 1,30 m",
+          "unit": "buah",
+          "coefficient": 1,
+          "price": null,
+          "remarks": "Belum ada harga dengan kecocokan identitas, satuan dan wilayah yang dapat dipertanggungjawabkan.",
+          "source": ""
+        }
+      ]
+    }
+  ]
+}

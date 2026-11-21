@@ -1,5 +1,5 @@
-import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.460048bf46f2.js';
-import {resourceIdentity} from './resource-cleanup.460048bf46f2.js';
+import {resources, resourceMetadata, setResourcePrice, setResourceMetadata, priceProfileKey, moneyRound} from './rab-core.9057dd027f80.js';
+import {resourceIdentity} from './resource-cleanup.9057dd027f80.js';
 
 // Published records contain reviewed identities; runtime never guesses by name or code.
 export function createPriceCatalog(data){
@@ -18,7 +18,7 @@ export function createPriceCatalog(data){
  }
  return index;
 }
-export {markResourceFieldManual as markPriceFieldManual} from './rab-core.460048bf46f2.js';
+export {markResourceFieldManual as markPriceFieldManual} from './rab-core.9057dd027f80.js';
 export function applyPriceCatalog(project,index){
  // Local prices require an explicit complete region; no silent provincial/city fallback.
  if(!project.priceRegion||!project.priceSubRegion||!index?.size)return 0;

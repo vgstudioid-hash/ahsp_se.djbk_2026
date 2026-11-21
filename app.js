@@ -1,5 +1,6 @@
-import { initButtonNavigation } from './button-navigation.460048bf46f2.js';
-import { normalize } from './search-core.460048bf46f2.js';
+import {ahsMenuIcon} from './menu-icons.9057dd027f80.js';
+import { initButtonNavigation } from './button-navigation.9057dd027f80.js';
+import { normalize } from './search-core.9057dd027f80.js';
 
 const icons = {
   home: '<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
@@ -50,7 +51,7 @@ function toggleSaved(id, page=1) {
 function route() { return (location.hash.slice(1).split('?')[0] || 'home'); }
 const names = { home: 'Ikhtisar', library: 'Pustaka Dokumen', fields: 'Bidang Pekerjaan', saved: 'Tersimpan', search: 'Pencarian' };
 function updateNav() {
-  $('#navigation').innerHTML = [['project','home','Informasi Umum'],['quantity','chart','Quantity Pekerjaan'],['recap','chart','Rekapitulasi RAB'],['rab','list','Rencana Anggaran Biaya (RAB)'],['catalog','grid','Analisa Harga Satuan (AHS)'],['prices','layers','Harga Satuan Dasar (HSD)']].map(([r,i,label])=>`<a href="index.html#${r}">${icon(i)}<span>${label}</span></a>`).join('')+`<a href="#library" class="active" aria-current="page">${icon('book')}<span>Dasar-dasar Perhitungan (Pustaka)</span></a>`;
+  $('#navigation').innerHTML = [['project','home','Informasi Umum'],['quantity','chart','Quantity Pekerjaan'],['recap','chart','Rekapitulasi RAB'],['rab','list','Rencana Anggaran Biaya (RAB)'],['catalog','grid','Analisa Harga Satuan (AHS)'],['prices','layers','Harga Satuan Dasar (HSD)']].map(([r,i,label])=>`<a href="index.html#${r}">${r==='catalog'?ahsMenuIcon:icon(i)}<span>${label}</span></a>`).join('')+`<a href="#library" class="active" aria-current="page">${icon('book')}<span>Dasar-dasar Perhitungan (Pustaka)</span></a>`;
   $('#breadcrumb-current').textContent = names[route()] || names.home;
 }
 function blueprint() {
@@ -79,7 +80,7 @@ function runSearch(q) {
   $('#search-input').value=q;
   if (q.trim().length<2) { $('#search-results').innerHTML='<div class="empty-state">Masukkan minimal dua karakter untuk mulai mencari.</div>'; return; }
   if (!worker) {
-    worker=new Worker(new URL('./search-worker.460048bf46f2.js', import.meta.url),{type:'module'});
+    worker=new Worker(new URL('./search-worker.9057dd027f80.js', import.meta.url),{type:'module'});
     worker.onmessage=({data})=>{
       if(data.id!==searchId || route()!=='search') return;
       const total=data.groups.reduce((n,g)=>n+g.total,0); const query=new URLSearchParams(location.hash.split('?')[1]).get('q')||'';
