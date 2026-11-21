@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=687c473ae8a5")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=687c473ae8a5")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=687c473ae8a5")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=cffa8436f6cf")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=cffa8436f6cf")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=cffa8436f6cf")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -453,6 +453,16 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 #navigation a.active{--menu-green:#19694d;--menu-green-dark:#125650;--menu-green-light:#27835f;--menu-blue:#1266ad;--menu-blue-dark:#165da3;--menu-outline:#fffdf5;--menu-paper:#fffdf5}
 #navigation .nav-symbol:has(.sidebar-menu-icon){width:28px;min-width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
 #navigation .sidebar-menu-icon{width:28px;height:28px;display:block;flex:none;stroke-width:1.2}
+}
+
+/* One consistent sidebar icon language: compact solid glyphs with identical
+   optical weight and palette across every page, including AHS. */
+@media screen {
+  #navigation .nav-symbol:has(.sidebar-menu-icon){width:26px;min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
+  #navigation .sidebar-menu-icon{width:26px;height:26px;display:block;flex:none;color:var(--menu-green-light)}
+  #navigation .sidebar-menu-icon *{stroke:none!important;fill:currentColor!important}
+  #navigation a.active .sidebar-menu-icon{color:var(--menu-green-dark)}
+  #navigation a:hover:not(.active) .sidebar-menu-icon{color:var(--menu-green-light)}
 }
 
 /* Final UI rhythm: retain the approved composition, colours and icon artwork. */
