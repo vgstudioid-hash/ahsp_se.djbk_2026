@@ -455,15 +455,6 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 #navigation .sidebar-menu-icon{width:28px;height:28px;display:block;flex:none;stroke-width:1.2}
 }
 
-/* One consistent sidebar icon language: compact solid glyphs with identical
-   optical weight and palette across every page, including AHS. */
-@media screen {
-  #navigation .nav-symbol:has(.sidebar-menu-icon){width:26px;min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;line-height:0}
-  #navigation .sidebar-menu-icon{width:26px;height:26px;display:block;flex:none;color:var(--menu-green-light)}
-  #navigation .sidebar-menu-icon *{stroke:none!important;fill:currentColor!important}
-  #navigation a.active .sidebar-menu-icon{color:var(--menu-green-dark)}
-  #navigation a:hover:not(.active) .sidebar-menu-icon{color:var(--menu-green-light)}
-}
 
 /* Final UI rhythm: retain the approved composition, colours and icon artwork. */
 @media screen {
@@ -529,6 +520,21 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 .project-location-card .settings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .project-location-card .setting-note{margin:16px 0 0}
 @media(max-width:600px){.project-location-card .settings-grid{grid-template-columns:1fr}}
+
+/* Action controls match the approved d26ee01e41a9 treatment. Keep the
+   control itself visible, centered, and let the inline SVG remain the icon. */
+@media screen {
+  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:4px!important;border:0!important;border-radius:6px!important;line-height:0!important;font-size:0!important;box-shadow:none!important}
+  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:none!important;display:none!important}
+  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:block!important;visibility:visible!important;opacity:1!important;width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;margin:0!important;flex:none!important;stroke:currentColor!important;fill:none!important;color:inherit!important;pointer-events:none}
+  button.trash-button{background:#eb4545!important;color:#fff!important}
+  button.trash-button:hover:not(:disabled){background:#c9363d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
+  button.edit-icon-button{background:#27835f!important;color:#fff!important}
+  button.edit-icon-button:hover:not(:disabled){background:#19694d!important;color:#fff!important;box-shadow:0 0 0 3px #c7b58b88!important}
+  :is(button[data-component-remove],button[data-component-last]){background:#eb4545!important;color:#fff!important}
+  :is(button[data-component-remove],button[data-component-last]):hover:not(:disabled){background:#c9363d!important;color:#fff!important}
+  :is(button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):focus-visible{outline:3px solid var(--sand)!important;outline-offset:2px}
+}
 
 /* Final shared symbol skin (kept last so page-specific rules cannot diverge). */
 @media screen {
