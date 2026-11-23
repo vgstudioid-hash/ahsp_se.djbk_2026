@@ -1,5 +1,5 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.8d651f285759.js';
-import { validateQuantityRows, quantitySummary } from './quantity-core.8d651f285759.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.f768d174f0db.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.f768d174f0db.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -16,18 +16,23 @@ export function applyCatalogCorrections(project,rawCatalog,correctedCatalog){
 }
 export function applyCatalogTitles(project,catalog){
  const key=item=>JSON.stringify([item.docId,item.code,item.page,item.unit]),index=new Map();
- for(const source of catalog){if(!source.previousTitles?.length)continue;const k=key(source);if(!index.has(k))index.set(k,[]);index.get(k).push(source);}
+ for(const source of catalog){const k=key(source);if(!index.has(k))index.set(k,[]);index.get(k).push(source);}
  let count=0;
  for(const item of project.items){
-  if(item.heading||item.empirical||item.titleEdited||!item.docId)continue;
-  const matches=(index.get(key(item))||[]).filter(source=>source.previousTitles.includes(item.title));
+  if(item.heading||item.empirical||!item.docId)continue;
+  let matches=index.get(key(item))||[];
+  if(item.catalogId)matches=matches.filter(source=>source.id===item.catalogId);
+  if(matches.length!==1){const known=item.ahsTitle||item.title,exact=matches.filter(source=>source.title===known||source.previousTitles?.includes(known));if(exact.length)matches=exact;}
   const titles=new Set(matches.map(source=>source.title));
   if(titles.size!==1)continue;
-  const [title]=titles;if(title===item.title)continue;
-  item.title=title;count++;
+  const [title]=titles;
+  if(item.ahsTitle!==title){item.ahsTitle=title;count++;}
+  if(!item.titleEdited&&matches.some(source=>source.previousTitles?.includes(item.title))&&item.title!==title){item.title=title;count++;}
  }
  return count;
 }
+export function ahsTitle(item){return item.ahsTitle||item.title||'';}
+export function ahsCode(item){const code=item.code||'';return item.adjusted&&!item.empirical&&code&&!code.endsWith('.Emp')?code+'.Emp':code;}
 function identityFromKey(key){try{const a=JSON.parse(key);if(!Array.isArray(a)||a.length!==4||a.some(x=>typeof x!=='string'))return null;return resourceIdentity({group:a[1],name:a[2],unit:a[3]});}catch{return null;}}
 function indexedRates(rates){const map=new Map();for(const [key,value]of Object.entries(rates)){const id=identityFromKey(key);if(!id)continue;if(!map.has(id))map.set(id,[]);map.get(id).push({key,value,doc:JSON.parse(key)[0]});}return map;}
 export function rateKey(item,component){return JSON.stringify([item.empirical?'empiris':item.docId||'manual',component.group,cleanResourceName(component.name).toLocaleLowerCase('id').replace(/\s+/g,' ').trim(),normalizedResourceUnit(component.unit)]);}
@@ -269,6 +274,7 @@ export function validateProject(p) {
   const regional=validatePriceRegions(p,rates,resourceMeta);
   const items = p.items.map(item => {
     for (const k of ['code', 'title', 'unit', 'group']) if (typeof item[k] !== 'string' || item[k].length > 2000) throw Error('Identitas pekerjaan tidak valid.');
+    if(item.ahsTitle!=null&&(typeof item.ahsTitle!=='string'||item.ahsTitle.length>2000)||item.catalogId!=null&&(typeof item.catalogId!=='string'||item.catalogId.length>300))throw Error('Identitas AHS tidak valid.');
     if (!Array.isArray(item.components) || item.components.length > 300 || (item.heading && item.components.length)) throw Error('Rincian analisis tidak valid.');
     const wbsLevel = item.wbsLevel ?? 2;
     if (!Number.isInteger(wbsLevel) || wbsLevel < 1 || wbsLevel > 4) throw Error('Tingkat WBS harus 1–4.');
@@ -279,7 +285,7 @@ export function validateProject(p) {
     const quantityRows=validateQuantityRows(item.quantityRows||[]),quantityLinked=Boolean(item.quantityLinked);
     if(item.heading&&quantityRows.length)throw Error('Judul WBS tidak memiliki rincian Quantity.');
     const volume=quantityLinked?quantitySummary(quantityRows,item.unit).total:nonnegative(item.volume);
-    return prepareItemResources({ id: crypto.randomUUID(), recapVolume:item.recapVolume==null?1:nonnegative(item.recapVolume), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, titleEdited: Boolean(item.titleEdited), unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
+    return prepareItemResources({ id: crypto.randomUUID(), recapVolume:item.recapVolume==null?1:nonnegative(item.recapVolume), code: item.code, title: wbsLevel===1?item.title.toLocaleUpperCase('id'):item.title, titleEdited: Boolean(item.titleEdited), ...(item.ahsTitle?{ahsTitle:item.ahsTitle}:{}), ...(item.catalogId?{catalogId:item.catalogId}:{}), unit: item.unit, group: item.group, docId: item.docId || '', page, note: String(item.note || '').slice(0,4000), remarks: item.remarks || '', heading: Boolean(item.heading), wbsLevel, empirical: Boolean(item.empirical), adjusted: Boolean(item.adjusted), manual: Boolean(item.manual || item.empirical || item.adjusted), volume, quantityRows, quantityLinked, components: item.components.map(c => {
       if (!groups.includes(c.group) || typeof c.name !== 'string' || !c.name.trim() || c.name.length > 1000 || typeof c.unit !== 'string' || !c.unit.trim() || c.unit.length > 50) throw Error('Komponen analisis tidak valid.');
       for(const field of ['sourceName','alternativeSet'])if(c[field]!=null&&(typeof c[field]!=='string'||c[field].length>3000))throw Error('Rujukan sumber daya tidak valid.');
       return {group:c.group,name:c.name,unit:c.unit,coefficient:nonnegative(c.coefficient),code:String(c.code||'').slice(0,100),...(c.sourceName?{sourceName:c.sourceName}:{}),...(c.alternativeSet?{alternativeSet:c.alternativeSet}:{})};
