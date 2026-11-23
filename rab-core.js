@@ -1,5 +1,5 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.85eb93746b04.js';
-import { validateQuantityRows, quantitySummary } from './quantity-core.85eb93746b04.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.802c15e2f5ce.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.802c15e2f5ce.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -173,15 +173,15 @@ function importSingleRates(text, project) {
   const rows = readCsv(text);
   if (!rows.length) throw Error('CSV kosong.');
   const header = rows.shift().map(c => c.trim().toLowerCase());
-  const keyIndex = header.indexOf('kunci'), priceIndex = header.indexOf('harga');
-  if (keyIndex < 0 || priceIndex < 0) throw Error('Gunakan template CSV dengan kolom kunci dan harga.');
+  const keyIndex = header.indexOf('kunci'), priceIndex = header.includes('harga')?header.indexOf('harga'):header.indexOf('harga satuan');
+  if (keyIndex < 0 || priceIndex < 0) throw Error('Gunakan template CSV dengan kolom kunci dan harga satuan.');
   const resourceRows=resources(project),allowed=new Map(resourceRows.flatMap(c=>c.aliases.map(key=>[key,c.key]))),rates={...project.rates},resourceMeta=structuredClone(project.resourceMeta||{}),draft={...project,rates,resourceMeta};
   let count = 0;
   for (const row of rows) {
     const sourceKey=row[keyIndex],key=allowed.get(sourceKey)||resourceRows.find(c=>resourceIdentity(c)===identityFromKey(sourceKey))?.key,raw=row[priceIndex]?.trim();
     if (!key) throw Error('CSV memuat sumber daya yang tidak ada pada proyek ini.');
-    for (const [column,field,max] of [['kode','code',100],['keterangan','remarks',4000],['sumber harga','priceSource',2000],['nilai kdn','kdn',100]]) {
-      const index=header.indexOf(column);
+    for (const [columns,field,max] of [[['kode'],'code',100],[['keterangan'],'remarks',4000],[['sumber harga'],'priceSource',2000],[['tkdn (%)','tkdn','nilai kdn'],'kdn',100]]) {
+      const index=columns.map(column=>header.indexOf(column)).find(index=>index>=0)??-1;
       if(index>=0){const value=row[index]||'';if(value.length>max)throw Error('Kode/keterangan HSD terlalu panjang.');setResourceMetadata(draft,key,field,value);if(['priceSource','kdn','remarks'].includes(field))markResourceFieldManual(draft,key,field);}
     }
     const shbIndex=header.indexOf('harga shb');
