@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=f768d174f0db")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=f768d174f0db")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=f768d174f0db")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=4b07a87e301d")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=4b07a87e301d")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=4b07a87e301d")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -458,6 +458,43 @@ button.balloon-control.text-action{padding:6px 9px;min-height:32px;font-size:11.
 @media screen and (max-width:1250px){
 #main .rab-heading>div:first-child,#main .rab-heading>.action-row{flex:0 1 auto;width:100%;min-width:0}
 #main .rab-heading>.action-row{align-content:flex-start;justify-content:flex-end}
+}
+
+/* Requested project history controls, unified export menu, and action sizing. */
+@media screen {
+.saved-information-label{max-width:650px}
+.saved-information-label>span{font-size:12px;font-weight:600;color:var(--forest)}
+.saved-information-picker{position:relative;width:100%}
+.saved-information-picker>summary{display:flex;align-items:center;min-height:48px;padding:11px 14px;border:1px solid #babda8;border-radius:7px;background:#fffefb;color:var(--forest);font-size:13px;cursor:pointer;list-style:none}
+.saved-information-picker>summary::-webkit-details-marker,.rab-export-menu>summary::-webkit-details-marker{display:none}
+.saved-information-picker>summary::after{content:'⌄';margin-left:auto;font-size:18px;line-height:1}
+.saved-information-picker[open]>summary{border-color:var(--forest);box-shadow:0 0 0 2px #174b4122}
+.saved-information-menu{position:absolute;inset:calc(100% + 6px) 0 auto;z-index:45;max-height:330px;overflow:auto;padding:6px;border:1px solid var(--control-line);border-radius:8px;background:var(--surface);box-shadow:0 12px 30px #14271f24}
+.saved-information-row{display:grid;grid-template-columns:minmax(0,1fr) 38px;align-items:center;gap:6px;border-bottom:1px solid var(--line)}
+.saved-information-row:last-child{border-bottom:0}
+.saved-information-row>button:first-child{min-width:0;padding:11px 10px;text-align:left;color:var(--forest);font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+.saved-information-row>button:first-child:hover{background:var(--control-hover)}
+.saved-project-delete{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;color:var(--symbol-red);border-radius:7px}
+.saved-project-delete svg{width:24px;height:24px}
+.project-delete-button{color:#9d312f!important}
+.rab-export-menu{position:relative;display:inline-flex}
+.rab-export-menu>summary{min-height:44px;gap:8px;font-size:12px;padding:10px 13px;white-space:nowrap}
+.rab-export-menu>summary>svg{width:18px;height:18px;transition:transform .15s}
+.rab-export-menu[open]>summary>svg{transform:rotate(180deg)}
+.rab-export-options{position:absolute;top:calc(100% + 7px);right:0;z-index:45;width:250px;padding:6px;border:1px solid var(--control-line);border-radius:8px;background:var(--surface);box-shadow:0 12px 30px #14271f24}
+.rab-export-options>button{display:flex;flex-direction:column;align-items:flex-start;width:100%;padding:10px 12px;border-radius:6px;text-align:left;color:var(--forest)}
+.rab-export-options>button:hover{background:var(--control-hover)}
+.rab-export-options strong{font-size:12px}
+.rab-export-options span{margin-top:3px;color:var(--muted);font-size:10px;line-height:1.4}
+[data-freeze-page="rab"] .rab-add-work,[data-freeze-page="rab"] .action-row>.button,[data-freeze-page="rab"] .rab-export-menu>summary{min-height:44px;font-size:12px;padding:10px 13px}
+[data-freeze-page="rab"] .rab-add-work .rab-add-symbol{flex:0 0 22px;width:22px;height:22px;min-width:22px;min-height:22px}
+[data-freeze-page="rab"] .rab-add-work .rab-add-symbol .add-icon{width:20px;height:20px}
+#analysis-dialog .manual-component-group .component-controls button{font-size:12px;line-height:1.4}
+}
+@media screen and (max-width:600px){
+.saved-information-menu{position:static;margin-top:6px;max-height:280px}
+.rab-export-options{right:0;left:auto;width:min(250px,calc(100vw - 32px))}
+#analysis-dialog .manual-component-group .component-controls button{font-size:12px}
 }
 
 /* Requested project location card; other accepted page styles stay unchanged. */
