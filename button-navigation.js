@@ -7,7 +7,7 @@ function directionFor(control){
  if(control.id==='next-page')return 'forward';
  const label=control.textContent.replace(/[←→]/g,'').trim();
  if(/^(Kembali|Sebelumnya|Mundur)\b/i.test(label))return 'back';
- if(/^(Lanjut|Menuju|Berikutnya|Buka|Rekapitulasi|Jelajahi|Pelajari)\b/i.test(label))return 'forward';
+ if(/^(Lanjut(?:kan)?|Menuju|Berikutnya|Buka|Rekapitulasi|Jelajahi|Pelajari)\b/i.test(label))return 'forward';
  if(control.matches('a.button[href^="#"]'))return 'forward';
  if(control.matches('button,a.button,.quantity-row-link,.text-link')&&/→/.test(control.textContent)&&! /^(Cetak|Ekspor|Impor)\b/i.test(label))return 'forward';
  return null;
@@ -18,7 +18,7 @@ function decorateActionSymbols(){
  const prints=new Set(['print','print-hsd','print-quantity','print-recap','print-smkk']);
  for(const control of document.querySelectorAll('button')){
   const action=control.dataset.action,kind=downloads.has(action)?'download':uploads.has(action)?'upload':prints.has(action)||control.hasAttribute('data-print-ahs')?'print':null;
-  const direction=kind==='download'||kind==='upload'||control.matches('[data-move],[data-wbs-shift],[data-smkk-group-toggle],[data-action="toggle-smkk"],#previous-page,#next-page');
+  const direction=kind==='download'||kind==='upload'||control.matches('[data-move],[data-component-move],[data-wbs-shift],[data-smkk-group-toggle],[data-action="toggle-smkk"],#previous-page,#next-page');
   const destructive=control.matches('.trash-button,[data-component-remove],[data-component-last],[data-close-dialog].icon-button,#close-reader');
   control.classList.toggle('symbol-direction',direction);
   control.classList.toggle('symbol-general',!direction&&!destructive);control.classList.toggle('symbol-destructive',destructive);
@@ -39,11 +39,13 @@ function decorate(){
   const fullLabel=(control.getAttribute('aria-label')||control.textContent).replace(/[←→]/g,'').replace(/\s+/g,' ').trim();
   if(!control.hasAttribute('aria-label'))control.setAttribute('aria-label',fullLabel|| (direction==='back'?'Kembali':'Lanjut'));
   control.dataset.navigation=direction;
-  const walker=document.createTreeWalker(control,NodeFilter.SHOW_TEXT);let text,first=true;
-  while(text=walker.nextNode()){
-   let value=text.nodeValue.replace(/[←→]/g,'').replace(/\b(?:lanjut(?:kan)?|buka|kembali)\b(?:\s+ke\b)?\s*/gi,'');
-   if(first&&value.trim()){value=value.replace(/\S/,c=>c.toLocaleUpperCase('id'));first=false;}
-   if(value!==text.nodeValue)text.nodeValue=value;
+  if(!control.hasAttribute('data-keep-navigation-label')&&control.dataset.action!=='continue-rab'){
+   const walker=document.createTreeWalker(control,NodeFilter.SHOW_TEXT);let text,first=true;
+   while(text=walker.nextNode()){
+    let value=text.nodeValue.replace(/[←→]/g,'').replace(/\b(?:lanjut(?:kan)?|buka|kembali)\b(?:\s+ke\b)?\s*/gi,'');
+    if(first&&value.trim()){value=value.replace(/\S/,c=>c.toLocaleUpperCase('id'));first=false;}
+    if(value!==text.nodeValue)text.nodeValue=value;
+   }
   }
   const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.classList.add('navigation-direction-icon');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.dataset.direction=direction;
   icon.innerHTML=direction==='back'?'<path d="m11 6-6 6 6 6" stroke="#65b5f0"/><path d="m19 6-6 6 6 6" stroke="#238de1"/>':'<path d="m5 6 6 6-6 6" stroke="#65b5f0"/><path d="m13 6 6 6-6 6" stroke="#238de1"/>';
