@@ -1,5 +1,5 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.33c033da3984.js';
-import { validateQuantityRows, quantitySummary } from './quantity-core.33c033da3984.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.a2bb10ae5d78.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.a2bb10ae5d78.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -64,6 +64,20 @@ export function calculateItem(item, rates, overhead) {
   const margin = moneyRound(direct * overhead / 100);
   const unitPrice = moneyRound(direct + margin);
   return { breakdown, missing, unresolvedAlternatives, unlinked: !item.heading && !item.components.length, direct, margin, unitPrice, amount: item.heading ? 0 : moneyRound(unitPrice * item.volume) };
+}
+export function parseTkdnPercent(value){
+ const raw=String(value??'').trim().replace(/%/g,'').replace(/\s/g,'').replace(',','.');
+ if(!raw)return null;const percent=Number(raw);return Number.isFinite(percent)&&percent>=0&&percent<=100?percent:null;
+}
+export function calculateTkdnItem(item,project){
+ const result=calculateItem(item,project.rates,project.overhead),volume=Number(item.volume)||0;
+ const breakdown=result.breakdown.map(component=>{
+  const tkdn=parseTkdnPercent(resourceMetadata(project,component).kdn);
+  const workCost=component.cost==null?null:moneyRound(component.cost*volume);
+  return {...component,tkdn,workCost,kdn:workCost==null||tkdn==null?null:moneyRound(workCost*tkdn/100)};
+ });
+ const kdnTotal=moneyRound(breakdown.reduce((sum,component)=>sum+(component.kdn??0),0));
+ return {...result,breakdown,volume,workDirect:moneyRound(result.direct*volume),workMargin:moneyRound(result.margin*volume),kdnTotal,missingTkdn:breakdown.filter(component=>component.tkdn==null).length};
 }
 export function smkkRowResult(row){
  const enabled=row.enabled!==false,missing=enabled&&(row.volume==null||row.price==null||!row.unit.trim());

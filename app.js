@@ -1,6 +1,6 @@
-import {pageMenuIcons} from './menu-icons.33c033da3984.js';
-import { initButtonNavigation } from './button-navigation.33c033da3984.js';
-import { normalize } from './search-core.33c033da3984.js';
+import {pageMenuIcons} from './menu-icons.a2bb10ae5d78.js';
+import { initButtonNavigation } from './button-navigation.a2bb10ae5d78.js';
+import { normalize } from './search-core.a2bb10ae5d78.js';
 
 const icons = {
   home: '<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
@@ -80,7 +80,7 @@ function runSearch(q) {
   $('#search-input').value=q;
   if (q.trim().length<2) { $('#search-results').innerHTML='<div class="empty-state">Masukkan minimal dua karakter untuk mulai mencari.</div>'; return; }
   if (!worker) {
-    worker=new Worker(new URL('./search-worker.33c033da3984.js', import.meta.url),{type:'module'});
+    worker=new Worker(new URL('./search-worker.a2bb10ae5d78.js', import.meta.url),{type:'module'});
     worker.onmessage=({data})=>{
       if(data.id!==searchId || route()!=='search') return;
       const total=data.groups.reduce((n,g)=>n+g.total,0); const query=new URLSearchParams(location.hash.split('?')[1]).get('q')||'';
