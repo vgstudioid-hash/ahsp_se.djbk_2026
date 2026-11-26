@@ -105,9 +105,9 @@ button.trash-button:focus-visible,button.edit-icon-button:focus-visible{outline:
 @media screen {
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]){display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 28px!important;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border:0!important;border-radius:5px;background:transparent!important;box-shadow:none;vertical-align:middle;font-size:0!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]) svg{display:none!important}
-:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=70391fa74a00")}
-button.edit-icon-button::before{background-image:url("icons/edit.svg?v=70391fa74a00")!important}
-#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=70391fa74a00")!important}
+:is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last])::before{content:"";display:block;width:24px;height:24px;flex:none;background:center/contain no-repeat url("icons/delete.svg?v=33c033da3984")}
+button.edit-icon-button::before{background-image:url("icons/edit.svg?v=33c033da3984")!important}
+#analysis-dialog button.icon-button[data-close-dialog]::before,#close-reader::before{background-image:url("icons/close.svg?v=33c033da3984")!important}
 :is(#analysis-dialog button.icon-button[data-close-dialog],#close-reader,button.trash-button,button.edit-icon-button,button[data-component-remove],button[data-component-last]):hover{filter:brightness(.93);box-shadow:0 0 0 3px #c7b58b55}
 }
 @media screen {
@@ -574,7 +574,7 @@ button.component-move:disabled{opacity:.35}
 :is(.workbook-ahs button.component-move,.workbook-ahs button.component-edit,.workbook-ahs .ahs-history-button,.workbook-ahs [data-component-add])>svg{display:none!important}
 :is(.workbook-ahs button.component-move,.workbook-ahs button.component-edit,.workbook-ahs .ahs-history-button,.workbook-ahs [data-component-add])::before{content:"";display:block;width:24px;height:24px;flex:0 0 24px;background:center/contain no-repeat}
 .workbook-ahs [data-component-add]::before{background-image:url("icons/add.svg")!important}
-.workbook-ahs button.component-edit::before{background-image:url("icons/edit.svg?v=70391fa74a00")!important}
+.workbook-ahs button.component-edit::before{background-image:url("icons/edit.svg?v=33c033da3984")!important}
 .workbook-ahs button.component-move[data-direction="-1"]::before{background-image:url("icons/up.svg")!important}
 .workbook-ahs button.component-move[data-direction="1"]::before{background-image:url("icons/down.svg")!important}
 .workbook-ahs .ahs-undo-button::before{background-image:url("icons/undo.svg")!important}
@@ -587,7 +587,7 @@ button.component-move:disabled{opacity:.35}
 
 :is(button.icon-button[data-close-dialog],#close-reader){display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box;width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;flex:0 0 28px!important;padding:0!important;border:0!important;border-radius:5px!important;background:transparent!important;box-shadow:none!important;font-size:0!important}
 :is(button.icon-button[data-close-dialog],#close-reader)>svg{display:none!important}
-:is(button.icon-button[data-close-dialog],#close-reader)::before{content:"";display:block;width:24px;height:24px;background:center/contain no-repeat url("icons/close.svg?v=70391fa74a00")}
+:is(button.icon-button[data-close-dialog],#close-reader)::before{content:"";display:block;width:24px;height:24px;background:center/contain no-repeat url("icons/close.svg?v=33c033da3984")}
 :is(button.icon-button[data-close-dialog],#close-reader):hover{filter:brightness(.94);box-shadow:0 0 0 3px #eb454533!important}
 
 .ahs-disclosure-toggle{border:0!important;background:transparent!important;box-shadow:none!important}
