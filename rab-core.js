@@ -1,5 +1,5 @@
-import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.a2bb10ae5d78.js';
-import { validateQuantityRows, quantitySummary } from './quantity-core.a2bb10ae5d78.js';
+import {cleanResourceName,normalizedResourceUnit,resourceIdentity,buildResourceCodeIndex,buildResourceNameIndex,normalizeItemResources} from './resource-cleanup.acce4dc045fd.js';
+import { validateQuantityRows, quantitySummary } from './quantity-core.acce4dc045fd.js';
 export const groups = ['Tenaga kerja', 'Bahan', 'Peralatan', 'Lain-lain'];
 export const moneyRound = n => Math.round((n + Number.EPSILON) * 100) / 100;
 export function nonnegative(value) {
@@ -78,6 +78,47 @@ export function calculateTkdnItem(item,project){
  });
  const kdnTotal=moneyRound(breakdown.reduce((sum,component)=>sum+(component.kdn??0),0));
  return {...result,breakdown,volume,workDirect:moneyRound(result.direct*volume),workMargin:moneyRound(result.margin*volume),kdnTotal,missingTkdn:breakdown.filter(component=>component.tkdn==null).length};
+}
+export const tkdnCategories=Object.freeze([
+ {id:'I',title:'Material Langsung (Bahan Baku)',resourceGroup:'Bahan',kind:'goods'},
+ {id:'II',title:'Peralatan (Barang Jadi)',resourceGroup:null,kind:'goods'},
+ {id:'III',title:'Manajemen Proyek dan Perekayasaan',resourceGroup:null,kind:'services'},
+ {id:'IV',title:'Alat Kerja / Fasilitas Kerja',resourceGroup:'Peralatan',kind:'services'},
+ {id:'V',title:'Konstruksi dan Fabrikasi',resourceGroup:'Tenaga kerja',kind:'services'},
+ {id:'VI',title:'Jasa Umum',resourceGroup:'Lain-lain',kind:'services'}
+]);
+function tkdnAnalysisKey(item){
+ const components=item.components.map(component=>[component.group,resourceIdentity(component),component.coefficient,component.code||'']);
+ return JSON.stringify([item.catalogId||'',item.docId||'',item.code||'',item.page||'',ahsTitle(item),item.unit,components]);
+}
+function tkdnTotals(rows){
+ const total=moneyRound(rows.reduce((sum,row)=>sum+(row.workCost??0),0));
+ const kdn=moneyRound(rows.reduce((sum,row)=>sum+(row.kdn??0),0));
+ const kln=moneyRound(rows.reduce((sum,row)=>sum+(row.kln??0),0));
+ const missingPrice=rows.filter(row=>row.workCost==null).length,missingTkdn=rows.filter(row=>row.workCost!=null&&row.tkdn==null).length;
+ return {total,kdn,kln,percent:total?moneyRound(kdn/total*100):null,missingPrice,missingTkdn,incomplete:missingPrice>0||missingTkdn>0};
+}
+export function calculateTkdnReport(project){
+ const calculated=calculateProject(project),numbers=wbsNumbers(project.items),works=[];
+ let scope={number:'—',title:'BELUM DIKELOMPOKKAN KE LINGKUP'};
+ calculated.items.forEach((row,index)=>{
+  const item=row.item,level=item.wbsLevel??2;
+  if(level===1)scope={number:numbers[index],title:wbsTitle(item)||'LINGKUP BELUM DIBERI NAMA'};
+  if(!row.billable)return;
+  const result=calculateTkdnItem(item,project),components=result.breakdown.map(component=>({...component,kln:component.workCost==null||component.tkdn==null?null:moneyRound(component.workCost-component.kdn)}));
+  works.push({item,result:{...result,breakdown:components},number:numbers[index],title:wbsTitle(item),scope:{...scope}});
+ });
+ const grouped=new Map();
+ for(const work of works){const key=tkdnAnalysisKey(work.item),entry=grouped.get(key);if(entry){entry.volume+=Number(work.item.volume)||0;entry.itemCount++;entry.itemIds.push(work.item.id);}else grouped.set(key,{item:work.item,volume:Number(work.item.volume)||0,itemCount:1,itemIds:[work.item.id]});}
+ const analyses=[...grouped.values()].map(entry=>{const volume=Math.round(entry.volume*1e6)/1e6,item={...entry.item,volume},result=calculateTkdnItem(item,project);return {item,result:{...result,itemCount:entry.itemCount,itemIds:entry.itemIds,kdnPercent:result.workDirect?moneyRound(result.kdnTotal/result.workDirect*100):null}};});
+ const categories=tkdnCategories.map(definition=>{
+  const entries=works.map(work=>{const components=work.result.breakdown.filter(component=>component.group===definition.resourceGroup);return components.length?{...work,components}:null;}).filter(Boolean);
+  const components=entries.flatMap(entry=>entry.components),totals=tkdnTotals(components);
+  return {...definition,entries,components,...totals};
+ });
+ const section=kind=>{const selected=categories.filter(category=>category.kind===kind),components=selected.flatMap(category=>category.components);return {...tkdnTotals(components),categories:selected};};
+ const goods=section('goods'),services=section('services'),all=tkdnTotals(categories.flatMap(category=>category.components));
+ return {analyses,works,categories,goods,services,...all};
 }
 export function smkkRowResult(row){
  const enabled=row.enabled!==false,missing=enabled&&(row.volume==null||row.price==null||!row.unit.trim());

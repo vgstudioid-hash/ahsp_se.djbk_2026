@@ -11,6 +11,8 @@ export const pageMenuIcons = Object.freeze({
   catalog: ahsMenuIcon,
   prices: pageIcon('<path d="M2 13 20 2a4 4 0 0 1 5 1l4 7a4 4 0 0 1-1 5L9 26a4 4 0 0 1-5-1l-3-7a4 4 0 0 1 1-5Z" fill="#d96f7a"/><path d="M10 14h17a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H10a3 3 0 0 1-2-1L3 25a3 3 0 0 1 0-4l5-6a3 3 0 0 1 2-1Z" fill="#d9b469"/><circle cx="10" cy="22.5" r="3.3" fill="#1f3b2f"/><circle cx="10" cy="22.5" r="1.3" fill="#6d9fc5"/>'),
   tkdn: ahsMenuIcon,
+  'tkdn-detail': ahsMenuIcon,
+  'tkdn-recap': ahsMenuIcon,
   assistant: pageIcon('<path d="M6 8h17a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H9l-8 5V13a5 5 0 0 1 5-5Z" fill="#d2a05f"/><path d="M12 1h14a5 5 0 0 1 5 5v20l-7-6H12a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4Z" fill="#6d9fc5"/><g fill="#fff"><circle cx="14" cy="10.5" r="1.5"/><circle cx="19.5" cy="10.5" r="1.5"/><circle cx="25" cy="10.5" r="1.5"/></g>'),
   pustaka: pageIcon('<path d="M9 1H8a6 6 0 0 0-6 6v19a6 6 0 0 1 7-6Z" fill="#d2a05f"/><path d="M12 1h12a6 6 0 0 1 6 6v16H12Z" fill="#6d9fc5"/><path d="M20 1h5v12l-2.5-2-2.5 2Z" fill="#d96f7a"/><rect x="2" y="25" width="28" height="6" rx="3" fill="#6d9fc5"/>')
 });
